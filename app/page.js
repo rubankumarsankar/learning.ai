@@ -19,11 +19,24 @@ function getPhaseForDay(dayId) {
 }
 
 export default async function Home() {
-  const filePath = path.join(process.cwd(), 'data/db.json');
+  // On Vercel: read from /tmp (writable) > fallback to bundled (read-only)
+  const bundledPath = path.join(process.cwd(), 'data/db.json');
+  const writablePath = '/tmp/db.json';
   let masteryList = [];
   try {
-    const file = await fs.readFile(filePath, 'utf8');
-    masteryList = JSON.parse(file || '[]');
+    if (process.env.VERCEL) {
+      try {
+        const file = await fs.readFile(writablePath, 'utf8');
+        masteryList = JSON.parse(file || '[]');
+      } catch {
+        // /tmp not populated yet, read from bundled
+        const file = await fs.readFile(bundledPath, 'utf8');
+        masteryList = JSON.parse(file || '[]');
+      }
+    } else {
+      const file = await fs.readFile(bundledPath, 'utf8');
+      masteryList = JSON.parse(file || '[]');
+    }
   } catch (e) {
     if (e.code !== 'ENOENT') throw e;
   }

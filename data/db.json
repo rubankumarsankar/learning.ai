@@ -3,7 +3,7 @@
     "id": 1,
     "date": "Mon, Mar 9",
     "topic": "Python Install, VS Code Setup, and Hello World",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 1
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "date": "Tue, Mar 10",
     "topic": "Variables: Strings, Integers, Floats, and Booleans",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 2
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "date": "Wed, Mar 11",
     "topic": "Input/Output: Building Interactive CLI Programs",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 3
   },
@@ -27,7 +27,7 @@
     "id": 4,
     "date": "Thu, Mar 12",
     "topic": "Operators: Arithmetic, Comparison, and Assignment",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 4
   },
@@ -35,7 +35,7 @@
     "id": 5,
     "date": "Fri, Mar 13",
     "topic": "Logical Operators: AND, OR, NOT in Conditions",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 5
   },
@@ -43,7 +43,7 @@
     "id": 6,
     "date": "Sat, Mar 14",
     "topic": "Lists: Indexing, Slicing, and Core Methods",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 6
   },
@@ -51,7 +51,7 @@
     "id": 7,
     "date": "Sun, Mar 15",
     "topic": "Dictionaries: Key-Value Pairs and Nested Data",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 7
   },
@@ -59,7 +59,7 @@
     "id": 8,
     "date": "Mon, Mar 16",
     "topic": "Tuples, Sets, and When to Use Each",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 8
   },
@@ -67,7 +67,7 @@
     "id": 9,
     "date": "Tue, Mar 17",
     "topic": "If-Else, Elif: Conditional Logic Flow",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 9
   },
@@ -75,7 +75,7 @@
     "id": 10,
     "date": "Wed, Mar 18",
     "topic": "For Loops: Iterating over Lists and Ranges",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 10
   },
@@ -83,7 +83,7 @@
     "id": 11,
     "date": "Thu, Mar 19",
     "topic": "While Loops: Break, Continue, and Loop Patterns",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 11
   },
@@ -91,7 +91,7 @@
     "id": 12,
     "date": "Fri, Mar 20",
     "topic": "Practice Day: 5 Loop and Condition Coding Challenges",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 12
   },
@@ -99,7 +99,7 @@
     "id": 13,
     "date": "Sat, Mar 21",
     "topic": "Functions: Defining, Calling, and Return Values",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 13
   },
@@ -107,7 +107,7 @@
     "id": 14,
     "date": "Sun, Mar 22",
     "topic": "Arguments: *args, **kwargs, and Default Parameters",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Coding Foundations",
     "lessonId": 14
   },
@@ -1323,7 +1323,7 @@
     "id": 166,
     "date": "Fri, Aug 21",
     "topic": "Web Basics: HTTP Methods — GET, POST, PUT, DELETE",
-    "status": "🚀 In Progress",
+    "status": "⬜ To-Do",
     "phase": "Backend & AI Engineering",
     "lessonId": 166
   },
@@ -1515,7 +1515,7 @@
     "id": 190,
     "date": "Mon, Sep 14",
     "topic": "GitHub: Pull Requests, Code Reviews, and GitHub Actions Intro",
-    "status": "✅ Done",
+    "status": "⬜ To-Do",
     "phase": "Backend & AI Engineering",
     "lessonId": 190
   },
@@ -1523,7 +1523,7 @@
     "id": 191,
     "date": "Tue, Sep 15",
     "topic": "Engineering Mini-Project: Full API + Docker + Tests Pipeline",
-    "status": "🚀 In Progress",
+    "status": "⬜ To-Do",
     "phase": "Backend & AI Engineering",
     "lessonId": 191
   },
