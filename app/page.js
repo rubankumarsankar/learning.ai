@@ -81,13 +81,13 @@ export default async function Home() {
             <div>
               <div className="flex items-center gap-3 mb-1">
                 <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-base sm:text-lg font-bold shadow-lg shadow-blue-500/20">
-                  A
+                  L
                 </div>
                 <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">
                   <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                    ANTIGRAVITY
+                    LEARNING
                   </span>
-                  <span className="text-gray-500 font-normal ml-1.5 sm:ml-2 text-sm sm:text-lg">TRACKER</span>
+                  <span className="text-gray-500 font-normal ml-1.5 sm:ml-2 text-sm sm:text-lg">& TRACKING</span>
                 </h1>
               </div>
               <p className="text-gray-500 text-xs sm:text-sm ml-12 sm:ml-[52px]">

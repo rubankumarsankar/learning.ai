@@ -6,7 +6,7 @@ import ReactMarkdown from 'react-markdown';
 export async function generateMetadata({ params }) {
   const { id } = await params;
   const lessonPath = path.join(process.cwd(), 'data', 'lessons', `${id}.json`);
-  
+
   let title = `Day ${id} | Learning & Tracking`;
   let desc = `Comprehensive material and working examples for Day ${id} of the Mastery learning schedule.`;
 
@@ -14,7 +14,7 @@ export async function generateMetadata({ params }) {
     const file = await fs.readFile(lessonPath, 'utf8');
     const lesson = JSON.parse(file);
     title = `${lesson.title} | Learning & Tracking`;
-    
+
     // Extract a smart description from the first 150 chars of markdown
     if (lesson.content) {
       let cleanDesc = lesson.content.replace(/[#*`\n\\]/g, ' ').substring(0, 150).trim();
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }) {
 
 export default async function DayPage({ params }) {
   const { id } = await params; // Next.js 15 params is a promise
-  
+
   // Read lesson file
   const lessonPath = path.join(process.cwd(), 'data', 'lessons', `${id}.json`);
   let lesson = null;
@@ -46,7 +46,7 @@ export default async function DayPage({ params }) {
       const dbFile = await fs.readFile(dbPath, 'utf8');
       const masteryList = JSON.parse(dbFile || '[]');
       const dbItem = masteryList.find(item => item.id.toString() === id);
-      
+
       lesson = {
         title: dbItem ? dbItem.topic : "Topic Not Found",
         content: "Content for this module is coming soon! Keep grinding.",
@@ -62,7 +62,7 @@ export default async function DayPage({ params }) {
     <div className="min-h-screen bg-black text-white p-4 md:p-10 font-mono">
       <div className="flex justify-between items-center mb-6 md:mb-8">
         <Link href="/" className="text-blue-500 hover:text-blue-400 font-bold">
-          ← BACK TO TRACKER
+          ← BACK TO LEARNING & TRACKING
         </Link>
         <div className="flex gap-3">
           <Link href="/ask" className="text-green-400 hover:text-green-200 font-bold text-sm bg-gray-900 border border-green-800 px-3 py-1 rounded transition-colors">
@@ -70,7 +70,7 @@ export default async function DayPage({ params }) {
           </Link>
         </div>
       </div>
-      
+
       <header className="mb-6 md:mb-10 border-b border-gray-800 pb-6 md:pb-8">
         <h1 className="text-2xl md:text-4xl font-bold text-blue-500 leading-tight">{lesson.title}</h1>
         {lesson.keywords && lesson.keywords.length > 0 && (
@@ -104,17 +104,17 @@ export default async function DayPage({ params }) {
         <section className="bg-gray-900 p-5 md:p-8 rounded-xl border border-gray-800">
           <h2 className="text-xl md:text-2xl font-bold mb-4 md:mb-6 text-green-400">TUTORIAL</h2>
           <div className="text-gray-300 leading-relaxed text-base md:text-lg overflow-x-auto">
-            <ReactMarkdown 
+            <ReactMarkdown
               components={{
-                h3: ({node, ...props}) => <h3 className="text-2xl font-bold mt-6 mb-3 text-white" {...props} />,
-                strong: ({node, ...props}) => <strong className="font-bold text-blue-300" {...props} />,
-                ul: ({node, ...props}) => <ul className="list-disc list-inside space-y-2 my-4" {...props} />,
-                ol: ({node, ...props}) => <ol className="list-decimal list-inside space-y-2 my-4" {...props} />,
-                p: ({node, ...props}) => <p className="mb-4" {...props} />,
-                code: ({node, inline, ...props}) => 
-                  inline ? 
-                  <code className="bg-black text-pink-400 px-1 py-0.5 rounded text-sm" {...props} /> :
-                  <code className="block bg-black p-4 rounded text-sm my-4 overflow-x-auto text-blue-300" {...props} />
+                h3: ({ node, ...props }) => <h3 className="text-2xl font-bold mt-6 mb-3 text-white" {...props} />,
+                strong: ({ node, ...props }) => <strong className="font-bold text-blue-300" {...props} />,
+                ul: ({ node, ...props }) => <ul className="list-disc list-inside space-y-2 my-4" {...props} />,
+                ol: ({ node, ...props }) => <ol className="list-decimal list-inside space-y-2 my-4" {...props} />,
+                p: ({ node, ...props }) => <p className="mb-4" {...props} />,
+                code: ({ node, inline, ...props }) =>
+                  inline ?
+                    <code className="bg-black text-pink-400 px-1 py-0.5 rounded text-sm" {...props} /> :
+                    <code className="block bg-black p-4 rounded text-sm my-4 overflow-x-auto text-blue-300" {...props} />
               }}
             >
               {lesson.content}
@@ -137,16 +137,16 @@ export default async function DayPage({ params }) {
                   code_editor
                 </div>
               </div>
-              
+
               {/* Code Area */}
               <div className="p-4 md:p-6 overflow-x-auto text-sm md:text-base">
-                <ReactMarkdown 
+                <ReactMarkdown
                   components={{
-                    h1: ({node, ...props}) => <h1 className="text-xl font-bold mb-3 text-purple-400 font-sans" {...props} />,
-                    h2: ({node, ...props}) => <h2 className="text-lg font-bold mb-3 text-purple-400 font-sans" {...props} />,
-                    h3: ({node, ...props}) => <h3 className="text-md font-bold mb-2 text-purple-400 font-sans" {...props} />,
-                    p: ({node, ...props}) => <div className="text-green-300 font-mono leading-loose whitespace-pre-wrap sm:whitespace-pre" {...props} />,
-                    code: ({node, inline, ...props}) => 
+                    h1: ({ node, ...props }) => <h1 className="text-xl font-bold mb-3 text-purple-400 font-sans" {...props} />,
+                    h2: ({ node, ...props }) => <h2 className="text-lg font-bold mb-3 text-purple-400 font-sans" {...props} />,
+                    h3: ({ node, ...props }) => <h3 className="text-md font-bold mb-2 text-purple-400 font-sans" {...props} />,
+                    p: ({ node, ...props }) => <div className="text-green-300 font-mono leading-loose whitespace-pre-wrap sm:whitespace-pre" {...props} />,
+                    code: ({ node, inline, ...props }) =>
                       <code className="text-pink-400 font-mono" {...props} />
                   }}
                 >
