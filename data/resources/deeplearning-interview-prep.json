@@ -1,0 +1,23 @@
+{
+  "title": "Deep Learning & Neural Networks Prep",
+  "url": "https://pytorch.org/",
+  "content": "### Crack the Interview: Deep Learning Architectures\n\nFor advanced AI roles, you must understand the calculus behind the network. \n\n**Theory: Backpropagation & Activation Functions**\n- **Core Concept:** Backpropagation uses the chain rule of calculus to calculate gradients backward from the output layer to update weights. \n- **Application:** Knowing why we use ReLU (Rectified Linear Unit) over Sigmoid in hidden layers. Sigmoid causes the **Vanishing Gradient Problem** in deep networks.\n- **Interview Trick:** If asked about CNNs (Convolutional Neural Networks) for images, explain how *pooling layers* reduce spatial dimensions and *convolution operations* extract features independently of location.",
+  "codeExample": "# 💡 Crack the Interview: Implementing a basic Forward/Backward pass concept\nimport torch\n\n# PyTorch is the industry standard for DL interviews\nx = torch.tensor([2.0], requires_grad=True)\ny = torch.tensor([8.0]) # Target\n\n# Forward Pass: y_pred = x^2\ny_pred = x**2\n\n# Loss Function (MSE)\nloss = (y_pred - y)**2 \n\n# Backward Pass (Calculate Gradients automatically)\nloss.backward()\n\n# The interviewer will ask: What is x.grad mathematically here?\nprint(f\"Gradient of x: {x.grad.item()}\")",
+  "practiceQuestions": [
+    "What is the Vanishing Gradient Problem and how does ReLU solve it?",
+    "Explain what Dropout layers do and why they are used.",
+    "What is the difference between a CNN and an RNN/Transformer architecture?",
+    "How do you choose a Learning Rate, and what happens if it is too high?"
+  ],
+  "keywords": [
+    "Backpropagation",
+    "Loss Gradients",
+    "ReLU",
+    "Architecture"
+  ],
+  "keyTakeaways": [
+    "Backpropagation uses calculus chain rules to trace the source of errors backward through the network layers.",
+    "Sigmoid activation causes Vanishing Gradients; ReLU passes active signals securely without decaying.",
+    "Convolutional pooling actively reduces the parameters needed to calculate image matrices."
+  ]
+}

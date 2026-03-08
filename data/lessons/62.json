@@ -1,0 +1,23 @@
+{
+  "id": 62,
+  "title": "Pandas: Head, Tail, Info, Describe — Data Audit",
+  "content": "### Day 62: Pandas: Head, Tail, Info, Describe — Data Audit\n\n**Data Audit** — first thing you do with any dataset:\n- `df.head()` / `df.tail()` — preview rows\n- `df.info()` — dtypes, non-null counts\n- `df.describe()` — statistics\n- `df.shape`, `df.columns`, `df.dtypes`",
+  "codeExample": "# Day 62: Pandas: Head, Tail, Info, Describe — Data Audit\nimport pandas as pd\nimport numpy as np\n\n# Sample data\ndf = pd.DataFrame({\n    'name': ['Alice','Bob','Carol','Dave','Eve'],\n    'age': [28, 32, None, 45, 29],\n    'salary': [120000, 80000, 95000, 110000, 87000],\n    'dept': ['Eng','Mkt','Eng','Mkt','Eng']\n})\n\n# Data audit\nprint(\"=== head() ===\")\nprint(df.head(3))\n\nprint(\"\\n=== info() ===\")\ndf.info()\n\nprint(\"\\n=== describe() ===\")\nprint(df.describe())\n\nprint(f\"\\nShape: {df.shape}\")\nprint(f\"Null counts:\\n{df.isnull().sum()}\")",
+  "practiceQuestions": [
+    "What is the first thing you do with a new dataset?",
+    "What does df.info() show?",
+    "Difference between describe() and info()?",
+    "How to check for missing values?"
+  ],
+  "keywords": [
+    "Data Audit",
+    "Pandas",
+    "Head",
+    "Tail"
+  ],
+  "keyTakeaways": [
+    "`df.head()` / `df.tail()` — preview rows",
+    "`df.info()` — dtypes, non-null counts",
+    "`df.describe()` — statistics"
+  ]
+}

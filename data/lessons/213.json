@@ -1,0 +1,22 @@
+{
+  "id": 213,
+  "title": "Deployment: Hosting Streamlit on Community Cloud",
+  "content": "### Day 213: Deployment: Hosting Streamlit on Community Cloud\n\nDeployment gets models from notebooks into the real world. MLOps makes ML systems reliable and maintainable in production.\n\n**Key Concepts:**\n- **Deployment:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Hosting Streamlit on Community Cloud:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 213: Deployment: Hosting Streamlit on Community Cloud\n# Phase: Deployment & MLOps\n\nprint(\"Day 213: Deployment: Hosting Streamlit on Community Cloud\")\nprint(\"Phase: Deployment & MLOps\")\n\n# Key concepts to practice:\n# 1. Deployment\\n# 2. Hosting Streamlit on Community Cloud\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain Deployment in your own words with a real-world example.",
+    "How would you use Deployment in a product company project?",
+    "Write working code that demonstrates Hosting Streamlit on Community Cloud.",
+    "What interview questions could be asked about Deployment?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Deployment",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Deployment: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Hosting Streamlit on Community Cloud: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

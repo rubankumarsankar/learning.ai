@@ -1,0 +1,23 @@
+{
+  "id": 82,
+  "title": "Stats: Variance, Standard Deviation, and Data Spread",
+  "content": "### Day 82: Stats: Variance, Standard Deviation, and Data Spread\n\n**Spread** measures how data varies:\n- **Variance:** Average of squared deviations from mean\n- **Std Dev:** Square root of variance — same unit as data\n- **IQR:** Q3-Q1, used for outlier detection (1.5×IQR rule)",
+  "codeExample": "# Day 82: Stats: Variance, Standard Deviation, and Data Spread\nimport numpy as np\nA = [48, 49, 50, 51, 52]\nB = [10, 30, 50, 70, 90]\nprint(f\"A: mean={np.mean(A)}, std={np.std(A):.2f}\")\nprint(f\"B: mean={np.mean(B)}, std={np.std(B):.2f}\")\n\n# IQR and outliers\ndata = [10,12,14,15,16,18,20,100]\nQ1, Q3 = np.percentile(data, [25, 75])\nIQR = Q3 - Q1\nlower, upper = Q1 - 1.5*IQR, Q3 + 1.5*IQR\noutliers = [x for x in data if x < lower or x > upper]\nprint(f\"\\nIQR: {IQR}, Outliers: {outliers}\")",
+  "practiceQuestions": [
+    "Difference between variance and std dev?",
+    "How to detect outliers with IQR?",
+    "Why divide by n-1 for sample variance?",
+    "Dataset A has std=2, B has std=20. What does this mean?"
+  ],
+  "keywords": [
+    "Spread",
+    "Variance",
+    "Std Dev",
+    "IQR"
+  ],
+  "keyTakeaways": [
+    "Variance: Average of squared deviations from mean",
+    "Std Dev: Square root of variance — same unit as data",
+    "IQR: Q3-Q1, used for outlier detection (1.5×IQR rule)"
+  ]
+}

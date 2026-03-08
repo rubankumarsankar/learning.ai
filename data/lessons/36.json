@@ -1,0 +1,22 @@
+{
+  "id": 36,
+  "title": "Debugging: Using print, breakpoints, and VS Code Debugger",
+  "content": "### Day 36: Debugging: Using print, breakpoints, and VS Code Debugger\n\n**Debugging** is systematic problem solving — not random changes.\n\n**Tools:** print() statements, VS Code debugger (F5), breakpoints, Python pdb.\n\n**Process:** 1) Read the error message. 2) Find the line. 3) Check variable values. 4) Fix and test.",
+  "codeExample": "# Day 36: Debugging: Using print, breakpoints, and VS Code Debugger\n# Debugging Techniques\n\n# 1. Read the traceback\ndef buggy_divide(a, b):\n    try:\n        return a / b\n    except ZeroDivisionError:\n        print(f\"ERROR: Cannot divide {a} by {b}\")\n        return None\n\nresult = buggy_divide(10, 0)\n\n# 2. Print debugging\ndef find_avg(nums):\n    print(f\"DEBUG: nums = {nums}\")        # debug print\n    print(f\"DEBUG: len = {len(nums)}\")     # debug print\n    if not nums:\n        return 0\n    total = sum(nums)\n    print(f\"DEBUG: total = {total}\")       # debug print\n    return total / len(nums)\n\nfind_avg([10, 20, 30])\n\n# 3. Assert statements\ndef set_age(age):\n    assert 0 <= age <= 150, f\"Invalid age: {age}\"\n    return age\n\ntry:\n    set_age(200)\nexcept AssertionError as e:\n    print(f\"Assertion failed: {e}\")",
+  "practiceQuestions": [
+    "3 debugging techniques?",
+    "How to read a Python traceback?",
+    "What are assert statements for?",
+    "How to use VS Code debugger?"
+  ],
+  "keywords": [
+    "Debugging",
+    "Tools",
+    "Process"
+  ],
+  "keyTakeaways": [
+    "Debugging is systematic problem solving — not random changes.",
+    "Tools: print() statements, VS Code debugger (F5), breakpoints, Python pdb.",
+    "Process: 1) Read the error message."
+  ]
+}

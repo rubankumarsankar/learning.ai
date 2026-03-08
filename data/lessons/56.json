@@ -1,0 +1,23 @@
+{
+  "id": 56,
+  "title": "SQL: Subqueries — Scalar, Row, and Table Subqueries",
+  "content": "### Day 56: SQL: Subqueries — Scalar, Row, and Table Subqueries\n\n**Subqueries** are queries inside queries.\n\n**Types:**\n- **Scalar:** returns single value: `WHERE salary > (SELECT AVG(salary)...)`\n- **Row:** returns one row\n- **Table:** returns multiple rows, used with IN or EXISTS",
+  "codeExample": "# Day 56: SQL: Subqueries — Scalar, Row, and Table Subqueries\n# SQL: Subqueries\nsql = \"\"\"\n-- Scalar: above-average salary\nSELECT name, salary FROM employees\nWHERE salary > (SELECT AVG(salary) FROM employees);\n\n-- IN subquery\nSELECT name FROM employees\nWHERE department_id IN (\n    SELECT id FROM departments WHERE location = 'Bangalore'\n);\n\n-- EXISTS\nSELECT c.name FROM customers c\nWHERE EXISTS (\n    SELECT 1 FROM orders o\n    WHERE o.customer_id = c.id AND o.amount > 5000\n);\n\n-- Subquery as table (derived table)\nSELECT dept, avg_salary FROM (\n    SELECT department AS dept, AVG(salary) AS avg_salary\n    FROM employees GROUP BY department\n) sub\nWHERE avg_salary > 80000;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "What is a subquery?",
+    "3 types of subqueries?",
+    "Find employees earning above average salary.",
+    "When to use EXISTS vs IN?"
+  ],
+  "keywords": [
+    "Subqueries",
+    "Types",
+    "Scalar",
+    "Row"
+  ],
+  "keyTakeaways": [
+    "Scalar: returns single value: `WHERE salary > (SELECT AVG(salary)...)`",
+    "Row: returns one row",
+    "Table: returns multiple rows, used with IN or EXISTS"
+  ]
+}

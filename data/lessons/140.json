@@ -1,0 +1,23 @@
+{
+  "id": 140,
+  "title": "Keras: Callbacks — EarlyStopping and ModelCheckpoint",
+  "content": "### Day 140: Keras: Callbacks — EarlyStopping and ModelCheckpoint\n\nModern deep learning frameworks provide high-level APIs for building, training, and deploying neural networks.\n\n**Key Concepts:**\n- **Keras:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Callbacks:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **EarlyStopping and ModelCheckpoint:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 140: Keras: Callbacks — EarlyStopping and ModelCheckpoint\nimport numpy as np\n\n# Today's topic: Callbacks — EarlyStopping and ModelCheckpoint\nprint(\"Day 140: Keras: Callbacks — EarlyStopping and ModelCheckpoint\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# Keras\\n# Callbacks\\n# EarlyStopping and ModelCheckpoint\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Callbacks — EarlyStopping and ModelCheckpoint\"\"\"\n    print(\"Implementing: Keras: Callbacks — EarlyStopping and ModelCheckpoint\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain Keras in your own words with a real-world example.",
+    "How would you use Keras in a product company project?",
+    "Write working code that demonstrates Callbacks — EarlyStopping and ModelCheckpoint.",
+    "What interview questions could be asked about Keras?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Keras",
+    "Callbacks",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Keras: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Callbacks: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "EarlyStopping and ModelCheckpoint: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

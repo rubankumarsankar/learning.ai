@@ -1,0 +1,22 @@
+{
+  "id": 211,
+  "title": "Streamlit: File Uploader + Model Prediction UI",
+  "content": "### Day 211: Streamlit: File Uploader + Model Prediction UI\n\nDeployment gets models from notebooks into the real world. MLOps makes ML systems reliable and maintainable in production.\n\n**Key Concepts:**\n- **Streamlit:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **File Uploader + Model Prediction UI:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 211: Streamlit: File Uploader + Model Prediction UI\n# Phase: Deployment & MLOps\n\nprint(\"Day 211: Streamlit: File Uploader + Model Prediction UI\")\nprint(\"Phase: Deployment & MLOps\")\n\n# Key concepts to practice:\n# 1. Streamlit\\n# 2. File Uploader + Model Prediction UI\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain Streamlit in your own words with a real-world example.",
+    "How would you use Streamlit in a product company project?",
+    "Write working code that demonstrates File Uploader + Model Prediction UI.",
+    "What interview questions could be asked about Streamlit?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Streamlit",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Streamlit: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "File Uploader + Model Prediction UI: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

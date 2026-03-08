@@ -1,0 +1,22 @@
+{
+  "id": 50,
+  "title": "SQL: IN, BETWEEN, LIKE, and Pattern Matching",
+  "content": "### Day 50: SQL: IN, BETWEEN, LIKE, and Pattern Matching\n\n**IN** — match any value in a list: `WHERE city IN ('Delhi','Mumbai')`\n\n**BETWEEN** — range filter: `WHERE salary BETWEEN 50000 AND 100000`\n\n**LIKE** — pattern matching:\n- `%` matches any characters: `'%kumar'`\n- `_` matches one character: `'_an'`",
+  "codeExample": "# Day 50: SQL: IN, BETWEEN, LIKE, and Pattern Matching\n# SQL: IN, BETWEEN, LIKE\nsql = \"\"\"\n-- IN: match from a list\nSELECT * FROM employees\nWHERE role IN ('ML Engineer', 'Data Analyst', 'Backend Dev');\n\n-- BETWEEN: range filter\nSELECT name, salary FROM employees\nWHERE salary BETWEEN 80000 AND 120000;\n\n-- LIKE: pattern matching\nSELECT * FROM employees WHERE name LIKE 'A%';     -- starts with A\nSELECT * FROM employees WHERE email LIKE '%@gmail.com';  -- Gmail\nSELECT * FROM employees WHERE name LIKE '_o%';     -- 2nd char is 'o'\n\n-- NOT IN / NOT LIKE\nSELECT * FROM employees\nWHERE role NOT IN ('Intern', 'Contractor');\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "When to use IN vs multiple OR conditions?",
+    "What is the difference between LIKE '%a' and LIKE 'a%'?",
+    "How does BETWEEN work with dates?",
+    "Write query: find employees with names starting with 'S'."
+  ],
+  "keywords": [
+    "BETWEEN",
+    "LIKE",
+    "Pattern",
+    "Matching"
+  ],
+  "keyTakeaways": [
+    "`%` matches any characters: `'%kumar'`",
+    "`_` matches one character: `'_an'`"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": 164,
+  "title": "DL Review: Explain CNN Architecture to a Non-Technical PM",
+  "content": "### Day 164: DL Review: Explain CNN Architecture to a Non-Technical PM\n\nCNNs are the backbone of computer vision — image classification, object detection, and segmentation.\n\n**Key Concepts:**\n- **DL Review:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Explain CNN Architecture to a Non-Technical PM:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 164: DL Review: Explain CNN Architecture to a Non-Technical PM\nimport numpy as np\n\n# Today's topic: Explain CNN Architecture to a Non-Technical PM\nprint(\"Day 164: DL Review: Explain CNN Architecture to a Non-Technical PM\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# DL Review\\n# Explain CNN Architecture to a Non-Technical PM\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Explain CNN Architecture to a Non-Technical PM\"\"\"\n    print(\"Implementing: DL Review: Explain CNN Architecture to a Non-Technical PM\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain DL Review in your own words with a real-world example.",
+    "How would you use DL Review in a product company project?",
+    "Write working code that demonstrates Explain CNN Architecture to a Non-Technical PM.",
+    "What interview questions could be asked about DL Review?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "DL Review",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "DL Review: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Explain CNN Architecture to a Non-Technical PM: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

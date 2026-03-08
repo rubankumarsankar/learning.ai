@@ -1,0 +1,23 @@
+{
+  "id": 132,
+  "title": "DL: Weights, Biases, and Activation Functions (ReLU, Sigmoid)",
+  "content": "### Day 132: DL: Weights, Biases, and Activation Functions (ReLU, Sigmoid)\n\nDeep learning is powerful for vision, NLP, and complex pattern recognition, but simpler models often win on tabular data.\n\n**Key Concepts:**\n- **Weights:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Biases:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and Activation Functions (ReLU:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Sigmoid):** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 132: DL: Weights, Biases, and Activation Functions (ReLU, Sigmoid)\nimport numpy as np\n\n# Today's topic: Weights, Biases, and Activation Functions (ReLU, Sigmoid)\nprint(\"Day 132: DL: Weights, Biases, and Activation Functions (ReLU, Sigmoid)\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# Weights\\n# Biases\\n# and Activation Functions (ReLU\\n# Sigmoid)\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Weights, Biases, and Activation Functions (ReLU, Sigmoid)\"\"\"\n    print(\"Implementing: DL: Weights, Biases, and Activation Functions (ReLU, Sigmoid)\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain Weights in your own words with a real-world example.",
+    "How would you use Weights in a product company project?",
+    "Write working code that demonstrates Weights, Biases, and Activation Functions (ReLU, Sigmoid).",
+    "What interview questions could be asked about Weights?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Weights",
+    "Biases",
+    "Sigmoid)"
+  ],
+  "keyTakeaways": [
+    "Weights: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Biases: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "and Activation Functions (ReLU: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

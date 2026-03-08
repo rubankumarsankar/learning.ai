@@ -1,0 +1,22 @@
+{
+  "id": 181,
+  "title": "Docker: Containers vs VMs — Why Docker Matters",
+  "content": "### Day 181: Docker: Containers vs VMs — Why Docker Matters\n\n**Containers vs VMs:**\n- **VM:** Full OS copy — heavy, slow to start\n- **Container:** Shares host OS kernel — lightweight, instant start\n\n**Docker:** Package app + dependencies into a portable container.\n- Runs same everywhere: dev, staging, production",
+  "codeExample": "# Day 181: Docker: Containers vs VMs — Why Docker Matters\n# Docker concepts\nprint(\"=== Containers vs VMs ===\")\nprint(\"VM:        [App] [Libs] [Guest OS] [Hypervisor] [Hardware]\")\nprint(\"Container: [App] [Libs] [Docker Engine] [Host OS] [Hardware]\")\nprint()\nprint(\"Docker commands:\")\nprint(\"  docker pull python:3.10     # Download image\")\nprint(\"  docker run -it python:3.10  # Run interactive\")\nprint(\"  docker ps                   # List running\")\nprint(\"  docker images               # List images\")\nprint(\"  docker stop <id>            # Stop container\")\nprint(\"  docker rm <id>              # Remove container\")",
+  "practiceQuestions": [
+    "Container vs VM?",
+    "What is a Docker image?",
+    "Image vs container?",
+    "Why Docker for ML?"
+  ],
+  "keywords": [
+    "Containers vs VMs",
+    "Container",
+    "Docker"
+  ],
+  "keyTakeaways": [
+    "VM: Full OS copy — heavy, slow to start",
+    "Container: Shares host OS kernel — lightweight, instant start",
+    "Runs same everywhere: dev, staging, production"
+  ]
+}

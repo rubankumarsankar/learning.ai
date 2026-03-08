@@ -1,0 +1,22 @@
+{
+  "id": 187,
+  "title": "Testing: Mocking External APIs and Model Predictions",
+  "content": "### Day 187: Testing: Mocking External APIs and Model Predictions\n\nAPIs are how ML models reach users. No company deploys Jupyter notebooks. FastAPI is the modern Python framework for ML APIs.\n\n**Key Concepts:**\n- **Testing:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Mocking External APIs and Model Predictions:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 187: Testing: Mocking External APIs and Model Predictions\n\"\"\"\nBackend Engineering: Mocking External APIs and Model Predictions\n\nKey concepts:\n1. Testing\\n2. Mocking External APIs and Model Predictions\n\"\"\"\n\nprint(\"Day 187: Testing: Mocking External APIs and Model Predictions\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Mocking External APIs and Model Predictions\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain Testing in your own words with a real-world example.",
+    "How would you use Testing in a product company project?",
+    "Write working code that demonstrates Mocking External APIs and Model Predictions.",
+    "What interview questions could be asked about Testing?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Testing",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Testing: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Mocking External APIs and Model Predictions: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

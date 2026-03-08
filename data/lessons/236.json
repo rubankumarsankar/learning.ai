@@ -1,0 +1,22 @@
+{
+  "id": 236,
+  "title": "Interview Prep: Top 20 Python Coding Questions",
+  "content": "### Day 236: Interview Prep: Top 20 Python Coding Questions\n\n**Top Python Interview Questions:**\n1. Reverse a linked list\n2. Two Sum problem\n3. Valid parentheses\n4. Merge sorted arrays\n5. Binary search\n\n**Tips:** Think aloud, discuss time/space complexity, handle edge cases.",
+  "codeExample": "# Day 236: Interview Prep: Top 20 Python Coding Questions\n# Top Python Coding Questions\n\n# 1. Two Sum\ndef two_sum(nums, target):\n    seen = {}\n    for i, n in enumerate(nums):\n        if target - n in seen:\n            return [seen[target-n], i]\n        seen[n] = i\n\nprint(f\"Two Sum: {two_sum([2,7,11,15], 9)}\")\n\n# 2. Valid Parentheses\ndef is_valid(s):\n    stack = []\n    pairs = {')':'(', ']':'[', '}':'{'}\n    for c in s:\n        if c in '([{': stack.append(c)\n        elif not stack or stack.pop() != pairs[c]: return False\n    return not stack\n\nprint(f\"Valid: {is_valid('()[]{}')}\")\n\n# 3. Fibonacci (memoized)\ndef fib(n, memo={}):\n    if n <= 1: return n\n    if n not in memo:\n        memo[n] = fib(n-1) + fib(n-2)\n    return memo[n]\n\nprint(f\"Fib(10): {fib(10)}\")",
+  "practiceQuestions": [
+    "Solve Two Sum in O(n).",
+    "Implement binary search.",
+    "Reverse a string without slicing.",
+    "Find duplicates in a list."
+  ],
+  "keywords": [
+    "Tips",
+    "Interview",
+    "Prep",
+    "Python"
+  ],
+  "keyTakeaways": [
+    "Top Python Interview Questions:\n1.",
+    "Binary search\n\nTips: Think aloud, discuss time/space complexity, handle edge cases."
+  ]
+}

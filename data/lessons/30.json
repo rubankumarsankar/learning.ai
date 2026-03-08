@@ -1,0 +1,22 @@
+{
+  "id": 30,
+  "title": "Modules and Packages: Organizing Your Python Projects",
+  "content": "### Day 30: Modules and Packages: Organizing Your Python Projects\n\n**Modules** = Python files you can import. **Packages** = folders with __init__.py.\n\n**import:** `import math`, `from os import path`, `import numpy as np`\n\n**Organizing Code:** Split large programs into modules for clarity and reusability.",
+  "codeExample": "# Day 30: Modules and Packages: Organizing Your Python Projects\n# Modules and Packages\nimport math\nimport os\nimport json\nfrom datetime import datetime\n\n# Using standard library\nprint(f\"Pi: {math.pi:.4f}\")\nprint(f\"Sqrt(144): {math.sqrt(144)}\")\nprint(f\"Current dir: {os.getcwd()}\")\nprint(f\"Now: {datetime.now().strftime('%Y-%m-%d %H:%M')}\")\n\n# Creating your own module\nmodule_code = '''\ndef add(a, b): return a + b\ndef multiply(a, b): return a * b\nPI = 3.14159\n'''\nprint(f\"\\nSample module code: {module_code.strip()[:50]}...\")\nprint(\"Save as mymath.py, then: from mymath import add\")",
+  "practiceQuestions": [
+    "What is a module vs package?",
+    "3 ways to import in Python?",
+    "What is __init__.py for?",
+    "How to create your own module?"
+  ],
+  "keywords": [
+    "Modules",
+    "Packages",
+    "import",
+    "Organizing Code"
+  ],
+  "keyTakeaways": [
+    "Modules = Python files you can import.",
+    "Packages = folders with __init__.py."
+  ]
+}

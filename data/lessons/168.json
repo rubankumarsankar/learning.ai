@@ -1,0 +1,22 @@
+{
+  "id": 168,
+  "title": "FastAPI: Path Parameters vs Query Parameters",
+  "content": "### Day 168: FastAPI: Path Parameters vs Query Parameters\n\nAPIs are how ML models reach users. No company deploys Jupyter notebooks. FastAPI is the modern Python framework for ML APIs.\n\n**Key Concepts:**\n- **FastAPI:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Path Parameters vs Query Parameters:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 168: FastAPI: Path Parameters vs Query Parameters\n\"\"\"\nBackend Engineering: Path Parameters vs Query Parameters\n\nKey concepts:\n1. FastAPI\\n2. Path Parameters vs Query Parameters\n\"\"\"\n\nprint(\"Day 168: FastAPI: Path Parameters vs Query Parameters\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Path Parameters vs Query Parameters\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain FastAPI in your own words with a real-world example.",
+    "How would you use FastAPI in a product company project?",
+    "Write working code that demonstrates Path Parameters vs Query Parameters.",
+    "What interview questions could be asked about FastAPI?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "FastAPI",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "FastAPI: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Path Parameters vs Query Parameters: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

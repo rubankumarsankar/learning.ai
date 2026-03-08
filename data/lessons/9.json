@@ -1,0 +1,23 @@
+{
+  "id": 9,
+  "title": "If-Else, Elif: Conditional Logic Flow",
+  "content": "### Day 9: If-Else, Elif — Conditional Logic Flow\n\n**if-elif-else** lets programs make decisions.\n\n**Key Rules:** Indentation matters. Conditions evaluate to True/False.\n\n**Falsy values:** False, 0, \"\", [], None, {}\n\n**Ternary:** `result = \"yes\" if condition else \"no\"`",
+  "codeExample": "# Day 9: Conditional Logic\n\n# Grade calculator\nscore = 78\nif score >= 90: grade = \"A+\"\nelif score >= 80: grade = \"A\"\nelif score >= 70: grade = \"B\"\nelif score >= 60: grade = \"C\"\nelse: grade = \"F\"\nprint(f\"Score {score} → Grade {grade}\")\n\n# Ticket pricing with nested conditions\nage = 25\nis_student = True\nif age < 12: price = 100\nelif age >= 60: price = 150\nelse:\n    price = 300\n    if is_student: price = 200\nprint(f\"Ticket: ₹{price}\")\n\n# Ternary\ntemp = 35\nweather = \"Hot 🔥\" if temp > 30 else \"Cool 🌤️\"\nprint(f\"{temp}°C → {weather}\")\n\n# Truthy/Falsy\nfor v in [0, 1, \"\", \"hi\", [], [1], None]:\n    print(f\"  {str(v):>6} → {'Truthy' if v else 'Falsy'}\")",
+  "practiceQuestions": [
+    "Difference between if-elif-else and multiple if statements?",
+    "What are truthy and falsy values?",
+    "Write positive/negative/zero checker.",
+    "What is the ternary operator?"
+  ],
+  "keywords": [
+    "if-elif-else",
+    "Key Rules",
+    "Falsy values",
+    "Ternary"
+  ],
+  "keyTakeaways": [
+    "if-elif-else lets programs make decisions.",
+    "Key Rules: Indentation matters.",
+    "Conditions evaluate to True/False."
+  ]
+}

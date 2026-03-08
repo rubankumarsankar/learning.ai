@@ -1,0 +1,22 @@
+{
+  "id": 184,
+  "title": "Docker: Environment Variables and docker-compose.yml",
+  "content": "### Day 184: Docker: Environment Variables and docker-compose.yml\n\nDocker ensures your app runs identically everywhere. \"Works on my machine\" is not acceptable in production.\n\n**Key Concepts:**\n- **Docker:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Environment Variables and docker-compose.yml:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 184: Docker: Environment Variables and docker-compose.yml\n\"\"\"\nBackend Engineering: Environment Variables and docker-compose.yml\n\nKey concepts:\n1. Docker\\n2. Environment Variables and docker-compose.yml\n\"\"\"\n\nprint(\"Day 184: Docker: Environment Variables and docker-compose.yml\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Environment Variables and docker-compose.yml\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain Docker in your own words with a real-world example.",
+    "How would you use Docker in a product company project?",
+    "Write working code that demonstrates Environment Variables and docker-compose.yml.",
+    "What interview questions could be asked about Docker?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Docker",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Docker: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Environment Variables and docker-compose.yml: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": 190,
+  "title": "GitHub: Pull Requests, Code Reviews, and GitHub Actions Intro",
+  "content": "### Day 190: GitHub: Pull Requests, Code Reviews, and GitHub Actions Intro\n\nGit branching, code reviews, and CI/CD are daily workflows at every product company.\n\n**Key Concepts:**\n- **GitHub:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Pull Requests:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Code Reviews:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and GitHub Actions Intro:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 190: GitHub: Pull Requests, Code Reviews, and GitHub Actions Intro\n\"\"\"\nBackend Engineering: Pull Requests, Code Reviews, and GitHub Actions Intro\n\nKey concepts:\n1. GitHub\\n2. Pull Requests\\n3. Code Reviews\\n4. and GitHub Actions Intro\n\"\"\"\n\nprint(\"Day 190: GitHub: Pull Requests, Code Reviews, and GitHub Actions Intro\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Pull Requests, Code Reviews, and GitHub Actions Intro\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain GitHub in your own words with a real-world example.",
+    "How would you use GitHub in a product company project?",
+    "Write working code that demonstrates Pull Requests, Code Reviews, and GitHub Actions Intro.",
+    "What interview questions could be asked about GitHub?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "GitHub",
+    "Pull Requests",
+    "Code Reviews"
+  ],
+  "keyTakeaways": [
+    "GitHub: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Pull Requests: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Code Reviews: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

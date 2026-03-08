@@ -1,0 +1,23 @@
+{
+  "id": 196,
+  "title": "Cloud: Intro to AWS vs GCP vs Azure — Which to Learn",
+  "content": "### Day 196: Cloud: Intro to AWS vs GCP vs Azure — Which to Learn\n\n**Cloud Providers:**\n- **AWS:** Market leader, most jobs require it\n- **GCP:** Google's cloud, great for ML (Vertex AI)\n- **Azure:** Microsoft, enterprise-heavy\n\n**Start with:** AWS (most demand) or GCP (best ML tools)",
+  "codeExample": "# Day 196: Cloud: Intro to AWS vs GCP vs Azure — Which to Learn\n# Cloud comparison\ncloud = {\n    \"AWS\": {\"ML\": \"SageMaker\", \"Compute\": \"EC2\", \"Storage\": \"S3\", \"Market\": \"33%\"},\n    \"GCP\": {\"ML\": \"Vertex AI\", \"Compute\": \"Compute Engine\", \"Storage\": \"GCS\", \"Market\": \"11%\"},\n    \"Azure\": {\"ML\": \"Azure ML\", \"Compute\": \"VMs\", \"Storage\": \"Blob\", \"Market\": \"22%\"}\n}\nfor provider, info in cloud.items():\n    print(f\"\\n{provider}:\")\n    for k, v in info.items():\n        print(f\"  {k}: {v}\")",
+  "practiceQuestions": [
+    "AWS vs GCP for ML?",
+    "What is EC2?",
+    "What is S3?",
+    "Which cloud to learn first?"
+  ],
+  "keywords": [
+    "Cloud Providers",
+    "AWS",
+    "GCP",
+    "Azure"
+  ],
+  "keyTakeaways": [
+    "AWS: Market leader, most jobs require it",
+    "GCP: Google's cloud, great for ML (Vertex AI)",
+    "Azure: Microsoft, enterprise-heavy"
+  ]
+}

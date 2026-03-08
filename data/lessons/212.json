@@ -1,0 +1,22 @@
+{
+  "id": 212,
+  "title": "Streamlit: Connecting a Streamlit Frontend to FastAPI",
+  "content": "### Day 212: Streamlit: Connecting a Streamlit Frontend to FastAPI\n\nDeployment gets models from notebooks into the real world. MLOps makes ML systems reliable and maintainable in production.\n\n**Key Concepts:**\n- **Streamlit:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Connecting a Streamlit Frontend to FastAPI:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 212: Streamlit: Connecting a Streamlit Frontend to FastAPI\n# Phase: Deployment & MLOps\n\nprint(\"Day 212: Streamlit: Connecting a Streamlit Frontend to FastAPI\")\nprint(\"Phase: Deployment & MLOps\")\n\n# Key concepts to practice:\n# 1. Streamlit\\n# 2. Connecting a Streamlit Frontend to FastAPI\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain Streamlit in your own words with a real-world example.",
+    "How would you use Streamlit in a product company project?",
+    "Write working code that demonstrates Connecting a Streamlit Frontend to FastAPI.",
+    "What interview questions could be asked about Streamlit?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Streamlit",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Streamlit: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Connecting a Streamlit Frontend to FastAPI: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

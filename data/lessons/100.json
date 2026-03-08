@@ -1,0 +1,22 @@
+{
+  "id": 100,
+  "title": "Classification: Decision Boundaries and Threshold Tuning",
+  "content": "### Day 100: Classification: Decision Boundaries and Threshold Tuning\n\n**Decision Boundary:** The line/surface that separates classes.\n\n**Threshold Tuning:** Default is 0.5. Adjust based on:\n- High threshold → fewer false positives (precision-focused)\n- Low threshold → fewer false negatives (recall-focused)",
+  "codeExample": "# Day 100: Classification: Decision Boundaries and Threshold Tuning\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.metrics import precision_score, recall_score, f1_score\nimport numpy as np\n\nnp.random.seed(42)\nX = np.random.randn(300, 2)\ny = (X[:, 0] + 0.5*X[:, 1] > 0.2).astype(int)\n\nmodel = LogisticRegression().fit(X, y)\nprobs = model.predict_proba(X)[:, 1]\n\nprint(\"Threshold | Precision | Recall | F1\")\nprint(\"-\" * 45)\nfor threshold in [0.3, 0.4, 0.5, 0.6, 0.7]:\n    preds = (probs >= threshold).astype(int)\n    p = precision_score(y, preds)\n    r = recall_score(y, preds)\n    f = f1_score(y, preds)\n    print(f\"  {threshold:.1f}     |   {p:.3f}   | {r:.3f}  | {f:.3f}\")",
+  "practiceQuestions": [
+    "What is a decision boundary?",
+    "When to change threshold from 0.5?",
+    "High precision vs high recall tradeoff?",
+    "How to choose optimal threshold?"
+  ],
+  "keywords": [
+    "Decision Boundary",
+    "Threshold Tuning",
+    "Classification",
+    "Decision"
+  ],
+  "keyTakeaways": [
+    "High threshold → fewer false positives (precision-focused)",
+    "Low threshold → fewer false negatives (recall-focused)"
+  ]
+}

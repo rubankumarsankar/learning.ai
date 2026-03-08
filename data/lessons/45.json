@@ -1,0 +1,23 @@
+{
+  "id": 45,
+  "title": "NumPy: Random Module and Synthetic Data Generation",
+  "content": "### Day 45: NumPy: Random Module and Synthetic Data Generation\n\n**np.random** generates random data for testing and simulation.\n- `np.random.rand(n)` — uniform [0,1)\n- `np.random.randn(n)` — normal distribution\n- `np.random.randint(low,high,size)`\n- `np.random.choice(arr,size)`\n- `np.random.seed(42)` — reproducibility",
+  "codeExample": "# Day 45: NumPy: Random Module and Synthetic Data Generation\nimport numpy as np\nnp.random.seed(42)  # Reproducible\n\n# Random arrays\nprint(f\"Uniform: {np.random.rand(5).round(2)}\")\nprint(f\"Normal: {np.random.randn(5).round(2)}\")\nprint(f\"Integers: {np.random.randint(1, 100, 5)}\")\n\n# Synthetic dataset\nn = 100\nages = np.random.normal(35, 10, n).astype(int)\nsalaries = ages * 1500 + np.random.normal(0, 5000, n)\nprint(f\"\\nAges: mean={ages.mean():.0f}, std={ages.std():.0f}\")\nprint(f\"Salaries: mean={salaries.mean():.0f}\")\n\n# Random choice\ncategories = np.random.choice(['A','B','C'], 10, p=[0.5,0.3,0.2])\nprint(f\"\\nCategories: {categories}\")\n\n# Shuffle\narr = np.arange(10)\nnp.random.shuffle(arr)\nprint(f\"Shuffled: {arr}\")",
+  "practiceQuestions": [
+    "Why use np.random.seed(42)?",
+    "Generate 100 samples from normal distribution.",
+    "How to create synthetic dataset?",
+    "Difference between rand and randn?"
+  ],
+  "keywords": [
+    "np.random",
+    "NumPy",
+    "Random",
+    "Module"
+  ],
+  "keyTakeaways": [
+    "`np.random.rand(n)` — uniform [0,1)",
+    "`np.random.randn(n)` — normal distribution",
+    "`np.random.randint(low,high,size)`"
+  ]
+}

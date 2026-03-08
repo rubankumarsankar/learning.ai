@@ -1,0 +1,23 @@
+{
+  "id": 5,
+  "title": "Logical Operators: AND, OR, NOT in Conditions",
+  "content": "### Day 5: Logical Operators — AND, OR, NOT in Conditions\n\n**Logical operators** combine conditions:\n- `and`: Both must be True\n- `or`: At least one True\n- `not`: Inverts value\n\n**Truth Table:**\n```\nT and T = T    T or T = T    not T = F\nT and F = F    T or F = T    not F = T\nF and F = F    F or F = F\n```\n\n**Short-Circuit:** `and` stops at first False, `or` stops at first True.\n\n**Real Uses:** Login validation, eligibility checks, data filtering.",
+  "codeExample": "# Day 5: Logical Operators\n\n# Login system\nusername = \"admin\"\npassword = \"secure123\"\nif username == \"admin\" and password == \"secure123\":\n    print(\"✅ Login successful!\")\n\n# Eligibility check\nage = 17\nhas_consent = True\nif age >= 18 or has_consent:\n    print(\"✅ Eligible to register\")\n\n# Input validation\nemail = \"user@example.com\"\npassword = \"pass123\"\nis_valid = \"@\" in email and len(password) >= 6 and not password.isdigit()\nprint(f\"Valid input: {is_valid}\")\n\n# Loan approval\ncredit = 720\nincome = 60000\nno_debt = True\napproved = credit >= 700 and income >= 40000 and no_debt\nprint(f\"Loan approved: {approved}\")",
+  "practiceQuestions": [
+    "Difference between 'and' and 'or'?",
+    "What is short-circuit evaluation?",
+    "Write a voting eligibility checker (age >= 18 AND citizen).",
+    "How do you combine 3+ conditions?"
+  ],
+  "keywords": [
+    "Logical operators",
+    "Truth Table",
+    "Short-Circuit",
+    "Real Uses"
+  ],
+  "keyTakeaways": [
+    "`and`: Both must be True",
+    "`or`: At least one True",
+    "`not`: Inverts value"
+  ]
+}

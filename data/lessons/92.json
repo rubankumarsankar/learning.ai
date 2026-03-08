@@ -1,0 +1,21 @@
+{
+  "id": 92,
+  "title": "ML: Feature Scaling — StandardScaler vs MinMaxScaler",
+  "content": "### Day 92: ML: Feature Scaling — StandardScaler vs MinMaxScaler\n\n**Feature Scaling** ensures all features are on same scale.\n\n- **StandardScaler:** Mean=0, Std=1 (use for most ML)\n- **MinMaxScaler:** Scale to [0,1] (use for neural networks)\n\n⚠️ Fit on train only, transform both train AND test.",
+  "codeExample": "# Day 92: ML: Feature Scaling — StandardScaler vs MinMaxScaler\nfrom sklearn.preprocessing import StandardScaler, MinMaxScaler\nimport numpy as np\n\nX_train = np.array([[25, 50000], [30, 60000], [35, 80000]])\nX_test = np.array([[28, 55000]])\n\n# StandardScaler\nscaler = StandardScaler()\nX_train_scaled = scaler.fit_transform(X_train)  # fit on train\nX_test_scaled = scaler.transform(X_test)         # transform only\n\nprint(\"Before scaling:\", X_train[0])\nprint(\"After scaling:\", X_train_scaled[0].round(2))\nprint(f\"Mean: {X_train_scaled.mean(axis=0).round(2)}\")\nprint(f\"Std: {X_train_scaled.std(axis=0).round(2)}\")",
+  "practiceQuestions": [
+    "Why is feature scaling needed?",
+    "StandardScaler vs MinMaxScaler?",
+    "Why fit only on train data?",
+    "Which algorithms need scaling?"
+  ],
+  "keywords": [
+    "Feature Scaling",
+    "StandardScaler",
+    "MinMaxScaler"
+  ],
+  "keyTakeaways": [
+    "StandardScaler: Mean=0, Std=1 (use for most ML)",
+    "MinMaxScaler: Scale to [0,1] (use for neural networks)"
+  ]
+}

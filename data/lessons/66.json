@@ -1,0 +1,23 @@
+{
+  "id": 66,
+  "title": "Pandas: Handling Missing Data — fillna, dropna, Imputation",
+  "content": "### Day 66: Pandas: Handling Missing Data — fillna, dropna, Imputation\n\nPandas is the workhorse of data manipulation. Never loop over rows — use vectorized operations.\n\n**Key Concepts:**\n- **Pandas:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Handling Missing Data:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **fillna:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **dropna:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Imputation:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 66: Pandas: Handling Missing Data — fillna, dropna, Imputation\n# Phase: Data Handling & SQL\n\nprint(\"Day 66: Pandas: Handling Missing Data — fillna, dropna, Imputation\")\nprint(\"Phase: Data Handling & SQL\")\n\n# Key concepts to practice:\n# 1. Pandas\\n# 2. Handling Missing Data\\n# 3. fillna\\n# 4. dropna\\n# 5. Imputation\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain Pandas in your own words with a real-world example.",
+    "How would you use Pandas in a product company project?",
+    "Write working code that demonstrates Handling Missing Data — fillna, dropna, Imputation.",
+    "What interview questions could be asked about Pandas?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Pandas",
+    "Handling Missing Data",
+    "fillna"
+  ],
+  "keyTakeaways": [
+    "Pandas: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Handling Missing Data: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "fillna: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

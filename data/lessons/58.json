@@ -1,0 +1,22 @@
+{
+  "id": 58,
+  "title": "SQL: LEAD, LAG, and Running Totals with Windows",
+  "content": "### Day 58: SQL: LEAD, LAG, and Running Totals with Windows\n\n**LAG/LEAD** access previous/next row values:\n- `LAG(col, 1)` — previous row's value\n- `LEAD(col, 1)` — next row's value\n\n**Running Totals:** `SUM(col) OVER (ORDER BY date)`",
+  "codeExample": "# Day 58: SQL: LEAD, LAG, and Running Totals with Windows\n# SQL: LAG, LEAD, Running Totals\nsql = \"\"\"\n-- Monthly revenue with previous month comparison\nSELECT \n    month,\n    revenue,\n    LAG(revenue, 1) OVER (ORDER BY month) AS prev_month,\n    revenue - LAG(revenue, 1) OVER (ORDER BY month) AS growth\nFROM monthly_sales;\n\n-- Running total\nSELECT \n    order_date,\n    amount,\n    SUM(amount) OVER (ORDER BY order_date) AS running_total\nFROM orders;\n\n-- Moving average (3 month)\nSELECT \n    month, revenue,\n    AVG(revenue) OVER (\n        ORDER BY month ROWS BETWEEN 2 PRECEDING AND CURRENT ROW\n    ) AS moving_avg_3m\nFROM monthly_sales;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "What does LAG do?",
+    "How to calculate running total?",
+    "What is a moving average in SQL?",
+    "Compare current and previous row values."
+  ],
+  "keywords": [
+    "LAG/LEAD",
+    "Running Totals",
+    "LEAD",
+    "Running"
+  ],
+  "keyTakeaways": [
+    "`LAG(col, 1)` — previous row's value",
+    "`LEAD(col, 1)` — next row's value"
+  ]
+}

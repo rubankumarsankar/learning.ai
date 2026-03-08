@@ -1,0 +1,23 @@
+{
+  "id": 54,
+  "title": "SQL: Aggregates — COUNT, SUM, AVG, MIN, MAX",
+  "content": "### Day 54: SQL: Aggregates — COUNT, SUM, AVG, MIN, MAX\n\n**Aggregate Functions** compute a single value from multiple rows:\n- `COUNT(*)` — number of rows\n- `SUM(col)` — total\n- `AVG(col)` — average\n- `MIN(col)`, `MAX(col)`\n\n**NULL handling:** Aggregates ignore NULLs (except COUNT(*)).",
+  "codeExample": "# Day 54: SQL: Aggregates — COUNT, SUM, AVG, MIN, MAX\n# SQL: Aggregate Functions\nsql = \"\"\"\n-- Basic aggregates\nSELECT \n    COUNT(*) AS total_employees,\n    AVG(salary) AS avg_salary,\n    MIN(salary) AS min_salary,\n    MAX(salary) AS max_salary,\n    SUM(salary) AS total_payroll\nFROM employees;\n\n-- Count by role\nSELECT \n    role,\n    COUNT(*) AS headcount,\n    ROUND(AVG(salary), 2) AS avg_salary\nFROM employees\nGROUP BY role\nORDER BY avg_salary DESC;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "What are aggregate functions?",
+    "Does COUNT(*) include NULLs?",
+    "Calculate average salary by department.",
+    "Difference between COUNT(*) and COUNT(column)?"
+  ],
+  "keywords": [
+    "Aggregate Functions",
+    "NULL handling",
+    "Aggregates",
+    "COUNT"
+  ],
+  "keyTakeaways": [
+    "`COUNT(*)` — number of rows",
+    "`SUM(col)` — total",
+    "`AVG(col)` — average"
+  ]
+}

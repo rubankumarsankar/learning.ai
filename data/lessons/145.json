@@ -1,0 +1,23 @@
+{
+  "id": 145,
+  "title": "CNN: Convolutional Layers, Kernels, and Feature Maps",
+  "content": "### Day 145: CNN: Convolutional Layers, Kernels, and Feature Maps\n\nCNNs are the backbone of computer vision — image classification, object detection, and segmentation.\n\n**Key Concepts:**\n- **CNN:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Convolutional Layers:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Kernels:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and Feature Maps:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 145: CNN: Convolutional Layers, Kernels, and Feature Maps\nimport numpy as np\n\n# Today's topic: Convolutional Layers, Kernels, and Feature Maps\nprint(\"Day 145: CNN: Convolutional Layers, Kernels, and Feature Maps\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# CNN\\n# Convolutional Layers\\n# Kernels\\n# and Feature Maps\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Convolutional Layers, Kernels, and Feature Maps\"\"\"\n    print(\"Implementing: CNN: Convolutional Layers, Kernels, and Feature Maps\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain CNN in your own words with a real-world example.",
+    "How would you use CNN in a product company project?",
+    "Write working code that demonstrates Convolutional Layers, Kernels, and Feature Maps.",
+    "What interview questions could be asked about CNN?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "CNN",
+    "Convolutional Layers",
+    "Kernels"
+  ],
+  "keyTakeaways": [
+    "CNN: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Convolutional Layers: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Kernels: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

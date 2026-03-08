@@ -1,0 +1,23 @@
+{
+  "id": 34,
+  "title": "DSA: Linked Lists Basics and Python Implementation",
+  "content": "### Day 34: DSA: Linked Lists Basics and Python Implementation\n\n**Linked List** stores elements in nodes, each pointing to the next. Unlike arrays, insertion/deletion is O(1) at head.\n\n**Node:** Contains data + pointer to next node.\n**Head:** First node in the list.\n\n**Tradeoffs:** LL has O(1) insert/delete but O(n) access. Arrays have O(1) access but O(n) insert.",
+  "codeExample": "# Day 34: DSA: Linked Lists Basics and Python Implementation\n# Linked List Implementation\nclass Node:\n    def __init__(self, data):\n        self.data = data\n        self.next = None\n\nclass LinkedList:\n    def __init__(self):\n        self.head = None\n    \n    def append(self, data):\n        new = Node(data)\n        if not self.head:\n            self.head = new\n            return\n        curr = self.head\n        while curr.next:\n            curr = curr.next\n        curr.next = new\n    \n    def display(self):\n        vals = []\n        curr = self.head\n        while curr:\n            vals.append(str(curr.data))\n            curr = curr.next\n        print(\" → \".join(vals))\n    \n    def reverse(self):\n        prev, curr = None, self.head\n        while curr:\n            nxt = curr.next\n            curr.next = prev\n            prev = curr\n            curr = nxt\n        self.head = prev\n\nll = LinkedList()\nfor x in [1, 2, 3, 4, 5]: ll.append(x)\nll.display()       # 1 → 2 → 3 → 4 → 5\nll.reverse()\nll.display()       # 5 → 4 → 3 → 2 → 1",
+  "practiceQuestions": [
+    "What is a linked list?",
+    "Array vs linked list tradeoffs?",
+    "How to reverse a linked list?",
+    "Time complexity of insert at head?"
+  ],
+  "keywords": [
+    "Linked List",
+    "Node",
+    "Head",
+    "Tradeoffs"
+  ],
+  "keyTakeaways": [
+    "Linked List stores elements in nodes, each pointing to the next.",
+    "Unlike arrays, insertion/deletion is O(1) at head.",
+    "Node: Contains data + pointer to next node."
+  ]
+}

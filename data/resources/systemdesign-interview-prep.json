@@ -1,0 +1,23 @@
+{
+  "title": "System Design & MLOps Prep",
+  "url": "https://docker.com",
+  "content": "### Crack the Interview: System Design & Deployment\n\nSenior engineering interviews rely heavily on how you design scalable systems. A model on your laptop is useless if it cannot serve 10,000 requests per second in production.\n\n**Theory: Scaling & Containerization**\n- **Core Concept:** Docker containers isolate environments. Kubernetes orchestrates these containers to scale up when traffic spikes.\n- **Application:** For ML, you usually wrap your model in a **FastAPI** REST endpoint, containerize it with **Docker**, and deploy it to cloud infrastructure.\n- **Interview Trick:** The interviewer will ask: \"What happens when 500 users hit your ML model endpoint simultaneously?\" Answer by introducing an async task queue (like Celery/Redis) or dynamic scaling, rather than locking the main thread.",
+  "codeExample": "# 💡 Crack the Interview: Non-Blocking ML API (FastAPI)\nfrom fastapi import FastAPI, BackgroundTasks\nimport time\n\napp = FastAPI()\n\ndef heavy_model_inference(data):\n    # Simulate a deep learning model taking 5 seconds to run\n    time.sleep(5) \n    print(f\"Finished processing {data}\")\n\n@app.post(\"/predict\")\nasync def predict(data: str, background_tasks: BackgroundTasks):\n    # Interview Answer: We DO NOT block the API request waiting for the ML model.\n    # We send it to a background task (or queue) and return a 202 Accepted immediately.\n    background_tasks.add_task(heavy_model_inference, data)\n    return {\"status\": \"Processing started\", \"job_id\": \"12345\"}",
+  "practiceQuestions": [
+    "What is the difference between monolithic architecture and microservices?",
+    "How does Docker prevent the 'It works on my machine' problem?",
+    "What is a Load Balancer and why is it necessary for a high-traffic AI API?",
+    "Explain the difference between Batch Processing and Real-Time Inference."
+  ],
+  "keywords": [
+    "Docker",
+    "Deployments",
+    "Microservices",
+    "Load Balancing"
+  ],
+  "keyTakeaways": [
+    "Docker containers guarantee runtime consistency across production clusters (like Kubernetes).",
+    "Never block an API's main thread with heavy ML inference. Send it to a Background Task/Queue (Non-blocking).",
+    "A single ML server crushes under traffic without stateless Load Balancers distributing the requests."
+  ]
+}

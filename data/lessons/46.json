@@ -1,0 +1,23 @@
+{
+  "id": 46,
+  "title": "SQL: Installing PostgreSQL/MySQL and First Queries",
+  "content": "### Day 46: SQL: Installing PostgreSQL/MySQL and First Queries\n\n**SQL (Structured Query Language)** is the standard language for relational databases.\n\n**Setup Options:**\n- PostgreSQL — production standard\n- MySQL — widely used\n- SQLite — lightweight, no server needed\n\n**First Queries:** `SELECT * FROM table;`",
+  "codeExample": "# Day 46: SQL: Installing PostgreSQL/MySQL and First Queries\n# SQL Setup and First Queries\n# Practice in any SQL client or use Python:\nimport sqlite3\n\nconn = sqlite3.connect(':memory:')\ncursor = conn.cursor()\n\n# Create table\ncursor.execute('''\n    CREATE TABLE employees (\n        id INTEGER PRIMARY KEY,\n        name TEXT NOT NULL,\n        role TEXT,\n        salary REAL\n    )\n''')\n\n# Insert data\nemployees = [\n    (1, 'Alice', 'ML Engineer', 120000),\n    (2, 'Bob', 'Data Analyst', 80000),\n    (3, 'Carol', 'Backend Dev', 95000),\n    (4, 'Dave', 'ML Engineer', 110000),\n]\ncursor.executemany('INSERT INTO employees VALUES (?,?,?,?)', employees)\n\n# First queries\nprint(\"All employees:\")\nfor row in cursor.execute('SELECT * FROM employees'):\n    print(f\"  {row}\")\n\nprint(\"\\nML Engineers:\")\nfor row in cursor.execute(\"SELECT name, salary FROM employees WHERE role='ML Engineer'\"):\n    print(f\"  {row[0]}: {row[1]}\")\n\nconn.close()",
+  "practiceQuestions": [
+    "What is SQL used for?",
+    "Difference between PostgreSQL and SQLite?",
+    "Write SELECT to get all rows from a table.",
+    "How to filter rows with WHERE?"
+  ],
+  "keywords": [
+    "Setup Options",
+    "First Queries",
+    "Installing",
+    "PostgreSQLMySQL"
+  ],
+  "keyTakeaways": [
+    "PostgreSQL — production standard",
+    "MySQL — widely used",
+    "SQLite — lightweight, no server needed"
+  ]
+}

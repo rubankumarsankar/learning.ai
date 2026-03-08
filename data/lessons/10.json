@@ -1,0 +1,21 @@
+{
+  "id": 10,
+  "title": "For Loops: Iterating over Lists and Ranges",
+  "content": "### Day 10: For Loops — Iterating over Lists and Ranges\n\n**For loop** repeats code for each item in a sequence.\n\n**range():** range(5)→0-4, range(2,8)→2-7, range(0,10,2)→0,2,4,6,8\n\n**enumerate():** Get index AND value: `for i, val in enumerate(lst)`\n\n**zip():** Loop multiple lists: `for a, b in zip(list1, list2)`\n\n**Nested loops:** Loop inside loop — for matrices, tables, grids.",
+  "codeExample": "# Day 10: For Loops\n\n# Basic loop\nfor fruit in [\"apple\", \"banana\", \"cherry\"]:\n    print(f\"  I like {fruit}\")\n\n# range()\nprint(\"\\nEven numbers 0-10:\")\nfor n in range(0, 11, 2):\n    print(n, end=\" \")\nprint()\n\n# enumerate — index + value\nlanguages = [\"Python\", \"SQL\", \"JavaScript\"]\nfor i, lang in enumerate(languages, 1):\n    print(f\"  {i}. {lang}\")\n\n# zip — loop two lists\nstudents = [\"Alice\", \"Bob\", \"Carol\"]\nscores = [92, 78, 88]\nfor name, score in zip(students, scores):\n    print(f\"  {name}: {score}\")\n\n# Nested loop — multiplication table\nprint(\"\\n5x5 Table:\")\nfor i in range(1, 6):\n    for j in range(1, 6):\n        print(f\"{i*j:4}\", end=\"\")\n    print()",
+  "practiceQuestions": [
+    "Difference between range(5) and range(1,6)?",
+    "How does enumerate() work?",
+    "How to loop two lists simultaneously?",
+    "Write a multiplication table for 7."
+  ],
+  "keywords": [
+    "For loop",
+    "range()",
+    "enumerate()",
+    "zip()"
+  ],
+  "keyTakeaways": [
+    "For loop repeats code for each item in a sequence."
+  ]
+}

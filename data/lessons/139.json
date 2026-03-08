@@ -1,0 +1,23 @@
+{
+  "id": 139,
+  "title": "Keras: Compiling with Loss, Optimizer, and Metrics",
+  "content": "### Day 139: Keras: Compiling with Loss, Optimizer, and Metrics\n\nModern deep learning frameworks provide high-level APIs for building, training, and deploying neural networks.\n\n**Key Concepts:**\n- **Keras:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Compiling with Loss:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Optimizer:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and Metrics:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 139: Keras: Compiling with Loss, Optimizer, and Metrics\nimport numpy as np\n\n# Today's topic: Compiling with Loss, Optimizer, and Metrics\nprint(\"Day 139: Keras: Compiling with Loss, Optimizer, and Metrics\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# Keras\\n# Compiling with Loss\\n# Optimizer\\n# and Metrics\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Compiling with Loss, Optimizer, and Metrics\"\"\"\n    print(\"Implementing: Keras: Compiling with Loss, Optimizer, and Metrics\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain Keras in your own words with a real-world example.",
+    "How would you use Keras in a product company project?",
+    "Write working code that demonstrates Compiling with Loss, Optimizer, and Metrics.",
+    "What interview questions could be asked about Keras?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Keras",
+    "Compiling with Loss",
+    "Optimizer"
+  ],
+  "keyTakeaways": [
+    "Keras: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Compiling with Loss: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Optimizer: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

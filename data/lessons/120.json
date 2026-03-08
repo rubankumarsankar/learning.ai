@@ -1,0 +1,23 @@
+{
+  "id": 120,
+  "title": "Unsupervised: K-Means Clustering",
+  "content": "### Day 120: Unsupervised: K-Means Clustering\n\n**K-Means Clustering:** Unsupervised — groups data into K clusters.\n1. Initialize K centroids randomly\n2. Assign each point to nearest centroid\n3. Update centroids to cluster means\n4. Repeat until convergence\n\n**Elbow Method:** Plot inertia vs K, choose the \"elbow\" point.",
+  "codeExample": "# Day 120: Unsupervised: K-Means Clustering\nfrom sklearn.cluster import KMeans\nimport numpy as np\n\nnp.random.seed(42)\nX = np.vstack([\n    np.random.randn(50, 2) + [2, 2],\n    np.random.randn(50, 2) + [-2, -2],\n    np.random.randn(50, 2) + [2, -2]\n])\n\nmodel = KMeans(n_clusters=3, random_state=42, n_init=10)\nlabels = model.fit_predict(X)\n\nprint(f\"Cluster centers:\\n{model.cluster_centers_.round(2)}\")\nprint(f\"Cluster sizes: {np.bincount(labels)}\")\n\n# Elbow method\nprint(\"\\nElbow method:\")\nfor k in range(2, 8):\n    km = KMeans(n_clusters=k, random_state=42, n_init=10).fit(X)\n    print(f\"  K={k}: inertia={km.inertia_:.1f}\")",
+  "practiceQuestions": [
+    "How does K-Means work?",
+    "What is the elbow method?",
+    "How to choose K?",
+    "K-Means limitations?"
+  ],
+  "keywords": [
+    "K-Means Clustering",
+    "Elbow Method",
+    "Unsupervised",
+    "KMeans"
+  ],
+  "keyTakeaways": [
+    "K-Means Clustering: Unsupervised — groups data into K clusters.",
+    "Initialize K centroids randomly\n2.",
+    "Assign each point to nearest centroid\n3."
+  ]
+}

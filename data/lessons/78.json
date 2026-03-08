@@ -1,0 +1,22 @@
+{
+  "id": 78,
+  "title": "EDA Mini-Project: Write Insights Report from Real Data",
+  "content": "### Day 78: EDA Mini-Project: Write Insights Report from Real Data\n\nEDA is how real data scientists understand problems before modeling. Focus on generating actionable business insights.\n\n**Key Concepts:**\n- **EDA Mini-Project:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Write Insights Report from Real Data:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 78: EDA Mini-Project: Write Insights Report from Real Data\n# Phase: Data Handling & SQL\n\nprint(\"Day 78: EDA Mini-Project: Write Insights Report from Real Data\")\nprint(\"Phase: Data Handling & SQL\")\n\n# Key concepts to practice:\n# 1. EDA Mini-Project\\n# 2. Write Insights Report from Real Data\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain EDA Mini-Project in your own words with a real-world example.",
+    "How would you use EDA Mini-Project in a product company project?",
+    "Write working code that demonstrates Write Insights Report from Real Data.",
+    "What interview questions could be asked about EDA Mini-Project?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "EDA Mini-Project",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "EDA Mini-Project: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Write Insights Report from Real Data: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

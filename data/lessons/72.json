@@ -1,0 +1,23 @@
+{
+  "id": 72,
+  "title": "Pandas: Apply, Lambda, and Custom Transformations",
+  "content": "### Day 72: Pandas: Apply, Lambda, and Custom Transformations\n\nPandas is the workhorse of data manipulation. Never loop over rows — use vectorized operations.\n\n**Key Concepts:**\n- **Pandas:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Apply:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Lambda:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and Custom Transformations:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 72: Pandas: Apply, Lambda, and Custom Transformations\n# Phase: Data Handling & SQL\n\nprint(\"Day 72: Pandas: Apply, Lambda, and Custom Transformations\")\nprint(\"Phase: Data Handling & SQL\")\n\n# Key concepts to practice:\n# 1. Pandas\\n# 2. Apply\\n# 3. Lambda\\n# 4. and Custom Transformations\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain Pandas in your own words with a real-world example.",
+    "How would you use Pandas in a product company project?",
+    "Write working code that demonstrates Apply, Lambda, and Custom Transformations.",
+    "What interview questions could be asked about Pandas?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Pandas",
+    "Apply",
+    "Lambda"
+  ],
+  "keyTakeaways": [
+    "Pandas: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Apply: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Lambda: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

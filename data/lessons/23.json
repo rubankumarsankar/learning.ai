@@ -1,0 +1,20 @@
+{
+  "id": 23,
+  "title": "Error Handling: Try, Except, Finally, and Custom Errors",
+  "content": "### Day 23: Error Handling: Try, Except, Finally, and Custom Errors\n\n**Try/Except** catches errors gracefully instead of crashing.\n\n**Structure:** try → except → else (no error) → finally (always runs)\n\n**Custom Exceptions:** Create your own error classes for specific cases.",
+  "codeExample": "# Day 23: Error Handling: Try, Except, Finally, and Custom Errors\n# Error Handling\n\n# Basic try/except\ntry:\n    num = int(\"abc\")\nexcept ValueError as e:\n    print(f\"Error: {e}\")\n\n# Multiple exceptions\ndef safe_divide(a, b):\n    try:\n        result = a / b\n    except ZeroDivisionError:\n        return \"Cannot divide by zero\"\n    except TypeError:\n        return \"Invalid types\"\n    else:\n        return round(result, 2)\n    finally:\n        print(\"  Division attempted\")\n\nprint(safe_divide(10, 3))\nprint(safe_divide(10, 0))\n\n# Custom exception\nclass InvalidAgeError(Exception):\n    pass\n\ndef set_age(age):\n    if age < 0 or age > 150:\n        raise InvalidAgeError(f\"Age {age} is invalid\")\n    return age\n\ntry:\n    set_age(200)\nexcept InvalidAgeError as e:\n    print(f\"Caught: {e}\")",
+  "practiceQuestions": [
+    "What is try/except?",
+    "When does finally block run?",
+    "How to create custom exceptions?",
+    "Write safe input function with error handling."
+  ],
+  "keywords": [
+    "Try/Except",
+    "Structure",
+    "Custom Exceptions"
+  ],
+  "keyTakeaways": [
+    "Try/Except catches errors gracefully instead of crashing."
+  ]
+}

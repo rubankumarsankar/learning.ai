@@ -1,0 +1,23 @@
+{
+  "id": 231,
+  "title": "Project 3: Sales Forecasting — Model Training and Evaluation",
+  "content": "### Day 231: Project 3: Sales Forecasting — Model Training and Evaluation\n\n**Model Training for Sales Forecasting:**\n1. Train multiple models (LogReg, RF, XGBoost)\n2. Compare on F1-score (for imbalanced data)\n3. Use cross-validation for reliable estimates\n4. Select best model",
+  "codeExample": "# Day 231: Project 3: Sales Forecasting — Model Training and Evaluation\nfrom sklearn.model_selection import train_test_split, cross_val_score\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.metrics import classification_report\nimport numpy as np\n\nnp.random.seed(42)\nX = np.random.randn(500, 5)\ny = (X[:, 0] + X[:, 1] * 0.5 > 0.3).astype(int)\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, stratify=y)\n\nmodels = {\n    \"LogReg\": LogisticRegression(),\n    \"RandomForest\": RandomForestClassifier(n_estimators=100, random_state=42)\n}\n\nfor name, model in models.items():\n    scores = cross_val_score(model, X_train, y_train, cv=5, scoring='f1')\n    model.fit(X_train, y_train)\n    print(f\"\\n{name}: CV F1={scores.mean():.3f}±{scores.std():.3f}\")\n    print(classification_report(y_test, model.predict(X_test)))",
+  "practiceQuestions": [
+    "Why compare multiple models?",
+    "Which metric for imbalanced data?",
+    "How to interpret classification report?",
+    "Why use cross-validation?"
+  ],
+  "keywords": [
+    "Project",
+    "Sales",
+    "Forecasting",
+    "Model"
+  ],
+  "keyTakeaways": [
+    "Model Training for Sales Forecasting:\n1.",
+    "Train multiple models (LogReg, RF, XGBoost)\n2.",
+    "Compare on F1-score (for imbalanced data)\n3."
+  ]
+}

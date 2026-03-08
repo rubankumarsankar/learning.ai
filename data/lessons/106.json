@@ -1,0 +1,23 @@
+{
+  "id": 106,
+  "title": "Evaluation: ROC Curve and AUC Score",
+  "content": "### Day 106: Evaluation: ROC Curve and AUC Score\n\n**ROC Curve:** Plots True Positive Rate vs False Positive Rate at every threshold.\n\n**AUC (Area Under Curve):** Overall model quality.\n- AUC = 1.0: perfect\n- AUC = 0.5: random guessing\n- AUC > 0.8: good model",
+  "codeExample": "# Day 106: Evaluation: ROC Curve and AUC Score\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.metrics import roc_auc_score, roc_curve\nfrom sklearn.model_selection import train_test_split\nimport numpy as np\n\nnp.random.seed(42)\nX = np.random.randn(300, 3)\ny = (X[:, 0] + X[:, 1] > 0).astype(int)\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\nmodel = LogisticRegression().fit(X_train, y_train)\nprobs = model.predict_proba(X_test)[:, 1]\n\nauc = roc_auc_score(y_test, probs)\nfpr, tpr, thresholds = roc_curve(y_test, probs)\n\nprint(f\"AUC Score: {auc:.4f}\")\nprint(f\"\\nThreshold → TPR, FPR:\")\nfor t, tp, fp in zip(thresholds[::10], tpr[::10], fpr[::10]):\n    print(f\"  {t:.2f} → TPR={tp:.2f}, FPR={fp:.2f}\")",
+  "practiceQuestions": [
+    "What does the ROC curve show?",
+    "What is a good AUC score?",
+    "AUC=0.5 means what?",
+    "ROC vs Precision-Recall curve?"
+  ],
+  "keywords": [
+    "ROC Curve",
+    "AUC (Area Under Curve)",
+    "Evaluation",
+    "Curve"
+  ],
+  "keyTakeaways": [
+    "AUC = 1.0: perfect",
+    "AUC = 0.5: random guessing",
+    "AUC > 0.8: good model"
+  ]
+}

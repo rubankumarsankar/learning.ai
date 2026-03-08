@@ -1,0 +1,22 @@
+{
+  "id": 83,
+  "title": "Stats: Normal Distribution and Z-Scores",
+  "content": "### Day 83: Stats: Normal Distribution and Z-Scores\n\n**Normal Distribution:** Bell curve where 68% within 1σ, 95% within 2σ, 99.7% within 3σ.\n\n**Z-Score:** How many std devs from mean: z = (x - μ) / σ\n- z > 2 or z < -2 → potential outlier",
+  "codeExample": "# Day 83: Stats: Normal Distribution and Z-Scores\nimport numpy as np\nnp.random.seed(42)\ndata = np.random.normal(100, 15, 1000)  # IQ scores\nprint(f\"Mean: {np.mean(data):.1f}, Std: {np.std(data):.1f}\")\nprint(f\"Within 1σ: {np.sum(np.abs(data - np.mean(data)) < np.std(data))/len(data)*100:.1f}%\")\n\n# Z-score\ndef z_score(x, data):\n    return (x - np.mean(data)) / np.std(data)\n\nfor val in [85, 100, 130, 145]:\n    z = z_score(val, data)\n    print(f\"  IQ {val}: z={z:.2f} {'⚠️ outlier' if abs(z) > 2 else ''}\")",
+  "practiceQuestions": [
+    "What is the 68-95-99.7 rule?",
+    "How to calculate z-score?",
+    "When is a z-score considered an outlier?",
+    "Why is normal distribution important in ML?"
+  ],
+  "keywords": [
+    "Normal Distribution",
+    "Z-Score",
+    "Stats",
+    "Normal"
+  ],
+  "keyTakeaways": [
+    "μ) / σ",
+    "z > 2 or z < -2 → potential outlier"
+  ]
+}

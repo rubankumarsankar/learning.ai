@@ -1,0 +1,23 @@
+{
+  "id": 1,
+  "title": "Python Install, VS Code Setup, and Hello World",
+  "content": "### Day 1: Python Install, VS Code Setup, and Hello World\n\n**What is Python?**\nPython is a high-level, interpreted programming language — the #1 language for AI/ML. Companies like Google, Netflix, and Instagram use Python.\n\n**Step-by-Step Setup:**\n1. **Install Python 3.10+** from python.org. Check \"Add Python to PATH\".\n2. **Install VS Code** from code.visualstudio.com + Python extension.\n3. **Create hello.py**: `print(\"Hello, World!\")`\n4. **Run it**: `python hello.py` in terminal.\n5. **Install packages**: `pip install numpy pandas scikit-learn`\n\n**Virtual Environments:**\n```\npython -m venv myenv\nmyenv\\\\Scripts\\\\activate  # Windows\npip install -r requirements.txt\n```\n\n**Why This Matters:** Product companies expect you to manage environments and dependencies from day one.",
+  "codeExample": "# Day 1: Setup Verification\nimport sys\nimport platform\n\nprint(\"Hello, World!\")\nprint(f\"Python: {sys.version}\")\nprint(f\"OS: {platform.system()}\")\n\n# Check packages\nfor pkg in [\"numpy\", \"pandas\", \"sklearn\"]:\n    try:\n        __import__(pkg)\n        print(f\"  ✅ {pkg} installed\")\n    except ImportError:\n        print(f\"  ❌ {pkg} missing → pip install {pkg}\")",
+  "practiceQuestions": [
+    "What does 'Add Python to PATH' mean?",
+    "How do you create and activate a virtual environment?",
+    "What is pip and what does pip freeze do?",
+    "Write a program that prints your name and Python version."
+  ],
+  "keywords": [
+    "What is Python?",
+    "Step-by-Step Setup",
+    "Install Python 3.10+",
+    "Install VS Code"
+  ],
+  "keyTakeaways": [
+    "Python is a high-level, interpreted programming language — the \nStep-by-Step Setup:\n1.",
+    "Install Python 3.10+ from python.org.",
+    "Check \"Add Python to PATH\"."
+  ]
+}

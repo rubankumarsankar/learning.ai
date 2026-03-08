@@ -1,0 +1,22 @@
+{
+  "id": 125,
+  "title": "Scikit-learn: Saving and Loading Models (Joblib/Pickle)",
+  "content": "### Day 125: Scikit-learn: Saving and Loading Models (Joblib/Pickle)\n\n**Model Saving:** Save trained models to reuse without retraining.\n- **Joblib:** Recommended for sklearn models (handles numpy arrays efficiently)\n- **Pickle:** Python standard library\n\n**Save everything:** Model + scaler + encoder — all components of the pipeline!",
+  "codeExample": "# Day 125: Scikit-learn: Saving and Loading Models (Joblib/Pickle)\nfrom sklearn.ensemble import RandomForestClassifier\nimport joblib\nimport numpy as np\n\n# Train model\nnp.random.seed(42)\nX = np.random.randn(100, 3)\ny = (X[:, 0] > 0).astype(int)\nmodel = RandomForestClassifier(random_state=42).fit(X, y)\n\n# Save\njoblib.dump(model, 'model.pkl')\nprint(\"✅ Model saved as model.pkl\")\n\n# Load\nloaded_model = joblib.load('model.pkl')\npred = loaded_model.predict(X[:3])\nprint(f\"Loaded model predictions: {pred}\")\nprint(f\"Same as original: {np.array_equal(pred, model.predict(X[:3]))}\")\n\nimport os\nprint(f\"File size: {os.path.getsize('model.pkl') / 1024:.1f} KB\")",
+  "practiceQuestions": [
+    "How to save sklearn models?",
+    "Joblib vs Pickle?",
+    "Why save the scaler too?",
+    "How to version saved models?"
+  ],
+  "keywords": [
+    "Model Saving",
+    "Joblib",
+    "Pickle",
+    "Save everything"
+  ],
+  "keyTakeaways": [
+    "Joblib: Recommended for sklearn models (handles numpy arrays efficiently)",
+    "Pickle: Python standard library"
+  ]
+}

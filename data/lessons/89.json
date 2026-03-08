@@ -1,0 +1,23 @@
+{
+  "id": 89,
+  "title": "Math: Cost Functions, Convexity, and Learning Rate",
+  "content": "### Day 89: Math: Cost Functions, Convexity, and Learning Rate\n\n**Cost Function** measures how wrong the model is:\n- **MSE** for regression: mean of (predicted - actual)²\n- **Cross-Entropy** for classification\n\n**Learning Rate:** Step size for gradient descent\n- Too small → slow convergence\n- Too large → overshooting, divergence",
+  "codeExample": "# Day 89: Math: Cost Functions, Convexity, and Learning Rate\nimport numpy as np\n\n# MSE Cost Function\ndef mse(y_true, y_pred):\n    return np.mean((y_true - y_pred) ** 2)\n\ny_true = np.array([3, 5, 7, 9])\ny_pred = np.array([2.8, 5.2, 6.5, 9.1])\nprint(f\"MSE: {mse(y_true, y_pred):.4f}\")\n\n# Learning rate comparison\ndef train(lr, epochs=50):\n    w = 0.0\n    X, y = np.array([1,2,3,4,5.0]), np.array([2,4,6,8,10.0])\n    for _ in range(epochs):\n        pred = w * X\n        grad = -2 * np.mean(X * (y - pred))\n        w -= lr * grad\n    return w\n\nfor lr in [0.001, 0.01, 0.1]:\n    print(f\"LR={lr}: w={train(lr):.4f} (target=2.0)\")",
+  "practiceQuestions": [
+    "What is a cost function?",
+    "MSE vs Cross-Entropy: when to use each?",
+    "What happens with wrong learning rate?",
+    "How do cost function and gradient descent work together?"
+  ],
+  "keywords": [
+    "Cost Function",
+    "MSE",
+    "Cross-Entropy",
+    "Learning Rate"
+  ],
+  "keyTakeaways": [
+    "MSE for regression: mean of (predicted - actual)²",
+    "Cross-Entropy for classification",
+    "Too small → slow convergence"
+  ]
+}

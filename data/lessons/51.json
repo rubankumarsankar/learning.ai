@@ -1,0 +1,20 @@
+{
+  "id": 51,
+  "title": "SQL: INNER JOIN — Connecting Related Tables",
+  "content": "### Day 51: SQL: INNER JOIN — Connecting Related Tables\n\n**INNER JOIN** returns only rows that have matches in BOTH tables.\n\n**Syntax:**\n```sql\nSELECT * FROM orders\nINNER JOIN customers ON orders.customer_id = customers.id;\n```\n\n**Key:** If no match exists, the row is excluded from results.",
+  "codeExample": "# Day 51: SQL: INNER JOIN — Connecting Related Tables\n# SQL: INNER JOIN\nsql = \"\"\"\n-- Join orders with customers\nSELECT \n    o.id AS order_id,\n    c.name AS customer_name,\n    o.amount,\n    o.order_date\nFROM orders o\nINNER JOIN customers c ON o.customer_id = c.id;\n\n-- Join with filtering\nSELECT \n    c.name,\n    COUNT(o.id) AS total_orders,\n    SUM(o.amount) AS total_spent\nFROM customers c\nINNER JOIN orders o ON c.id = o.customer_id\nGROUP BY c.name\nHAVING total_spent > 1000\nORDER BY total_spent DESC;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "What does INNER JOIN return?",
+    "What happens to unmatched rows?",
+    "Write a JOIN between orders and products.",
+    "When to use table aliases?"
+  ],
+  "keywords": [
+    "INNER JOIN",
+    "Syntax",
+    "Key"
+  ],
+  "keyTakeaways": [
+    "INNER JOIN returns only rows that have matches in BOTH tables."
+  ]
+}

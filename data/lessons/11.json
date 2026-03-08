@@ -1,0 +1,23 @@
+{
+  "id": 11,
+  "title": "While Loops: Break, Continue, and Loop Patterns",
+  "content": "### Day 11: While Loops — Break, Continue, and Loop Patterns\n\n**While loop** repeats as long as condition is True. Use when iteration count is unknown.\n\n**Control:** `break` exits loop, `continue` skips to next iteration.\n\n**Patterns:** Counter loop, sentinel loop (until \"quit\"), validation loop.\n\n**Danger:** Always ensure condition becomes False eventually to avoid infinite loops.",
+  "codeExample": "# Day 11: While Loops\n\n# Countdown\ni = 5\nwhile i > 0:\n    print(f\"{i}...\", end=\" \")\n    i -= 1\nprint(\"Go! 🚀\")\n\n# Break — exit loop\nprint(\"\\nGuess game:\")\nsecret, guess = 7, 0\nwhile guess != secret:\n    guess += 1\n    if guess == secret:\n        print(f\"  Found it: {guess}!\")\n        break\n\n# Continue — skip iteration\nprint(\"\\nOdd numbers 1-10:\")\nn = 0\nwhile n < 10:\n    n += 1\n    if n % 2 == 0: continue\n    print(n, end=\" \")\nprint()\n\n# Sum until 0\nnums = [10, 25, 30, 0, 50]\ntotal = 0\nidx = 0\nwhile idx < len(nums) and nums[idx] != 0:\n    total += nums[idx]\n    idx += 1\nprint(f\"Sum before 0: {total}\")",
+  "practiceQuestions": [
+    "When to use while vs for?",
+    "What does break do vs continue?",
+    "How to prevent infinite loops?",
+    "Write: keep dividing by 2 until < 1."
+  ],
+  "keywords": [
+    "While loop",
+    "Control",
+    "Patterns",
+    "Danger"
+  ],
+  "keyTakeaways": [
+    "While loop repeats as long as condition is True.",
+    "Use when iteration count is unknown.",
+    "Control: `break` exits loop, `continue` skips to next iteration."
+  ]
+}

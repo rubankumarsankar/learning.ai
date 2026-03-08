@@ -1,0 +1,23 @@
+{
+  "id": 41,
+  "title": "NumPy: Creating 1D and 2D Arrays",
+  "content": "### Day 41: NumPy: Creating 1D and 2D Arrays\n\n**NumPy arrays** are faster and use less memory than Python lists. They support vectorized operations.\n\n**Creating arrays:**\n- `np.array([1,2,3])` — from list\n- `np.zeros(5)`, `np.ones(5)` — filled arrays\n- `np.arange(0,10,2)` — like range()\n- `np.linspace(0,1,5)` — evenly spaced",
+  "codeExample": "# Day 41: NumPy: Creating 1D and 2D Arrays\nimport numpy as np\n\n# From list\narr = np.array([1, 2, 3, 4, 5])\nprint(f\"1D: {arr}, dtype: {arr.dtype}\")\n\n# 2D array\nmatrix = np.array([[1,2,3],[4,5,6]])\nprint(f\"2D shape: {matrix.shape}\")\n\n# Special arrays\nprint(f\"Zeros: {np.zeros(5)}\")\nprint(f\"Ones: {np.ones((2,3))}\")\nprint(f\"Range: {np.arange(0, 10, 2)}\")\nprint(f\"Linspace: {np.linspace(0, 1, 5)}\")\nprint(f\"Identity:\\n{np.eye(3)}\")",
+  "practiceQuestions": [
+    "How is a NumPy array different from a Python list?",
+    "Create a 3x3 matrix of zeros.",
+    "What is np.linspace and when to use it?",
+    "What is dtype in NumPy?"
+  ],
+  "keywords": [
+    "NumPy arrays",
+    "Creating arrays",
+    "NumPy",
+    "Creating"
+  ],
+  "keyTakeaways": [
+    "`np.array([1,2,3])` — from list",
+    "`np.zeros(5)`, `np.ones(5)` — filled arrays",
+    "`np.arange(0,10,2)` — like range()"
+  ]
+}

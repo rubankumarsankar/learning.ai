@@ -1,0 +1,23 @@
+{
+  "id": 29,
+  "title": "String Methods: Parsing, Formatting, and Regex Basics",
+  "content": "### Day 29: String Methods: Parsing, Formatting, and Regex Basics\n\n**String Methods:** split(), join(), strip(), replace(), find(), startswith(), endswith(), upper(), lower()\n\n**Regex (re module):** Pattern matching for complex text processing.\n- `re.search()` — find first match\n- `re.findall()` — find all matches\n- `re.sub()` — replace matches",
+  "codeExample": "# Day 29: String Methods: Parsing, Formatting, and Regex Basics\n# String Methods and Regex\nimport re\n\ntext = \"  Hello, World! Python is great.  \"\n\n# String methods\nprint(text.strip())           # Remove whitespace\nprint(text.strip().lower())   # Lowercase\nprint(text.strip().split())   # Split to list\nprint(\"-\".join([\"2026\",\"03\",\"08\"]))  # Join\nprint(text.replace(\"World\", \"Python\"))\n\n# Regex basics\nemail_text = \"Contact us at info@example.com or support@test.org\"\nemails = re.findall(r'[\\w.]+@[\\w.]+', email_text)\nprint(f\"\\nEmails found: {emails}\")\n\n# Validate phone number\ndef is_valid_phone(phone):\n    pattern = r'^\\d{10}$'\n    return bool(re.match(pattern, phone))\n\nprint(f\"Valid phone: {is_valid_phone('9876543210')}\")\nprint(f\"Valid phone: {is_valid_phone('123')}\")",
+  "practiceQuestions": [
+    "5 most useful string methods?",
+    "How does split() and join() work?",
+    "Write regex to extract emails.",
+    "Difference between re.search and re.findall?"
+  ],
+  "keywords": [
+    "String Methods",
+    "Regex (re module)",
+    "String",
+    "Methods"
+  ],
+  "keyTakeaways": [
+    "`re.search()` — find first match",
+    "`re.findall()` — find all matches",
+    "`re.sub()` — replace matches"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 2,
+  "title": "Variables: Strings, Integers, Floats, and Booleans",
+  "content": "### Day 2: Variables — Strings, Integers, Floats, and Booleans\n\n**A variable** is a named container for a value. Python has 4 basic types:\n\n| Type | Example | Use Case |\n|------|---------|----------|\n| str | \"hello\" | Text, names, messages |\n| int | 42 | Counts, IDs, ages |\n| float | 3.14 | Prices, measurements |\n| bool | True/False | Flags, conditions |\n\n**Naming Rules:** Use snake_case (`user_name`), start with letter/underscore, case-sensitive.\n\n**Type Conversion:** `int(\"5\")`, `str(42)`, `float(\"3.14\")`\n\n**f-Strings:** `f\"Hello {name}, age {age}\"` — the modern way to format strings.",
+  "codeExample": "# Day 2: Variables and Data Types\nname = \"Ruban\"          # str\nage = 25                # int\nheight = 5.9            # float\nis_student = True       # bool\n\nprint(f\"Name: {name} (type: {type(name).__name__})\")\nprint(f\"Age: {age} (type: {type(age).__name__})\")\nprint(f\"Height: {height} (type: {type(height).__name__})\")\nprint(f\"Student: {is_student} (type: {type(is_student).__name__})\")\n\n# Type conversion\nage_str = str(age)        # int → str\nprice_int = int(99.9)     # float → int (truncates)\nnum = int(\"100\")          # str → int\nprint(f\"\\nConverted: '{age_str}', {price_int}, {num}\")\n\n# Swap variables\na, b = 5, 10\na, b = b, a\nprint(f\"After swap: a={a}, b={b}\")",
+  "practiceQuestions": [
+    "What are the 4 basic data types in Python?",
+    "What happens if you try: print('Age: ' + 25)?",
+    "How do you swap two variables without a third variable?",
+    "What is an f-string? Show an example."
+  ],
+  "keywords": [
+    "A variable",
+    "Naming Rules",
+    "Type Conversion",
+    "f-Strings"
+  ],
+  "keyTakeaways": [
+    "A variable is a named container for a value."
+  ]
+}

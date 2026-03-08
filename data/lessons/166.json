@@ -1,0 +1,23 @@
+{
+  "id": 166,
+  "title": "Web Basics: HTTP Methods — GET, POST, PUT, DELETE",
+  "content": "### Day 166: Web Basics: HTTP Methods — GET, POST, PUT, DELETE\n\n**HTTP Methods:**\n- **GET:** Retrieve data (idempotent)\n- **POST:** Create new resource\n- **PUT:** Update entire resource\n- **DELETE:** Remove resource\n\n**Status Codes:** 200 OK, 201 Created, 400 Bad Request, 404 Not Found, 500 Server Error",
+  "codeExample": "# Day 166: Web Basics: HTTP Methods — GET, POST, PUT, DELETE\n# HTTP Methods explained\nimport json\n\n# Simulating API requests\nendpoints = {\n    \"GET /users\": {\"method\": \"GET\", \"desc\": \"List all users\", \"status\": 200},\n    \"POST /users\": {\"method\": \"POST\", \"desc\": \"Create user\", \"status\": 201},\n    \"GET /users/1\": {\"method\": \"GET\", \"desc\": \"Get user by ID\", \"status\": 200},\n    \"PUT /users/1\": {\"method\": \"PUT\", \"desc\": \"Update user\", \"status\": 200},\n    \"DELETE /users/1\": {\"method\": \"DELETE\", \"desc\": \"Delete user\", \"status\": 204}\n}\n\nprint(\"REST API Design:\")\nfor endpoint, info in endpoints.items():\n    print(f\"  {info['method']:6s} {endpoint:15s} → {info['status']} {info['desc']}\")",
+  "practiceQuestions": [
+    "What are HTTP methods?",
+    "GET vs POST?",
+    "Common status codes?",
+    "What is REST?"
+  ],
+  "keywords": [
+    "HTTP Methods",
+    "GET",
+    "POST",
+    "PUT"
+  ],
+  "keyTakeaways": [
+    "GET: Retrieve data (idempotent)",
+    "POST: Create new resource",
+    "PUT: Update entire resource"
+  ]
+}

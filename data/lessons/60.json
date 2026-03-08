@@ -1,0 +1,23 @@
+{
+  "id": 60,
+  "title": "SQL Interview Practice: 10 Real SQL Challenges",
+  "content": "### Day 60: SQL Interview Practice: 10 Real SQL Challenges\n\n**SQL Interview Tips:**\n1. Always clarify the schema first\n2. Start simple, add complexity\n3. Use CTEs for readability\n4. Think about edge cases (NULLs, duplicates)\n5. Practice writing without an IDE",
+  "codeExample": "# Day 60: SQL Interview Practice: 10 Real SQL Challenges\n# SQL Interview Challenges\nsql = \"\"\"\n-- 1. Second highest salary\nSELECT MAX(salary) FROM employees\nWHERE salary < (SELECT MAX(salary) FROM employees);\n\n-- 2. Employees earning more than their manager\nSELECT e.name FROM employees e\nJOIN employees m ON e.manager_id = m.id\nWHERE e.salary > m.salary;\n\n-- 3. Duplicate emails\nSELECT email, COUNT(*) FROM users\nGROUP BY email HAVING COUNT(*) > 1;\n\n-- 4. Customers who never ordered\nSELECT c.name FROM customers c\nLEFT JOIN orders o ON c.id = o.customer_id\nWHERE o.id IS NULL;\n\n-- 5. Running total\nSELECT date, amount,\n    SUM(amount) OVER (ORDER BY date) AS running_total\nFROM sales;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "Find second highest salary.",
+    "Find duplicate records.",
+    "Employees earning more than manager.",
+    "Customers with no orders."
+  ],
+  "keywords": [
+    "SQL Interview Tips",
+    "Interview",
+    "Practice",
+    "Real"
+  ],
+  "keyTakeaways": [
+    "Always clarify the schema first\n2.",
+    "Start simple, add complexity\n3.",
+    "Use CTEs for readability\n4."
+  ]
+}

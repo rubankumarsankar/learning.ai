@@ -1,0 +1,23 @@
+{
+  "id": 235,
+  "title": "Portfolio: Writing Resume Bullets for Each Project",
+  "content": "### Day 235: Portfolio: Writing Resume Bullets for Each Project\n\n**Resume Bullets — XYZ Formula:**\n\"Accomplished [X] as measured by [Y] by doing [Z]\"\n\nExample: \"Built a customer churn prediction system achieving 91% AUC by engineering 15 features and deploying with FastAPI + Docker\"",
+  "codeExample": "# Day 235: Portfolio: Writing Resume Bullets for Each Project\n# Resume Bullet Templates\nbullets = [\n    {\n        \"project\": \"Customer Churn Prediction\",\n        \"bullet\": \"Built ML pipeline predicting customer churn with 91% AUC using XGBoost, \"\n                  \"reducing churn rate by 15% through targeted retention campaigns\"\n    },\n    {\n        \"project\": \"Resume Screening NLP\",\n        \"bullet\": \"Developed NLP resume ranking system processing 500+ resumes/min using \"\n                  \"TF-IDF + Logistic Regression, deployed as FastAPI microservice\"\n    },\n    {\n        \"project\": \"Sales Forecasting\",\n        \"bullet\": \"Created time-series forecasting dashboard achieving MAPE < 8% using \"\n                  \"Prophet + Streamlit, enabling data-driven inventory decisions\"\n    }\n]\n\nprint(\"Resume Bullets (XYZ Formula):\")\nfor b in bullets:\n    print(f\"\\n📌 {b['project']}:\")\n    print(f\"   • {b['bullet']}\")",
+  "practiceQuestions": [
+    "What is the XYZ formula?",
+    "How to quantify achievements?",
+    "What makes a strong bullet?",
+    "How to describe ML projects on resume?"
+  ],
+  "keywords": [
+    "Portfolio",
+    "Writing",
+    "Resume",
+    "Bullets"
+  ],
+  "keyTakeaways": [
+    "Review the provided code sandbox to understand execution flow.",
+    "Attempt all practice questions without looking at the answers.",
+    "Reference the Crack the Interview library for deeper technical syntax."
+  ]
+}

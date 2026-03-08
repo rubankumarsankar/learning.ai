@@ -1,0 +1,22 @@
+{
+  "id": 85,
+  "title": "Stats: Probability Basics and Bayes Theorem Intuition",
+  "content": "### Day 85: Stats: Probability Basics and Bayes Theorem Intuition\n\n**Probability:** P(A) = favorable outcomes / total outcomes\n\n**Bayes Theorem:** P(A|B) = P(B|A) × P(A) / P(B)\n- Update beliefs with new evidence\n- Foundation of Naive Bayes classifier",
+  "codeExample": "# Day 85: Stats: Probability Basics and Bayes Theorem Intuition\n# Probability basics\nprint(\"=== Probability ===\")\nprint(f\"Coin flip: P(heads) = {1/2}\")\nprint(f\"Die roll P(even): {3/6}\")\n\n# Bayes Theorem\nprint(\"\\n=== Bayes: Disease Testing ===\")\nP_disease = 0.001      # 0.1% have disease\nP_pos_given_disease = 0.99  # 99% sensitivity\nP_pos_given_healthy = 0.05  # 5% false positive\nP_healthy = 1 - P_disease\n\nP_pos = P_pos_given_disease * P_disease + P_pos_given_healthy * P_healthy\nP_disease_given_pos = (P_pos_given_disease * P_disease) / P_pos\n\nprint(f\"Test positive → actually sick: {P_disease_given_pos:.1%}\")\nprint(\"Even with 99% accurate test, only ~2% chance if disease is rare!\")",
+  "practiceQuestions": [
+    "What is Bayes Theorem?",
+    "Why is prior probability important?",
+    "Explain the disease testing example.",
+    "How is Bayes used in spam filtering?"
+  ],
+  "keywords": [
+    "Probability",
+    "Bayes Theorem",
+    "Stats",
+    "Basics"
+  ],
+  "keyTakeaways": [
+    "Update beliefs with new evidence",
+    "Foundation of Naive Bayes classifier"
+  ]
+}

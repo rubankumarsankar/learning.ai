@@ -1,0 +1,22 @@
+{
+  "id": 55,
+  "title": "SQL: GROUP BY and HAVING for Segmented Analysis",
+  "content": "### Day 55: SQL: GROUP BY and HAVING for Segmented Analysis\n\n**GROUP BY** groups rows that share values, used with aggregates.\n\n**HAVING** filters groups (like WHERE but for aggregates).\n\n**Order:** SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY → LIMIT",
+  "codeExample": "# Day 55: SQL: GROUP BY and HAVING for Segmented Analysis\n# SQL: GROUP BY and HAVING\nsql = \"\"\"\n-- Revenue by category\nSELECT \n    category,\n    COUNT(*) AS num_products,\n    SUM(price) AS total_revenue,\n    AVG(price) AS avg_price\nFROM products\nGROUP BY category\nORDER BY total_revenue DESC;\n\n-- HAVING: filter groups\nSELECT \n    customer_id,\n    COUNT(*) AS order_count,\n    SUM(amount) AS total_spent\nFROM orders\nGROUP BY customer_id\nHAVING COUNT(*) >= 5 AND SUM(amount) > 10000\nORDER BY total_spent DESC;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "Difference between WHERE and HAVING?",
+    "What is GROUP BY used for?",
+    "Find categories with more than 10 products.",
+    "What is the SQL execution order?"
+  ],
+  "keywords": [
+    "GROUP BY",
+    "HAVING",
+    "Order"
+  ],
+  "keyTakeaways": [
+    "GROUP BY groups rows that share values, used with aggregates.",
+    "HAVING filters groups (like WHERE but for aggregates).",
+    "Order: SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY → LIMIT."
+  ]
+}

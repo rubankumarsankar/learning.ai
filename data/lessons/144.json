@@ -1,0 +1,23 @@
+{
+  "id": 144,
+  "title": "CNN: How Computers See Pixels — Image as Matrix",
+  "content": "### Day 144: CNN: How Computers See Pixels — Image as Matrix\n\n**Images are matrices:** Grayscale = 2D array, Color = 3D (H×W×3 for RGB).\n\n**How CNNs see:** Instead of looking at every pixel, CNNs learn filters/kernels that detect features:\n- Early layers: edges, corners\n- Middle layers: textures, patterns\n- Deep layers: objects, faces",
+  "codeExample": "# Day 144: CNN: How Computers See Pixels — Image as Matrix\nimport numpy as np\n\n# Image as matrix\nimage = np.random.randint(0, 256, (28, 28))  # grayscale\nprint(f\"Image shape: {image.shape}\")\nprint(f\"Pixel range: {image.min()}-{image.max()}\")\n\n# Simple edge detection kernel\nkernel = np.array([[-1, -1, -1],\n                   [-1,  8, -1],\n                   [-1, -1, -1]])\n\n# Apply kernel (convolution)\ndef convolve2d(image, kernel):\n    h, w = image.shape\n    kh, kw = kernel.shape\n    out = np.zeros((h-kh+1, w-kw+1))\n    for i in range(out.shape[0]):\n        for j in range(out.shape[1]):\n            out[i,j] = np.sum(image[i:i+kh, j:j+kw] * kernel)\n    return out\n\nedges = convolve2d(image, kernel)\nprint(f\"After convolution: {edges.shape}\")",
+  "practiceQuestions": [
+    "How is an image represented?",
+    "What is a convolution kernel?",
+    "What do CNN layers learn?",
+    "RGB vs Grayscale shape?"
+  ],
+  "keywords": [
+    "Images are matrices",
+    "How CNNs see",
+    "Computers",
+    "Pixels"
+  ],
+  "keyTakeaways": [
+    "Early layers: edges, corners",
+    "Middle layers: textures, patterns",
+    "Deep layers: objects, faces"
+  ]
+}

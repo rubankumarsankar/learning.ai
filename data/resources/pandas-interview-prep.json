@@ -1,0 +1,22 @@
+{
+  "title": "Pandas & Data Science Interview Prep",
+  "url": "https://pandas.pydata.org/docs/",
+  "content": "### Crack the Interview: Data Wrangling with Pandas\n\nData Science interviews heavily focus on your ability to clean and manipulate raw, messy CSVs using Pandas. They test for vectorized thinking rather than standard looping.\n\n**Theory: Vectorization vs Iteration**\n- **Core Concept:** Under the hood, Pandas is built on NumPy (C-arrays). You should NEVER use `iterrows()` or `for` loops on a DataFrame if a vectorized operation or `.apply()` exists.\n- **Application:** Handling missing data. Interviewers will ask how you handle NaNs. You must explain when to drop (`dropna`) versus when to impute (`fillna` with mean/median).\n- **Interview Trick:** Be comfortable explaining `groupby()` aggregations and how `merge()` differs from `concat()`.",
+  "codeExample": "# 💡 Crack the Interview: Handling Missing Data Vectorized\nimport pandas as pd\nimport numpy as np\n\ndf = pd.DataFrame({'Age': [25, np.nan, 30, 22], 'Salary': [50000, 60000, np.nan, 45000]})\n\n# Bad (Looping):\n# for i in range(len(df)):\n#     if pd.isna(df['Age'][i]): ... \n\n# Good (Vectorized Imputation):\ndf['Age'] = df['Age'].fillna(df['Age'].median())\ndf['Salary'] = df['Salary'].fillna(df['Salary'].mean())\nprint(df)",
+  "practiceQuestions": [
+    "Why is iterating over DataFrame rows considered an anti-pattern?",
+    "Explain the difference between `loc` and `iloc`.",
+    "How do you merge two DataFrames on a specific column, similar to a SQL LEFT JOIN?"
+  ],
+  "keywords": [
+    "Vectorization",
+    "Data Imputation",
+    "DataFrames",
+    "NumPy Integration"
+  ],
+  "keyTakeaways": [
+    "Never use for-loops or iterrows() on massive datasets; use vectorization.",
+    "Missing data (NaNs) must be purposefully dropped or filled via mean/median imputation.",
+    "Pandas is just a high-level wrapper constructed on top of optimized C-compiled NumPy arrays."
+  ]
+}

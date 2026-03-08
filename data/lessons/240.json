@@ -1,0 +1,23 @@
+{
+  "id": 240,
+  "title": "Job Launch: Resume Polish, LinkedIn Posts, and Apply Strategy",
+  "content": "### Day 240: Job Launch: Resume Polish, LinkedIn Posts, and Apply Strategy\n\n**Job Launch Checklist:**\n1. ✅ Resume: 1-page, quantified achievements, ATS-friendly\n2. ✅ GitHub: 3 pinned projects with clean READMEs\n3. ✅ LinkedIn: Updated headline, summary, project posts\n4. ✅ Apply: 5-10 targeted applications per day\n5. ✅ Network: Connect with recruiters, attend meetups",
+  "codeExample": "# Day 240: Job Launch: Resume Polish, LinkedIn Posts, and Apply Strategy\n# Job Launch Strategy\nstrategy = {\n    \"Week 1-2\": [\n        \"Polish resume with XYZ bullets\",\n        \"Update LinkedIn with project posts\",\n        \"Clean GitHub profile, pin 3 projects\"\n    ],\n    \"Week 3-4\": [\n        \"Apply 5-10 jobs daily on LinkedIn/Naukri\",\n        \"Customize cover letter per company\",\n        \"Practice 2 coding problems daily\"\n    ],\n    \"Week 5-6\": [\n        \"Mock interviews with friends\",\n        \"Review ML theory flashcards\",\n        \"Follow up on applications\"\n    ],\n    \"Ongoing\": [\n        \"Write 1 technical blog post per week\",\n        \"Network on LinkedIn (comments > posts)\",\n        \"Keep building side projects\"\n    ]\n}\n\nprint(\"🚀 Job Launch Strategy:\")\nfor phase, tasks in strategy.items():\n    print(f\"\\n{phase}:\")\n    for task in tasks:\n        print(f\"  • {task}\")",
+  "practiceQuestions": [
+    "How to write an ATS-friendly resume?",
+    "How many applications per day?",
+    "How to network effectively?",
+    "What to do after applying?"
+  ],
+  "keywords": [
+    "Job Launch Checklist",
+    "Launch",
+    "Resume",
+    "Polish"
+  ],
+  "keyTakeaways": [
+    "✅ Resume: 1-page, quantified achievements, ATS-friendly\n2.",
+    "✅ GitHub: 3 pinned projects with clean READMEs\n3.",
+    "✅ LinkedIn: Updated headline, summary, project posts\n4."
+  ]
+}

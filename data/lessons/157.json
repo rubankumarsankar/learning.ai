@@ -1,0 +1,23 @@
+{
+  "id": 157,
+  "title": "Applied AI: Model Optimization — Quantization and Pruning Basics",
+  "content": "### Day 157: Applied AI: Model Optimization — Quantization and Pruning Basics\n\nDeep learning is powerful for vision, NLP, and complex pattern recognition, but simpler models often win on tabular data.\n\n**Key Concepts:**\n- **Applied AI:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Model Optimization:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Quantization and Pruning Basics:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 157: Applied AI: Model Optimization — Quantization and Pruning Basics\nimport numpy as np\n\n# Today's topic: Model Optimization — Quantization and Pruning Basics\nprint(\"Day 157: Applied AI: Model Optimization — Quantization and Pruning Basics\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# Applied AI\\n# Model Optimization\\n# Quantization and Pruning Basics\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Model Optimization — Quantization and Pruning Basics\"\"\"\n    print(\"Implementing: Applied AI: Model Optimization — Quantization and Pruning Basics\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain Applied AI in your own words with a real-world example.",
+    "How would you use Applied AI in a product company project?",
+    "Write working code that demonstrates Model Optimization — Quantization and Pruning Basics.",
+    "What interview questions could be asked about Applied AI?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Applied AI",
+    "Model Optimization",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Applied AI: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Model Optimization: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Quantization and Pruning Basics: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": 228,
+  "title": "Project 2: Resume Screening — UI, Deploy, and README",
+  "content": "### Day 228: Project 2: Resume Screening — UI, Deploy, and README\n\n**Resume Screening NLP App** — HR teams review thousands of resumes. Build an NLP system that ranks candidates by relevance.\n\n**Key Concepts:**\n- **Project 2:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Resume Screening:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Deploy:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and README:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 228: Project 2: Resume Screening — UI, Deploy, and README\n# Project: Resume Screening NLP\n\"\"\"\nToday's task: Resume Screening — UI, Deploy, and README\n\nProject structure:\nresume_screening_nlp/\n├── data/\n├── notebooks/\n├── src/\n│   ├── data_processing.py\n│   ├── model.py\n│   └── api.py\n├── tests/\n├── Dockerfile\n└── README.md\n\"\"\"\nprint(\"Day 228: Project 2: Resume Screening — UI, Deploy, and README\")\nprint(\"Project: Resume Screening NLP\")",
+  "practiceQuestions": [
+    "Explain Project 2 in your own words with a real-world example.",
+    "How would you use Project 2 in a product company project?",
+    "Write working code that demonstrates Resume Screening — UI, Deploy, and README.",
+    "What interview questions could be asked about Project 2?"
+  ],
+  "keywords": [
+    "Resume Screening NLP App",
+    "Key Concepts",
+    "Project 2",
+    "Resume Screening"
+  ],
+  "keyTakeaways": [
+    "Project 2: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Resume Screening: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Deploy: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

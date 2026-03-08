@@ -1,0 +1,23 @@
+{
+  "id": 146,
+  "title": "CNN: Pooling, Padding, Stride, and Architecture Design",
+  "content": "### Day 146: CNN: Pooling, Padding, Stride, and Architecture Design\n\nCNNs are the backbone of computer vision — image classification, object detection, and segmentation.\n\n**Key Concepts:**\n- **CNN:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Pooling:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Padding:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Stride:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and Architecture Design:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 146: CNN: Pooling, Padding, Stride, and Architecture Design\nimport numpy as np\n\n# Today's topic: Pooling, Padding, Stride, and Architecture Design\nprint(\"Day 146: CNN: Pooling, Padding, Stride, and Architecture Design\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# CNN\\n# Pooling\\n# Padding\\n# Stride\\n# and Architecture Design\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Pooling, Padding, Stride, and Architecture Design\"\"\"\n    print(\"Implementing: CNN: Pooling, Padding, Stride, and Architecture Design\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain CNN in your own words with a real-world example.",
+    "How would you use CNN in a product company project?",
+    "Write working code that demonstrates Pooling, Padding, Stride, and Architecture Design.",
+    "What interview questions could be asked about CNN?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "CNN",
+    "Pooling",
+    "Padding"
+  ],
+  "keyTakeaways": [
+    "CNN: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Pooling: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Padding: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

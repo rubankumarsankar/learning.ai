@@ -1,0 +1,22 @@
+{
+  "id": 192,
+  "title": "Engineering: Caching Predictions with Redis Basics",
+  "content": "### Day 192: Engineering: Caching Predictions with Redis Basics\n\nAI Engineering combines ML with software engineering. Companies hire engineers who can build, test, and deploy.\n\n**Key Concepts:**\n- **Engineering:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Caching Predictions with Redis Basics:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 192: Engineering: Caching Predictions with Redis Basics\n\"\"\"\nBackend Engineering: Caching Predictions with Redis Basics\n\nKey concepts:\n1. Engineering\\n2. Caching Predictions with Redis Basics\n\"\"\"\n\nprint(\"Day 192: Engineering: Caching Predictions with Redis Basics\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Caching Predictions with Redis Basics\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain Engineering in your own words with a real-world example.",
+    "How would you use Engineering in a product company project?",
+    "Write working code that demonstrates Caching Predictions with Redis Basics.",
+    "What interview questions could be asked about Engineering?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Engineering",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Engineering: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Caching Predictions with Redis Basics: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

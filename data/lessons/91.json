@@ -1,0 +1,23 @@
+{
+  "id": 91,
+  "title": "ML: Train-Test Split and the Danger of Data Leakage",
+  "content": "### Day 91: ML: Train-Test Split and the Danger of Data Leakage\n\n**Train-Test Split:** Never evaluate on training data!\n- Train: 80% — model learns\n- Test: 20% — model evaluated\n\n**Data Leakage:** When test info leaks into training.\n- Scaling BEFORE split → leakage!\n- Using future data → leakage!",
+  "codeExample": "# Day 91: ML: Train-Test Split and the Danger of Data Leakage\nfrom sklearn.model_selection import train_test_split\nimport numpy as np\n\nX = np.random.randn(100, 3)\ny = (X[:, 0] > 0).astype(int)\n\n# Correct split\nX_train, X_test, y_train, y_test = train_test_split(\n    X, y, test_size=0.2, random_state=42, stratify=y)\n\nprint(f\"Train: {X_train.shape}, Test: {X_test.shape}\")\nprint(f\"Train labels: {np.bincount(y_train)}\")\nprint(f\"Test labels: {np.bincount(y_test)}\")\n\n# BAD: Scaling before split (leakage!)\nprint(\"\\n❌ BAD: Fit scaler on ALL data then split\")\nprint(\"✅ GOOD: Split first, fit scaler on train only\")",
+  "practiceQuestions": [
+    "Why split data into train/test?",
+    "What is data leakage?",
+    "Why use stratify parameter?",
+    "Give 3 examples of data leakage."
+  ],
+  "keywords": [
+    "Train-Test Split",
+    "Data Leakage",
+    "TrainTest",
+    "Split"
+  ],
+  "keyTakeaways": [
+    "Train: 80% — model learns",
+    "Test: 20% — model evaluated",
+    "Scaling BEFORE split → leakage!"
+  ]
+}

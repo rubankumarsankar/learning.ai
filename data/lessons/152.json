@@ -1,0 +1,23 @@
+{
+  "id": 152,
+  "title": "NLP: Word Embeddings — Word2Vec and GloVe Intuition",
+  "content": "### Day 152: NLP: Word Embeddings — Word2Vec and GloVe Intuition\n\nNLP enables machines to understand text. The field has shifted from bag-of-words to transformers and pretrained models.\n\n**Key Concepts:**\n- **NLP:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Word Embeddings:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Word2Vec and GloVe Intuition:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 152: NLP: Word Embeddings — Word2Vec and GloVe Intuition\nimport numpy as np\n\n# Today's topic: Word Embeddings — Word2Vec and GloVe Intuition\nprint(\"Day 152: NLP: Word Embeddings — Word2Vec and GloVe Intuition\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# NLP\\n# Word Embeddings\\n# Word2Vec and GloVe Intuition\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Word Embeddings — Word2Vec and GloVe Intuition\"\"\"\n    print(\"Implementing: NLP: Word Embeddings — Word2Vec and GloVe Intuition\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain NLP in your own words with a real-world example.",
+    "How would you use NLP in a product company project?",
+    "Write working code that demonstrates Word Embeddings — Word2Vec and GloVe Intuition.",
+    "What interview questions could be asked about NLP?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "NLP",
+    "Word Embeddings",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "NLP: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Word Embeddings: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Word2Vec and GloVe Intuition: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

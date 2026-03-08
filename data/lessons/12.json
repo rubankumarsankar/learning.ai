@@ -1,0 +1,23 @@
+{
+  "id": 12,
+  "title": "Practice Day: 5 Loop and Condition Coding Challenges",
+  "content": "### Day 12: Practice Day — 5 Loop and Condition Coding Challenges\n\n**Today's Challenges:**\n1. **FizzBuzz** — 1-50: multiples of 3→\"Fizz\", 5→\"Buzz\", both→\"FizzBuzz\"\n2. **Sum of Digits** — 1234 → 1+2+3+4 = 10\n3. **Reverse a String** — without [::-1]\n4. **Find Maximum** — without max()\n5. **Palindrome Check** — \"racecar\" → True\n\n**Approach:** Read → Think → Code → Test edge cases.",
+  "codeExample": "# Day 12: 5 Coding Challenges\n\n# 1. FizzBuzz\nfor i in range(1, 21):\n    if i % 15 == 0: print(\"FizzBuzz\", end=\" \")\n    elif i % 3 == 0: print(\"Fizz\", end=\" \")\n    elif i % 5 == 0: print(\"Buzz\", end=\" \")\n    else: print(i, end=\" \")\nprint()\n\n# 2. Sum of Digits\ndef sum_digits(n):\n    total = 0\n    while n > 0:\n        total += n % 10\n        n //= 10\n    return total\nprint(f\"sum_digits(1234) = {sum_digits(1234)}\")\n\n# 3. Reverse String\ndef reverse(s):\n    result = \"\"\n    for ch in s: result = ch + result\n    return result\nprint(f\"reverse('hello') = {reverse('hello')}\")\n\n# 4. Find Max\ndef find_max(nums):\n    m = nums[0]\n    for n in nums[1:]:\n        if n > m: m = n\n    return m\nprint(f\"max([3,7,2,9]) = {find_max([3,7,2,9])}\")\n\n# 5. Palindrome\ndef is_palindrome(s):\n    s = s.lower()\n    return s == s[::-1]\nfor w in [\"racecar\", \"hello\", \"madam\"]:\n    print(f\"  '{w}' → {is_palindrome(w)}\")",
+  "practiceQuestions": [
+    "Explain FizzBuzz step by step.",
+    "How to extract last digit of a number?",
+    "Write a prime number checker.",
+    "What edge cases for palindrome?"
+  ],
+  "keywords": [
+    "Today's Challenges",
+    "FizzBuzz",
+    "Sum of Digits",
+    "Reverse a String"
+  ],
+  "keyTakeaways": [
+    "FizzBuzz — 1-50: multiples of 3→\"Fizz\", 5→\"Buzz\", both→\"FizzBuzz\"\n2.",
+    "Sum of Digits — 1234 → 1+2+3+4 = 10\n3.",
+    "Reverse a String — without [::-1]\n4."
+  ]
+}

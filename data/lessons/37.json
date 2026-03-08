@@ -1,0 +1,22 @@
+{
+  "id": 37,
+  "title": "Clean Code: PEP 8, Naming Conventions, and Docstrings",
+  "content": "### Day 37: Clean Code: PEP 8, Naming Conventions, and Docstrings\n\n**PEP 8** is Python's style guide. Following it makes code readable and professional.\n\n**Key Rules:** snake_case for variables/functions, PascalCase for classes, 4-space indent, max 79 chars per line.\n\n**Docstrings:** Document every function and class. Use type hints.",
+  "codeExample": "# Day 37: Clean Code: PEP 8, Naming Conventions, and Docstrings\n# Clean Code: PEP 8 Style\n\n# BAD ❌\ndef calcAvg(l):\n  s=0\n  for i in l:s+=i\n  return s/len(l)\n\n# GOOD ✅\ndef calculate_average(numbers: list[float]) -> float:\n    \"\"\"Calculate the arithmetic mean of a list of numbers.\n    \n    Args:\n        numbers: List of numeric values.\n    \n    Returns:\n        The average value.\n    \n    Raises:\n        ValueError: If the list is empty.\n    \"\"\"\n    if not numbers:\n        raise ValueError(\"Cannot calculate average of empty list\")\n    \n    total = sum(numbers)\n    count = len(numbers)\n    return total / count\n\n# Type hints\ndef greet(name: str, times: int = 1) -> str:\n    return (f\"Hello, {name}! \" * times).strip()\n\nprint(calculate_average([10, 20, 30]))\nprint(greet(\"Ruban\", 2))",
+  "practiceQuestions": [
+    "What is PEP 8?",
+    "snake_case vs PascalCase?",
+    "Why write docstrings?",
+    "What are type hints?"
+  ],
+  "keywords": [
+    "PEP 8",
+    "Key Rules",
+    "Docstrings"
+  ],
+  "keyTakeaways": [
+    "PEP 8 is Python's style guide.",
+    "Following it makes code readable and professional.",
+    "Key Rules: snake_case for variables/functions, PascalCase for classes, 4-space indent, max 79 chars per line."
+  ]
+}

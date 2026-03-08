@@ -1,0 +1,21 @@
+{
+  "id": 24,
+  "title": "List Comprehensions: One-Line Loops and Filtering",
+  "content": "### Day 24: List Comprehensions: One-Line Loops and Filtering\n\n**List Comprehensions** create lists in one line. Cleaner and faster than loops.\n\n**Syntax:** `[expression for item in iterable if condition]`\n\n**Also:** Dict comprehensions `{k:v for ...}`, Set comprehensions `{x for ...}`",
+  "codeExample": "# Day 24: List Comprehensions: One-Line Loops and Filtering\n# List Comprehensions\n\n# Basic\nsquares = [x**2 for x in range(1, 11)]\nprint(f\"Squares: {squares}\")\n\n# With filter\nevens = [x for x in range(20) if x % 2 == 0]\nprint(f\"Evens: {evens}\")\n\n# String processing\nnames = [\"alice\", \"bob\", \"carol\"]\nupper = [n.capitalize() for n in names]\nprint(f\"Capitalized: {upper}\")\n\n# Nested\nmatrix = [[i*j for j in range(1,4)] for i in range(1,4)]\nprint(f\"Matrix: {matrix}\")\n\n# Dict comprehension\nword = \"hello\"\nfreq = {c: word.count(c) for c in set(word)}\nprint(f\"Freq: {freq}\")\n\n# If-else in comprehension\nnums = [1, -2, 3, -4, 5]\nabs_nums = [n if n >= 0 else -n for n in nums]\nprint(f\"Absolute: {abs_nums}\")",
+  "practiceQuestions": [
+    "What is a list comprehension?",
+    "How to add a condition (filter)?",
+    "Convert a for loop to list comprehension.",
+    "What is a dict comprehension?"
+  ],
+  "keywords": [
+    "List Comprehensions",
+    "Syntax",
+    "Also"
+  ],
+  "keyTakeaways": [
+    "List Comprehensions create lists in one line.",
+    "Cleaner and faster than loops."
+  ]
+}

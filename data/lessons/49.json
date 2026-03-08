@@ -1,0 +1,22 @@
+{
+  "id": 49,
+  "title": "SQL: SELECT, WHERE, DISTINCT, and ALIASES",
+  "content": "### Day 49: SQL: SELECT, WHERE, DISTINCT, and ALIASES\n\n**SELECT** retrieves data. **WHERE** filters rows.\n\n**Key Clauses:**\n- `DISTINCT` — unique values only\n- `AS` — column aliases for readability\n- `ORDER BY` — sort results\n- `LIMIT` — restrict row count",
+  "codeExample": "# Day 49: SQL: SELECT, WHERE, DISTINCT, and ALIASES\n# SQL: SELECT, WHERE, DISTINCT, ALIASES\nsql = \"\"\"\n-- Basic SELECT\nSELECT name, salary FROM employees;\n\n-- WHERE filters\nSELECT * FROM employees WHERE salary > 90000;\nSELECT * FROM employees WHERE role = 'ML Engineer' AND salary > 100000;\n\n-- DISTINCT\nSELECT DISTINCT role FROM employees;\n\n-- Aliases\nSELECT \n    name AS employee_name,\n    salary AS annual_salary,\n    salary / 12 AS monthly_salary\nFROM employees;\n\n-- ORDER BY + LIMIT\nSELECT name, salary FROM employees\nORDER BY salary DESC\nLIMIT 3;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "What does DISTINCT do?",
+    "How to sort results descending?",
+    "What are column aliases used for?",
+    "Filter employees earning > 50000 in 'Engineering'."
+  ],
+  "keywords": [
+    "SELECT",
+    "WHERE",
+    "Key Clauses"
+  ],
+  "keyTakeaways": [
+    "`DISTINCT` — unique values only",
+    "`AS` — column aliases for readability",
+    "`ORDER BY` — sort results"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": 3,
+  "title": "Input/Output: Building Interactive CLI Programs",
+  "content": "### Day 3: Input/Output — Building Interactive CLI Programs\n\n**print()** outputs text. **input()** reads text from user (always returns string).\n\n**Formatting:**\n- f-strings: `f\"Hello {name}\"`\n- sep/end: `print(\"a\", \"b\", sep=\"-\")`\n\n**Key Pattern — Input Validation:**\n```python\nage = int(input(\"Enter age: \"))  # Convert string to int\n```\n\n**Building CLI Tools:** Real tools like git, pip, docker are all CLI programs. Learn to build interactive text-based programs.",
+  "codeExample": "# Day 3: Input/Output — BMI Calculator\nprint(\"=== BMI Calculator ===\")\n\nname = input(\"Your name: \")\nweight = float(input(\"Weight (kg): \"))\nheight = float(input(\"Height (m): \"))\n\nbmi = weight / (height ** 2)\n\nprint(f\"\\n{name}'s BMI: {bmi:.1f}\")\nif bmi < 18.5:\n    print(\"Status: Underweight\")\nelif bmi < 25:\n    print(\"Status: Normal ✅\")\nelif bmi < 30:\n    print(\"Status: Overweight\")\nelse:\n    print(\"Status: Obese\")\n\n# Print formatting tricks\nprint(\"\\n\" + \"=\" * 30)\nprint(\"Apple\", \"Banana\", \"Cherry\", sep=\" | \")\nprint(\"Loading\", end=\"...\")\nprint(\"Done!\")",
+  "practiceQuestions": [
+    "Why does input() always return a string?",
+    "What does print(end='') do?",
+    "Build a calculator that takes two numbers and an operator from user.",
+    "How do you handle invalid input (user types 'abc' for a number)?"
+  ],
+  "keywords": [
+    "print()",
+    "input()",
+    "Formatting",
+    "Building CLI Tools"
+  ],
+  "keyTakeaways": [
+    "f-strings: `f\"Hello {name}\"`",
+    "sep/end: `print(\"a\", \"b\", sep=\"-\")`"
+  ]
+}

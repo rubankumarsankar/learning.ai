@@ -1,0 +1,23 @@
+{
+  "id": 217,
+  "title": "Project 1: Churn — Exploratory Data Analysis",
+  "content": "### Day 217: Project 1: Churn — Exploratory Data Analysis\n\n**EDA for Customer Churn Prediction:**\n1. Check shape, dtypes, missing values\n2. Target distribution (imbalanced?)\n3. Feature correlations\n4. Visualize key relationships\n5. Generate business insights",
+  "codeExample": "# Day 217: Project 1: Churn — Exploratory Data Analysis\nimport pandas as pd\nimport numpy as np\n\n# EDA\nnp.random.seed(42)\nn = 500\ndf = pd.DataFrame({\n    'tenure': np.random.randint(1, 72, n),\n    'charges': np.random.uniform(20, 120, n).round(2),\n    'contract': np.random.choice(['Monthly', '1yr', '2yr'], n),\n    'churn': np.random.choice([0, 1], n, p=[0.73, 0.27])\n})\n\nprint(\"=== Data Audit ===\")\nprint(f\"Shape: {df.shape}\")\nprint(f\"Missing: {df.isnull().sum().sum()}\")\nprint(f\"\\nChurn distribution:\\n{df['churn'].value_counts(normalize=True).round(3)}\")\nprint(f\"\\nAvg tenure by churn:\\n{df.groupby('churn')['tenure'].mean().round(1)}\")\nprint(f\"\\nChurn by contract:\\n{df.groupby('contract')['churn'].mean().round(3)}\")",
+  "practiceQuestions": [
+    "What insights did EDA reveal?",
+    "Is the target imbalanced?",
+    "Which features correlate with target?",
+    "What visualizations are most useful?"
+  ],
+  "keywords": [
+    "Project",
+    "Churn",
+    "Exploratory",
+    "Data"
+  ],
+  "keyTakeaways": [
+    "EDA for Customer Churn Prediction:\n1.",
+    "Check shape, dtypes, missing values\n2.",
+    "Target distribution (imbalanced?)\n3."
+  ]
+}

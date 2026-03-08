@@ -1,0 +1,23 @@
+{
+  "id": 220,
+  "title": "Project 1: Churn — Hyperparameter Tuning and Final Model",
+  "content": "### Day 220: Project 1: Churn — Hyperparameter Tuning and Final Model\n\n**Customer Churn Prediction** — Telecom/SaaS companies lose millions to churn. Build a predictive system with FastAPI + Streamlit.\n\n**Key Concepts:**\n- **Project 1:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Churn:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Hyperparameter Tuning and Final Model:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 220: Project 1: Churn — Hyperparameter Tuning and Final Model\n# Project: Customer Churn Prediction\n\"\"\"\nToday's task: Churn — Hyperparameter Tuning and Final Model\n\nProject structure:\ncustomer_churn_prediction/\n├── data/\n├── notebooks/\n├── src/\n│   ├── data_processing.py\n│   ├── model.py\n│   └── api.py\n├── tests/\n├── Dockerfile\n└── README.md\n\"\"\"\nprint(\"Day 220: Project 1: Churn — Hyperparameter Tuning and Final Model\")\nprint(\"Project: Customer Churn Prediction\")",
+  "practiceQuestions": [
+    "Explain Project 1 in your own words with a real-world example.",
+    "How would you use Project 1 in a product company project?",
+    "Write working code that demonstrates Churn — Hyperparameter Tuning and Final Model.",
+    "What interview questions could be asked about Project 1?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Project 1",
+    "Churn",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Project 1: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Churn: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Hyperparameter Tuning and Final Model: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

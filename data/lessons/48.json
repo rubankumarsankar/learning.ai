@@ -1,0 +1,23 @@
+{
+  "id": 48,
+  "title": "SQL: INSERT, UPDATE, DELETE — CRUD Operations",
+  "content": "### Day 48: SQL: INSERT, UPDATE, DELETE — CRUD Operations\n\n**CRUD Operations:**\n- **C**reate: `INSERT INTO table (cols) VALUES (vals)`\n- **R**ead: `SELECT cols FROM table`\n- **U**pdate: `UPDATE table SET col=val WHERE condition`\n- **D**elete: `DELETE FROM table WHERE condition`\n\n⚠️ Always use WHERE with UPDATE/DELETE to avoid affecting all rows!",
+  "codeExample": "# Day 48: SQL: INSERT, UPDATE, DELETE — CRUD Operations\n# SQL: CRUD Operations\nsql = \"\"\"\n-- INSERT\nINSERT INTO users (name, email, age)\nVALUES ('Ruban', 'ruban@example.com', 25);\n\n-- INSERT multiple\nINSERT INTO users (name, email, age) VALUES\n('Alice', 'alice@co.com', 28),\n('Bob', 'bob@co.com', 32);\n\n-- UPDATE (always use WHERE!)\nUPDATE users SET age = 26 WHERE name = 'Ruban';\n\n-- DELETE (always use WHERE!)\nDELETE FROM users WHERE email = 'bob@co.com';\n\n-- Verify changes\nSELECT * FROM users;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "What are CRUD operations?",
+    "Why always use WHERE with UPDATE/DELETE?",
+    "How to insert multiple rows at once?",
+    "What happens if you run DELETE without WHERE?"
+  ],
+  "keywords": [
+    "CRUD Operations",
+    "INSERT",
+    "UPDATE",
+    "DELETE"
+  ],
+  "keyTakeaways": [
+    "Create: `INSERT INTO table (cols) VALUES (vals)`",
+    "Read: `SELECT cols FROM table`",
+    "Update: `UPDATE table SET col=val WHERE condition`"
+  ]
+}

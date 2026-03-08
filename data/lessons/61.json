@@ -1,0 +1,23 @@
+{
+  "id": 61,
+  "title": "Pandas: Loading CSV, Excel, and JSON Files",
+  "content": "### Day 61: Pandas: Loading CSV, Excel, and JSON Files\n\n**Pandas** reads data from many formats:\n- `pd.read_csv('file.csv')`\n- `pd.read_excel('file.xlsx')`\n- `pd.read_json('file.json')`\n\n**Key Parameters:** sep, header, index_col, na_values, dtype, parse_dates",
+  "codeExample": "# Day 61: Pandas: Loading CSV, Excel, and JSON Files\nimport pandas as pd\nimport numpy as np\n\n# Create sample CSV\nimport io\ncsv_data = \"\"\"name,age,salary,department\nAlice,28,120000,Engineering\nBob,32,80000,Marketing\nCarol,26,95000,Engineering\nDave,45,110000,Marketing\"\"\"\n\ndf = pd.read_csv(io.StringIO(csv_data))\nprint(\"DataFrame:\")\nprint(df)\nprint(f\"\\nShape: {df.shape}\")\nprint(f\"Columns: {list(df.columns)}\")\nprint(f\"Dtypes:\\n{df.dtypes}\")",
+  "practiceQuestions": [
+    "How to read a CSV file with Pandas?",
+    "What does df.shape return?",
+    "How to specify column types when reading?",
+    "Read CSV with custom separator."
+  ],
+  "keywords": [
+    "Pandas",
+    "Key Parameters",
+    "Loading",
+    "Excel"
+  ],
+  "keyTakeaways": [
+    "`pd.read_csv('file.csv')`",
+    "`pd.read_excel('file.xlsx')`",
+    "`pd.read_json('file.json')`"
+  ]
+}

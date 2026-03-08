@@ -1,0 +1,240 @@
+1,Coding Foundations,"Python Install, VS Code Setup, and Hello World",⬜ To-Do
+2,Coding Foundations,"Variables: Strings, Integers, Floats, and Booleans",⬜ To-Do
+3,Coding Foundations,Input/Output: Building Interactive CLI Programs,⬜ To-Do
+4,Coding Foundations,"Operators: Arithmetic, Comparison, and Assignment",⬜ To-Do
+5,Coding Foundations,"Logical Operators: AND, OR, NOT in Conditions",⬜ To-Do
+6,Coding Foundations,"Lists: Indexing, Slicing, and Core Methods",⬜ To-Do
+7,Coding Foundations,Dictionaries: Key-Value Pairs and Nested Data,⬜ To-Do
+8,Coding Foundations,"Tuples, Sets, and When to Use Each",⬜ To-Do
+9,Coding Foundations,"If-Else, Elif: Conditional Logic Flow",⬜ To-Do
+10,Coding Foundations,For Loops: Iterating over Lists and Ranges,⬜ To-Do
+11,Coding Foundations,"While Loops: Break, Continue, and Loop Patterns",⬜ To-Do
+12,Coding Foundations,Practice Day: 5 Loop and Condition Coding Challenges,⬜ To-Do
+13,Coding Foundations,"Functions: Defining, Calling, and Return Values",⬜ To-Do
+14,Coding Foundations,"Arguments: *args, **kwargs, and Default Parameters",⬜ To-Do
+15,Coding Foundations,Scope: Global vs. Local Variables and Closures,⬜ To-Do
+16,Coding Foundations,DSA: Arrays and Two-Pointer Technique (LeetCode Easy),⬜ To-Do
+17,Coding Foundations,"OOP: Classes, Objects, and the self Keyword",⬜ To-Do
+18,Coding Foundations,OOP: The __init__ Constructor and Instance Methods,⬜ To-Do
+19,Coding Foundations,"OOP: Inheritance, Polymorphism, and super()",⬜ To-Do
+20,Coding Foundations,OOP: Encapsulation and Property Decorators,⬜ To-Do
+21,Coding Foundations,DSA: Hash Maps and Frequency Counting (LeetCode Easy),⬜ To-Do
+22,Coding Foundations,File Handling: Reading and Writing Text and CSV Files,⬜ To-Do
+23,Coding Foundations,"Error Handling: Try, Except, Finally, and Custom Errors",⬜ To-Do
+24,Coding Foundations,List Comprehensions: One-Line Loops and Filtering,⬜ To-Do
+25,Coding Foundations,Lambda Functions and Map/Filter/Reduce,⬜ To-Do
+26,Coding Foundations,Decorators: Wrapping Functions with Reusable Logic,⬜ To-Do
+27,Coding Foundations,Generators: Yielding Data for Memory Efficiency,⬜ To-Do
+28,Coding Foundations,DSA: Stacks and Queues with Python Lists and Deque,⬜ To-Do
+29,Coding Foundations,"String Methods: Parsing, Formatting, and Regex Basics",⬜ To-Do
+30,Coding Foundations,Modules and Packages: Organizing Your Python Projects,⬜ To-Do
+31,Coding Foundations,"Virtual Environments: venv, pip freeze, requirements.txt",⬜ To-Do
+32,Coding Foundations,"DSA: Sorting Algorithms — Bubble, Merge, Quick Sort",⬜ To-Do
+33,Coding Foundations,DSA: Binary Search on Sorted Arrays (LeetCode Easy),⬜ To-Do
+34,Coding Foundations,DSA: Linked Lists Basics and Python Implementation,⬜ To-Do
+35,Coding Foundations,DSA: Recursion Fundamentals and Base Cases,⬜ To-Do
+36,Coding Foundations,"Debugging: Using print, breakpoints, and VS Code Debugger",⬜ To-Do
+37,Coding Foundations,"Clean Code: PEP 8, Naming Conventions, and Docstrings",⬜ To-Do
+38,Coding Foundations,"Git Basics: Init, Add, Commit, Status, and .gitignore",⬜ To-Do
+39,Coding Foundations,"GitHub: Creating Repos, Pushing Code, and README Writing",⬜ To-Do
+40,Coding Foundations,Coding Foundations Capstone: Build a CLI Task Manager,⬜ To-Do
+41,Data Handling & SQL,NumPy: Creating 1D and 2D Arrays,⬜ To-Do
+42,Data Handling & SQL,"NumPy: Indexing, Slicing, and Fancy Indexing",⬜ To-Do
+43,Data Handling & SQL,NumPy: Mathematical and Statistical Operations,⬜ To-Do
+44,Data Handling & SQL,"NumPy: Reshaping, Broadcasting, and Vectorization",⬜ To-Do
+45,Data Handling & SQL,NumPy: Random Module and Synthetic Data Generation,⬜ To-Do
+46,Data Handling & SQL,SQL: Installing PostgreSQL/MySQL and First Queries,⬜ To-Do
+47,Data Handling & SQL,"SQL: CREATE TABLE, Data Types, and Constraints",⬜ To-Do
+48,Data Handling & SQL,"SQL: INSERT, UPDATE, DELETE — CRUD Operations",⬜ To-Do
+49,Data Handling & SQL,"SQL: SELECT, WHERE, DISTINCT, and ALIASES",⬜ To-Do
+50,Data Handling & SQL,"SQL: IN, BETWEEN, LIKE, and Pattern Matching",⬜ To-Do
+51,Data Handling & SQL,SQL: INNER JOIN — Connecting Related Tables,⬜ To-Do
+52,Data Handling & SQL,"SQL: LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN",⬜ To-Do
+53,Data Handling & SQL,"SQL: Self-Joins, Cross-Joins, and Multi-Table Queries",⬜ To-Do
+54,Data Handling & SQL,"SQL: Aggregates — COUNT, SUM, AVG, MIN, MAX",⬜ To-Do
+55,Data Handling & SQL,SQL: GROUP BY and HAVING for Segmented Analysis,⬜ To-Do
+56,Data Handling & SQL,"SQL: Subqueries — Scalar, Row, and Table Subqueries",⬜ To-Do
+57,Data Handling & SQL,"SQL: Window Functions — ROW_NUMBER, RANK, DENSE_RANK",⬜ To-Do
+58,Data Handling & SQL,"SQL: LEAD, LAG, and Running Totals with Windows",⬜ To-Do
+59,Data Handling & SQL,"SQL: CASE WHEN, COALESCE, and NULL Handling",⬜ To-Do
+60,Data Handling & SQL,SQL Interview Practice: 10 Real SQL Challenges,⬜ To-Do
+61,Data Handling & SQL,"Pandas: Loading CSV, Excel, and JSON Files",⬜ To-Do
+62,Data Handling & SQL,"Pandas: Head, Tail, Info, Describe — Data Audit",⬜ To-Do
+63,Data Handling & SQL,Pandas: Selection with .loc and .iloc,⬜ To-Do
+64,Data Handling & SQL,Pandas: Filtering DataFrames with Boolean Logic,⬜ To-Do
+65,Data Handling & SQL,"Pandas: Adding, Renaming, and Dropping Columns",⬜ To-Do
+66,Data Handling & SQL,"Pandas: Handling Missing Data — fillna, dropna, Imputation",⬜ To-Do
+67,Data Handling & SQL,Pandas: Handling Duplicates and Data Type Conversion,⬜ To-Do
+68,Data Handling & SQL,Pandas: String Methods and Datetime Parsing,⬜ To-Do
+69,Data Handling & SQL,"Pandas: GroupBy, Aggregation, and Multi-Indexing",⬜ To-Do
+70,Data Handling & SQL,"Pandas: Pivot Tables, Melt, and Reshaping Data",⬜ To-Do
+71,Data Handling & SQL,Pandas: Merging and Joining DataFrames (SQL-style),⬜ To-Do
+72,Data Handling & SQL,"Pandas: Apply, Lambda, and Custom Transformations",⬜ To-Do
+73,Data Handling & SQL,EDA Project: Business Case Dataset Analysis (E-commerce),⬜ To-Do
+74,Data Handling & SQL,EDA Project: Customer Behavior Insights with Plots,⬜ To-Do
+75,Data Handling & SQL,"Matplotlib and Seaborn: Charts, Heatmaps, and Styling",⬜ To-Do
+76,Data Handling & SQL,Pandas: Time Series Basics and Resampling,⬜ To-Do
+77,Data Handling & SQL,EDA Mini-Project: HR Attrition Dataset Deep Dive,⬜ To-Do
+78,Data Handling & SQL,EDA Mini-Project: Write Insights Report from Real Data,⬜ To-Do
+79,Data Handling & SQL,Data Handling Capstone: Clean and Analyze a 10K-Row Dataset,⬜ To-Do
+80,Data Handling & SQL,Data Handling Review: SQL + Pandas Interview Q&A Day,⬜ To-Do
+81,Machine Learning Core,"Stats: Mean, Median, Mode, and Measures of Central Tendency",⬜ To-Do
+82,Machine Learning Core,"Stats: Variance, Standard Deviation, and Data Spread",⬜ To-Do
+83,Machine Learning Core,Stats: Normal Distribution and Z-Scores,⬜ To-Do
+84,Machine Learning Core,"Stats: Correlation, Covariance, and Scatter Plots",⬜ To-Do
+85,Machine Learning Core,Stats: Probability Basics and Bayes Theorem Intuition,⬜ To-Do
+86,Machine Learning Core,Stats: Hypothesis Testing and p-Values,⬜ To-Do
+87,Machine Learning Core,"Math: Vectors, Matrices, and Linear Algebra Essentials",⬜ To-Do
+88,Machine Learning Core,Math: Gradient Descent — The Optimization Engine,⬜ To-Do
+89,Machine Learning Core,"Math: Cost Functions, Convexity, and Learning Rate",⬜ To-Do
+90,Machine Learning Core,ML: What is Machine Learning? Types and Workflow,⬜ To-Do
+91,Machine Learning Core,ML: Train-Test Split and the Danger of Data Leakage,⬜ To-Do
+92,Machine Learning Core,ML: Feature Scaling — StandardScaler vs MinMaxScaler,⬜ To-Do
+93,Machine Learning Core,ML: Encoding Categorical Variables — Label vs OneHot,⬜ To-Do
+94,Machine Learning Core,Regression: Simple Linear Regression with scikit-learn,⬜ To-Do
+95,Machine Learning Core,Regression: Multiple Linear Regression and Feature Selection,⬜ To-Do
+96,Machine Learning Core,"Regression: R-Squared, Adjusted R², and Residual Analysis",⬜ To-Do
+97,Machine Learning Core,Regression: Polynomial Regression and Overfitting,⬜ To-Do
+98,Machine Learning Core,Regression: Ridge and Lasso Regularization,⬜ To-Do
+99,Machine Learning Core,Classification: Logistic Regression — Theory and Code,⬜ To-Do
+100,Machine Learning Core,Classification: Decision Boundaries and Threshold Tuning,⬜ To-Do
+101,Machine Learning Core,Classification: K-Nearest Neighbors (KNN) Algorithm,⬜ To-Do
+102,Machine Learning Core,Classification: Naive Bayes for Text and Tabular Data,⬜ To-Do
+103,Machine Learning Core,Classification: Support Vector Machines (SVM) Basics,⬜ To-Do
+104,Machine Learning Core,"Evaluation: Confusion Matrix — TP, TN, FP, FN",⬜ To-Do
+105,Machine Learning Core,"Evaluation: Precision, Recall, and the F1-Score",⬜ To-Do
+106,Machine Learning Core,Evaluation: ROC Curve and AUC Score,⬜ To-Do
+107,Machine Learning Core,Evaluation: Cross-Validation and K-Fold Strategies,⬜ To-Do
+108,Machine Learning Core,Evaluation: Bias-Variance Tradeoff Explained,⬜ To-Do
+109,Machine Learning Core,Trees: Decision Trees — Gini Impurity and Entropy,⬜ To-Do
+110,Machine Learning Core,Trees: Visualizing and Pruning Decision Trees,⬜ To-Do
+111,Machine Learning Core,Ensembles: Random Forest — Bagging in Action,⬜ To-Do
+112,Machine Learning Core,Ensembles: Feature Importance and Model Interpretation,⬜ To-Do
+113,Machine Learning Core,Boosting: Gradient Boosting Machines (GBM) Explained,⬜ To-Do
+114,Machine Learning Core,"Boosting: XGBoost — Install, Train, and Tune",⬜ To-Do
+115,Machine Learning Core,Boosting: LightGBM and CatBoost for Production Use,⬜ To-Do
+116,Machine Learning Core,Hyperparameters: GridSearchCV vs RandomizedSearchCV,⬜ To-Do
+117,Machine Learning Core,Pipelines: Building sklearn Pipelines for Clean ML Code,⬜ To-Do
+118,Machine Learning Core,Feature Engineering: Creating New Features from Data,⬜ To-Do
+119,Machine Learning Core,Feature Engineering: Handling Imbalanced Datasets (SMOTE),⬜ To-Do
+120,Machine Learning Core,Unsupervised: K-Means Clustering,⬜ To-Do
+121,Machine Learning Core,Unsupervised: Dimensionality Reduction with PCA,⬜ To-Do
+122,Machine Learning Core,ML Mini-Project: Predict House Prices End-to-End,⬜ To-Do
+123,Machine Learning Core,ML Mini-Project: Credit Card Fraud Detection,⬜ To-Do
+124,Machine Learning Core,ML Mini-Project: Employee Attrition Prediction,⬜ To-Do
+125,Machine Learning Core,Scikit-learn: Saving and Loading Models (Joblib/Pickle),⬜ To-Do
+126,Machine Learning Core,"ML Capstone: Full Pipeline — Clean, Train, Evaluate, Save",⬜ To-Do
+127,Machine Learning Core,ML Core Review: 20 Interview Questions Practice Day,⬜ To-Do
+128,Machine Learning Core,ML Core Review: Whiteboard a Model Pipeline from Scratch,⬜ To-Do
+129,Machine Learning Core,ML Core Review: Compare 5 Models on Same Dataset,⬜ To-Do
+130,Machine Learning Core,ML Core Review: Write a Technical Blog Post on Your Model,⬜ To-Do
+131,Deep Learning & Applied AI,DL: The Biological vs. Artificial Neuron,⬜ To-Do
+132,Deep Learning & Applied AI,"DL: Weights, Biases, and Activation Functions (ReLU, Sigmoid)",⬜ To-Do
+133,Deep Learning & Applied AI,DL: Forward Propagation Step-by-Step,⬜ To-Do
+134,Deep Learning & Applied AI,"DL: Loss Functions — MSE, Cross-Entropy, and When to Use",⬜ To-Do
+135,Deep Learning & Applied AI,DL: Backpropagation and Gradient Flow,⬜ To-Do
+136,Deep Learning & Applied AI,"DL: Optimizers — SGD, Momentum, Adam",⬜ To-Do
+137,Deep Learning & Applied AI,TensorFlow/Keras: Installing and First Neural Network,⬜ To-Do
+138,Deep Learning & Applied AI,Keras: Sequential vs Functional API,⬜ To-Do
+139,Deep Learning & Applied AI,"Keras: Compiling with Loss, Optimizer, and Metrics",⬜ To-Do
+140,Deep Learning & Applied AI,Keras: Callbacks — EarlyStopping and ModelCheckpoint,⬜ To-Do
+141,Deep Learning & Applied AI,"DL: Regularization — L2, Dropout, and Batch Normalization",⬜ To-Do
+142,Deep Learning & Applied AI,"DL: Hyperparameter Tuning — Batch Size, LR, Epochs",⬜ To-Do
+143,Deep Learning & Applied AI,DL Project: Binary Classification on Tabular Data,⬜ To-Do
+144,Deep Learning & Applied AI,CNN: How Computers See Pixels — Image as Matrix,⬜ To-Do
+145,Deep Learning & Applied AI,"CNN: Convolutional Layers, Kernels, and Feature Maps",⬜ To-Do
+146,Deep Learning & Applied AI,"CNN: Pooling, Padding, Stride, and Architecture Design",⬜ To-Do
+147,Deep Learning & Applied AI,CNN Project: MNIST Handwritten Digit Classifier,⬜ To-Do
+148,Deep Learning & Applied AI,CNN: Transfer Learning with VGG16/ResNet (Pretrained Models),⬜ To-Do
+149,Deep Learning & Applied AI,CNN Project: Image Classification App with Pretrained Model,⬜ To-Do
+150,Deep Learning & Applied AI,"NLP: Text Preprocessing — Tokenization, Stopwords, Stemming",⬜ To-Do
+151,Deep Learning & Applied AI,NLP: Bag of Words and TF-IDF Vectorization,⬜ To-Do
+152,Deep Learning & Applied AI,NLP: Word Embeddings — Word2Vec and GloVe Intuition,⬜ To-Do
+153,Deep Learning & Applied AI,NLP: Text Classification with TF-IDF + Logistic Regression,⬜ To-Do
+154,Deep Learning & Applied AI,NLP: Sentiment Analysis Project — Product Reviews,⬜ To-Do
+155,Deep Learning & Applied AI,NLP: Intro to HuggingFace Transformers and Pretrained Models,⬜ To-Do
+156,Deep Learning & Applied AI,Applied AI: Using Pretrained Models for Real-World Tasks,⬜ To-Do
+157,Deep Learning & Applied AI,Applied AI: Model Optimization — Quantization and Pruning Basics,⬜ To-Do
+158,Deep Learning & Applied AI,Applied AI: Building an Inference Pipeline (Preprocessing → Predict → Postprocess),⬜ To-Do
+159,Deep Learning & Applied AI,Applied AI: When to Use ML vs DL — Decision Framework,⬜ To-Do
+160,Deep Learning & Applied AI,DL Mini-Project: Text Classification App End-to-End,⬜ To-Do
+161,Deep Learning & Applied AI,DL Mini-Project: Image Classifier with Streamlit Demo,⬜ To-Do
+162,Deep Learning & Applied AI,DL Capstone: Choose a Problem → Train → Deploy a Model,⬜ To-Do
+163,Deep Learning & Applied AI,DL & Applied AI Review: 15 Interview Questions Practice,⬜ To-Do
+164,Deep Learning & Applied AI,DL Review: Explain CNN Architecture to a Non-Technical PM,⬜ To-Do
+165,Deep Learning & Applied AI,DL Review: Compare TensorFlow vs PyTorch in a Short Report,⬜ To-Do
+166,Backend & AI Engineering,"Web Basics: HTTP Methods — GET, POST, PUT, DELETE",⬜ To-Do
+167,Backend & AI Engineering,"FastAPI: Setup, Uvicorn, and Your First Endpoint",⬜ To-Do
+168,Backend & AI Engineering,FastAPI: Path Parameters vs Query Parameters,⬜ To-Do
+169,Backend & AI Engineering,"FastAPI: Request Body, JSON Handling, and Response Models",⬜ To-Do
+170,Backend & AI Engineering,FastAPI: Auto-Generated /docs (Swagger UI),⬜ To-Do
+171,Backend & AI Engineering,"Pydantic: Data Models, Field Validation, and Custom Validators",⬜ To-Do
+172,Backend & AI Engineering,FastAPI: Dependency Injection and Middleware,⬜ To-Do
+173,Backend & AI Engineering,FastAPI: Async/Await and Background Tasks,⬜ To-Do
+174,Backend & AI Engineering,FastAPI Project: Build a /predict Endpoint for ML Model,⬜ To-Do
+175,Backend & AI Engineering,Model Serving: Preprocessing Data Inside the API,⬜ To-Do
+176,Backend & AI Engineering,Model Serving: Structured JSON Responses and Error Handling,⬜ To-Do
+177,Backend & AI Engineering,Model Serving: Input Schema Validation with Pydantic,⬜ To-Do
+178,Backend & AI Engineering,FastAPI: Authentication Basics — API Keys and OAuth2,⬜ To-Do
+179,Backend & AI Engineering,"FastAPI: Logging, Environment Variables, and Config Management",⬜ To-Do
+180,Backend & AI Engineering,FastAPI: Basic Database Integration with SQLAlchemy,⬜ To-Do
+181,Backend & AI Engineering,Docker: Containers vs VMs — Why Docker Matters,⬜ To-Do
+182,Backend & AI Engineering,Docker: Writing Your First Dockerfile for a Python API,⬜ To-Do
+183,Backend & AI Engineering,"Docker: Building Images, Running Containers, and Port Mapping",⬜ To-Do
+184,Backend & AI Engineering,Docker: Environment Variables and docker-compose.yml,⬜ To-Do
+185,Backend & AI Engineering,Docker Project: Containerize Your FastAPI ML App,⬜ To-Do
+186,Backend & AI Engineering,Testing: Unit Tests with Pytest — Writing Your First Tests,⬜ To-Do
+187,Backend & AI Engineering,Testing: Mocking External APIs and Model Predictions,⬜ To-Do
+188,Backend & AI Engineering,Testing: Integration Testing — Testing the Full API Flow,⬜ To-Do
+189,Backend & AI Engineering,"Git Advanced: Branching, Merging, and Resolving Conflicts",⬜ To-Do
+190,Backend & AI Engineering,"GitHub: Pull Requests, Code Reviews, and GitHub Actions Intro",⬜ To-Do
+191,Backend & AI Engineering,Engineering Mini-Project: Full API + Docker + Tests Pipeline,⬜ To-Do
+192,Backend & AI Engineering,Engineering: Caching Predictions with Redis Basics,⬜ To-Do
+193,Backend & AI Engineering,Engineering: Rate Limiting and API Security Best Practices,⬜ To-Do
+194,Backend & AI Engineering,Engineering: Building a Health Check and Status Dashboard,⬜ To-Do
+195,Backend & AI Engineering,Backend & AI Engineering Review: System Design Discussion,⬜ To-Do
+196,Deployment & MLOps,Cloud: Intro to AWS vs GCP vs Azure — Which to Learn,⬜ To-Do
+197,Deployment & MLOps,Deployment: Deploy a FastAPI App to Render/Railway,⬜ To-Do
+198,Deployment & MLOps,Deployment: Deploy to AWS EC2 with Docker,⬜ To-Do
+199,Deployment & MLOps,Deployment: Environment Variables and Secrets in Production,⬜ To-Do
+200,Deployment & MLOps,CI/CD: GitHub Actions — Auto-Deploy on Push,⬜ To-Do
+201,Deployment & MLOps,CI/CD: Building a Test + Lint + Deploy Pipeline,⬜ To-Do
+202,Deployment & MLOps,MLflow: Experiment Tracking — Setup and First Experiment,⬜ To-Do
+203,Deployment & MLOps,"MLflow: Logging Parameters, Metrics, and Artifacts",⬜ To-Do
+204,Deployment & MLOps,MLflow: Model Registry and Version Management,⬜ To-Do
+205,Deployment & MLOps,DVC: Data Version Control — Track Large Datasets,⬜ To-Do
+206,Deployment & MLOps,Monitoring: Model Performance Metrics in Production,⬜ To-Do
+207,Deployment & MLOps,Monitoring: Detecting Data Drift and Concept Drift,⬜ To-Do
+208,Deployment & MLOps,MLOps: Model Retraining Strategy and Automation Concepts,⬜ To-Do
+209,Deployment & MLOps,MLOps: Latency vs Accuracy — Production Tradeoffs,⬜ To-Do
+210,Deployment & MLOps,Streamlit: Building Interactive ML Dashboards,⬜ To-Do
+211,Deployment & MLOps,Streamlit: File Uploader + Model Prediction UI,⬜ To-Do
+212,Deployment & MLOps,Streamlit: Connecting a Streamlit Frontend to FastAPI,⬜ To-Do
+213,Deployment & MLOps,Deployment: Hosting Streamlit on Community Cloud,⬜ To-Do
+214,Deployment & MLOps,Gradio: Quick ML Demos for HuggingFace Spaces,⬜ To-Do
+215,Deployment & MLOps,Deployment & MLOps Review: Architecture Design Discussion,⬜ To-Do
+216,Portfolio Projects,Project 1: Customer Churn — Problem Statement and Dataset,⬜ To-Do
+217,Portfolio Projects,Project 1: Churn — Exploratory Data Analysis,⬜ To-Do
+218,Portfolio Projects,Project 1: Churn — Feature Engineering and Preprocessing,⬜ To-Do
+219,Portfolio Projects,Project 1: Churn — Model Training and Evaluation,⬜ To-Do
+220,Portfolio Projects,Project 1: Churn — Hyperparameter Tuning and Final Model,⬜ To-Do
+221,Portfolio Projects,Project 1: Churn — FastAPI Prediction Endpoint,⬜ To-Do
+222,Portfolio Projects,Project 1: Churn — Streamlit UI and Demo,⬜ To-Do
+223,Portfolio Projects,"Project 1: Churn — Docker, Deploy, and GitHub README",⬜ To-Do
+224,Portfolio Projects,Project 2: Resume Screening NLP — Problem and Dataset,⬜ To-Do
+225,Portfolio Projects,Project 2: Resume Screening — Text Preprocessing and EDA,⬜ To-Do
+226,Portfolio Projects,Project 2: Resume Screening — TF-IDF and Model Training,⬜ To-Do
+227,Portfolio Projects,Project 2: Resume Screening — Ranking Logic and API,⬜ To-Do
+228,Portfolio Projects,"Project 2: Resume Screening — UI, Deploy, and README",⬜ To-Do
+229,Portfolio Projects,Project 3: Sales Forecasting — Problem and Time-Series Data,⬜ To-Do
+230,Portfolio Projects,Project 3: Sales Forecasting — EDA and Feature Engineering,⬜ To-Do
+231,Portfolio Projects,Project 3: Sales Forecasting — Model Training and Evaluation,⬜ To-Do
+232,Portfolio Projects,Project 3: Sales Forecasting — Dashboard and Deployment,⬜ To-Do
+233,Portfolio Projects,Project 3: Sales Forecasting — Business Insights and README,⬜ To-Do
+234,Portfolio Projects,Portfolio: GitHub Profile Cleanup and Project Pinning,⬜ To-Do
+235,Portfolio Projects,Portfolio: Writing Resume Bullets for Each Project,⬜ To-Do
+236,Interview & Job Launch,Interview Prep: Top 20 Python Coding Questions,⬜ To-Do
+237,Interview & Job Launch,Interview Prep: Top 15 SQL Interview Challenges,⬜ To-Do
+238,Interview & Job Launch,Interview Prep: ML Theory and System Design Questions,⬜ To-Do
+239,Interview & Job Launch,Interview Prep: Project Walkthrough and HR Questions,⬜ To-Do
+240,Interview & Job Launch,"Job Launch: Resume Polish, LinkedIn Posts, and Apply Strategy",⬜ To-Do

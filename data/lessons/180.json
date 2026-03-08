@@ -1,0 +1,22 @@
+{
+  "id": 180,
+  "title": "FastAPI: Basic Database Integration with SQLAlchemy",
+  "content": "### Day 180: FastAPI: Basic Database Integration with SQLAlchemy\n\nAPIs are how ML models reach users. No company deploys Jupyter notebooks. FastAPI is the modern Python framework for ML APIs.\n\n**Key Concepts:**\n- **FastAPI:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Basic Database Integration with SQLAlchemy:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 180: FastAPI: Basic Database Integration with SQLAlchemy\n\"\"\"\nBackend Engineering: Basic Database Integration with SQLAlchemy\n\nKey concepts:\n1. FastAPI\\n2. Basic Database Integration with SQLAlchemy\n\"\"\"\n\nprint(\"Day 180: FastAPI: Basic Database Integration with SQLAlchemy\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Basic Database Integration with SQLAlchemy\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain FastAPI in your own words with a real-world example.",
+    "How would you use FastAPI in a product company project?",
+    "Write working code that demonstrates Basic Database Integration with SQLAlchemy.",
+    "What interview questions could be asked about FastAPI?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "FastAPI",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "FastAPI: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Basic Database Integration with SQLAlchemy: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

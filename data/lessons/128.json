@@ -1,0 +1,22 @@
+{
+  "id": 128,
+  "title": "ML Core Review: Whiteboard a Model Pipeline from Scratch",
+  "content": "### Day 128: ML Core Review: Whiteboard a Model Pipeline from Scratch\n\nProduct companies want engineers who own the entire pipeline: data → features → model → evaluation → deployment.\n\n**Key Concepts:**\n- **ML Core Review:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Whiteboard a Model Pipeline from Scratch:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 128: ML Core Review: Whiteboard a Model Pipeline from Scratch\nimport numpy as np\nfrom sklearn.model_selection import train_test_split\n\n# Today's topic: Whiteboard a Model Pipeline from Scratch\nprint(\"Day 128: ML Core Review: Whiteboard a Model Pipeline from Scratch\")\nprint(\"Phase: Machine Learning Core\")\n\n# Generate sample data\nnp.random.seed(42)\nX = np.random.randn(200, 5)\ny = (X[:, 0] + X[:, 1] * 0.5 > 0).astype(int)\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\nprint(f\"Train: {X_train.shape}, Test: {X_test.shape}\")\nprint(f\"Target distribution: {np.bincount(y_train)}\")\n\n# YOUR TASK: Implement today's concept here\n# Key areas: ML Core Review, Whiteboard a Model Pipeline from Scratch",
+  "practiceQuestions": [
+    "Explain ML Core Review in your own words with a real-world example.",
+    "How would you use ML Core Review in a product company project?",
+    "Write working code that demonstrates Whiteboard a Model Pipeline from Scratch.",
+    "What interview questions could be asked about ML Core Review?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "ML Core Review",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "ML Core Review: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Whiteboard a Model Pipeline from Scratch: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

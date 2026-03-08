@@ -1,0 +1,22 @@
+{
+  "id": 193,
+  "title": "Engineering: Rate Limiting and API Security Best Practices",
+  "content": "### Day 193: Engineering: Rate Limiting and API Security Best Practices\n\nAPIs are how ML models reach users. No company deploys Jupyter notebooks. FastAPI is the modern Python framework for ML APIs.\n\n**Key Concepts:**\n- **Engineering:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Rate Limiting and API Security Best Practices:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 193: Engineering: Rate Limiting and API Security Best Practices\n\"\"\"\nBackend Engineering: Rate Limiting and API Security Best Practices\n\nKey concepts:\n1. Engineering\\n2. Rate Limiting and API Security Best Practices\n\"\"\"\n\nprint(\"Day 193: Engineering: Rate Limiting and API Security Best Practices\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Rate Limiting and API Security Best Practices\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain Engineering in your own words with a real-world example.",
+    "How would you use Engineering in a product company project?",
+    "Write working code that demonstrates Rate Limiting and API Security Best Practices.",
+    "What interview questions could be asked about Engineering?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Engineering",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Engineering: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Rate Limiting and API Security Best Practices: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

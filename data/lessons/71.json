@@ -1,0 +1,22 @@
+{
+  "id": 71,
+  "title": "Pandas: Merging and Joining DataFrames (SQL-style)",
+  "content": "### Day 71: Pandas: Merging and Joining DataFrames (SQL-style)\n\nSQL is tested in every data role interview. Master this concept to ace the SQL round.\n\n**Key Concepts:**\n- **Pandas:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Merging and Joining DataFrames (SQL-style):** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 71: Pandas: Merging and Joining DataFrames (SQL-style)\n# Phase: Data Handling & SQL\n\nprint(\"Day 71: Pandas: Merging and Joining DataFrames (SQL-style)\")\nprint(\"Phase: Data Handling & SQL\")\n\n# Key concepts to practice:\n# 1. Pandas\\n# 2. Merging and Joining DataFrames (SQL-style)\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain Pandas in your own words with a real-world example.",
+    "How would you use Pandas in a product company project?",
+    "Write working code that demonstrates Merging and Joining DataFrames (SQL-style).",
+    "What interview questions could be asked about Pandas?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Pandas",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Pandas: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Merging and Joining DataFrames (SQL-style): Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "title": "Python Developer Interview Prep",
+  "url": "https://docs.python.org/3/tutorial/index.html",
+  "content": "### Crack the Interview: Python Developer Edition\n\nDirectly referenced from the **Official Python Documentation**, this comprehensive tutorial is designed to prepare you for technical interviews. We bypass generic high-level overviews and jump straight into core mechanics, edge cases, and algorithmic thinking expected in Big Tech interviews.\n\n**Theory: Variables & Memory Management**\n- **Core Concept:** In Python, variables are not 'containers' that store values; they are **labels or references** pointing to objects in memory.\n- **Application:** Knowing the difference between mutable (lists, dicts) and immutable (strings, ints) types is the #1 most frequently asked interview question regarding Python's core behavior.\n- **Interview Trick:** When an interviewer asks what happens when you pass a list to a function and modify it inside, you must explain that lists are passed by *object reference*, meaning the original list is permanently altered.",
+  "codeExample": "# 💡 Crack the Interview: Variable References & Mutability\nx = 10\ny = x\nx += 1\n# Question: What is y?\n# Answer: y is still 10, because integers are immutable. x was pointed to a new object (11).\n\nlist_a = [1, 2, 3]\nlist_b = list_a\nlist_a.append(4)\n# Question: What is list_b?\n# Answer: list_b is [1, 2, 3, 4], because both labels point to the exact same memory object.",
+  "practiceQuestions": [
+    "Explain the difference between '==' and 'is' in Python.",
+    "What is a Generator? How does the 'yield' keyword differ from 'return'?",
+    "Explain the Global Interpreter Lock (GIL) and how it affects multi-threading."
+  ],
+  "keywords": [
+    "Memory Management",
+    "Mutability",
+    "References",
+    "Big Tech Prep"
+  ],
+  "keyTakeaways": [
+    "Variables are memory references, not buckets.",
+    "Lists and Dictionaries are mutable; Strings and Integers are immutable.",
+    "Never use mutable default arguments in Python function definitions."
+  ]
+}

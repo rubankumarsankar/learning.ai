@@ -1,0 +1,23 @@
+{
+  "id": 232,
+  "title": "Project 3: Sales Forecasting — Dashboard and Deployment",
+  "content": "### Day 232: Project 3: Sales Forecasting — Dashboard and Deployment\n\n**Sales Forecasting Dashboard** — Retail needs accurate demand forecasts. Build a time-series model with interactive dashboard.\n\n**Key Concepts:**\n- **Project 3:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Sales Forecasting:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Dashboard and Deployment:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 232: Project 3: Sales Forecasting — Dashboard and Deployment\n# Project: Sales Forecasting\n\"\"\"\nToday's task: Sales Forecasting — Dashboard and Deployment\n\nProject structure:\nsales_forecasting/\n├── data/\n├── notebooks/\n├── src/\n│   ├── data_processing.py\n│   ├── model.py\n│   └── api.py\n├── tests/\n├── Dockerfile\n└── README.md\n\"\"\"\nprint(\"Day 232: Project 3: Sales Forecasting — Dashboard and Deployment\")\nprint(\"Project: Sales Forecasting\")",
+  "practiceQuestions": [
+    "Explain Project 3 in your own words with a real-world example.",
+    "How would you use Project 3 in a product company project?",
+    "Write working code that demonstrates Sales Forecasting — Dashboard and Deployment.",
+    "What interview questions could be asked about Project 3?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Project 3",
+    "Sales Forecasting",
+    "Dashboard and Deployment"
+  ],
+  "keyTakeaways": [
+    "Project 3: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Sales Forecasting: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Dashboard and Deployment: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

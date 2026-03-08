@@ -1,0 +1,23 @@
+{
+  "id": 64,
+  "title": "Pandas: Filtering DataFrames with Boolean Logic",
+  "content": "### Day 64: Pandas: Filtering DataFrames with Boolean Logic\n\n**Boolean Filtering** — the most common Pandas operation:\n```python\ndf[df['salary'] > 100000]           # single condition\ndf[(df['age'] > 25) & (df['dept'] == 'Eng')]  # multiple\n```\n\n**Operators:** `&` (and), `|` (or), `~` (not). Always use parentheses!",
+  "codeExample": "# Day 64: Pandas: Filtering DataFrames with Boolean Logic\nimport pandas as pd\n\ndf = pd.DataFrame({\n    'name': ['Alice','Bob','Carol','Dave','Eve'],\n    'age': [28, 32, 26, 45, 29],\n    'salary': [120000, 80000, 95000, 110000, 87000],\n    'dept': ['Eng','Mkt','Eng','Mkt','Eng']\n})\n\n# Single condition\nhigh_earners = df[df['salary'] > 100000]\nprint(\"High earners:\\n\", high_earners)\n\n# Multiple conditions (use & and parentheses!)\nyoung_eng = df[(df['age'] < 30) & (df['dept'] == 'Eng')]\nprint(\"\\nYoung engineers:\\n\", young_eng)\n\n# isin()\nselected = df[df['dept'].isin(['Eng', 'Data'])]\nprint(\"\\nEng/Data:\\n\", selected)\n\n# String contains\ndf2 = df[df['name'].str.startswith('A')]\nprint(\"\\nNames starting with A:\\n\", df2)",
+  "practiceQuestions": [
+    "How to filter DataFrame rows?",
+    "Why use parentheses with & and |?",
+    "Filter: age > 30 AND salary > 90000.",
+    "How does isin() work?"
+  ],
+  "keywords": [
+    "Boolean Filtering",
+    "Operators",
+    "Pandas",
+    "Filtering"
+  ],
+  "keyTakeaways": [
+    "Review the provided code sandbox to understand execution flow.",
+    "Attempt all practice questions without looking at the answers.",
+    "Reference the Crack the Interview library for deeper technical syntax."
+  ]
+}

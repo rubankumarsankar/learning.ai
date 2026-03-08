@@ -1,0 +1,23 @@
+{
+  "id": 126,
+  "title": "ML Capstone: Full Pipeline — Clean, Train, Evaluate, Save",
+  "content": "### Day 126: ML Capstone: Full Pipeline — Clean, Train, Evaluate, Save\n\nProduct companies want engineers who own the entire pipeline: data → features → model → evaluation → deployment.\n\n**Key Concepts:**\n- **ML Capstone:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Full Pipeline:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Clean:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Train:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Evaluate:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Save:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 126: ML Capstone: Full Pipeline — Clean, Train, Evaluate, Save\nimport numpy as np\nfrom sklearn.model_selection import train_test_split\n\n# Today's topic: Full Pipeline — Clean, Train, Evaluate, Save\nprint(\"Day 126: ML Capstone: Full Pipeline — Clean, Train, Evaluate, Save\")\nprint(\"Phase: Machine Learning Core\")\n\n# Generate sample data\nnp.random.seed(42)\nX = np.random.randn(200, 5)\ny = (X[:, 0] + X[:, 1] * 0.5 > 0).astype(int)\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\nprint(f\"Train: {X_train.shape}, Test: {X_test.shape}\")\nprint(f\"Target distribution: {np.bincount(y_train)}\")\n\n# YOUR TASK: Implement today's concept here\n# Key areas: ML Capstone, Full Pipeline, Clean, Train, Evaluate, Save",
+  "practiceQuestions": [
+    "Explain ML Capstone in your own words with a real-world example.",
+    "How would you use ML Capstone in a product company project?",
+    "Write working code that demonstrates Full Pipeline — Clean, Train, Evaluate, Save.",
+    "What interview questions could be asked about ML Capstone?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "ML Capstone",
+    "Full Pipeline",
+    "Clean"
+  ],
+  "keyTakeaways": [
+    "ML Capstone: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Full Pipeline: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Clean: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

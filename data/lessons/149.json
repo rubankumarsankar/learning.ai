@@ -1,0 +1,23 @@
+{
+  "id": 149,
+  "title": "CNN Project: Image Classification App with Pretrained Model",
+  "content": "### Day 149: CNN Project: Image Classification App with Pretrained Model\n\n**Transfer Learning:** Use a model pretrained on millions of images (ImageNet) and fine-tune on your small dataset.\n- Freeze base layers → train only top layers\n- Much less data needed (100s vs millions)\n- Popular: VGG16, ResNet50, MobileNet",
+  "codeExample": "# Day 149: CNN Project: Image Classification App with Pretrained Model\n# Transfer Learning with Pretrained Model\ntry:\n    from tensorflow.keras.applications import MobileNetV2\n    from tensorflow.keras.layers import Dense, GlobalAveragePooling2D\n    from tensorflow.keras.models import Model\n\n    # Load pretrained model (without top classification layer)\n    base = MobileNetV2(weights='imagenet', include_top=False, input_shape=(224,224,3))\n    base.trainable = False  # Freeze base layers\n\n    # Add custom classification head\n    x = GlobalAveragePooling2D()(base.output)\n    x = Dense(128, activation='relu')(x)\n    output = Dense(5, activation='softmax')(x)  # 5 classes\n    model = Model(inputs=base.input, outputs=output)\n\n    model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])\n    print(f\"Total params: {model.count_params():,}\")\n    print(f\"Trainable: {sum(p.numpy().size for p in model.trainable_weights):,}\")\nexcept ImportError:\n    print(\"Install: pip install tensorflow\")",
+  "practiceQuestions": [
+    "What is transfer learning?",
+    "Why freeze base layers?",
+    "How much data needed?",
+    "Popular pretrained models?"
+  ],
+  "keywords": [
+    "Transfer Learning",
+    "Project",
+    "Image",
+    "Classification"
+  ],
+  "keyTakeaways": [
+    "Freeze base layers → train only top layers",
+    "Much less data needed (100s vs millions)",
+    "Popular: VGG16, ResNet50, MobileNet"
+  ]
+}

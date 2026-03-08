@@ -1,0 +1,23 @@
+{
+  "id": 111,
+  "title": "Ensembles: Random Forest — Bagging in Action",
+  "content": "### Day 111: Ensembles: Random Forest — Bagging in Action\n\n**Random Forest:** Ensemble of decision trees using bagging.\n- Each tree trained on random subset of data AND features\n- Final prediction = majority vote (classification) or average (regression)\n- Reduces overfitting vs single tree",
+  "codeExample": "# Day 111: Ensembles: Random Forest — Bagging in Action\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import accuracy_score\nimport numpy as np\n\nnp.random.seed(42)\nX = np.random.randn(300, 10)\ny = (X[:, 0] + X[:, 1] - X[:, 2] > 0).astype(int)\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n\n# Compare number of trees\nfor n in [1, 10, 50, 100, 200]:\n    model = RandomForestClassifier(n_estimators=n, random_state=42)\n    model.fit(X_train, y_train)\n    acc = accuracy_score(y_test, model.predict(X_test))\n    print(f\"Trees={n:3d}: Accuracy={acc:.3f}\")\n\n# Feature importance\nmodel = RandomForestClassifier(n_estimators=100, random_state=42).fit(X_train, y_train)\nfor i, imp in enumerate(model.feature_importances_):\n    bar = \"█\" * int(imp * 50)\n    print(f\"  Feature {i}: {imp:.3f} {bar}\")",
+  "practiceQuestions": [
+    "How does Random Forest work?",
+    "What is bagging?",
+    "Why does RF reduce overfitting?",
+    "How to read feature importance?"
+  ],
+  "keywords": [
+    "Random Forest",
+    "Ensembles",
+    "Random",
+    "Forest"
+  ],
+  "keyTakeaways": [
+    "Each tree trained on random subset of data AND features",
+    "Final prediction = majority vote (classification) or average (regression)",
+    "Reduces overfitting vs single tree"
+  ]
+}

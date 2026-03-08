@@ -1,0 +1,23 @@
+{
+  "id": 183,
+  "title": "Docker: Building Images, Running Containers, and Port Mapping",
+  "content": "### Day 183: Docker: Building Images, Running Containers, and Port Mapping\n\nDocker ensures your app runs identically everywhere. \"Works on my machine\" is not acceptable in production.\n\n**Key Concepts:**\n- **Docker:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Building Images:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Running Containers:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and Port Mapping:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 183: Docker: Building Images, Running Containers, and Port Mapping\n\"\"\"\nBackend Engineering: Building Images, Running Containers, and Port Mapping\n\nKey concepts:\n1. Docker\\n2. Building Images\\n3. Running Containers\\n4. and Port Mapping\n\"\"\"\n\nprint(\"Day 183: Docker: Building Images, Running Containers, and Port Mapping\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Building Images, Running Containers, and Port Mapping\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain Docker in your own words with a real-world example.",
+    "How would you use Docker in a product company project?",
+    "Write working code that demonstrates Building Images, Running Containers, and Port Mapping.",
+    "What interview questions could be asked about Docker?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Docker",
+    "Building Images",
+    "Running Containers"
+  ],
+  "keyTakeaways": [
+    "Docker: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Building Images: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Running Containers: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

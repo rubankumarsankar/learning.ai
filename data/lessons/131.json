@@ -1,0 +1,23 @@
+{
+  "id": 131,
+  "title": "DL: The Biological vs. Artificial Neuron",
+  "content": "### Day 131: DL: The Biological vs. Artificial Neuron\n\n**Artificial Neuron:** Inspired by biological neurons.\n- Input × Weight + Bias → Activation Function → Output\n- Activation functions: Sigmoid (0-1), ReLU (max(0,x)), Tanh (-1 to 1)\n- Multiple neurons = layer. Multiple layers = deep network.",
+  "codeExample": "# Day 131: DL: The Biological vs. Artificial Neuron\nimport numpy as np\n\n# Single neuron simulation\ndef sigmoid(z): return 1 / (1 + np.exp(-z))\ndef relu(z): return np.maximum(0, z)\n\n# Neuron: inputs × weights + bias\ninputs = np.array([0.5, 0.3, 0.8])\nweights = np.array([0.4, 0.7, 0.2])\nbias = 0.1\n\nz = np.dot(inputs, weights) + bias\nprint(f\"z = {z:.3f}\")\nprint(f\"Sigmoid: {sigmoid(z):.3f}\")\nprint(f\"ReLU: {relu(z):.3f}\")\n\n# Compare activations\nx = np.linspace(-5, 5, 11)\nprint(\"\\nx      | Sigmoid | ReLU\")\nfor xi in x:\n    print(f\"{xi:6.1f} | {sigmoid(xi):.3f}   | {relu(xi):.1f}\")",
+  "practiceQuestions": [
+    "How does an artificial neuron work?",
+    "What are activation functions?",
+    "ReLU vs Sigmoid: when to use each?",
+    "What happens without activation functions?"
+  ],
+  "keywords": [
+    "Artificial Neuron",
+    "Biological",
+    "Artificial",
+    "Neuron"
+  ],
+  "keyTakeaways": [
+    "Input × Weight + Bias → Activation Function → Output",
+    "Activation functions: Sigmoid (0-1), ReLU (max(0,x)), Tanh (-1 to 1)",
+    "Multiple neurons = layer. Multiple layers = deep network."
+  ]
+}

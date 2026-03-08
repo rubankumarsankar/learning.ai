@@ -1,0 +1,21 @@
+{
+  "id": 237,
+  "title": "Interview Prep: Top 15 SQL Interview Challenges",
+  "content": "### Day 237: Interview Prep: Top 15 SQL Interview Challenges\n\n**Top SQL Interview Challenges:**\n1. Second highest salary\n2. Employees earning more than manager\n3. Running totals\n4. Duplicate detection\n5. Customer with most orders",
+  "codeExample": "# Day 237: Interview Prep: Top 15 SQL Interview Challenges\n# SQL Interview Challenges\nsql = \"\"\"\n-- 1. Second highest salary\nSELECT MAX(salary) FROM employees\nWHERE salary < (SELECT MAX(salary) FROM employees);\n\n-- 2. Employees earning more than manager\nSELECT e.name FROM employees e\nJOIN employees m ON e.manager_id = m.id\nWHERE e.salary > m.salary;\n\n-- 3. Running total\nSELECT date, amount,\n  SUM(amount) OVER (ORDER BY date) AS running_total\nFROM sales;\n\n-- 4. Find duplicates\nSELECT email, COUNT(*) AS cnt\nFROM users GROUP BY email HAVING cnt > 1;\n\n-- 5. Nth highest salary\nSELECT salary FROM (\n  SELECT salary, DENSE_RANK() OVER (ORDER BY salary DESC) AS rnk\n  FROM employees\n) t WHERE rnk = 3;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "Find second highest salary.",
+    "Find duplicate emails.",
+    "Calculate running total.",
+    "Top 3 customers by spend."
+  ],
+  "keywords": [
+    "Interview",
+    "Prep",
+    "Challenges"
+  ],
+  "keyTakeaways": [
+    "Top SQL Interview Challenges:\n1.",
+    "Employees earning more than manager\n3."
+  ]
+}

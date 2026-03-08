@@ -1,0 +1,23 @@
+{
+  "id": 43,
+  "title": "NumPy: Mathematical and Statistical Operations",
+  "content": "### Day 43: NumPy: Mathematical and Statistical Operations\n\n**NumPy Math:** Element-wise operations without loops.\n- Arithmetic: `arr + 1`, `arr * 2`, `arr ** 2`\n- Stats: `np.mean()`, `np.std()`, `np.median()`\n- Aggregation: `np.sum()`, `np.min()`, `np.max()`\n- Axis: `axis=0` (columns), `axis=1` (rows)",
+  "codeExample": "# Day 43: NumPy: Mathematical and Statistical Operations\nimport numpy as np\n\narr = np.array([10, 20, 30, 40, 50])\n\n# Vectorized arithmetic\nprint(f\"arr * 2: {arr * 2}\")\nprint(f\"arr ** 2: {arr ** 2}\")\n\n# Statistics\nprint(f\"Mean: {np.mean(arr)}\")\nprint(f\"Std: {np.std(arr):.2f}\")\nprint(f\"Median: {np.median(arr)}\")\n\n# 2D axis operations\nmatrix = np.array([[1,2,3],[4,5,6],[7,8,9]])\nprint(f\"Sum all: {matrix.sum()}\")\nprint(f\"Sum cols: {matrix.sum(axis=0)}\")\nprint(f\"Sum rows: {matrix.sum(axis=1)}\")\nprint(f\"Max each row: {matrix.max(axis=1)}\")",
+  "practiceQuestions": [
+    "What are vectorized operations?",
+    "Difference between axis=0 and axis=1?",
+    "Calculate mean and std of an array.",
+    "Why is NumPy faster than Python loops?"
+  ],
+  "keywords": [
+    "NumPy Math",
+    "NumPy",
+    "Mathematical",
+    "Statistical"
+  ],
+  "keyTakeaways": [
+    "Arithmetic: `arr + 1`, `arr * 2`, `arr  2`",
+    "Stats: `np.mean()`, `np.std()`, `np.median()`",
+    "Aggregation: `np.sum()`, `np.min()`, `np.max()`"
+  ]
+}

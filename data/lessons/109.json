@@ -1,0 +1,22 @@
+{
+  "id": 109,
+  "title": "Trees: Decision Trees — Gini Impurity and Entropy",
+  "content": "### Day 109: Trees: Decision Trees — Gini Impurity and Entropy\n\n**Decision Tree:** Makes decisions by splitting data on features.\n- **Gini Impurity:** Measures how often randomly chosen element is misclassified\n- **Entropy:** Measures disorder/uncertainty (information theory)\n- Splits on feature that gives best information gain",
+  "codeExample": "# Day 109: Trees: Decision Trees — Gini Impurity and Entropy\nfrom sklearn.tree import DecisionTreeClassifier, export_text\nfrom sklearn.datasets import load_iris\nfrom sklearn.model_selection import train_test_split\n\ndata = load_iris()\nX_train, X_test, y_train, y_test = train_test_split(\n    data.data, data.target, test_size=0.2, random_state=42)\n\n# Gini criterion\ntree_gini = DecisionTreeClassifier(max_depth=3, criterion='gini', random_state=42)\ntree_gini.fit(X_train, y_train)\nprint(f\"Gini accuracy: {tree_gini.score(X_test, y_test):.2%}\")\n\n# Entropy criterion\ntree_ent = DecisionTreeClassifier(max_depth=3, criterion='entropy', random_state=42)\ntree_ent.fit(X_train, y_train)\nprint(f\"Entropy accuracy: {tree_ent.score(X_test, y_test):.2%}\")\n\n# Visualize tree rules\nprint(f\"\\nTree rules:\\n{export_text(tree_gini, feature_names=data.feature_names)}\")",
+  "practiceQuestions": [
+    "How does a decision tree split?",
+    "Gini vs Entropy?",
+    "What is information gain?",
+    "Why prune decision trees?"
+  ],
+  "keywords": [
+    "Decision Tree",
+    "Gini Impurity",
+    "Entropy"
+  ],
+  "keyTakeaways": [
+    "Gini Impurity: Measures how often randomly chosen element is misclassified",
+    "Entropy: Measures disorder/uncertainty (information theory)",
+    "Splits on feature that gives best information gain"
+  ]
+}

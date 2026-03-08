@@ -1,0 +1,22 @@
+{
+  "id": 174,
+  "title": "FastAPI Project: Build a /predict Endpoint for ML Model",
+  "content": "### Day 174: FastAPI Project: Build a /predict Endpoint for ML Model\n\n**ML API Pattern:**\n1. Load model at startup\n2. Define Pydantic schema for input\n3. Preprocess input in the endpoint\n4. Return prediction as JSON",
+  "codeExample": "# Day 174: FastAPI Project: Build a /predict Endpoint for ML Model\n# FastAPI ML Prediction Endpoint\nfrom fastapi import FastAPI\nfrom pydantic import BaseModel\nimport numpy as np\nimport joblib\n\napp = FastAPI()\n\nclass PredictRequest(BaseModel):\n    features: list[float]\n\nclass PredictResponse(BaseModel):\n    prediction: int\n    probability: float\n    status: str = \"success\"\n\n# Load model at startup\n# model = joblib.load(\"model.pkl\")\n\n@app.post(\"/predict\", response_model=PredictResponse)\ndef predict(req: PredictRequest):\n    features = np.array(req.features).reshape(1, -1)\n    # prediction = model.predict(features)[0]\n    # probability = model.predict_proba(features)[0].max()\n    prediction, probability = 1, 0.87  # placeholder\n    return PredictResponse(prediction=prediction, probability=probability)\n\nprint(\"ML API with /predict endpoint ready!\")",
+  "practiceQuestions": [
+    "How to serve ML model as API?",
+    "What is Pydantic?",
+    "Why load model at startup?",
+    "How to handle invalid input?"
+  ],
+  "keywords": [
+    "ML API Pattern",
+    "FastAPI",
+    "Project",
+    "Build"
+  ],
+  "keyTakeaways": [
+    "Define Pydantic schema for input\n3.",
+    "Preprocess input in the endpoint\n4."
+  ]
+}

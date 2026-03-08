@@ -1,0 +1,22 @@
+{
+  "id": 175,
+  "title": "Model Serving: Preprocessing Data Inside the API",
+  "content": "### Day 175: Model Serving: Preprocessing Data Inside the API\n\nAPIs are how ML models reach users. No company deploys Jupyter notebooks. FastAPI is the modern Python framework for ML APIs.\n\n**Key Concepts:**\n- **Model Serving:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Preprocessing Data Inside the API:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 175: Model Serving: Preprocessing Data Inside the API\n\"\"\"\nBackend Engineering: Preprocessing Data Inside the API\n\nKey concepts:\n1. Model Serving\\n2. Preprocessing Data Inside the API\n\"\"\"\n\nprint(\"Day 175: Model Serving: Preprocessing Data Inside the API\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Preprocessing Data Inside the API\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain Model Serving in your own words with a real-world example.",
+    "How would you use Model Serving in a product company project?",
+    "Write working code that demonstrates Preprocessing Data Inside the API.",
+    "What interview questions could be asked about Model Serving?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Model Serving",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Model Serving: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Preprocessing Data Inside the API: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": 153,
+  "title": "NLP: Text Classification with TF-IDF + Logistic Regression",
+  "content": "### Day 153: NLP: Text Classification with TF-IDF + Logistic Regression\n\n**Bag of Words:** Count word occurrences in each document. Simple but loses word order.\n\n**TF-IDF:** Term Frequency × Inverse Document Frequency.\n- High TF-IDF = word is important in THIS document but rare overall\n- Better than raw counts for classification",
+  "codeExample": "# Day 153: NLP: Text Classification with TF-IDF + Logistic Regression\nfrom sklearn.feature_extraction.text import CountVectorizer, TfidfVectorizer\n\ndocs = [\n    \"Python is great for machine learning\",\n    \"Machine learning needs good data\",\n    \"Python and data science are popular\",\n    \"Deep learning is a subset of machine learning\"\n]\n\n# Bag of Words\nbow = CountVectorizer()\nX_bow = bow.fit_transform(docs)\nprint(\"Vocabulary:\", bow.get_feature_names_out()[:8])\nprint(f\"BoW shape: {X_bow.shape}\")\n\n# TF-IDF\ntfidf = TfidfVectorizer()\nX_tfidf = tfidf.fit_transform(docs)\nprint(f\"\\nTF-IDF for doc 0:\")\nfor word, score in sorted(zip(tfidf.get_feature_names_out(), X_tfidf[0].toarray()[0]), key=lambda x: -x[1])[:5]:\n    if score > 0: print(f\"  {word}: {score:.3f}\")",
+  "practiceQuestions": [
+    "What is Bag of Words?",
+    "How does TF-IDF work?",
+    "BoW vs TF-IDF?",
+    "What does high TF-IDF mean?"
+  ],
+  "keywords": [
+    "Bag of Words",
+    "TF-IDF",
+    "Text",
+    "Classification"
+  ],
+  "keyTakeaways": [
+    "High TF-IDF = word is important in THIS document but rare overall",
+    "Better than raw counts for classification"
+  ]
+}

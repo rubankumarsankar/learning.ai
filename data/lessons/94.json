@@ -1,0 +1,23 @@
+{
+  "id": 94,
+  "title": "Regression: Simple Linear Regression with scikit-learn",
+  "content": "### Day 94: Regression: Simple Linear Regression with scikit-learn\n\n**Linear Regression:** y = mx + b\n- Finds the straight line that best fits data\n- Minimizes Sum of Squared Errors\n- Simplest and most interpretable model",
+  "codeExample": "# Day 94: Regression: Simple Linear Regression with scikit-learn\nfrom sklearn.linear_model import LinearRegression\nimport numpy as np\n\n# Predict salary from experience\nX = np.array([1,2,3,4,5,6,7,8,9,10]).reshape(-1, 1)\ny = np.array([30, 35, 40, 50, 55, 60, 70, 75, 85, 90])\n\nmodel = LinearRegression()\nmodel.fit(X, y)\n\nprint(f\"Slope (coefficient): {model.coef_[0]:.2f}\")\nprint(f\"Intercept: {model.intercept_:.2f}\")\nprint(f\"Formula: salary = {model.coef_[0]:.1f} × years + {model.intercept_:.1f}\")\nprint(f\"\\nPredict 12 years: ₹{model.predict([[12]])[0]:.0f}K\")\nprint(f\"R² Score: {model.score(X, y):.4f}\")",
+  "practiceQuestions": [
+    "What does linear regression find?",
+    "What are slope and intercept?",
+    "What does R² score mean?",
+    "When would linear regression fail?"
+  ],
+  "keywords": [
+    "Linear Regression",
+    "Regression",
+    "Simple",
+    "Linear"
+  ],
+  "keyTakeaways": [
+    "Finds the straight line that best fits data",
+    "Minimizes Sum of Squared Errors",
+    "Simplest and most interpretable model"
+  ]
+}

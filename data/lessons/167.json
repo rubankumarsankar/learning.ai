@@ -1,0 +1,23 @@
+{
+  "id": 167,
+  "title": "FastAPI: Setup, Uvicorn, and Your First Endpoint",
+  "content": "### Day 167: FastAPI: Setup, Uvicorn, and Your First Endpoint\n\n**FastAPI:** Modern, fast Python web framework for building APIs.\n- Automatic docs at /docs\n- Type hints for validation\n- Async support built-in\n- Run with: `uvicorn main:app --reload`",
+  "codeExample": "# Day 167: FastAPI: Setup, Uvicorn, and Your First Endpoint\n# FastAPI: First Endpoint\n# Save as main.py, run: uvicorn main:app --reload\n\nfrom fastapi import FastAPI\n\napp = FastAPI(title=\"ML API\", version=\"1.0\")\n\n@app.get(\"/\")\ndef root():\n    return {\"message\": \"ML API is running!\", \"status\": \"healthy\"}\n\n@app.get(\"/predict/{item_id}\")\ndef predict(item_id: int, q: str = None):\n    return {\"item_id\": item_id, \"query\": q, \"prediction\": 0.87}\n\n@app.post(\"/train\")\ndef train(data: dict):\n    return {\"status\": \"training started\", \"samples\": len(data.get(\"features\", []))}\n\nprint(\"Save as main.py\")\nprint(\"Run: uvicorn main:app --reload\")\nprint(\"Open: http://localhost:8000/docs\")",
+  "practiceQuestions": [
+    "What is FastAPI?",
+    "How to run a FastAPI app?",
+    "What is /docs endpoint?",
+    "Path vs query parameters?"
+  ],
+  "keywords": [
+    "FastAPI",
+    "Setup",
+    "Uvicorn",
+    "Your"
+  ],
+  "keyTakeaways": [
+    "Automatic docs at /docs",
+    "Type hints for validation",
+    "Async support built-in"
+  ]
+}

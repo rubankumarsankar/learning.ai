@@ -1,0 +1,22 @@
+{
+  "id": 53,
+  "title": "SQL: Self-Joins, Cross-Joins, and Multi-Table Queries",
+  "content": "### Day 53: SQL: Self-Joins, Cross-Joins, and Multi-Table Queries\n\n**Self-Join** — join a table with itself (e.g., find employees and their managers).\n**Cross-Join** — every row combined with every other row (cartesian product).\n**Multi-Table** — join 3+ tables in one query.",
+  "codeExample": "# Day 53: SQL: Self-Joins, Cross-Joins, and Multi-Table Queries\n# SQL: Self-Join, Cross-Join, Multi-Table\nsql = \"\"\"\n-- Self-Join: employee and their manager\nSELECT \n    e.name AS employee,\n    m.name AS manager\nFROM employees e\nLEFT JOIN employees m ON e.manager_id = m.id;\n\n-- Cross-Join: all combinations\nSELECT color, size\nFROM colors CROSS JOIN sizes;\n\n-- Multi-Table Join\nSELECT \n    o.id AS order_id,\n    c.name AS customer,\n    p.name AS product,\n    oi.quantity\nFROM orders o\nJOIN customers c ON o.customer_id = c.id\nJOIN order_items oi ON o.id = oi.order_id\nJOIN products p ON oi.product_id = p.id;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "What is a self-join? Give example.",
+    "When would you use cross-join?",
+    "How to join 3 tables?",
+    "Write self-join to find employee-manager pairs."
+  ],
+  "keywords": [
+    "Self-Join",
+    "Cross-Join",
+    "Multi-Table"
+  ],
+  "keyTakeaways": [
+    "Self-Join — join a table with itself (e.g., find employees and their managers).",
+    "Cross-Join — every row combined with every other row (cartesian product).",
+    "Multi-Table — join 3+ tables in one query."
+  ]
+}

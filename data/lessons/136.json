@@ -1,0 +1,23 @@
+{
+  "id": 136,
+  "title": "DL: Optimizers — SGD, Momentum, Adam",
+  "content": "### Day 136: DL: Optimizers — SGD, Momentum, Adam\n\n**Optimizers** update weights to minimize loss:\n- **SGD:** Simple, uses gradient directly\n- **Momentum:** Adds velocity to avoid local minima\n- **Adam:** Adaptive learning rates per parameter — most popular",
+  "codeExample": "# Day 136: DL: Optimizers — SGD, Momentum, Adam\n# Optimizers comparison (conceptual)\nimport numpy as np\n\ndef f(x): return x**2 + 3*np.sin(x)  # bumpy function\ndef grad_f(x): return 2*x + 3*np.cos(x)\n\n# SGD\nx_sgd = 5.0\nfor _ in range(50):\n    x_sgd -= 0.1 * grad_f(x_sgd)\n\n# Adam (simplified)\nx_adam, m, v = 5.0, 0, 0\nfor t in range(1, 51):\n    g = grad_f(x_adam)\n    m = 0.9*m + 0.1*g\n    v = 0.999*v + 0.001*g**2\n    m_hat = m / (1 - 0.9**t)\n    v_hat = v / (1 - 0.999**t)\n    x_adam -= 0.1 * m_hat / (np.sqrt(v_hat) + 1e-8)\n\nprint(f\"SGD converged to: {x_sgd:.4f} (f={f(x_sgd):.4f})\")\nprint(f\"Adam converged to: {x_adam:.4f} (f={f(x_adam):.4f})\")",
+  "practiceQuestions": [
+    "How does Adam optimizer work?",
+    "SGD vs Adam?",
+    "What is momentum?",
+    "Why is Adam most popular?"
+  ],
+  "keywords": [
+    "Optimizers",
+    "SGD",
+    "Momentum",
+    "Adam"
+  ],
+  "keyTakeaways": [
+    "SGD: Simple, uses gradient directly",
+    "Momentum: Adds velocity to avoid local minima",
+    "Adam: Adaptive learning rates per parameter — most popular"
+  ]
+}

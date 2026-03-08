@@ -1,0 +1,23 @@
+{
+  "id": 150,
+  "title": "NLP: Text Preprocessing — Tokenization, Stopwords, Stemming",
+  "content": "### Day 150: NLP: Text Preprocessing — Tokenization, Stopwords, Stemming\n\n**NLP Text Preprocessing:**\n1. **Tokenization:** Split text into words/tokens\n2. **Lowercasing:** Normalize case\n3. **Stopwords:** Remove common words (the, is, and)\n4. **Stemming:** Reduce to root (running → run)\n5. **Lemmatization:** Proper root form (better → good)",
+  "codeExample": "# Day 150: NLP: Text Preprocessing — Tokenization, Stopwords, Stemming\nimport re\nfrom collections import Counter\n\ntext = \"The quick brown foxes were jumping over the lazy dogs. The dogs were barking!\"\n\n# 1. Lowercase + tokenize\ntokens = re.findall(r'\\b\\w+\\b', text.lower())\nprint(f\"Tokens: {tokens}\")\n\n# 2. Remove stopwords\nstopwords = {'the', 'is', 'are', 'was', 'were', 'a', 'an', 'and', 'or', 'but', 'in', 'on', 'at', 'to', 'for', 'of', 'over'}\nfiltered = [w for w in tokens if w not in stopwords]\nprint(f\"Filtered: {filtered}\")\n\n# 3. Simple stemming\ndef simple_stem(word):\n    for suffix in ['ing', 'ed', 'es', 's', 'ly']:\n        if word.endswith(suffix) and len(word) > len(suffix) + 2:\n            return word[:-len(suffix)]\n    return word\n\nstemmed = [simple_stem(w) for w in filtered]\nprint(f\"Stemmed: {stemmed}\")\nprint(f\"Vocabulary: {Counter(stemmed)}\")",
+  "practiceQuestions": [
+    "What is tokenization?",
+    "Why remove stopwords?",
+    "Stemming vs Lemmatization?",
+    "What is NLP preprocessing pipeline?"
+  ],
+  "keywords": [
+    "NLP Text Preprocessing",
+    "Tokenization",
+    "Lowercasing",
+    "Stopwords"
+  ],
+  "keyTakeaways": [
+    "NLP Text Preprocessing:\n1.",
+    "Tokenization: Split text into words/tokens\n2.",
+    "Lowercasing: Normalize case\n3."
+  ]
+}

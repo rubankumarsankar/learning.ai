@@ -1,0 +1,23 @@
+{
+  "id": 119,
+  "title": "Feature Engineering: Handling Imbalanced Datasets (SMOTE)",
+  "content": "### Day 119: Feature Engineering: Handling Imbalanced Datasets (SMOTE)\n\n**Imbalanced Data:** When one class has much fewer samples (e.g., fraud: 1% vs 99%).\n\n**Solutions:**\n- **SMOTE:** Create synthetic samples of minority class\n- **class_weight='balanced':** Penalize errors on minority more\n- **Undersample** majority class\n- Use F1/AUC instead of accuracy!",
+  "codeExample": "# Day 119: Feature Engineering: Handling Imbalanced Datasets (SMOTE)\nfrom sklearn.datasets import make_classification\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.metrics import f1_score\nimport numpy as np\n\n# Create imbalanced dataset (95% vs 5%)\nX, y = make_classification(n_samples=1000, weights=[0.95, 0.05], random_state=42)\nprint(f\"Class distribution: {np.bincount(y)}\")\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n\n# Without handling\nmodel1 = RandomForestClassifier(random_state=42).fit(X_train, y_train)\nf1_1 = f1_score(y_test, model1.predict(X_test))\n\n# With class_weight='balanced'\nmodel2 = RandomForestClassifier(class_weight='balanced', random_state=42).fit(X_train, y_train)\nf1_2 = f1_score(y_test, model2.predict(X_test))\n\nprint(f\"Without balancing: F1={f1_1:.3f}\")\nprint(f\"With class_weight:  F1={f1_2:.3f}\")",
+  "practiceQuestions": [
+    "Why is accuracy bad for imbalanced data?",
+    "How does SMOTE work?",
+    "What does class_weight='balanced' do?",
+    "3 strategies for imbalanced datasets."
+  ],
+  "keywords": [
+    "Imbalanced Data",
+    "Solutions",
+    "SMOTE",
+    "class_weight='balanced'"
+  ],
+  "keyTakeaways": [
+    "SMOTE: Create synthetic samples of minority class",
+    "class_weight='balanced': Penalize errors on minority more",
+    "Undersample majority class"
+  ]
+}

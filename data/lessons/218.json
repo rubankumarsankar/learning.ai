@@ -1,0 +1,23 @@
+{
+  "id": 218,
+  "title": "Project 1: Churn — Feature Engineering and Preprocessing",
+  "content": "### Day 218: Project 1: Churn — Feature Engineering and Preprocessing\n\n**Feature Engineering for Customer Churn Prediction:**\n- Create interaction features\n- Bin continuous variables\n- Encode categoricals\n- Handle missing values\n- Scale numerical features",
+  "codeExample": "# Day 218: Project 1: Churn — Feature Engineering and Preprocessing\nfrom sklearn.preprocessing import StandardScaler, LabelEncoder\nimport pandas as pd\nimport numpy as np\n\nnp.random.seed(42)\ndf = pd.DataFrame({\n    'tenure': np.random.randint(1, 72, 200),\n    'charges': np.random.uniform(20, 120, 200),\n    'contract': np.random.choice(['Monthly', '1yr', '2yr'], 200),\n    'churn': np.random.choice([0, 1], 200, p=[0.73, 0.27])\n})\n\n# Feature engineering\ndf['charges_per_month'] = df['charges'] / (df['tenure'] + 1)\ndf['tenure_group'] = pd.cut(df['tenure'], bins=[0,12,24,48,72], labels=['New','1yr','2yr','Long'])\n\n# Encode\nle = LabelEncoder()\ndf['contract_enc'] = le.fit_transform(df['contract'])\n\n# Scale\nscaler = StandardScaler()\ndf[['tenure_scaled', 'charges_scaled']] = scaler.fit_transform(df[['tenure', 'charges']])\n\nprint(df[['tenure', 'charges', 'charges_per_month', 'tenure_group', 'contract_enc']].head())",
+  "practiceQuestions": [
+    "What features did you create?",
+    "Why create interaction features?",
+    "How to handle categoricals?",
+    "What is your preprocessing pipeline?"
+  ],
+  "keywords": [
+    "Project",
+    "Churn",
+    "Feature",
+    "Engineering"
+  ],
+  "keyTakeaways": [
+    "Create interaction features",
+    "Bin continuous variables",
+    "Encode categoricals"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": 238,
+  "title": "Interview Prep: ML Theory and System Design Questions",
+  "content": "### Day 238: Interview Prep: ML Theory and System Design Questions\n\n**ML Interview Topics:**\n1. Bias-variance tradeoff\n2. Overfitting prevention\n3. Feature selection methods\n4. Model evaluation metrics\n5. System design: recommendation system, fraud detection",
+  "codeExample": "# Day 238: Interview Prep: ML Theory and System Design Questions\n# ML Interview Rapid-Fire Answers\nqa = [\n    (\"Bias vs Variance?\", \"Bias=underfitting (too simple). Variance=overfitting (too complex). Goal: balance.\"),\n    (\"How to prevent overfitting?\", \"More data, regularization (L1/L2), dropout, cross-validation, simpler model.\"),\n    (\"When is accuracy misleading?\", \"Imbalanced data: 99% negative → always predict negative → 99% accuracy but useless.\"),\n    (\"Random Forest vs XGBoost?\", \"RF: parallel trees (bagging). XGB: sequential trees (boosting). XGB usually wins.\"),\n    (\"Explain precision vs recall\", \"Precision: of predicted positive, how many correct. Recall: of actual positive, how many found.\"),\n    (\"What is data leakage?\", \"Test info leaks into training. Example: scaling before split, using future data.\"),\n    (\"How to handle missing values?\", \"Drop, fill with mean/median/mode, or use models that handle NaN (XGBoost).\"),\n]\n\nfor q, a in qa:\n    print(f\"Q: {q}\")\n    print(f\"A: {a}\\n\")",
+  "practiceQuestions": [
+    "Explain bias-variance tradeoff.",
+    "How to prevent overfitting?",
+    "Design a recommendation system.",
+    "When is accuracy misleading?"
+  ],
+  "keywords": [
+    "ML Interview Topics",
+    "Interview",
+    "Prep",
+    "Theory"
+  ],
+  "keyTakeaways": [
+    "Feature selection methods\n4.",
+    "Model evaluation metrics\n5.",
+    "System design: recommendation system, fraud detection."
+  ]
+}

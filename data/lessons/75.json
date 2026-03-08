@@ -1,0 +1,23 @@
+{
+  "id": 75,
+  "title": "Matplotlib and Seaborn: Charts, Heatmaps, and Styling",
+  "content": "### Day 75: Matplotlib and Seaborn: Charts, Heatmaps, and Styling\n\nData visualization communicates insights to stakeholders. Every chart should answer a business question.\n\n**Key Concepts:**\n- **Matplotlib and Seaborn:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Charts:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Heatmaps:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and Styling:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 75: Matplotlib and Seaborn: Charts, Heatmaps, and Styling\n# Phase: Data Handling & SQL\n\nprint(\"Day 75: Matplotlib and Seaborn: Charts, Heatmaps, and Styling\")\nprint(\"Phase: Data Handling & SQL\")\n\n# Key concepts to practice:\n# 1. Matplotlib and Seaborn\\n# 2. Charts\\n# 3. Heatmaps\\n# 4. and Styling\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain Matplotlib and Seaborn in your own words with a real-world example.",
+    "How would you use Matplotlib and Seaborn in a product company project?",
+    "Write working code that demonstrates Charts, Heatmaps, and Styling.",
+    "What interview questions could be asked about Matplotlib and Seaborn?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Matplotlib and Seaborn",
+    "Charts",
+    "Heatmaps"
+  ],
+  "keyTakeaways": [
+    "Matplotlib and Seaborn: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Charts: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Heatmaps: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

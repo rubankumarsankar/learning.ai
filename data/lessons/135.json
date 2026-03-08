@@ -1,0 +1,20 @@
+{
+  "id": 135,
+  "title": "DL: Backpropagation and Gradient Flow",
+  "content": "### Day 135: DL: Backpropagation and Gradient Flow\n\n**Backpropagation:** How neural networks learn.\n1. Forward pass → calculate loss\n2. Backward pass → compute gradients (chain rule)\n3. Update weights: w = w - lr × gradient\n4. Repeat for many epochs",
+  "codeExample": "# Day 135: DL: Backpropagation and Gradient Flow\nimport numpy as np\n\ndef sigmoid(z): return 1/(1+np.exp(-z))\ndef sigmoid_deriv(z): return sigmoid(z)*(1-sigmoid(z))\n\n# Simple backpropagation\nnp.random.seed(42)\nX = np.array([[0,0],[0,1],[1,0],[1,1]])\ny = np.array([[0],[1],[1],[0]])  # XOR\n\nW1 = np.random.randn(2, 4)\nW2 = np.random.randn(4, 1)\nlr = 0.5\n\nfor epoch in range(5000):\n    # Forward\n    z1 = X @ W1; a1 = sigmoid(z1)\n    z2 = a1 @ W2; a2 = sigmoid(z2)\n    # Backward\n    d2 = (a2 - y) * sigmoid_deriv(z2)\n    d1 = (d2 @ W2.T) * sigmoid_deriv(z1)\n    W2 -= lr * a1.T @ d2\n    W1 -= lr * X.T @ d1\n\npred = sigmoid(sigmoid(X @ W1) @ W2)\nprint(\"XOR predictions:\")\nfor x, p in zip(X, pred):\n    print(f\"  {x} → {p[0]:.3f} ({'1' if p[0]>0.5 else '0'}\")",
+  "practiceQuestions": [
+    "What is backpropagation?",
+    "What is the chain rule?",
+    "Why do we need backward pass?",
+    "How are weights updated?"
+  ],
+  "keywords": [
+    "Backpropagation",
+    "Gradient",
+    "Flow"
+  ],
+  "keyTakeaways": [
+    "lr × gradient"
+  ]
+}

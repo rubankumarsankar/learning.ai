@@ -1,0 +1,22 @@
+{
+  "id": 96,
+  "title": "Regression: R-Squared, Adjusted R², and Residual Analysis",
+  "content": "### Day 96: Regression: R-Squared, Adjusted R², and Residual Analysis\n\n**R² Score:** % of variance explained. R²=0.85 means 85% explained.\n- 1.0 = perfect, 0 = baseline\n- **Adjusted R²**: Penalizes extra features\n\n**Residuals:** actual - predicted. Should be random with no pattern.",
+  "codeExample": "# Day 96: Regression: R-Squared, Adjusted R², and Residual Analysis\nfrom sklearn.linear_model import LinearRegression\nimport numpy as np\n\nnp.random.seed(42)\nX = np.random.rand(100, 1) * 10\ny = 3 * X.flatten() + 7 + np.random.randn(100) * 2\n\nmodel = LinearRegression().fit(X, y)\ny_pred = model.predict(X)\n\nprint(f\"R²: {model.score(X, y):.4f}\")\n\n# Residual analysis\nresiduals = y - y_pred\nprint(f\"Mean residual: {np.mean(residuals):.4f} (should be ~0)\")\nprint(f\"Std residual: {np.std(residuals):.4f}\")\nprint(f\"Max residual: {np.max(np.abs(residuals)):.2f}\")",
+  "practiceQuestions": [
+    "What does R²=0.7 mean?",
+    "Why use adjusted R²?",
+    "What should residuals look like?",
+    "When is R² misleading?"
+  ],
+  "keywords": [
+    "R² Score",
+    "Adjusted R²",
+    "Residuals"
+  ],
+  "keyTakeaways": [
+    "1.0 = perfect, 0 = baseline",
+    "Adjusted R²: Penalizes extra features",
+    "predicted. Should be random with no pattern."
+  ]
+}

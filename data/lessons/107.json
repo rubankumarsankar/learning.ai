@@ -1,0 +1,23 @@
+{
+  "id": 107,
+  "title": "Evaluation: Cross-Validation and K-Fold Strategies",
+  "content": "### Day 107: Evaluation: Cross-Validation and K-Fold Strategies\n\n**Cross-Validation:** Split data into K folds, use each fold as test once.\n- More reliable than single train/test split\n- K=5 or K=10 is standard\n- Reports mean ± std of scores\n\n**StratifiedKFold:** Maintains class balance in each fold.",
+  "codeExample": "# Day 107: Evaluation: Cross-Validation and K-Fold Strategies\nfrom sklearn.model_selection import cross_val_score, StratifiedKFold\nfrom sklearn.ensemble import RandomForestClassifier\nimport numpy as np\n\nnp.random.seed(42)\nX = np.random.randn(200, 5)\ny = (X[:, 0] + X[:, 1] > 0).astype(int)\n\nmodel = RandomForestClassifier(n_estimators=50, random_state=42)\n\n# 5-fold cross-validation\nscores = cross_val_score(model, X, y, cv=5, scoring='accuracy')\nprint(f\"5-Fold CV Accuracy: {scores.mean():.3f} ± {scores.std():.3f}\")\nprint(f\"Individual folds: {scores.round(3)}\")\n\n# Stratified K-Fold\nskf = StratifiedKFold(n_splits=5, shuffle=True, random_state=42)\nscores = cross_val_score(model, X, y, cv=skf, scoring='f1')\nprint(f\"\\nStratified 5-Fold F1: {scores.mean():.3f} ± {scores.std():.3f}\")",
+  "practiceQuestions": [
+    "What is K-fold cross-validation?",
+    "Why is CV better than single split?",
+    "What is StratifiedKFold?",
+    "How to interpret mean ± std?"
+  ],
+  "keywords": [
+    "Cross-Validation",
+    "StratifiedKFold",
+    "Evaluation",
+    "CrossValidation"
+  ],
+  "keyTakeaways": [
+    "More reliable than single train/test split",
+    "K=5 or K=10 is standard",
+    "Reports mean ± std of scores"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": 90,
+  "title": "ML: What is Machine Learning? Types and Workflow",
+  "content": "### Day 90: ML: What is Machine Learning? Types and Workflow\n\n**Machine Learning:** Algorithms that learn patterns from data.\n\n**3 Types:**\n1. **Supervised:** Labeled data → predict (regression, classification)\n2. **Unsupervised:** No labels → find patterns (clustering, PCA)\n3. **Reinforcement:** Learn from rewards\n\n**ML Workflow:** Problem → Data → EDA → Features → Train → Evaluate → Deploy",
+  "codeExample": "# Day 90: ML: What is Machine Learning? Types and Workflow\nfrom sklearn.datasets import load_iris\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.tree import DecisionTreeClassifier\nfrom sklearn.metrics import accuracy_score\n\n# Complete ML workflow in 10 lines\ndata = load_iris()\nX_train, X_test, y_train, y_test = train_test_split(\n    data.data, data.target, test_size=0.2, random_state=42)\n\nmodel = DecisionTreeClassifier(random_state=42)\nmodel.fit(X_train, y_train)\npred = model.predict(X_test)\n\nprint(f\"Accuracy: {accuracy_score(y_test, pred):.2%}\")\nprint(f\"Features: {data.feature_names}\")\nprint(f\"Target classes: {list(data.target_names)}\")",
+  "practiceQuestions": [
+    "3 types of ML with examples?",
+    "What is the ML workflow?",
+    "Supervised vs unsupervised?",
+    "Give a real-world example of each ML type."
+  ],
+  "keywords": [
+    "Machine Learning",
+    "3 Types",
+    "Supervised",
+    "Unsupervised"
+  ],
+  "keyTakeaways": [
+    "Machine Learning: Algorithms that learn patterns from data.",
+    "Supervised: Labeled data → predict (regression, classification)\n2.",
+    "Unsupervised: No labels → find patterns (clustering, PCA)\n3."
+  ]
+}

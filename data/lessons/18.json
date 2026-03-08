@@ -1,0 +1,22 @@
+{
+  "id": 18,
+  "title": "OOP: The __init__ Constructor and Instance Methods",
+  "content": "### Day 18: OOP: The __init__ Constructor and Instance Methods\n\n**Git** tracks code changes. Every product company uses it.\n\n**Core Commands:** git init, git add, git commit, git status, git log.\n\n**.gitignore:** List files Git should never track (data files, secrets, __pycache__).",
+  "codeExample": "# Day 18: OOP: The __init__ Constructor and Instance Methods\n# Git Commands (run in terminal)\n\n# Initialize repo\n# git init\n\n# Check status\n# git status\n\n# Stage files\n# git add .                    # all files\n# git add src/model.py         # specific file\n\n# Commit\n# git commit -m \"Add churn prediction model\"\n\n# View history\n# git log --oneline -5\n\n# .gitignore for ML projects\ngitignore = \"\"\"# Python\n__pycache__/\n*.pyc\n.env\nvenv/\n\n# Data\n*.csv\n*.pkl\ndata/raw/\n\n# IDE\n.vscode/\n.idea/\n\n# Notebooks\n.ipynb_checkpoints/\"\"\"\nprint(gitignore)",
+  "practiceQuestions": [
+    "What is git init, add, commit?",
+    "What goes in .gitignore?",
+    "Why meaningful commit messages?",
+    "What is git log?"
+  ],
+  "keywords": [
+    "Git",
+    "Core Commands",
+    ".gitignore"
+  ],
+  "keyTakeaways": [
+    "Every product company uses it.",
+    "Core Commands: git init, git add, git commit, git status, git log.",
+    ".gitignore: List files Git should never track (data files, secrets, __pycache__)."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": 188,
+  "title": "Testing: Integration Testing — Testing the Full API Flow",
+  "content": "### Day 188: Testing: Integration Testing — Testing the Full API Flow\n\nAPIs are how ML models reach users. No company deploys Jupyter notebooks. FastAPI is the modern Python framework for ML APIs.\n\n**Key Concepts:**\n- **Testing:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Integration Testing:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Testing the Full API Flow:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 188: Testing: Integration Testing — Testing the Full API Flow\n\"\"\"\nBackend Engineering: Integration Testing — Testing the Full API Flow\n\nKey concepts:\n1. Testing\\n2. Integration Testing\\n3. Testing the Full API Flow\n\"\"\"\n\nprint(\"Day 188: Testing: Integration Testing — Testing the Full API Flow\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Integration Testing — Testing the Full API Flow\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain Testing in your own words with a real-world example.",
+    "How would you use Testing in a product company project?",
+    "Write working code that demonstrates Integration Testing — Testing the Full API Flow.",
+    "What interview questions could be asked about Testing?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Testing",
+    "Integration Testing",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Testing: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Integration Testing: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Testing the Full API Flow: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

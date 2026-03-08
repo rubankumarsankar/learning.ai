@@ -1,0 +1,23 @@
+{
+  "id": 117,
+  "title": "Pipelines: Building sklearn Pipelines for Clean ML Code",
+  "content": "### Day 117: Pipelines: Building sklearn Pipelines for Clean ML Code\n\n**sklearn Pipeline:** Chain preprocessing + model into one object.\n- Prevents data leakage (fit_transform on train, transform on test)\n- Clean, production-ready code\n- Works with GridSearchCV",
+  "codeExample": "# Day 117: Pipelines: Building sklearn Pipelines for Clean ML Code\nfrom sklearn.pipeline import Pipeline\nfrom sklearn.preprocessing import StandardScaler\nfrom sklearn.ensemble import RandomForestClassifier\nfrom sklearn.model_selection import train_test_split, cross_val_score\nimport numpy as np\n\nnp.random.seed(42)\nX = np.random.randn(200, 5)\ny = (X[:, 0] + X[:, 1] > 0).astype(int)\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n\n# Pipeline: Scale → Model\npipe = Pipeline([\n    ('scaler', StandardScaler()),\n    ('model', RandomForestClassifier(n_estimators=100, random_state=42))\n])\n\npipe.fit(X_train, y_train)\nprint(f\"Test accuracy: {pipe.score(X_test, y_test):.3f}\")\n\n# CV with pipeline (prevents leakage!)\nscores = cross_val_score(pipe, X, y, cv=5)\nprint(f\"5-fold CV: {scores.mean():.3f} ± {scores.std():.3f}\")",
+  "practiceQuestions": [
+    "Why use sklearn Pipeline?",
+    "How does Pipeline prevent data leakage?",
+    "How to use Pipeline with GridSearchCV?",
+    "What steps go in a typical pipeline?"
+  ],
+  "keywords": [
+    "sklearn Pipeline",
+    "Pipelines",
+    "Building",
+    "sklearn"
+  ],
+  "keyTakeaways": [
+    "Prevents data leakage (fit_transform on train, transform on test)",
+    "Clean, production-ready code",
+    "Works with GridSearchCV"
+  ]
+}

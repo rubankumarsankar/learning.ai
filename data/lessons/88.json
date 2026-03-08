@@ -1,0 +1,21 @@
+{
+  "id": 88,
+  "title": "Math: Gradient Descent — The Optimization Engine",
+  "content": "### Day 88: Math: Gradient Descent — The Optimization Engine\n\n**Gradient Descent:** Optimization algorithm that finds the minimum of a function.\n1. Start with random parameters\n2. Calculate gradient (slope)\n3. Update: param = param - learning_rate × gradient\n4. Repeat until convergence",
+  "codeExample": "# Day 88: Math: Gradient Descent — The Optimization Engine\nimport numpy as np\n\n# Gradient Descent: minimize f(x) = x²\ndef gradient_descent(lr=0.1, epochs=20):\n    x = 10.0  # start point\n    for i in range(epochs):\n        gradient = 2 * x  # derivative of x²\n        x = x - lr * gradient\n        if i % 5 == 0:\n            print(f\"  Step {i}: x={x:.4f}, f(x)={x**2:.4f}\")\n    return x\n\nprint(\"=== Gradient Descent ===\")\nresult = gradient_descent(lr=0.1)\nprint(f\"Minimum at x = {result:.6f}\")\n\n# Effect of learning rate\nfor lr in [0.01, 0.1, 0.5]:\n    r = gradient_descent(lr=lr)\n    print(f\"LR={lr}: converged to {r:.4f}\")",
+  "practiceQuestions": [
+    "What is gradient descent?",
+    "What happens if learning rate is too large?",
+    "What is a gradient?",
+    "Why is gradient descent used in ML?"
+  ],
+  "keywords": [
+    "Gradient Descent",
+    "Math",
+    "Gradient",
+    "Descent"
+  ],
+  "keyTakeaways": [
+    "learning_rate × gradient"
+  ]
+}

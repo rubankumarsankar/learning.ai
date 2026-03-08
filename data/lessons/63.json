@@ -1,0 +1,22 @@
+{
+  "id": 63,
+  "title": "Pandas: Selection with .loc and .iloc",
+  "content": "### Day 63: Pandas: Selection with .loc and .iloc\n\n**Selection:**\n- `.loc[]` — select by **labels** (row/column names)\n- `.iloc[]` — select by **integer position** (0-based index)\n\n**Key difference:** .loc includes the end, .iloc excludes it.",
+  "codeExample": "# Day 63: Pandas: Selection with .loc and .iloc\nimport pandas as pd\n\ndf = pd.DataFrame({\n    'name': ['Alice','Bob','Carol','Dave'],\n    'age': [28, 32, 26, 45],\n    'salary': [120000, 80000, 95000, 110000]\n}, index=['a','b','c','d'])\n\n# .loc — by label\nprint(\"loc['a']:\", df.loc['a'].values)\nprint(\"loc['a':'c', 'name']:\\n\", df.loc['a':'c', 'name'])\n\n# .iloc — by position\nprint(\"\\niloc[0]:\", df.iloc[0].values)\nprint(\"iloc[0:2, 0:2]:\\n\", df.iloc[0:2, 0:2])\n\n# Select specific rows and columns\nprint(\"\\nNames of first 3:\\n\", df.loc['a':'c', ['name','salary']])",
+  "practiceQuestions": [
+    "Difference between .loc and .iloc?",
+    "Select rows 2-4 and columns 'name','salary'.",
+    "Does .loc include the endpoint?",
+    "How to select a single cell?"
+  ],
+  "keywords": [
+    "Selection",
+    "labels",
+    "integer position",
+    "Key difference"
+  ],
+  "keyTakeaways": [
+    "`.loc[]` — select by labels (row/column names)",
+    "`.iloc[]` — select by integer position (0-based index)"
+  ]
+}

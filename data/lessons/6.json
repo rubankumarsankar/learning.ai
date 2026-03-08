@@ -1,0 +1,21 @@
+{
+  "id": 6,
+  "title": "Lists: Indexing, Slicing, and Core Methods",
+  "content": "### Day 6: Lists — Indexing, Slicing, and Core Methods\n\n**Lists** are ordered, mutable collections — the most-used data structure.\n\n**Indexing:** `lst[0]` (first), `lst[-1]` (last)\n\n**Slicing:** `lst[1:4]`, `lst[:3]`, `lst[::2]`, `lst[::-1]` (reverse)\n\n**Key Methods:** append(), insert(), remove(), pop(), sort(), reverse(), index(), count()\n\n**Built-ins:** len(), min(), max(), sum(), sorted()",
+  "codeExample": "# Day 6: Lists\nfruits = [\"apple\", \"banana\", \"cherry\", \"date\", \"elderberry\"]\n\n# Indexing\nprint(f\"First: {fruits[0]}, Last: {fruits[-1]}\")\n\n# Slicing\nprint(f\"First 3: {fruits[:3]}\")\nprint(f\"Reversed: {fruits[::-1]}\")\n\n# Methods\nfruits.append(\"fig\")\nfruits.insert(1, \"avocado\")\nfruits.remove(\"banana\")\nprint(f\"Modified: {fruits}\")\n\n# Sorting\nnums = [45, 12, 78, 3, 56]\nnums.sort()\nprint(f\"Sorted: {nums}\")\nprint(f\"Min: {min(nums)}, Max: {max(nums)}, Sum: {sum(nums)}\")",
+  "practiceQuestions": [
+    "Difference between append() and insert()?",
+    "How to get last 3 elements using slicing?",
+    "What does [::-1] do?",
+    "Find second-largest number without sort()."
+  ],
+  "keywords": [
+    "Lists",
+    "Indexing",
+    "Slicing",
+    "Key Methods"
+  ],
+  "keyTakeaways": [
+    "Lists are ordered, mutable collections — the most-used data structure."
+  ]
+}

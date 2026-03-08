@@ -1,0 +1,23 @@
+{
+  "id": 31,
+  "title": "Virtual Environments: venv, pip freeze, requirements.txt",
+  "content": "### Day 31: Virtual Environments: venv, pip freeze, requirements.txt\n\n**Virtual Environments** isolate project dependencies. Every project should have its own venv.\n\n**Commands:**\n- Create: `python -m venv venv`\n- Activate: `venv\\\\Scripts\\\\activate` (Windows)\n- Freeze: `pip freeze > requirements.txt`\n- Install: `pip install -r requirements.txt`",
+  "codeExample": "# Day 31: Virtual Environments: venv, pip freeze, requirements.txt\n# Virtual Environment Commands (run in terminal)\n# 1. Create\n# python -m venv venv\n\n# 2. Activate\n# Windows: venv\\\\Scripts\\\\activate\n# Mac/Linux: source venv/bin/activate\n\n# 3. Install packages\n# pip install numpy pandas scikit-learn\n\n# 4. Save dependencies\n# pip freeze > requirements.txt\n\n# 5. Install from requirements\n# pip install -r requirements.txt\n\n# Example requirements.txt content:\nreq = \"\"\"numpy==1.24.0\npandas==2.0.0\nscikit-learn==1.3.0\nfastapi==0.100.0\nuvicorn==0.23.0\"\"\"\nprint(\"requirements.txt:\")\nprint(req)",
+  "practiceQuestions": [
+    "Why use virtual environments?",
+    "How to create and activate venv?",
+    "What does pip freeze do?",
+    "How to share project dependencies?"
+  ],
+  "keywords": [
+    "Virtual Environments",
+    "Commands",
+    "Virtual",
+    "Environments"
+  ],
+  "keyTakeaways": [
+    "Create: `python -m venv venv`",
+    "Activate: `venv\\\\Scripts\\\\activate` (Windows)",
+    "Freeze: `pip freeze > requirements.txt`"
+  ]
+}

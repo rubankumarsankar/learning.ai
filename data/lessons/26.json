@@ -1,0 +1,22 @@
+{
+  "id": 26,
+  "title": "Decorators: Wrapping Functions with Reusable Logic",
+  "content": "### Day 26: Decorators: Wrapping Functions with Reusable Logic\n\n**Decorators** wrap functions with reusable logic using `@decorator` syntax.\n\n**Use Cases:** Logging, timing, authentication, caching, validation.\n\n**How it works:** A decorator is a function that takes a function and returns a new function.",
+  "codeExample": "# Day 26: Decorators: Wrapping Functions with Reusable Logic\n# Decorators\nimport time\n\n# Basic decorator\ndef log_call(func):\n    def wrapper(*args, **kwargs):\n        print(f\"Calling {func.__name__}...\")\n        result = func(*args, **kwargs)\n        print(f\"  → returned {result}\")\n        return result\n    return wrapper\n\n@log_call\ndef add(a, b):\n    return a + b\n\nadd(3, 5)\n\n# Timer decorator\ndef timer(func):\n    def wrapper(*args, **kwargs):\n        start = time.time()\n        result = func(*args, **kwargs)\n        elapsed = time.time() - start\n        print(f\"  {func.__name__} took {elapsed:.4f}s\")\n        return result\n    return wrapper\n\n@timer\ndef slow_sum(n):\n    return sum(range(n))\n\nprint(f\"Result: {slow_sum(1000000)}\")",
+  "practiceQuestions": [
+    "What is a decorator?",
+    "How does @ syntax work?",
+    "Write a timer decorator.",
+    "When are decorators useful?"
+  ],
+  "keywords": [
+    "Decorators",
+    "Use Cases",
+    "How it works"
+  ],
+  "keyTakeaways": [
+    "Decorators wrap functions with reusable logic using `@decorator` syntax.",
+    "Use Cases: Logging, timing, authentication, caching, validation.",
+    "How it works: A decorator is a function that takes a function and returns a new function."
+  ]
+}

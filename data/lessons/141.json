@@ -1,0 +1,23 @@
+{
+  "id": 141,
+  "title": "DL: Regularization — L2, Dropout, and Batch Normalization",
+  "content": "### Day 141: DL: Regularization — L2, Dropout, and Batch Normalization\n\nDeep learning is powerful for vision, NLP, and complex pattern recognition, but simpler models often win on tabular data.\n\n**Key Concepts:**\n- **Regularization:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Dropout:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and Batch Normalization:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 141: DL: Regularization — L2, Dropout, and Batch Normalization\nimport numpy as np\n\n# Today's topic: Regularization — L2, Dropout, and Batch Normalization\nprint(\"Day 141: DL: Regularization — L2, Dropout, and Batch Normalization\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# Regularization\\n# Dropout\\n# and Batch Normalization\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Regularization — L2, Dropout, and Batch Normalization\"\"\"\n    print(\"Implementing: DL: Regularization — L2, Dropout, and Batch Normalization\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain Regularization in your own words with a real-world example.",
+    "How would you use Regularization in a product company project?",
+    "Write working code that demonstrates Regularization — L2, Dropout, and Batch Normalization.",
+    "What interview questions could be asked about Regularization?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Regularization",
+    "Dropout",
+    "and Batch Normalization"
+  ],
+  "keyTakeaways": [
+    "Regularization: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Dropout: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "and Batch Normalization: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

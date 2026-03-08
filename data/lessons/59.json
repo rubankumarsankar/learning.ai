@@ -1,0 +1,22 @@
+{
+  "id": 59,
+  "title": "SQL: CASE WHEN, COALESCE, and NULL Handling",
+  "content": "### Day 59: SQL: CASE WHEN, COALESCE, and NULL Handling\n\n**CASE WHEN** — SQL's if-else:\n```sql\nCASE WHEN condition THEN result ELSE default END\n```\n\n**COALESCE** — returns first non-NULL value\n\n**NULL handling:** IS NULL, IS NOT NULL, IFNULL, NULLIF",
+  "codeExample": "# Day 59: SQL: CASE WHEN, COALESCE, and NULL Handling\n# SQL: CASE WHEN, COALESCE, NULL\nsql = \"\"\"\n-- CASE WHEN: categorize salary\nSELECT name, salary,\n    CASE \n        WHEN salary >= 100000 THEN 'Senior'\n        WHEN salary >= 70000 THEN 'Mid'\n        ELSE 'Junior'\n    END AS level\nFROM employees;\n\n-- COALESCE: handle NULLs\nSELECT \n    name,\n    COALESCE(phone, email, 'No contact') AS contact\nFROM customers;\n\n-- NULL filtering\nSELECT * FROM employees WHERE manager_id IS NULL;  -- top managers\nSELECT * FROM employees WHERE manager_id IS NOT NULL;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "How does CASE WHEN work?",
+    "What does COALESCE do?",
+    "Difference between NULL and empty string?",
+    "Write CASE to categorize ages into groups."
+  ],
+  "keywords": [
+    "CASE WHEN",
+    "COALESCE",
+    "NULL handling"
+  ],
+  "keyTakeaways": [
+    "Review the provided code sandbox to understand execution flow.",
+    "Attempt all practice questions without looking at the answers.",
+    "Reference the Crack the Interview library for deeper technical syntax."
+  ]
+}

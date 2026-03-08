@@ -1,0 +1,23 @@
+{
+  "id": 13,
+  "title": "Functions: Defining, Calling, and Return Values",
+  "content": "### Day 13: Functions — Defining, Calling, and Return Values\n\n**Functions** are reusable code blocks. `def name(params): return result`\n\n**Key Concepts:**\n- **Parameters** = variables in definition; **Arguments** = values when calling\n- **Return** sends value back. No return → returns None\n- **Docstring** — first line string documenting the function\n\n**Why Functions Matter:** Reusability, testability, collaboration, code review.",
+  "codeExample": "# Day 13: Functions\n\ndef greet(name):\n    \"\"\"Returns a greeting message\"\"\"\n    return f\"Hello, {name}!\"\n\nprint(greet(\"Ruban\"))\n\n# Function with default + multiple returns\ndef calc_tax(amount, rate=0.18):\n    tax = amount * rate\n    return tax, amount + tax\n\ntax, total = calc_tax(1000)\nprint(f\"Tax: ₹{tax}, Total: ₹{total}\")\n\n# Function as filter\ndef is_even(n): return n % 2 == 0\nevens = [n for n in range(1, 11) if is_even(n)]\nprint(f\"Evens: {evens}\")\n\n# Practical: email validation\ndef validate_email(email):\n    if \"@\" not in email: return False, \"Missing @\"\n    if \".\" not in email.split(\"@\")[1]: return False, \"Bad domain\"\n    return True, \"Valid\"\n\nfor e in [\"user@gmail.com\", \"bad-email\", \"test@co\"]:\n    ok, msg = validate_email(e)\n    print(f\"  {'✅' if ok else '❌'} {e}: {msg}\")",
+  "practiceQuestions": [
+    "Difference between parameters and arguments?",
+    "What returns if no return statement?",
+    "Why should functions have docstrings?",
+    "Write a function returning min and max of a list."
+  ],
+  "keywords": [
+    "Functions",
+    "Key Concepts",
+    "Parameters",
+    "Arguments"
+  ],
+  "keyTakeaways": [
+    "Parameters = variables in definition; Arguments = values when calling",
+    "Return sends value back. No return → returns None",
+    "Docstring — first line string documenting the function"
+  ]
+}

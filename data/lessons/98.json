@@ -1,0 +1,23 @@
+{
+  "id": 98,
+  "title": "Regression: Ridge and Lasso Regularization",
+  "content": "### Day 98: Regression: Ridge and Lasso Regularization\n\n**Regularization** prevents overfitting by penalizing large coefficients.\n\n- **Ridge (L2):** Shrinks coefficients towards zero. Keeps all features.\n- **Lasso (L1):** Can shrink coefficients to exactly zero → feature selection!\n- **Alpha:** Controls regularization strength (higher = more penalty)",
+  "codeExample": "# Day 98: Regression: Ridge and Lasso Regularization\nfrom sklearn.linear_model import Ridge, Lasso, LinearRegression\nfrom sklearn.model_selection import train_test_split\nimport numpy as np\n\nnp.random.seed(42)\nX = np.random.randn(100, 20)  # 20 features, some irrelevant\ny = X[:, 0]*3 + X[:, 1]*2 + np.random.randn(100)*0.5\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n\nfor name, model in [(\"Linear\", LinearRegression()),\n                     (\"Ridge\", Ridge(alpha=1.0)),\n                     (\"Lasso\", Lasso(alpha=0.1))]:\n    model.fit(X_train, y_train)\n    r2 = model.score(X_test, y_test)\n    nonzero = np.sum(np.abs(model.coef_) > 0.01)\n    print(f\"{name:8s}: R²={r2:.3f}, Non-zero features: {nonzero}\")",
+  "practiceQuestions": [
+    "What is regularization?",
+    "Ridge vs Lasso: key difference?",
+    "When to use Lasso?",
+    "What does alpha control?"
+  ],
+  "keywords": [
+    "Regularization",
+    "Ridge (L2)",
+    "Lasso (L1)",
+    "Alpha"
+  ],
+  "keyTakeaways": [
+    "Ridge (L2): Shrinks coefficients towards zero. Keeps all features.",
+    "Lasso (L1): Can shrink coefficients to exactly zero → feature selection!",
+    "Alpha: Controls regularization strength (higher = more penalty)"
+  ]
+}

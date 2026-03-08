@@ -1,0 +1,23 @@
+{
+  "id": 104,
+  "title": "Evaluation: Confusion Matrix — TP, TN, FP, FN",
+  "content": "### Day 104: Evaluation: Confusion Matrix — TP, TN, FP, FN\n\n**Confusion Matrix:** Shows prediction results in a 2x2 grid.\n\n|  | Predicted + | Predicted - |\n|--|-------------|-------------|\n| Actual + | TP | FN |\n| Actual - | FP | TN |\n\n- **TP:** Correctly predicted positive\n- **FP:** False alarm (Type I error)\n- **FN:** Missed (Type II error)",
+  "codeExample": "# Day 104: Evaluation: Confusion Matrix — TP, TN, FP, FN\nfrom sklearn.metrics import confusion_matrix, ConfusionMatrixDisplay\nimport numpy as np\n\ny_true = [1, 0, 1, 1, 0, 1, 0, 0, 1, 0]\ny_pred = [1, 0, 1, 0, 0, 1, 1, 0, 1, 0]\n\ncm = confusion_matrix(y_true, y_pred)\ntn, fp, fn, tp = cm.ravel()\n\nprint(f\"Confusion Matrix:\\n{cm}\")\nprint(f\"\\nTP={tp}, TN={tn}, FP={fp}, FN={fn}\")\nprint(f\"Accuracy: {(tp+tn)/(tp+tn+fp+fn):.2%}\")\nprint(f\"Precision: {tp/(tp+fp):.2%}\")\nprint(f\"Recall: {tp/(tp+fn):.2%}\")",
+  "practiceQuestions": [
+    "What is a confusion matrix?",
+    "What is a false positive?",
+    "TP, TN, FP, FN — explain each.",
+    "Why is accuracy alone not enough?"
+  ],
+  "keywords": [
+    "Confusion Matrix",
+    "Evaluation",
+    "Confusion",
+    "Matrix"
+  ],
+  "keyTakeaways": [
+    "|",
+    "| FP | TN |",
+    "TP: Correctly predicted positive"
+  ]
+}

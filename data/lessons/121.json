@@ -1,0 +1,23 @@
+{
+  "id": 121,
+  "title": "Unsupervised: Dimensionality Reduction with PCA",
+  "content": "### Day 121: Unsupervised: Dimensionality Reduction with PCA\n\n**PCA:** Reduces dimensions while keeping maximum variance.\n- Projects data onto principal components (directions of max variance)\n- Use when: too many features, visualization, reducing noise\n- Explain variance ratio tells you how much info each component captures",
+  "codeExample": "# Day 121: Unsupervised: Dimensionality Reduction with PCA\nfrom sklearn.decomposition import PCA\nfrom sklearn.preprocessing import StandardScaler\nimport numpy as np\n\nnp.random.seed(42)\nX = np.random.randn(200, 10)  # 10 features\n\n# Scale first (required!)\nX_scaled = StandardScaler().fit_transform(X)\n\n# PCA to 3 components\npca = PCA(n_components=3)\nX_pca = pca.fit_transform(X_scaled)\n\nprint(f\"Original shape: {X.shape}\")\nprint(f\"Reduced shape: {X_pca.shape}\")\nprint(f\"Variance explained: {pca.explained_variance_ratio_.round(3)}\")\nprint(f\"Total variance: {sum(pca.explained_variance_ratio_):.1%}\")\n\n# How many components for 95% variance?\npca_full = PCA().fit(X_scaled)\ncumvar = np.cumsum(pca_full.explained_variance_ratio_)\nn95 = np.argmax(cumvar >= 0.95) + 1\nprint(f\"\\nComponents for 95% variance: {n95}\")",
+  "practiceQuestions": [
+    "What does PCA do?",
+    "Why scale before PCA?",
+    "How many components to keep?",
+    "When to use PCA?"
+  ],
+  "keywords": [
+    "PCA",
+    "Unsupervised",
+    "Dimensionality",
+    "Reduction"
+  ],
+  "keyTakeaways": [
+    "Projects data onto principal components (directions of max variance)",
+    "Use when: too many features, visualization, reducing noise",
+    "Explain variance ratio tells you how much info each component captures"
+  ]
+}

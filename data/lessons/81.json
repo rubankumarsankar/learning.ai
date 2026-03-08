@@ -1,0 +1,23 @@
+{
+  "id": 81,
+  "title": "Stats: Mean, Median, Mode, and Measures of Central Tendency",
+  "content": "### Day 81: Stats: Mean, Median, Mode, and Measures of Central Tendency\n\n**Central Tendency** measures the center of data:\n- **Mean:** Average (sum/count). Sensitive to outliers.\n- **Median:** Middle value when sorted. Robust to outliers.\n- **Mode:** Most frequent value.",
+  "codeExample": "# Day 81: Stats: Mean, Median, Mode, and Measures of Central Tendency\nimport numpy as np\ndata = [25, 30, 35, 40, 45, 50, 200]\nprint(f\"Mean: {np.mean(data):.1f}\")   # pulled by 200\nprint(f\"Median: {np.median(data)}\")    # robust\nfrom collections import Counter\nscores = [85, 90, 85, 92, 85, 88]\nprint(f\"Mode: {Counter(scores).most_common(1)[0][0]}\")\n\n# When mean != median → data is skewed\nsalaries = np.random.exponential(50000, 1000)\nprint(f\"\\nSalary Mean: {np.mean(salaries):.0f}\")\nprint(f\"Salary Median: {np.median(salaries):.0f}\")\nprint(\"Mean > Median → right-skewed (typical for salaries)\")",
+  "practiceQuestions": [
+    "When is median better than mean?",
+    "What does skewness tell you?",
+    "Calculate mean, median, mode of a dataset.",
+    "Why are salaries usually right-skewed?"
+  ],
+  "keywords": [
+    "Central Tendency",
+    "Mean",
+    "Median",
+    "Mode"
+  ],
+  "keyTakeaways": [
+    "Mean: Average (sum/count). Sensitive to outliers.",
+    "Median: Middle value when sorted. Robust to outliers.",
+    "Mode: Most frequent value."
+  ]
+}

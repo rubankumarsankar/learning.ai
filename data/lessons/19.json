@@ -1,0 +1,23 @@
+{
+  "id": 19,
+  "title": "OOP: Inheritance, Polymorphism, and super()",
+  "content": "### Day 19: OOP: Inheritance, Polymorphism, and super()\n\nThis is an essential skill for modern AI/ML engineering roles at product companies.\n\n**Key Concepts:**\n- **OOP:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Inheritance:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Polymorphism:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and super():** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 19: OOP: Inheritance, Polymorphism, and super()\n# Phase: Coding Foundations\n\nprint(\"Day 19: OOP: Inheritance, Polymorphism, and super()\")\nprint(\"Phase: Coding Foundations\")\n\n# Key concepts to practice:\n# 1. OOP\\n# 2. Inheritance\\n# 3. Polymorphism\\n# 4. and super()\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain OOP in your own words with a real-world example.",
+    "How would you use OOP in a product company project?",
+    "Write working code that demonstrates Inheritance, Polymorphism, and super().",
+    "What interview questions could be asked about OOP?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "OOP",
+    "Inheritance",
+    "Polymorphism"
+  ],
+  "keyTakeaways": [
+    "OOP: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Inheritance: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Polymorphism: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

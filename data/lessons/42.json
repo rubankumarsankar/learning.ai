@@ -1,0 +1,23 @@
+{
+  "id": 42,
+  "title": "NumPy: Indexing, Slicing, and Fancy Indexing",
+  "content": "### Day 42: NumPy: Indexing, Slicing, and Fancy Indexing\n\n**NumPy Indexing:**\n- Basic: `arr[0]`, `arr[-1]`\n- Slicing: `arr[1:4]`, `arr[::-1]`\n- 2D: `matrix[row, col]`\n- Boolean: `arr[arr > 5]`\n- Fancy: `arr[[0, 2, 4]]` — index with array",
+  "codeExample": "# Day 42: NumPy: Indexing, Slicing, and Fancy Indexing\nimport numpy as np\n\narr = np.array([10, 20, 30, 40, 50, 60])\n\n# Basic indexing\nprint(f\"First: {arr[0]}, Last: {arr[-1]}\")\nprint(f\"Slice: {arr[1:4]}\")\n\n# 2D indexing\nm = np.array([[1,2,3],[4,5,6],[7,8,9]])\nprint(f\"Row 1: {m[1]}\")\nprint(f\"Element [1,2]: {m[1,2]}\")\nprint(f\"Column 0: {m[:,0]}\")\n\n# Boolean indexing (filtering)\ndata = np.array([15, 22, 8, 45, 30, 12])\nprint(f\"Above 20: {data[data > 20]}\")\n\n# Fancy indexing\nprint(f\"Select [0,2,4]: {arr[[0,2,4]]}\")",
+  "practiceQuestions": [
+    "How does boolean indexing work?",
+    "Get all elements > 50 from array.",
+    "Difference between slicing and fancy indexing?",
+    "How to select a column from 2D array?"
+  ],
+  "keywords": [
+    "NumPy Indexing",
+    "NumPy",
+    "Indexing",
+    "Slicing"
+  ],
+  "keyTakeaways": [
+    "Basic: `arr[0]`, `arr[-1]`",
+    "Slicing: `arr[1:4]`, `arr[::-1]`",
+    "2D: `matrix[row, col]`"
+  ]
+}

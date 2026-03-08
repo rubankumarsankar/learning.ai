@@ -1,0 +1,23 @@
+{
+  "id": 95,
+  "title": "Regression: Multiple Linear Regression and Feature Selection",
+  "content": "### Day 95: Regression: Multiple Linear Regression and Feature Selection\n\n**Multiple Linear Regression:** Multiple features predict target.\ny = b₀ + b₁x₁ + b₂x₂ + ... + bₙxₙ\n\n**Feature Selection:** Remove irrelevant features to improve model.\n- Correlation analysis\n- p-values from statsmodels\n- Feature importance from tree models",
+  "codeExample": "# Day 95: Regression: Multiple Linear Regression and Feature Selection\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\nimport numpy as np\n\n# Multiple features: experience, education, city\nnp.random.seed(42)\nX = np.column_stack([\n    np.random.randint(1, 15, 100),   # experience\n    np.random.randint(12, 20, 100),  # education years\n    np.random.randint(0, 3, 100),    # city tier\n])\ny = X[:,0]*6 + X[:,1]*3 + np.random.normal(0, 5, 100)\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\nmodel = LinearRegression().fit(X_train, y_train)\n\nnames = ['Experience', 'Education', 'City']\nfor name, coef in zip(names, model.coef_):\n    print(f\"  {name}: {coef:.2f}\")\nprint(f\"R²: {model.score(X_test, y_test):.3f}\")",
+  "practiceQuestions": [
+    "What is multiple regression?",
+    "How to select important features?",
+    "What is multicollinearity?",
+    "How to interpret coefficients?"
+  ],
+  "keywords": [
+    "Feature Selection",
+    "Regression",
+    "Multiple",
+    "Linear"
+  ],
+  "keyTakeaways": [
+    "Correlation analysis",
+    "p-values from statsmodels",
+    "Feature importance from tree models"
+  ]
+}

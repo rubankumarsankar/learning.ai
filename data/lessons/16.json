@@ -1,0 +1,22 @@
+{
+  "id": 16,
+  "title": "DSA: Arrays and Two-Pointer Technique (LeetCode Easy)",
+  "content": "### Day 16: DSA: Arrays and Two-Pointer Technique (LeetCode Easy)\n\n**Two-Pointer Technique** uses two indices that move through an array to solve problems in O(n) time instead of O(n²).\n\n**When to Use:** Sorted arrays, finding pairs, removing duplicates, palindrome checks.\n\n**Pattern:** Start left=0, right=end. Compare values, move pointers based on comparison.",
+  "codeExample": "# Day 16: DSA: Arrays and Two-Pointer Technique (LeetCode Easy)\n# DSA: Two-Pointer Technique\ndef two_sum_sorted(nums, target):\n    left, right = 0, len(nums) - 1\n    while left < right:\n        s = nums[left] + nums[right]\n        if s == target: return [left, right]\n        elif s < target: left += 1\n        else: right -= 1\n    return [-1, -1]\n\nprint(two_sum_sorted([1,3,5,7,9], 12))  # [1,4]\n\n# Remove duplicates from sorted array\ndef remove_dupes(nums):\n    if not nums: return 0\n    w = 1\n    for r in range(1, len(nums)):\n        if nums[r] != nums[r-1]:\n            nums[w] = nums[r]\n            w += 1\n    return w\n\narr = [1,1,2,2,3,4,4]\nprint(f\"Unique count: {remove_dupes(arr)}\")",
+  "practiceQuestions": [
+    "Explain two-pointer technique.",
+    "Time complexity vs brute force?",
+    "Reverse array in-place with two pointers.",
+    "Find pair with given difference in sorted array."
+  ],
+  "keywords": [
+    "Two-Pointer Technique",
+    "When to Use",
+    "Pattern"
+  ],
+  "keyTakeaways": [
+    "Two-Pointer Technique uses two indices that move through an array to solve problems in O(n) time instead of O(n²).",
+    "When to Use: Sorted arrays, finding pairs, removing duplicates, palindrome checks.",
+    "Pattern: Start left=0, right=end."
+  ]
+}

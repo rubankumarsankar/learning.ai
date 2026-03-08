@@ -1,0 +1,22 @@
+{
+  "id": 39,
+  "title": "GitHub: Creating Repos, Pushing Code, and README Writing",
+  "content": "### Day 39: GitHub: Creating Repos, Pushing Code, and README Writing\n\n**GitHub** hosts your code and serves as your portfolio. Hiring managers check your GitHub profile.\n\n**Key Actions:** Create repo, push code, write README, pin best projects.\n\n**Good README:** Title, description, setup instructions, screenshots, tech stack.",
+  "codeExample": "# Day 39: GitHub: Creating Repos, Pushing Code, and README Writing\n# GitHub Workflow (terminal commands)\n\n# Connect to GitHub\n# git remote add origin https://github.com/you/project.git\n# git branch -M main\n# git push -u origin main\n\n# README template\nreadme = \"\"\"# Project Name\n\nBrief description of what this project does.\n\n## Setup\n\\x60\\x60\\x60bash\npip install -r requirements.txt\npython main.py\n\\x60\\x60\\x60\n\n## Features\n- Feature 1\n- Feature 2\n\n## Tech Stack\n- Python 3.10\n- scikit-learn\n- FastAPI\n\n## Results\n| Model | Accuracy | F1 |\n|-------|----------|----|\n| RF    | 0.87     | 0.83 |\n| XGB   | 0.91     | 0.88 |\n\"\"\"\nprint(readme)",
+  "practiceQuestions": [
+    "How to push code to GitHub?",
+    "What makes a good README?",
+    "Why pin projects on GitHub?",
+    "How to write a project description?"
+  ],
+  "keywords": [
+    "GitHub",
+    "Key Actions",
+    "Good README"
+  ],
+  "keyTakeaways": [
+    "GitHub hosts your code and serves as your portfolio.",
+    "Hiring managers check your GitHub profile.",
+    "Key Actions: Create repo, push code, write README, pin best projects."
+  ]
+}

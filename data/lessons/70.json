@@ -1,0 +1,22 @@
+{
+  "id": 70,
+  "title": "Pandas: Pivot Tables, Melt, and Reshaping Data",
+  "content": "### Day 70: Pandas: Pivot Tables, Melt, and Reshaping Data\n\n**Reshaping:** Change array dimensions without changing data.\n- `arr.reshape(2,3)` — new shape\n- `arr.flatten()` — to 1D\n- `arr.T` — transpose\n\n**Broadcasting:** NumPy automatically expands smaller arrays to match larger ones for operations.\n\n**Vectorization:** Replace Python loops with NumPy operations for 100x speedup.",
+  "codeExample": "# Day 70: Pandas: Pivot Tables, Melt, and Reshaping Data\nimport numpy as np\n\n# Reshape\narr = np.arange(12)\nprint(f\"Original: {arr}\")\nprint(f\"Reshaped 3x4:\\n{arr.reshape(3,4)}\")\nprint(f\"Reshaped 2x6:\\n{arr.reshape(2,6)}\")\n\n# Broadcasting\na = np.array([[1],[2],[3]])  # 3x1\nb = np.array([10, 20, 30])   # 1x3\nprint(f\"\\nBroadcast:\\n{a + b}\")  # 3x3 result\n\n# Vectorization speed\nimport time\nn = 1000000\npy_list = list(range(n))\nnp_arr = np.arange(n)\n\nstart = time.time()\nresult1 = [x*2 for x in py_list]\nt1 = time.time() - start\n\nstart = time.time()\nresult2 = np_arr * 2\nt2 = time.time() - start\n\nprint(f\"\\nPython loop: {t1:.4f}s\")\nprint(f\"NumPy vector: {t2:.4f}s\")\nprint(f\"NumPy is {t1/t2:.0f}x faster!\")",
+  "practiceQuestions": [
+    "What is broadcasting?",
+    "How does reshape work?",
+    "Why is vectorization faster than loops?",
+    "Reshape a 1D array of 12 elements into 3x4 matrix."
+  ],
+  "keywords": [
+    "Reshaping",
+    "Broadcasting",
+    "Vectorization"
+  ],
+  "keyTakeaways": [
+    "`arr.reshape(2,3)` — new shape",
+    "`arr.flatten()` — to 1D",
+    "`arr.T` — transpose"
+  ]
+}

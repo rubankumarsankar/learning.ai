@@ -1,0 +1,39 @@
+﻿node : node:internal/mo
+dules/cjs/loader:1404
+At line:1 char:1
++ node -c "require('./g
+enerate_upgraded_roadma
+p.js')" 2>&1 | 
+Out-File - ...
++ ~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~
+    + CategoryInfo     
+         : NotSpecifi  
+  ed: (node:internal   
+ /modules/cjs/loade    
+r:1404:String) [],     
+RemoteException
+    + FullyQualifiedEr 
+   rorId : NativeComm  
+  andError
+ 
+  throw err;
+  ^
+
+Error: Cannot find 
+module 'D:\2026\1\antig
+ravity-tracker\require(
+'.\generate_upgraded_ro
+admap.js')'
+    at node:internal/mo
+dules/cjs/loader:1401:1
+5
+    at node:internal/ma
+in/check_syntax:33:20 {
+  code: 
+'MODULE_NOT_FOUND',
+  requireStack: []
+}
+
+Node.js v22.15.0

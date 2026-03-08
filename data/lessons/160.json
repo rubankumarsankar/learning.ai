@@ -1,0 +1,22 @@
+{
+  "id": 160,
+  "title": "DL Mini-Project: Text Classification App End-to-End",
+  "content": "### Day 160: DL Mini-Project: Text Classification App End-to-End\n\nNLP enables machines to understand text. The field has shifted from bag-of-words to transformers and pretrained models.\n\n**Key Concepts:**\n- **DL Mini-Project:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Text Classification App End-to-End:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 160: DL Mini-Project: Text Classification App End-to-End\nimport numpy as np\n\n# Today's topic: Text Classification App End-to-End\nprint(\"Day 160: DL Mini-Project: Text Classification App End-to-End\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# DL Mini-Project\\n# Text Classification App End-to-End\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Text Classification App End-to-End\"\"\"\n    print(\"Implementing: DL Mini-Project: Text Classification App End-to-End\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain DL Mini-Project in your own words with a real-world example.",
+    "How would you use DL Mini-Project in a product company project?",
+    "Write working code that demonstrates Text Classification App End-to-End.",
+    "What interview questions could be asked about DL Mini-Project?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "DL Mini-Project",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "DL Mini-Project: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Text Classification App End-to-End: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

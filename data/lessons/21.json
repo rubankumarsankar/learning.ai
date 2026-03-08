@@ -1,0 +1,23 @@
+{
+  "id": 21,
+  "title": "DSA: Hash Maps and Frequency Counting (LeetCode Easy)",
+  "content": "### Day 21: DSA: Hash Maps and Frequency Counting (LeetCode Easy)\n\n**Hash Maps (Dictionaries)** provide O(1) average lookup. Perfect for counting, grouping, and caching.\n\n**Frequency Counting Pattern:** Loop through data, use dict to count occurrences.\n\n**Common Interview Problems:** Two Sum, Anagram check, First unique character.",
+  "codeExample": "# Day 21: DSA: Hash Maps and Frequency Counting (LeetCode Easy)\n# DSA: Hash Maps and Frequency Counting\n\n# Two Sum (classic interview problem)\ndef two_sum(nums, target):\n    seen = {}\n    for i, n in enumerate(nums):\n        complement = target - n\n        if complement in seen:\n            return [seen[complement], i]\n        seen[n] = i\n    return []\n\nprint(f\"Two Sum: {two_sum([2,7,11,15], 9)}\")  # [0,1]\n\n# Character frequency\ndef char_freq(s):\n    freq = {}\n    for c in s:\n        freq[c] = freq.get(c, 0) + 1\n    return freq\n\nprint(f\"Freq: {char_freq('hello')}\")\n\n# Anagram check\ndef is_anagram(s1, s2):\n    return char_freq(s1) == char_freq(s2)\n\nprint(f\"Anagram: {is_anagram('listen', 'silent')}\")",
+  "practiceQuestions": [
+    "What is O(1) lookup?",
+    "Solve Two Sum with hash map.",
+    "Check if two strings are anagrams.",
+    "Find first non-repeating character."
+  ],
+  "keywords": [
+    "Hash Maps (Dictionaries)",
+    "Hash",
+    "Maps",
+    "Frequency"
+  ],
+  "keyTakeaways": [
+    "Hash Maps (Dictionaries) provide O(1) average lookup.",
+    "Perfect for counting, grouping, and caching.",
+    "Frequency Counting Pattern: Loop through data, use dict to count occurrences."
+  ]
+}

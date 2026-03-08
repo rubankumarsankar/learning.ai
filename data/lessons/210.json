@@ -1,0 +1,23 @@
+{
+  "id": 210,
+  "title": "Streamlit: Building Interactive ML Dashboards",
+  "content": "### Day 210: Streamlit: Building Interactive ML Dashboards\n\n**Streamlit:** Build ML dashboards in pure Python.\n- No HTML/CSS/JS needed\n- `st.title()`, `st.slider()`, `st.plotly_chart()`\n- Run: `streamlit run app.py`\n- Deploy free on Streamlit Community Cloud",
+  "codeExample": "# Day 210: Streamlit: Building Interactive ML Dashboards\n# Streamlit Dashboard\ntry:\n    import streamlit as st\n    import pandas as pd\n    import numpy as np\n\n    st.title(\"ML Model Dashboard\")\n    st.sidebar.header(\"Parameters\")\n\n    n_samples = st.sidebar.slider(\"Samples\", 50, 500, 200)\n    noise = st.sidebar.slider(\"Noise\", 0.0, 1.0, 0.3)\n\n    data = pd.DataFrame({\n        'x': np.random.randn(n_samples),\n        'y': np.random.randn(n_samples) * noise\n    })\n\n    col1, col2 = st.columns(2)\n    col1.metric(\"Mean X\", f\"{data['x'].mean():.3f}\")\n    col2.metric(\"Std X\", f\"{data['x'].std():.3f}\")\n\n    st.line_chart(data)\n    st.dataframe(data.describe())\nexcept ImportError:\n    print(\"Install: pip install streamlit\")\n    print(\"Run: streamlit run app.py\")",
+  "practiceQuestions": [
+    "What is Streamlit?",
+    "How to add interactivity?",
+    "Streamlit vs Flask?",
+    "How to deploy Streamlit?"
+  ],
+  "keywords": [
+    "Streamlit",
+    "Building",
+    "Interactive",
+    "Dashboards"
+  ],
+  "keyTakeaways": [
+    "No HTML/CSS/JS needed",
+    "`st.title()`, `st.slider()`, `st.plotly_chart()`",
+    "Run: `streamlit run app.py`"
+  ]
+}

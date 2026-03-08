@@ -1,0 +1,23 @@
+{
+  "title": "Machine Learning Interview Prep",
+  "url": "https://scikit-learn.org/stable/",
+  "content": "### Crack the Interview: Machine Learning Fundamentals\n\nML interviews test your mathematical intuition and your understanding of model trade-offs. You rarely code algorithms from scratch; you explain *why* you chose them.\n\n**Theory: Bias-Variance Tradeoff**\n- **Core Concept:** You must understand Overfitting (high variance) vs Underfitting (high bias). \n- **Application:** If a Random Forest has 100% training accuracy but 60% test accuracy, it is overfitting. You must suggest regularization, pruning, or cross-validation.\n- **Interview Trick:** Never trust Accuracy on an imbalanced dataset (e.g., fraud detection where 99% of data is 'not fraud'). You must propose **Precision, Recall, and the F1-Score** as your metrics.",
+  "codeExample": "# 💡 Crack the Interview: Model Evaluation\nfrom sklearn.metrics import classification_report, confusion_matrix\n\n# Interviewers want you to look beyond simple 'accuracy'\ny_true = [0, 1, 0, 0, 1, 0] # 0: Normal, 1: Fraud\ny_pred = [0, 1, 0, 0, 0, 0] # Model missed a fraud case\n\nprint(\"Confusion Matrix:\\n\", confusion_matrix(y_true, y_pred))\nprint(\"\\nClassification Report:\\n\", classification_report(y_true, y_pred))\n# You must explain why 'Recall' matters more for Fraud detection than 'Precision'.",
+  "practiceQuestions": [
+    "Explain the Bias-Variance Tradeoff in your own words.",
+    "When would you use a Random Forest instead of a Linear Regression model?",
+    "What is Cross-Validation and why is it necessary before deploying a model?",
+    "How do you handle severe class imbalance in a dataset?"
+  ],
+  "keywords": [
+    "Bias-Variance",
+    "Overfitting",
+    "Precision",
+    "Recall"
+  ],
+  "keyTakeaways": [
+    "High Variance equals Overfitting; High Bias equals Underfitting.",
+    "Accuracy is a deceptive metric on imbalanced datasets. Calculate Precision, Recall, and the F1-Score instead.",
+    "Cross-Validation ensures your model hasn't just memorized the specific training split."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": 97,
+  "title": "Regression: Polynomial Regression and Overfitting",
+  "content": "### Day 97: Regression: Polynomial Regression and Overfitting\n\n**Polynomial Regression:** Fits curves instead of lines.\ny = b₀ + b₁x + b₂x² + b₃x³...\n\n**Overfitting:** Model memorizes training data but fails on new data.\n- High train accuracy, low test accuracy\n- Fix: simpler model, more data, regularization",
+  "codeExample": "# Day 97: Regression: Polynomial Regression and Overfitting\nfrom sklearn.preprocessing import PolynomialFeatures\nfrom sklearn.linear_model import LinearRegression\nfrom sklearn.model_selection import train_test_split\nimport numpy as np\n\nnp.random.seed(42)\nX = np.sort(np.random.rand(50, 1) * 6, axis=0)\ny = np.sin(X).ravel() + np.random.randn(50) * 0.1\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n\nfor degree in [1, 3, 15]:\n    poly = PolynomialFeatures(degree)\n    X_poly_train = poly.fit_transform(X_train)\n    X_poly_test = poly.transform(X_test)\n    model = LinearRegression().fit(X_poly_train, y_train)\n    train_r2 = model.score(X_poly_train, y_train)\n    test_r2 = model.score(X_poly_test, y_test)\n    gap = train_r2 - test_r2\n    print(f\"Degree {degree:2d}: Train R²={train_r2:.3f}, Test R²={test_r2:.3f} {'⚠️ OVERFIT' if gap > 0.2 else '✅'}\")",
+  "practiceQuestions": [
+    "What is polynomial regression?",
+    "What is overfitting?",
+    "How to detect overfitting?",
+    "3 ways to prevent overfitting."
+  ],
+  "keywords": [
+    "Polynomial Regression",
+    "Overfitting",
+    "Regression",
+    "Polynomial"
+  ],
+  "keyTakeaways": [
+    "High train accuracy, low test accuracy",
+    "Fix: simpler model, more data, regularization"
+  ]
+}

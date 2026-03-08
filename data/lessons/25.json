@@ -1,0 +1,23 @@
+{
+  "id": 25,
+  "title": "Lambda Functions and Map/Filter/Reduce",
+  "content": "### Day 25: Lambda Functions and Map/Filter/Reduce\n\n**Lambda** creates small anonymous functions: `lambda x: x * 2`\n\n**map()** applies function to every element: `map(func, iterable)`\n\n**filter()** keeps elements where function returns True\n\n**reduce()** combines elements into single value (from functools)",
+  "codeExample": "# Day 25: Lambda Functions and Map/Filter/Reduce\n# Lambda, Map, Filter, Reduce\nfrom functools import reduce\n\n# Lambda\nsquare = lambda x: x ** 2\nprint(f\"5² = {square(5)}\")\n\n# Map — apply to all\nnums = [1, 2, 3, 4, 5]\nsquared = list(map(lambda x: x**2, nums))\nprint(f\"Squared: {squared}\")\n\n# Filter — keep matching\nevens = list(filter(lambda x: x % 2 == 0, range(1, 11)))\nprint(f\"Evens: {evens}\")\n\n# Reduce — combine to one value\ntotal = reduce(lambda a, b: a + b, nums)\nprint(f\"Sum: {total}\")\n\n# Practical: Sort by custom key\nstudents = [(\"Alice\", 88), (\"Bob\", 95), (\"Carol\", 72)]\nby_score = sorted(students, key=lambda s: s[1], reverse=True)\nprint(f\"By score: {by_score}\")",
+  "practiceQuestions": [
+    "What is a lambda function?",
+    "How does map() work?",
+    "Difference between map and filter?",
+    "Sort list of dicts by a specific key."
+  ],
+  "keywords": [
+    "Lambda",
+    "map()",
+    "filter()",
+    "reduce()"
+  ],
+  "keyTakeaways": [
+    "Review the provided code sandbox to understand execution flow.",
+    "Attempt all practice questions without looking at the answers.",
+    "Reference the Crack the Interview library for deeper technical syntax."
+  ]
+}

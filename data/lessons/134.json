@@ -1,0 +1,22 @@
+{
+  "id": 134,
+  "title": "DL: Loss Functions — MSE, Cross-Entropy, and When to Use",
+  "content": "### Day 134: DL: Loss Functions — MSE, Cross-Entropy, and When to Use\n\n**Loss Functions** measure prediction error:\n- **MSE:** Regression — mean of squared errors\n- **Binary Cross-Entropy:** Binary classification\n- **Categorical Cross-Entropy:** Multi-class classification\n\nLower loss = better model. Training minimizes the loss.",
+  "codeExample": "# Day 134: DL: Loss Functions — MSE, Cross-Entropy, and When to Use\nimport numpy as np\n\n# MSE for regression\ny_true = np.array([3.0, 5.0, 7.0, 9.0])\ny_pred = np.array([2.8, 5.2, 6.5, 9.1])\nmse = np.mean((y_true - y_pred) ** 2)\nprint(f\"MSE: {mse:.4f}\")\n\n# Binary cross-entropy\ndef bce(y_true, y_pred):\n    eps = 1e-15\n    y_pred = np.clip(y_pred, eps, 1 - eps)\n    return -np.mean(y_true * np.log(y_pred) + (1-y_true) * np.log(1-y_pred))\n\ny_t = np.array([1, 0, 1, 1])\ny_p = np.array([0.9, 0.1, 0.8, 0.7])\nprint(f\"BCE (good): {bce(y_t, y_p):.4f}\")\ny_p_bad = np.array([0.2, 0.8, 0.3, 0.4])\nprint(f\"BCE (bad): {bce(y_t, y_p_bad):.4f}\")",
+  "practiceQuestions": [
+    "What is a loss function?",
+    "MSE vs Cross-Entropy?",
+    "Why minimize loss?",
+    "What does high loss mean?"
+  ],
+  "keywords": [
+    "Loss Functions",
+    "MSE",
+    "Binary Cross-Entropy"
+  ],
+  "keyTakeaways": [
+    "MSE: Regression — mean of squared errors",
+    "Binary Cross-Entropy: Binary classification",
+    "Categorical Cross-Entropy: Multi-class classification"
+  ]
+}

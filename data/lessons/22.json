@@ -1,0 +1,23 @@
+{
+  "id": 22,
+  "title": "File Handling: Reading and Writing Text and CSV Files",
+  "content": "### Day 22: File Handling: Reading and Writing Text and CSV Files\n\n**File I/O** is essential — reading CSV data, writing logs, saving results.\n\n**Always use `with` statement** — it automatically closes files.\n\n**Modes:** 'r' (read), 'w' (write/overwrite), 'a' (append), 'r+' (read+write)",
+  "codeExample": "# Day 22: File Handling: Reading and Writing Text and CSV Files\n# File Handling\nimport json, csv\n\n# Write text file\nwith open(\"log.txt\", \"w\") as f:\n    f.write(\"Experiment 1: accuracy=0.87\\n\")\n    f.write(\"Experiment 2: accuracy=0.91\\n\")\n\n# Read text file\nwith open(\"log.txt\", \"r\") as f:\n    for line in f:\n        print(line.strip())\n\n# Write JSON\ndata = {\"name\": \"model_v1\", \"accuracy\": 0.91}\nwith open(\"config.json\", \"w\") as f:\n    json.dump(data, f, indent=2)\n\n# Read JSON\nwith open(\"config.json\", \"r\") as f:\n    loaded = json.load(f)\n    print(f\"Loaded: {loaded}\")\n\n# Write CSV\nwith open(\"results.csv\", \"w\", newline=\"\") as f:\n    writer = csv.writer(f)\n    writer.writerow([\"Model\", \"Accuracy\"])\n    writer.writerow([\"RF\", 0.87])\n    writer.writerow([\"XGB\", 0.91])",
+  "practiceQuestions": [
+    "Why use 'with' statement for files?",
+    "Difference between 'w' and 'a' modes?",
+    "How to read/write JSON files?",
+    "Write a program that reads CSV and calculates average."
+  ],
+  "keywords": [
+    "File I/O",
+    "Modes",
+    "File",
+    "Handling"
+  ],
+  "keyTakeaways": [
+    "File I/O is essential — reading CSV data, writing logs, saving results.",
+    "Always use `with` statement — it automatically closes files.",
+    "Modes: 'r' (read), 'w' (write/overwrite), 'a' (append), 'r+' (read+write)."
+  ]
+}

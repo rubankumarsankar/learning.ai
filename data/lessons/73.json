@@ -1,0 +1,22 @@
+{
+  "id": 73,
+  "title": "EDA Project: Business Case Dataset Analysis (E-commerce)",
+  "content": "### Day 73: EDA Project: Business Case Dataset Analysis (E-commerce)\n\nEDA is how real data scientists understand problems before modeling. Focus on generating actionable business insights.\n\n**Key Concepts:**\n- **EDA Project:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Business Case Dataset Analysis (E-commerce):** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 73: EDA Project: Business Case Dataset Analysis (E-commerce)\n# Phase: Data Handling & SQL\n\nprint(\"Day 73: EDA Project: Business Case Dataset Analysis (E-commerce)\")\nprint(\"Phase: Data Handling & SQL\")\n\n# Key concepts to practice:\n# 1. EDA Project\\n# 2. Business Case Dataset Analysis (E-commerce)\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain EDA Project in your own words with a real-world example.",
+    "How would you use EDA Project in a product company project?",
+    "Write working code that demonstrates Business Case Dataset Analysis (E-commerce).",
+    "What interview questions could be asked about EDA Project?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "EDA Project",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "EDA Project: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Business Case Dataset Analysis (E-commerce): Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

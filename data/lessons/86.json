@@ -1,0 +1,22 @@
+{
+  "id": 86,
+  "title": "Stats: Hypothesis Testing and p-Values",
+  "content": "### Day 86: Stats: Hypothesis Testing and p-Values\n\n**Hypothesis Testing:** Make data-driven decisions.\n- H₀ (null): No effect/difference\n- H₁ (alternative): There IS an effect\n- **p-value < 0.05** → reject H₀ (statistically significant)\n\n**A/B Testing:** Product companies use this daily.",
+  "codeExample": "# Day 86: Stats: Hypothesis Testing and p-Values\nimport numpy as np\nfrom scipy import stats\n\n# A/B Test: Does new button color improve clicks?\nnp.random.seed(42)\ncontrol = np.random.binomial(1, 0.10, 1000)   # 10% click rate\nvariant = np.random.binomial(1, 0.12, 1000)   # 12% click rate\n\nt_stat, p_value = stats.ttest_ind(control, variant)\nprint(f\"Control mean: {control.mean():.3f}\")\nprint(f\"Variant mean: {variant.mean():.3f}\")\nprint(f\"p-value: {p_value:.4f}\")\nprint(f\"Result: {'✅ Significant!' if p_value < 0.05 else '❌ Not significant'}\")",
+  "practiceQuestions": [
+    "What is a p-value?",
+    "What is H₀ vs H₁?",
+    "How is A/B testing used at Google/Amazon?",
+    "What does p < 0.05 mean?"
+  ],
+  "keywords": [
+    "Hypothesis Testing",
+    "p-value < 0.05",
+    "A/B Testing"
+  ],
+  "keyTakeaways": [
+    "H₀ (null): No effect/difference",
+    "H₁ (alternative): There IS an effect",
+    "p-value < 0.05 → reject H₀ (statistically significant)"
+  ]
+}

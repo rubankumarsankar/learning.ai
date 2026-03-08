@@ -1,0 +1,22 @@
+{
+  "id": 8,
+  "title": "Tuples, Sets, and When to Use Each",
+  "content": "### Day 8: Tuples, Sets, and When to Use Each\n\n**Tuples** — immutable sequences. Use for fixed data, function returns, dict keys.\n\n**Sets** — unordered, unique elements. O(1) membership check. Great for deduplication.\n\n**When to use what:**\n| List | Ordered, mutable, duplicates OK |\n| Tuple | Fixed data, immutable, hashable |\n| Set | Unique values, fast lookup, math ops |\n| Dict | Key-value mapping |",
+  "codeExample": "# Day 8: Tuples and Sets\n\n# Tuples — immutable\npoint = (3, 7)\nname, age, city = (\"Ruban\", 25, \"Chennai\")  # unpacking\nprint(f\"{name}, {age}, {city}\")\n\n# Tuple as dict key\nlocations = {(28.6, 77.2): \"Delhi\", (13.0, 80.2): \"Chennai\"}\nprint(f\"Lookup: {locations[(13.0, 80.2)]}\")\n\n# Sets — unique, unordered\nnums = [1, 2, 2, 3, 3, 3, 4]\nunique = list(set(nums))\nprint(f\"Unique: {unique}\")\n\n# Set operations\npython_devs = {\"Alice\", \"Bob\", \"Carol\"}\nml_devs = {\"Carol\", \"Dave\", \"Eve\"}\nprint(f\"Both: {python_devs & ml_devs}\")       # intersection\nprint(f\"Either: {python_devs | ml_devs}\")      # union\nprint(f\"Only Python: {python_devs - ml_devs}\") # difference",
+  "practiceQuestions": [
+    "Main difference between tuple and list?",
+    "Why use a set to store unique values?",
+    "How to find common elements between two lists?",
+    "Can you modify a tuple after creation?"
+  ],
+  "keywords": [
+    "Tuples",
+    "Sets",
+    "When to use what"
+  ],
+  "keyTakeaways": [
+    "Tuples — immutable sequences.",
+    "Use for fixed data, function returns, dict keys.",
+    "Sets — unordered, unique elements."
+  ]
+}

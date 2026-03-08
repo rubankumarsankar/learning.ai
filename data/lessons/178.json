@@ -1,0 +1,23 @@
+{
+  "id": 178,
+  "title": "FastAPI: Authentication Basics — API Keys and OAuth2",
+  "content": "### Day 178: FastAPI: Authentication Basics — API Keys and OAuth2\n\nAPIs are how ML models reach users. No company deploys Jupyter notebooks. FastAPI is the modern Python framework for ML APIs.\n\n**Key Concepts:**\n- **FastAPI:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Authentication Basics:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **API Keys and OAuth2:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 178: FastAPI: Authentication Basics — API Keys and OAuth2\n\"\"\"\nBackend Engineering: Authentication Basics — API Keys and OAuth2\n\nKey concepts:\n1. FastAPI\\n2. Authentication Basics\\n3. API Keys and OAuth2\n\"\"\"\n\nprint(\"Day 178: FastAPI: Authentication Basics — API Keys and OAuth2\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Authentication Basics — API Keys and OAuth2\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain FastAPI in your own words with a real-world example.",
+    "How would you use FastAPI in a product company project?",
+    "Write working code that demonstrates Authentication Basics — API Keys and OAuth2.",
+    "What interview questions could be asked about FastAPI?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "FastAPI",
+    "Authentication Basics",
+    "API Keys and OAuth2"
+  ],
+  "keyTakeaways": [
+    "FastAPI: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Authentication Basics: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "API Keys and OAuth2: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

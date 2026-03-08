@@ -1,0 +1,23 @@
+{
+  "id": 159,
+  "title": "Applied AI: When to Use ML vs DL — Decision Framework",
+  "content": "### Day 159: Applied AI: When to Use ML vs DL — Decision Framework\n\nDeep learning is powerful for vision, NLP, and complex pattern recognition, but simpler models often win on tabular data.\n\n**Key Concepts:**\n- **Applied AI:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **When to Use ML vs DL:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Decision Framework:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 159: Applied AI: When to Use ML vs DL — Decision Framework\nimport numpy as np\n\n# Today's topic: When to Use ML vs DL — Decision Framework\nprint(\"Day 159: Applied AI: When to Use ML vs DL — Decision Framework\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# Applied AI\\n# When to Use ML vs DL\\n# Decision Framework\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate When to Use ML vs DL — Decision Framework\"\"\"\n    print(\"Implementing: Applied AI: When to Use ML vs DL — Decision Framework\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain Applied AI in your own words with a real-world example.",
+    "How would you use Applied AI in a product company project?",
+    "Write working code that demonstrates When to Use ML vs DL — Decision Framework.",
+    "What interview questions could be asked about Applied AI?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Applied AI",
+    "When to Use ML vs DL",
+    "Decision Framework"
+  ],
+  "keyTakeaways": [
+    "Applied AI: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "When to Use ML vs DL: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Decision Framework: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

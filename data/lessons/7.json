@@ -1,0 +1,22 @@
+{
+  "id": 7,
+  "title": "Dictionaries: Key-Value Pairs and Nested Data",
+  "content": "### Day 7: Dictionaries — Key-Value Pairs and Nested Data\n\n**Dictionaries** store key-value pairs with O(1) lookup. Keys must be unique and immutable.\n\n**Access:** `dict[\"key\"]` (raises KeyError) vs `dict.get(\"key\", default)` (safe)\n\n**Methods:** .keys(), .values(), .items(), .get(), .update(), .pop()\n\n**Nested Dicts:** Used in JSON, APIs, config files — you'll see them everywhere.",
+  "codeExample": "# Day 7: Dictionaries\nstudent = {\"name\": \"Ruban\", \"age\": 25, \"skills\": [\"Python\", \"SQL\"]}\n\n# Access\nprint(f\"Name: {student['name']}\")\nprint(f\"Email: {student.get('email', 'Not found')}\")  # safe\n\n# Add/Update\nstudent[\"email\"] = \"ruban@example.com\"\nstudent[\"age\"] = 26\n\n# Iterate\nfor key, val in student.items():\n    print(f\"  {key}: {val}\")\n\n# Nested dict (like JSON)\nemployees = {\n    \"E001\": {\"name\": \"Alice\", \"role\": \"ML Engineer\", \"salary\": 120000},\n    \"E002\": {\"name\": \"Bob\", \"role\": \"Data Analyst\", \"salary\": 80000}\n}\nfor eid, info in employees.items():\n    print(f\"{eid}: {info['name']} — {info['role']}\")\n\n# Character frequency (interview classic)\ntext = \"hello world\"\nfreq = {}\nfor ch in text:\n    if ch != \" \":\n        freq[ch] = freq.get(ch, 0) + 1\nprint(f\"Frequency: {freq}\")",
+  "practiceQuestions": [
+    "Difference between dict['key'] and dict.get('key')?",
+    "Can a list be a dictionary key? Why not?",
+    "Write a word frequency counter.",
+    "How to merge two dictionaries?"
+  ],
+  "keywords": [
+    "Dictionaries",
+    "Access",
+    "Methods",
+    "Nested Dicts"
+  ],
+  "keyTakeaways": [
+    "Dictionaries store key-value pairs with O(1) lookup.",
+    "Keys must be unique and immutable."
+  ]
+}

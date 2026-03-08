@@ -1,0 +1,23 @@
+{
+  "id": 35,
+  "title": "DSA: Recursion Fundamentals and Base Cases",
+  "content": "### Day 35: DSA: Recursion Fundamentals and Base Cases\n\n**Recursion** = function calling itself. Must have a **base case** (stops recursion) and **recursive case** (makes progress).\n\n**Call Stack:** Each call adds a frame. Too many calls = StackOverflow.\n\n**Classic Problems:** Factorial, Fibonacci, tree traversal, binary search.",
+  "codeExample": "# Day 35: DSA: Recursion Fundamentals and Base Cases\n# Recursion Fundamentals\n\n# Factorial\ndef factorial(n):\n    if n <= 1: return 1      # base case\n    return n * factorial(n-1)  # recursive case\n\nprint(f\"5! = {factorial(5)}\")  # 120\n\n# Fibonacci\ndef fib(n):\n    if n <= 1: return n\n    return fib(n-1) + fib(n-2)\n\nprint(f\"fib(10) = {fib(10)}\")  # 55\n\n# Sum of list (recursive)\ndef rec_sum(lst):\n    if not lst: return 0\n    return lst[0] + rec_sum(lst[1:])\n\nprint(f\"Sum: {rec_sum([1,2,3,4,5])}\")  # 15\n\n# Binary search (recursive)\ndef rec_binary_search(arr, target, lo, hi):\n    if lo > hi: return -1\n    mid = (lo + hi) // 2\n    if arr[mid] == target: return mid\n    elif arr[mid] < target: return rec_binary_search(arr, target, mid+1, hi)\n    else: return rec_binary_search(arr, target, lo, mid-1)\n\narr = [1,3,5,7,9,11]\nprint(f\"Find 7: {rec_binary_search(arr, 7, 0, len(arr)-1)}\")",
+  "practiceQuestions": [
+    "What is a base case?",
+    "What causes stack overflow?",
+    "Write recursive factorial.",
+    "Recursion vs iteration tradeoffs?"
+  ],
+  "keywords": [
+    "Recursion",
+    "base case",
+    "recursive case",
+    "Call Stack"
+  ],
+  "keyTakeaways": [
+    "Recursion = function calling itself.",
+    "Must have a base case (stops recursion) and recursive case (makes progress).",
+    "Call Stack: Each call adds a frame."
+  ]
+}

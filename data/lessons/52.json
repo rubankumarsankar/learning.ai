@@ -1,0 +1,23 @@
+{
+  "id": 52,
+  "title": "SQL: LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN",
+  "content": "### Day 52: SQL: LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN\n\n**LEFT JOIN** — all rows from left table + matches from right (NULL if no match)\n**RIGHT JOIN** — all rows from right table + matches from left\n**FULL OUTER** — all rows from both tables\n\n**Use Case:** LEFT JOIN is most common — \"show all customers, even those with no orders.\"",
+  "codeExample": "# Day 52: SQL: LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN\n# SQL: LEFT, RIGHT, FULL OUTER JOIN\nsql = \"\"\"\n-- LEFT JOIN: all customers, even without orders\nSELECT \n    c.name,\n    COALESCE(SUM(o.amount), 0) AS total_spent\nFROM customers c\nLEFT JOIN orders o ON c.id = o.customer_id\nGROUP BY c.name;\n\n-- Find customers with NO orders\nSELECT c.name\nFROM customers c\nLEFT JOIN orders o ON c.id = o.customer_id\nWHERE o.id IS NULL;\n\n-- FULL OUTER JOIN (PostgreSQL)\nSELECT *\nFROM table_a a\nFULL OUTER JOIN table_b b ON a.id = b.id;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "Difference between LEFT and INNER JOIN?",
+    "How to find rows with no match using LEFT JOIN?",
+    "When to use FULL OUTER JOIN?",
+    "What does COALESCE do?"
+  ],
+  "keywords": [
+    "LEFT JOIN",
+    "RIGHT JOIN",
+    "FULL OUTER",
+    "Use Case"
+  ],
+  "keyTakeaways": [
+    "Review the provided code sandbox to understand execution flow.",
+    "Attempt all practice questions without looking at the answers.",
+    "Reference the Crack the Interview library for deeper technical syntax."
+  ]
+}

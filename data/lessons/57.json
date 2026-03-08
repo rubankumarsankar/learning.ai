@@ -1,0 +1,23 @@
+{
+  "id": 57,
+  "title": "SQL: Window Functions — ROW_NUMBER, RANK, DENSE_RANK",
+  "content": "### Day 57: SQL: Window Functions — ROW_NUMBER, RANK, DENSE_RANK\n\n**Window Functions** perform calculations across rows without collapsing them (unlike GROUP BY).\n\n- `ROW_NUMBER()` — unique sequential number\n- `RANK()` — same rank for ties, gaps after\n- `DENSE_RANK()` — same rank for ties, no gaps",
+  "codeExample": "# Day 57: SQL: Window Functions — ROW_NUMBER, RANK, DENSE_RANK\n# SQL: Window Functions\nsql = \"\"\"\n-- ROW_NUMBER: rank employees by salary\nSELECT \n    name, role, salary,\n    ROW_NUMBER() OVER (ORDER BY salary DESC) AS row_num,\n    RANK() OVER (ORDER BY salary DESC) AS rank,\n    DENSE_RANK() OVER (ORDER BY salary DESC) AS dense_rank\nFROM employees;\n\n-- PARTITION BY: rank within each department\nSELECT \n    name, department, salary,\n    RANK() OVER (PARTITION BY department ORDER BY salary DESC) AS dept_rank\nFROM employees;\n\n-- Top earner per department\nSELECT * FROM (\n    SELECT *, ROW_NUMBER() OVER (PARTITION BY department ORDER BY salary DESC) AS rn\n    FROM employees\n) sub WHERE rn = 1;\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "Difference between RANK and DENSE_RANK?",
+    "What is PARTITION BY?",
+    "Find top 3 earners per department.",
+    "How do window functions differ from GROUP BY?"
+  ],
+  "keywords": [
+    "Window Functions",
+    "Window",
+    "Functions",
+    "ROWNUMBER"
+  ],
+  "keyTakeaways": [
+    "`ROW_NUMBER()` — unique sequential number",
+    "`RANK()` — same rank for ties, gaps after",
+    "`DENSE_RANK()` — same rank for ties, no gaps"
+  ]
+}

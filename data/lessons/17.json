@@ -1,0 +1,23 @@
+{
+  "id": 17,
+  "title": "OOP: Classes, Objects, and the self Keyword",
+  "content": "### Day 17: OOP: Classes, Objects, and the self Keyword\n\nThis is an essential skill for modern AI/ML engineering roles at product companies.\n\n**Key Concepts:**\n- **OOP:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Classes:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Objects:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and the self Keyword:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 17: OOP: Classes, Objects, and the self Keyword\n# Phase: Coding Foundations\n\nprint(\"Day 17: OOP: Classes, Objects, and the self Keyword\")\nprint(\"Phase: Coding Foundations\")\n\n# Key concepts to practice:\n# 1. OOP\\n# 2. Classes\\n# 3. Objects\\n# 4. and the self Keyword\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain OOP in your own words with a real-world example.",
+    "How would you use OOP in a product company project?",
+    "Write working code that demonstrates Classes, Objects, and the self Keyword.",
+    "What interview questions could be asked about OOP?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "OOP",
+    "Classes",
+    "Objects"
+  ],
+  "keyTakeaways": [
+    "OOP: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Classes: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Objects: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

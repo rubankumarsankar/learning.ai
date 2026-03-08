@@ -1,0 +1,1922 @@
+[
+  {
+    "id": 1,
+    "date": "Mon, Mar 9",
+    "topic": "Python Install, VS Code Setup, and Hello World",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 1
+  },
+  {
+    "id": 2,
+    "date": "Tue, Mar 10",
+    "topic": "Variables: Strings, Integers, Floats, and Booleans",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 2
+  },
+  {
+    "id": 3,
+    "date": "Wed, Mar 11",
+    "topic": "Input/Output: Building Interactive CLI Programs",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 3
+  },
+  {
+    "id": 4,
+    "date": "Thu, Mar 12",
+    "topic": "Operators: Arithmetic, Comparison, and Assignment",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 4
+  },
+  {
+    "id": 5,
+    "date": "Fri, Mar 13",
+    "topic": "Logical Operators: AND, OR, NOT in Conditions",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 5
+  },
+  {
+    "id": 6,
+    "date": "Sat, Mar 14",
+    "topic": "Lists: Indexing, Slicing, and Core Methods",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 6
+  },
+  {
+    "id": 7,
+    "date": "Sun, Mar 15",
+    "topic": "Dictionaries: Key-Value Pairs and Nested Data",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 7
+  },
+  {
+    "id": 8,
+    "date": "Mon, Mar 16",
+    "topic": "Tuples, Sets, and When to Use Each",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 8
+  },
+  {
+    "id": 9,
+    "date": "Tue, Mar 17",
+    "topic": "If-Else, Elif: Conditional Logic Flow",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 9
+  },
+  {
+    "id": 10,
+    "date": "Wed, Mar 18",
+    "topic": "For Loops: Iterating over Lists and Ranges",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 10
+  },
+  {
+    "id": 11,
+    "date": "Thu, Mar 19",
+    "topic": "While Loops: Break, Continue, and Loop Patterns",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 11
+  },
+  {
+    "id": 12,
+    "date": "Fri, Mar 20",
+    "topic": "Practice Day: 5 Loop and Condition Coding Challenges",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 12
+  },
+  {
+    "id": 13,
+    "date": "Sat, Mar 21",
+    "topic": "Functions: Defining, Calling, and Return Values",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 13
+  },
+  {
+    "id": 14,
+    "date": "Sun, Mar 22",
+    "topic": "Arguments: *args, **kwargs, and Default Parameters",
+    "status": "✅ Done",
+    "phase": "Coding Foundations",
+    "lessonId": 14
+  },
+  {
+    "id": 15,
+    "date": "Mon, Mar 23",
+    "topic": "Scope: Global vs. Local Variables and Closures",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 15
+  },
+  {
+    "id": 16,
+    "date": "Tue, Mar 24",
+    "topic": "DSA: Arrays and Two-Pointer Technique (LeetCode Easy)",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 16
+  },
+  {
+    "id": 17,
+    "date": "Wed, Mar 25",
+    "topic": "OOP: Classes, Objects, and the self Keyword",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 17
+  },
+  {
+    "id": 18,
+    "date": "Thu, Mar 26",
+    "topic": "OOP: The __init__ Constructor and Instance Methods",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 18
+  },
+  {
+    "id": 19,
+    "date": "Fri, Mar 27",
+    "topic": "OOP: Inheritance, Polymorphism, and super()",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 19
+  },
+  {
+    "id": 20,
+    "date": "Sat, Mar 28",
+    "topic": "OOP: Encapsulation and Property Decorators",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 20
+  },
+  {
+    "id": 21,
+    "date": "Sun, Mar 29",
+    "topic": "DSA: Hash Maps and Frequency Counting (LeetCode Easy)",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 21
+  },
+  {
+    "id": 22,
+    "date": "Mon, Mar 30",
+    "topic": "File Handling: Reading and Writing Text and CSV Files",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 22
+  },
+  {
+    "id": 23,
+    "date": "Tue, Mar 31",
+    "topic": "Error Handling: Try, Except, Finally, and Custom Errors",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 23
+  },
+  {
+    "id": 24,
+    "date": "Wed, Apr 1",
+    "topic": "List Comprehensions: One-Line Loops and Filtering",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 24
+  },
+  {
+    "id": 25,
+    "date": "Thu, Apr 2",
+    "topic": "Lambda Functions and Map/Filter/Reduce",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 25
+  },
+  {
+    "id": 26,
+    "date": "Fri, Apr 3",
+    "topic": "Decorators: Wrapping Functions with Reusable Logic",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 26
+  },
+  {
+    "id": 27,
+    "date": "Sat, Apr 4",
+    "topic": "Generators: Yielding Data for Memory Efficiency",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 27
+  },
+  {
+    "id": 28,
+    "date": "Sun, Apr 5",
+    "topic": "DSA: Stacks and Queues with Python Lists and Deque",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 28
+  },
+  {
+    "id": 29,
+    "date": "Mon, Apr 6",
+    "topic": "String Methods: Parsing, Formatting, and Regex Basics",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 29
+  },
+  {
+    "id": 30,
+    "date": "Tue, Apr 7",
+    "topic": "Modules and Packages: Organizing Your Python Projects",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 30
+  },
+  {
+    "id": 31,
+    "date": "Wed, Apr 8",
+    "topic": "Virtual Environments: venv, pip freeze, requirements.txt",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 31
+  },
+  {
+    "id": 32,
+    "date": "Thu, Apr 9",
+    "topic": "DSA: Sorting Algorithms — Bubble, Merge, Quick Sort",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 32
+  },
+  {
+    "id": 33,
+    "date": "Fri, Apr 10",
+    "topic": "DSA: Binary Search on Sorted Arrays (LeetCode Easy)",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 33
+  },
+  {
+    "id": 34,
+    "date": "Sat, Apr 11",
+    "topic": "DSA: Linked Lists Basics and Python Implementation",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 34
+  },
+  {
+    "id": 35,
+    "date": "Sun, Apr 12",
+    "topic": "DSA: Recursion Fundamentals and Base Cases",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 35
+  },
+  {
+    "id": 36,
+    "date": "Mon, Apr 13",
+    "topic": "Debugging: Using print, breakpoints, and VS Code Debugger",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 36
+  },
+  {
+    "id": 37,
+    "date": "Tue, Apr 14",
+    "topic": "Clean Code: PEP 8, Naming Conventions, and Docstrings",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 37
+  },
+  {
+    "id": 38,
+    "date": "Wed, Apr 15",
+    "topic": "Git Basics: Init, Add, Commit, Status, and .gitignore",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 38
+  },
+  {
+    "id": 39,
+    "date": "Thu, Apr 16",
+    "topic": "GitHub: Creating Repos, Pushing Code, and README Writing",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 39
+  },
+  {
+    "id": 40,
+    "date": "Fri, Apr 17",
+    "topic": "Coding Foundations Capstone: Build a CLI Task Manager",
+    "status": "⬜ To-Do",
+    "phase": "Coding Foundations",
+    "lessonId": 40
+  },
+  {
+    "id": 41,
+    "date": "Sat, Apr 18",
+    "topic": "NumPy: Creating 1D and 2D Arrays",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 41
+  },
+  {
+    "id": 42,
+    "date": "Sun, Apr 19",
+    "topic": "NumPy: Indexing, Slicing, and Fancy Indexing",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 42
+  },
+  {
+    "id": 43,
+    "date": "Mon, Apr 20",
+    "topic": "NumPy: Mathematical and Statistical Operations",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 43
+  },
+  {
+    "id": 44,
+    "date": "Tue, Apr 21",
+    "topic": "NumPy: Reshaping, Broadcasting, and Vectorization",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 44
+  },
+  {
+    "id": 45,
+    "date": "Wed, Apr 22",
+    "topic": "NumPy: Random Module and Synthetic Data Generation",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 45
+  },
+  {
+    "id": 46,
+    "date": "Thu, Apr 23",
+    "topic": "SQL: Installing PostgreSQL/MySQL and First Queries",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 46
+  },
+  {
+    "id": 47,
+    "date": "Fri, Apr 24",
+    "topic": "SQL: CREATE TABLE, Data Types, and Constraints",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 47
+  },
+  {
+    "id": 48,
+    "date": "Sat, Apr 25",
+    "topic": "SQL: INSERT, UPDATE, DELETE — CRUD Operations",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 48
+  },
+  {
+    "id": 49,
+    "date": "Sun, Apr 26",
+    "topic": "SQL: SELECT, WHERE, DISTINCT, and ALIASES",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 49
+  },
+  {
+    "id": 50,
+    "date": "Mon, Apr 27",
+    "topic": "SQL: IN, BETWEEN, LIKE, and Pattern Matching",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 50
+  },
+  {
+    "id": 51,
+    "date": "Tue, Apr 28",
+    "topic": "SQL: INNER JOIN — Connecting Related Tables",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 51
+  },
+  {
+    "id": 52,
+    "date": "Wed, Apr 29",
+    "topic": "SQL: LEFT JOIN, RIGHT JOIN, and FULL OUTER JOIN",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 52
+  },
+  {
+    "id": 53,
+    "date": "Thu, Apr 30",
+    "topic": "SQL: Self-Joins, Cross-Joins, and Multi-Table Queries",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 53
+  },
+  {
+    "id": 54,
+    "date": "Fri, May 1",
+    "topic": "SQL: Aggregates — COUNT, SUM, AVG, MIN, MAX",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 54
+  },
+  {
+    "id": 55,
+    "date": "Sat, May 2",
+    "topic": "SQL: GROUP BY and HAVING for Segmented Analysis",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 55
+  },
+  {
+    "id": 56,
+    "date": "Sun, May 3",
+    "topic": "SQL: Subqueries — Scalar, Row, and Table Subqueries",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 56
+  },
+  {
+    "id": 57,
+    "date": "Mon, May 4",
+    "topic": "SQL: Window Functions — ROW_NUMBER, RANK, DENSE_RANK",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 57
+  },
+  {
+    "id": 58,
+    "date": "Tue, May 5",
+    "topic": "SQL: LEAD, LAG, and Running Totals with Windows",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 58
+  },
+  {
+    "id": 59,
+    "date": "Wed, May 6",
+    "topic": "SQL: CASE WHEN, COALESCE, and NULL Handling",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 59
+  },
+  {
+    "id": 60,
+    "date": "Thu, May 7",
+    "topic": "SQL Interview Practice: 10 Real SQL Challenges",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 60
+  },
+  {
+    "id": 61,
+    "date": "Fri, May 8",
+    "topic": "Pandas: Loading CSV, Excel, and JSON Files",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 61
+  },
+  {
+    "id": 62,
+    "date": "Sat, May 9",
+    "topic": "Pandas: Head, Tail, Info, Describe — Data Audit",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 62
+  },
+  {
+    "id": 63,
+    "date": "Sun, May 10",
+    "topic": "Pandas: Selection with .loc and .iloc",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 63
+  },
+  {
+    "id": 64,
+    "date": "Mon, May 11",
+    "topic": "Pandas: Filtering DataFrames with Boolean Logic",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 64
+  },
+  {
+    "id": 65,
+    "date": "Tue, May 12",
+    "topic": "Pandas: Adding, Renaming, and Dropping Columns",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 65
+  },
+  {
+    "id": 66,
+    "date": "Wed, May 13",
+    "topic": "Pandas: Handling Missing Data — fillna, dropna, Imputation",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 66
+  },
+  {
+    "id": 67,
+    "date": "Thu, May 14",
+    "topic": "Pandas: Handling Duplicates and Data Type Conversion",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 67
+  },
+  {
+    "id": 68,
+    "date": "Fri, May 15",
+    "topic": "Pandas: String Methods and Datetime Parsing",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 68
+  },
+  {
+    "id": 69,
+    "date": "Sat, May 16",
+    "topic": "Pandas: GroupBy, Aggregation, and Multi-Indexing",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 69
+  },
+  {
+    "id": 70,
+    "date": "Sun, May 17",
+    "topic": "Pandas: Pivot Tables, Melt, and Reshaping Data",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 70
+  },
+  {
+    "id": 71,
+    "date": "Mon, May 18",
+    "topic": "Pandas: Merging and Joining DataFrames (SQL-style)",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 71
+  },
+  {
+    "id": 72,
+    "date": "Tue, May 19",
+    "topic": "Pandas: Apply, Lambda, and Custom Transformations",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 72
+  },
+  {
+    "id": 73,
+    "date": "Wed, May 20",
+    "topic": "EDA Project: Business Case Dataset Analysis (E-commerce)",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 73
+  },
+  {
+    "id": 74,
+    "date": "Thu, May 21",
+    "topic": "EDA Project: Customer Behavior Insights with Plots",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 74
+  },
+  {
+    "id": 75,
+    "date": "Fri, May 22",
+    "topic": "Matplotlib and Seaborn: Charts, Heatmaps, and Styling",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 75
+  },
+  {
+    "id": 76,
+    "date": "Sat, May 23",
+    "topic": "Pandas: Time Series Basics and Resampling",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 76
+  },
+  {
+    "id": 77,
+    "date": "Sun, May 24",
+    "topic": "EDA Mini-Project: HR Attrition Dataset Deep Dive",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 77
+  },
+  {
+    "id": 78,
+    "date": "Mon, May 25",
+    "topic": "EDA Mini-Project: Write Insights Report from Real Data",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 78
+  },
+  {
+    "id": 79,
+    "date": "Tue, May 26",
+    "topic": "Data Handling Capstone: Clean and Analyze a 10K-Row Dataset",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 79
+  },
+  {
+    "id": 80,
+    "date": "Wed, May 27",
+    "topic": "Data Handling Review: SQL + Pandas Interview Q&A Day",
+    "status": "⬜ To-Do",
+    "phase": "Data Handling & SQL",
+    "lessonId": 80
+  },
+  {
+    "id": 81,
+    "date": "Thu, May 28",
+    "topic": "Stats: Mean, Median, Mode, and Measures of Central Tendency",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 81
+  },
+  {
+    "id": 82,
+    "date": "Fri, May 29",
+    "topic": "Stats: Variance, Standard Deviation, and Data Spread",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 82
+  },
+  {
+    "id": 83,
+    "date": "Sat, May 30",
+    "topic": "Stats: Normal Distribution and Z-Scores",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 83
+  },
+  {
+    "id": 84,
+    "date": "Sun, May 31",
+    "topic": "Stats: Correlation, Covariance, and Scatter Plots",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 84
+  },
+  {
+    "id": 85,
+    "date": "Mon, Jun 1",
+    "topic": "Stats: Probability Basics and Bayes Theorem Intuition",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 85
+  },
+  {
+    "id": 86,
+    "date": "Tue, Jun 2",
+    "topic": "Stats: Hypothesis Testing and p-Values",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 86
+  },
+  {
+    "id": 87,
+    "date": "Wed, Jun 3",
+    "topic": "Math: Vectors, Matrices, and Linear Algebra Essentials",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 87
+  },
+  {
+    "id": 88,
+    "date": "Thu, Jun 4",
+    "topic": "Math: Gradient Descent — The Optimization Engine",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 88
+  },
+  {
+    "id": 89,
+    "date": "Fri, Jun 5",
+    "topic": "Math: Cost Functions, Convexity, and Learning Rate",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 89
+  },
+  {
+    "id": 90,
+    "date": "Sat, Jun 6",
+    "topic": "ML: What is Machine Learning? Types and Workflow",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 90
+  },
+  {
+    "id": 91,
+    "date": "Sun, Jun 7",
+    "topic": "ML: Train-Test Split and the Danger of Data Leakage",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 91
+  },
+  {
+    "id": 92,
+    "date": "Mon, Jun 8",
+    "topic": "ML: Feature Scaling — StandardScaler vs MinMaxScaler",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 92
+  },
+  {
+    "id": 93,
+    "date": "Tue, Jun 9",
+    "topic": "ML: Encoding Categorical Variables — Label vs OneHot",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 93
+  },
+  {
+    "id": 94,
+    "date": "Wed, Jun 10",
+    "topic": "Regression: Simple Linear Regression with scikit-learn",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 94
+  },
+  {
+    "id": 95,
+    "date": "Thu, Jun 11",
+    "topic": "Regression: Multiple Linear Regression and Feature Selection",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 95
+  },
+  {
+    "id": 96,
+    "date": "Fri, Jun 12",
+    "topic": "Regression: R-Squared, Adjusted R², and Residual Analysis",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 96
+  },
+  {
+    "id": 97,
+    "date": "Sat, Jun 13",
+    "topic": "Regression: Polynomial Regression and Overfitting",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 97
+  },
+  {
+    "id": 98,
+    "date": "Sun, Jun 14",
+    "topic": "Regression: Ridge and Lasso Regularization",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 98
+  },
+  {
+    "id": 99,
+    "date": "Mon, Jun 15",
+    "topic": "Classification: Logistic Regression — Theory and Code",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 99
+  },
+  {
+    "id": 100,
+    "date": "Tue, Jun 16",
+    "topic": "Classification: Decision Boundaries and Threshold Tuning",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 100
+  },
+  {
+    "id": 101,
+    "date": "Wed, Jun 17",
+    "topic": "Classification: K-Nearest Neighbors (KNN) Algorithm",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 101
+  },
+  {
+    "id": 102,
+    "date": "Thu, Jun 18",
+    "topic": "Classification: Naive Bayes for Text and Tabular Data",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 102
+  },
+  {
+    "id": 103,
+    "date": "Fri, Jun 19",
+    "topic": "Classification: Support Vector Machines (SVM) Basics",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 103
+  },
+  {
+    "id": 104,
+    "date": "Sat, Jun 20",
+    "topic": "Evaluation: Confusion Matrix — TP, TN, FP, FN",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 104
+  },
+  {
+    "id": 105,
+    "date": "Sun, Jun 21",
+    "topic": "Evaluation: Precision, Recall, and the F1-Score",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 105
+  },
+  {
+    "id": 106,
+    "date": "Mon, Jun 22",
+    "topic": "Evaluation: ROC Curve and AUC Score",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 106
+  },
+  {
+    "id": 107,
+    "date": "Tue, Jun 23",
+    "topic": "Evaluation: Cross-Validation and K-Fold Strategies",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 107
+  },
+  {
+    "id": 108,
+    "date": "Wed, Jun 24",
+    "topic": "Evaluation: Bias-Variance Tradeoff Explained",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 108
+  },
+  {
+    "id": 109,
+    "date": "Thu, Jun 25",
+    "topic": "Trees: Decision Trees — Gini Impurity and Entropy",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 109
+  },
+  {
+    "id": 110,
+    "date": "Fri, Jun 26",
+    "topic": "Trees: Visualizing and Pruning Decision Trees",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 110
+  },
+  {
+    "id": 111,
+    "date": "Sat, Jun 27",
+    "topic": "Ensembles: Random Forest — Bagging in Action",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 111
+  },
+  {
+    "id": 112,
+    "date": "Sun, Jun 28",
+    "topic": "Ensembles: Feature Importance and Model Interpretation",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 112
+  },
+  {
+    "id": 113,
+    "date": "Mon, Jun 29",
+    "topic": "Boosting: Gradient Boosting Machines (GBM) Explained",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 113
+  },
+  {
+    "id": 114,
+    "date": "Tue, Jun 30",
+    "topic": "Boosting: XGBoost — Install, Train, and Tune",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 114
+  },
+  {
+    "id": 115,
+    "date": "Wed, Jul 1",
+    "topic": "Boosting: LightGBM and CatBoost for Production Use",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 115
+  },
+  {
+    "id": 116,
+    "date": "Thu, Jul 2",
+    "topic": "Hyperparameters: GridSearchCV vs RandomizedSearchCV",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 116
+  },
+  {
+    "id": 117,
+    "date": "Fri, Jul 3",
+    "topic": "Pipelines: Building sklearn Pipelines for Clean ML Code",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 117
+  },
+  {
+    "id": 118,
+    "date": "Sat, Jul 4",
+    "topic": "Feature Engineering: Creating New Features from Data",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 118
+  },
+  {
+    "id": 119,
+    "date": "Sun, Jul 5",
+    "topic": "Feature Engineering: Handling Imbalanced Datasets (SMOTE)",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 119
+  },
+  {
+    "id": 120,
+    "date": "Mon, Jul 6",
+    "topic": "Unsupervised: K-Means Clustering",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 120
+  },
+  {
+    "id": 121,
+    "date": "Tue, Jul 7",
+    "topic": "Unsupervised: Dimensionality Reduction with PCA",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 121
+  },
+  {
+    "id": 122,
+    "date": "Wed, Jul 8",
+    "topic": "ML Mini-Project: Predict House Prices End-to-End",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 122
+  },
+  {
+    "id": 123,
+    "date": "Thu, Jul 9",
+    "topic": "ML Mini-Project: Credit Card Fraud Detection",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 123
+  },
+  {
+    "id": 124,
+    "date": "Fri, Jul 10",
+    "topic": "ML Mini-Project: Employee Attrition Prediction",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 124
+  },
+  {
+    "id": 125,
+    "date": "Sat, Jul 11",
+    "topic": "Scikit-learn: Saving and Loading Models (Joblib/Pickle)",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 125
+  },
+  {
+    "id": 126,
+    "date": "Sun, Jul 12",
+    "topic": "ML Capstone: Full Pipeline — Clean, Train, Evaluate, Save",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 126
+  },
+  {
+    "id": 127,
+    "date": "Mon, Jul 13",
+    "topic": "ML Core Review: 20 Interview Questions Practice Day",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 127
+  },
+  {
+    "id": 128,
+    "date": "Tue, Jul 14",
+    "topic": "ML Core Review: Whiteboard a Model Pipeline from Scratch",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 128
+  },
+  {
+    "id": 129,
+    "date": "Wed, Jul 15",
+    "topic": "ML Core Review: Compare 5 Models on Same Dataset",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 129
+  },
+  {
+    "id": 130,
+    "date": "Thu, Jul 16",
+    "topic": "ML Core Review: Write a Technical Blog Post on Your Model",
+    "status": "⬜ To-Do",
+    "phase": "Machine Learning Core",
+    "lessonId": 130
+  },
+  {
+    "id": 131,
+    "date": "Fri, Jul 17",
+    "topic": "DL: The Biological vs. Artificial Neuron",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 131
+  },
+  {
+    "id": 132,
+    "date": "Sat, Jul 18",
+    "topic": "DL: Weights, Biases, and Activation Functions (ReLU, Sigmoid)",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 132
+  },
+  {
+    "id": 133,
+    "date": "Sun, Jul 19",
+    "topic": "DL: Forward Propagation Step-by-Step",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 133
+  },
+  {
+    "id": 134,
+    "date": "Mon, Jul 20",
+    "topic": "DL: Loss Functions — MSE, Cross-Entropy, and When to Use",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 134
+  },
+  {
+    "id": 135,
+    "date": "Tue, Jul 21",
+    "topic": "DL: Backpropagation and Gradient Flow",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 135
+  },
+  {
+    "id": 136,
+    "date": "Wed, Jul 22",
+    "topic": "DL: Optimizers — SGD, Momentum, Adam",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 136
+  },
+  {
+    "id": 137,
+    "date": "Thu, Jul 23",
+    "topic": "TensorFlow/Keras: Installing and First Neural Network",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 137
+  },
+  {
+    "id": 138,
+    "date": "Fri, Jul 24",
+    "topic": "Keras: Sequential vs Functional API",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 138
+  },
+  {
+    "id": 139,
+    "date": "Sat, Jul 25",
+    "topic": "Keras: Compiling with Loss, Optimizer, and Metrics",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 139
+  },
+  {
+    "id": 140,
+    "date": "Sun, Jul 26",
+    "topic": "Keras: Callbacks — EarlyStopping and ModelCheckpoint",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 140
+  },
+  {
+    "id": 141,
+    "date": "Mon, Jul 27",
+    "topic": "DL: Regularization — L2, Dropout, and Batch Normalization",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 141
+  },
+  {
+    "id": 142,
+    "date": "Tue, Jul 28",
+    "topic": "DL: Hyperparameter Tuning — Batch Size, LR, Epochs",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 142
+  },
+  {
+    "id": 143,
+    "date": "Wed, Jul 29",
+    "topic": "DL Project: Binary Classification on Tabular Data",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 143
+  },
+  {
+    "id": 144,
+    "date": "Thu, Jul 30",
+    "topic": "CNN: How Computers See Pixels — Image as Matrix",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 144
+  },
+  {
+    "id": 145,
+    "date": "Fri, Jul 31",
+    "topic": "CNN: Convolutional Layers, Kernels, and Feature Maps",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 145
+  },
+  {
+    "id": 146,
+    "date": "Sat, Aug 1",
+    "topic": "CNN: Pooling, Padding, Stride, and Architecture Design",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 146
+  },
+  {
+    "id": 147,
+    "date": "Sun, Aug 2",
+    "topic": "CNN Project: MNIST Handwritten Digit Classifier",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 147
+  },
+  {
+    "id": 148,
+    "date": "Mon, Aug 3",
+    "topic": "CNN: Transfer Learning with VGG16/ResNet (Pretrained Models)",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 148
+  },
+  {
+    "id": 149,
+    "date": "Tue, Aug 4",
+    "topic": "CNN Project: Image Classification App with Pretrained Model",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 149
+  },
+  {
+    "id": 150,
+    "date": "Wed, Aug 5",
+    "topic": "NLP: Text Preprocessing — Tokenization, Stopwords, Stemming",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 150
+  },
+  {
+    "id": 151,
+    "date": "Thu, Aug 6",
+    "topic": "NLP: Bag of Words and TF-IDF Vectorization",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 151
+  },
+  {
+    "id": 152,
+    "date": "Fri, Aug 7",
+    "topic": "NLP: Word Embeddings — Word2Vec and GloVe Intuition",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 152
+  },
+  {
+    "id": 153,
+    "date": "Sat, Aug 8",
+    "topic": "NLP: Text Classification with TF-IDF + Logistic Regression",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 153
+  },
+  {
+    "id": 154,
+    "date": "Sun, Aug 9",
+    "topic": "NLP: Sentiment Analysis Project — Product Reviews",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 154
+  },
+  {
+    "id": 155,
+    "date": "Mon, Aug 10",
+    "topic": "NLP: Intro to HuggingFace Transformers and Pretrained Models",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 155
+  },
+  {
+    "id": 156,
+    "date": "Tue, Aug 11",
+    "topic": "Applied AI: Using Pretrained Models for Real-World Tasks",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 156
+  },
+  {
+    "id": 157,
+    "date": "Wed, Aug 12",
+    "topic": "Applied AI: Model Optimization — Quantization and Pruning Basics",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 157
+  },
+  {
+    "id": 158,
+    "date": "Thu, Aug 13",
+    "topic": "Applied AI: Building an Inference Pipeline (Preprocessing → Predict → Postprocess)",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 158
+  },
+  {
+    "id": 159,
+    "date": "Fri, Aug 14",
+    "topic": "Applied AI: When to Use ML vs DL — Decision Framework",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 159
+  },
+  {
+    "id": 160,
+    "date": "Sat, Aug 15",
+    "topic": "DL Mini-Project: Text Classification App End-to-End",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 160
+  },
+  {
+    "id": 161,
+    "date": "Sun, Aug 16",
+    "topic": "DL Mini-Project: Image Classifier with Streamlit Demo",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 161
+  },
+  {
+    "id": 162,
+    "date": "Mon, Aug 17",
+    "topic": "DL Capstone: Choose a Problem → Train → Deploy a Model",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 162
+  },
+  {
+    "id": 163,
+    "date": "Tue, Aug 18",
+    "topic": "DL & Applied AI Review: 15 Interview Questions Practice",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 163
+  },
+  {
+    "id": 164,
+    "date": "Wed, Aug 19",
+    "topic": "DL Review: Explain CNN Architecture to a Non-Technical PM",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 164
+  },
+  {
+    "id": 165,
+    "date": "Thu, Aug 20",
+    "topic": "DL Review: Compare TensorFlow vs PyTorch in a Short Report",
+    "status": "⬜ To-Do",
+    "phase": "Deep Learning & Applied AI",
+    "lessonId": 165
+  },
+  {
+    "id": 166,
+    "date": "Fri, Aug 21",
+    "topic": "Web Basics: HTTP Methods — GET, POST, PUT, DELETE",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 166
+  },
+  {
+    "id": 167,
+    "date": "Sat, Aug 22",
+    "topic": "FastAPI: Setup, Uvicorn, and Your First Endpoint",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 167
+  },
+  {
+    "id": 168,
+    "date": "Sun, Aug 23",
+    "topic": "FastAPI: Path Parameters vs Query Parameters",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 168
+  },
+  {
+    "id": 169,
+    "date": "Mon, Aug 24",
+    "topic": "FastAPI: Request Body, JSON Handling, and Response Models",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 169
+  },
+  {
+    "id": 170,
+    "date": "Tue, Aug 25",
+    "topic": "FastAPI: Auto-Generated /docs (Swagger UI)",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 170
+  },
+  {
+    "id": 171,
+    "date": "Wed, Aug 26",
+    "topic": "Pydantic: Data Models, Field Validation, and Custom Validators",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 171
+  },
+  {
+    "id": 172,
+    "date": "Thu, Aug 27",
+    "topic": "FastAPI: Dependency Injection and Middleware",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 172
+  },
+  {
+    "id": 173,
+    "date": "Fri, Aug 28",
+    "topic": "FastAPI: Async/Await and Background Tasks",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 173
+  },
+  {
+    "id": 174,
+    "date": "Sat, Aug 29",
+    "topic": "FastAPI Project: Build a /predict Endpoint for ML Model",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 174
+  },
+  {
+    "id": 175,
+    "date": "Sun, Aug 30",
+    "topic": "Model Serving: Preprocessing Data Inside the API",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 175
+  },
+  {
+    "id": 176,
+    "date": "Mon, Aug 31",
+    "topic": "Model Serving: Structured JSON Responses and Error Handling",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 176
+  },
+  {
+    "id": 177,
+    "date": "Tue, Sep 1",
+    "topic": "Model Serving: Input Schema Validation with Pydantic",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 177
+  },
+  {
+    "id": 178,
+    "date": "Wed, Sep 2",
+    "topic": "FastAPI: Authentication Basics — API Keys and OAuth2",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 178
+  },
+  {
+    "id": 179,
+    "date": "Thu, Sep 3",
+    "topic": "FastAPI: Logging, Environment Variables, and Config Management",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 179
+  },
+  {
+    "id": 180,
+    "date": "Fri, Sep 4",
+    "topic": "FastAPI: Basic Database Integration with SQLAlchemy",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 180
+  },
+  {
+    "id": 181,
+    "date": "Sat, Sep 5",
+    "topic": "Docker: Containers vs VMs — Why Docker Matters",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 181
+  },
+  {
+    "id": 182,
+    "date": "Sun, Sep 6",
+    "topic": "Docker: Writing Your First Dockerfile for a Python API",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 182
+  },
+  {
+    "id": 183,
+    "date": "Mon, Sep 7",
+    "topic": "Docker: Building Images, Running Containers, and Port Mapping",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 183
+  },
+  {
+    "id": 184,
+    "date": "Tue, Sep 8",
+    "topic": "Docker: Environment Variables and docker-compose.yml",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 184
+  },
+  {
+    "id": 185,
+    "date": "Wed, Sep 9",
+    "topic": "Docker Project: Containerize Your FastAPI ML App",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 185
+  },
+  {
+    "id": 186,
+    "date": "Thu, Sep 10",
+    "topic": "Testing: Unit Tests with Pytest — Writing Your First Tests",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 186
+  },
+  {
+    "id": 187,
+    "date": "Fri, Sep 11",
+    "topic": "Testing: Mocking External APIs and Model Predictions",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 187
+  },
+  {
+    "id": 188,
+    "date": "Sat, Sep 12",
+    "topic": "Testing: Integration Testing — Testing the Full API Flow",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 188
+  },
+  {
+    "id": 189,
+    "date": "Sun, Sep 13",
+    "topic": "Git Advanced: Branching, Merging, and Resolving Conflicts",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 189
+  },
+  {
+    "id": 190,
+    "date": "Mon, Sep 14",
+    "topic": "GitHub: Pull Requests, Code Reviews, and GitHub Actions Intro",
+    "status": "✅ Done",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 190
+  },
+  {
+    "id": 191,
+    "date": "Tue, Sep 15",
+    "topic": "Engineering Mini-Project: Full API + Docker + Tests Pipeline",
+    "status": "🚀 In Progress",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 191
+  },
+  {
+    "id": 192,
+    "date": "Wed, Sep 16",
+    "topic": "Engineering: Caching Predictions with Redis Basics",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 192
+  },
+  {
+    "id": 193,
+    "date": "Thu, Sep 17",
+    "topic": "Engineering: Rate Limiting and API Security Best Practices",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 193
+  },
+  {
+    "id": 194,
+    "date": "Fri, Sep 18",
+    "topic": "Engineering: Building a Health Check and Status Dashboard",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 194
+  },
+  {
+    "id": 195,
+    "date": "Sat, Sep 19",
+    "topic": "Backend & AI Engineering Review: System Design Discussion",
+    "status": "⬜ To-Do",
+    "phase": "Backend & AI Engineering",
+    "lessonId": 195
+  },
+  {
+    "id": 196,
+    "date": "Sun, Sep 20",
+    "topic": "Cloud: Intro to AWS vs GCP vs Azure — Which to Learn",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 196
+  },
+  {
+    "id": 197,
+    "date": "Mon, Sep 21",
+    "topic": "Deployment: Deploy a FastAPI App to Render/Railway",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 197
+  },
+  {
+    "id": 198,
+    "date": "Tue, Sep 22",
+    "topic": "Deployment: Deploy to AWS EC2 with Docker",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 198
+  },
+  {
+    "id": 199,
+    "date": "Wed, Sep 23",
+    "topic": "Deployment: Environment Variables and Secrets in Production",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 199
+  },
+  {
+    "id": 200,
+    "date": "Thu, Sep 24",
+    "topic": "CI/CD: GitHub Actions — Auto-Deploy on Push",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 200
+  },
+  {
+    "id": 201,
+    "date": "Fri, Sep 25",
+    "topic": "CI/CD: Building a Test + Lint + Deploy Pipeline",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 201
+  },
+  {
+    "id": 202,
+    "date": "Sat, Sep 26",
+    "topic": "MLflow: Experiment Tracking — Setup and First Experiment",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 202
+  },
+  {
+    "id": 203,
+    "date": "Sun, Sep 27",
+    "topic": "MLflow: Logging Parameters, Metrics, and Artifacts",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 203
+  },
+  {
+    "id": 204,
+    "date": "Mon, Sep 28",
+    "topic": "MLflow: Model Registry and Version Management",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 204
+  },
+  {
+    "id": 205,
+    "date": "Tue, Sep 29",
+    "topic": "DVC: Data Version Control — Track Large Datasets",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 205
+  },
+  {
+    "id": 206,
+    "date": "Wed, Sep 30",
+    "topic": "Monitoring: Model Performance Metrics in Production",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 206
+  },
+  {
+    "id": 207,
+    "date": "Thu, Oct 1",
+    "topic": "Monitoring: Detecting Data Drift and Concept Drift",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 207
+  },
+  {
+    "id": 208,
+    "date": "Fri, Oct 2",
+    "topic": "MLOps: Model Retraining Strategy and Automation Concepts",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 208
+  },
+  {
+    "id": 209,
+    "date": "Sat, Oct 3",
+    "topic": "MLOps: Latency vs Accuracy — Production Tradeoffs",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 209
+  },
+  {
+    "id": 210,
+    "date": "Sun, Oct 4",
+    "topic": "Streamlit: Building Interactive ML Dashboards",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 210
+  },
+  {
+    "id": 211,
+    "date": "Mon, Oct 5",
+    "topic": "Streamlit: File Uploader + Model Prediction UI",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 211
+  },
+  {
+    "id": 212,
+    "date": "Tue, Oct 6",
+    "topic": "Streamlit: Connecting a Streamlit Frontend to FastAPI",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 212
+  },
+  {
+    "id": 213,
+    "date": "Wed, Oct 7",
+    "topic": "Deployment: Hosting Streamlit on Community Cloud",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 213
+  },
+  {
+    "id": 214,
+    "date": "Thu, Oct 8",
+    "topic": "Gradio: Quick ML Demos for HuggingFace Spaces",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 214
+  },
+  {
+    "id": 215,
+    "date": "Fri, Oct 9",
+    "topic": "Deployment & MLOps Review: Architecture Design Discussion",
+    "status": "⬜ To-Do",
+    "phase": "Deployment & MLOps",
+    "lessonId": 215
+  },
+  {
+    "id": 216,
+    "date": "Sat, Oct 10",
+    "topic": "Project 1: Customer Churn — Problem Statement and Dataset",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 216
+  },
+  {
+    "id": 217,
+    "date": "Sun, Oct 11",
+    "topic": "Project 1: Churn — Exploratory Data Analysis",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 217
+  },
+  {
+    "id": 218,
+    "date": "Mon, Oct 12",
+    "topic": "Project 1: Churn — Feature Engineering and Preprocessing",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 218
+  },
+  {
+    "id": 219,
+    "date": "Tue, Oct 13",
+    "topic": "Project 1: Churn — Model Training and Evaluation",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 219
+  },
+  {
+    "id": 220,
+    "date": "Wed, Oct 14",
+    "topic": "Project 1: Churn — Hyperparameter Tuning and Final Model",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 220
+  },
+  {
+    "id": 221,
+    "date": "Thu, Oct 15",
+    "topic": "Project 1: Churn — FastAPI Prediction Endpoint",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 221
+  },
+  {
+    "id": 222,
+    "date": "Fri, Oct 16",
+    "topic": "Project 1: Churn — Streamlit UI and Demo",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 222
+  },
+  {
+    "id": 223,
+    "date": "Sat, Oct 17",
+    "topic": "Project 1: Churn — Docker, Deploy, and GitHub README",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 223
+  },
+  {
+    "id": 224,
+    "date": "Sun, Oct 18",
+    "topic": "Project 2: Resume Screening NLP — Problem and Dataset",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 224
+  },
+  {
+    "id": 225,
+    "date": "Mon, Oct 19",
+    "topic": "Project 2: Resume Screening — Text Preprocessing and EDA",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 225
+  },
+  {
+    "id": 226,
+    "date": "Tue, Oct 20",
+    "topic": "Project 2: Resume Screening — TF-IDF and Model Training",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 226
+  },
+  {
+    "id": 227,
+    "date": "Wed, Oct 21",
+    "topic": "Project 2: Resume Screening — Ranking Logic and API",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 227
+  },
+  {
+    "id": 228,
+    "date": "Thu, Oct 22",
+    "topic": "Project 2: Resume Screening — UI, Deploy, and README",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 228
+  },
+  {
+    "id": 229,
+    "date": "Fri, Oct 23",
+    "topic": "Project 3: Sales Forecasting — Problem and Time-Series Data",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 229
+  },
+  {
+    "id": 230,
+    "date": "Sat, Oct 24",
+    "topic": "Project 3: Sales Forecasting — EDA and Feature Engineering",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 230
+  },
+  {
+    "id": 231,
+    "date": "Sun, Oct 25",
+    "topic": "Project 3: Sales Forecasting — Model Training and Evaluation",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 231
+  },
+  {
+    "id": 232,
+    "date": "Mon, Oct 26",
+    "topic": "Project 3: Sales Forecasting — Dashboard and Deployment",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 232
+  },
+  {
+    "id": 233,
+    "date": "Tue, Oct 27",
+    "topic": "Project 3: Sales Forecasting — Business Insights and README",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 233
+  },
+  {
+    "id": 234,
+    "date": "Wed, Oct 28",
+    "topic": "Portfolio: GitHub Profile Cleanup and Project Pinning",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 234
+  },
+  {
+    "id": 235,
+    "date": "Thu, Oct 29",
+    "topic": "Portfolio: Writing Resume Bullets for Each Project",
+    "status": "⬜ To-Do",
+    "phase": "Portfolio Projects",
+    "lessonId": 235
+  },
+  {
+    "id": 236,
+    "date": "Fri, Oct 30",
+    "topic": "Interview Prep: Top 20 Python Coding Questions",
+    "status": "⬜ To-Do",
+    "phase": "Interview & Job Launch",
+    "lessonId": 236
+  },
+  {
+    "id": 237,
+    "date": "Sat, Oct 31",
+    "topic": "Interview Prep: Top 15 SQL Interview Challenges",
+    "status": "⬜ To-Do",
+    "phase": "Interview & Job Launch",
+    "lessonId": 237
+  },
+  {
+    "id": 238,
+    "date": "Sun, Nov 1",
+    "topic": "Interview Prep: ML Theory and System Design Questions",
+    "status": "⬜ To-Do",
+    "phase": "Interview & Job Launch",
+    "lessonId": 238
+  },
+  {
+    "id": 239,
+    "date": "Mon, Nov 2",
+    "topic": "Interview Prep: Project Walkthrough and HR Questions",
+    "status": "⬜ To-Do",
+    "phase": "Interview & Job Launch",
+    "lessonId": 239
+  },
+  {
+    "id": 240,
+    "date": "Tue, Nov 3",
+    "topic": "Job Launch: Resume Polish, LinkedIn Posts, and Apply Strategy",
+    "status": "⬜ To-Do",
+    "phase": "Interview & Job Launch",
+    "lessonId": 240
+  }
+]

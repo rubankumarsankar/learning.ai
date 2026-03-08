@@ -1,0 +1,23 @@
+{
+  "id": 15,
+  "title": "Scope: Global vs. Local Variables and Closures",
+  "content": "### Day 15: Scope — Global vs Local Variables and Closures\n\n**Scope** = where a variable is accessible.\n\n**LEGB Rule:** Local → Enclosing → Global → Built-in\n\n**global keyword:** Avoid it — pass values as parameters instead.\n\n**Closures:** A function that remembers its enclosing scope variables.",
+  "codeExample": "# Day 15: Scope and Closures\n\n# Local vs Global\nx = \"GLOBAL\"\ndef show():\n    x = \"LOCAL\"\n    print(f\"Inside: {x}\")\nshow()\nprint(f\"Outside: {x}\")\n\n# LEGB demo\nname = \"Global\"\ndef outer():\n    name = \"Enclosing\"\n    def inner():\n        name = \"Local\"\n        print(f\"  Inner: {name}\")\n    inner()\n    print(f\"  Outer: {name}\")\nouter()\nprint(f\"  Module: {name}\")\n\n# Closure\ndef make_multiplier(factor):\n    def multiply(n):\n        return n * factor\n    return multiply\n\ndouble = make_multiplier(2)\ntriple = make_multiplier(3)\nprint(f\"\\ndouble(5) = {double(5)}\")\nprint(f\"triple(5) = {triple(5)}\")",
+  "practiceQuestions": [
+    "What is variable scope?",
+    "What is the LEGB rule?",
+    "Why avoid the 'global' keyword?",
+    "What is a closure? Write one."
+  ],
+  "keywords": [
+    "Scope",
+    "LEGB Rule",
+    "global keyword",
+    "Closures"
+  ],
+  "keyTakeaways": [
+    "Scope = where a variable is accessible.",
+    "LEGB Rule: Local → Enclosing → Global → Built-in\n\nglobal keyword: Avoid it — pass values as parameters instead.",
+    "Closures: A function that remembers its enclosing scope variables."
+  ]
+}

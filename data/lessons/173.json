@@ -1,0 +1,22 @@
+{
+  "id": 173,
+  "title": "FastAPI: Async/Await and Background Tasks",
+  "content": "### Day 173: FastAPI: Async/Await and Background Tasks\n\nAPIs are how ML models reach users. No company deploys Jupyter notebooks. FastAPI is the modern Python framework for ML APIs.\n\n**Key Concepts:**\n- **FastAPI:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Async/Await and Background Tasks:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 173: FastAPI: Async/Await and Background Tasks\n\"\"\"\nBackend Engineering: Async/Await and Background Tasks\n\nKey concepts:\n1. FastAPI\\n2. Async/Await and Background Tasks\n\"\"\"\n\nprint(\"Day 173: FastAPI: Async/Await and Background Tasks\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Async/Await and Background Tasks\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain FastAPI in your own words with a real-world example.",
+    "How would you use FastAPI in a product company project?",
+    "Write working code that demonstrates Async/Await and Background Tasks.",
+    "What interview questions could be asked about FastAPI?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "FastAPI",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "FastAPI: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Async/Await and Background Tasks: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

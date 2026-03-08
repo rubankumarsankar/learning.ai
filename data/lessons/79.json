@@ -1,0 +1,22 @@
+{
+  "id": 79,
+  "title": "Data Handling Capstone: Clean and Analyze a 10K-Row Dataset",
+  "content": "### Day 79: Data Handling Capstone: Clean and Analyze a 10K-Row Dataset\n\nApply everything you've learned in this phase to a real dataset. Focus on clean, documented analysis.\n\n**Key Concepts:**\n- **Data Handling Capstone:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Clean and Analyze a 10K-Row Dataset:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 79: Data Handling Capstone: Clean and Analyze a 10K-Row Dataset\n# Phase: Data Handling & SQL\n\nprint(\"Day 79: Data Handling Capstone: Clean and Analyze a 10K-Row Dataset\")\nprint(\"Phase: Data Handling & SQL\")\n\n# Key concepts to practice:\n# 1. Data Handling Capstone\\n# 2. Clean and Analyze a 10K-Row Dataset\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain Data Handling Capstone in your own words with a real-world example.",
+    "How would you use Data Handling Capstone in a product company project?",
+    "Write working code that demonstrates Clean and Analyze a 10K-Row Dataset.",
+    "What interview questions could be asked about Data Handling Capstone?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Data Handling Capstone",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Data Handling Capstone: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Clean and Analyze a 10K-Row Dataset: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "id": 47,
+  "title": "SQL: CREATE TABLE, Data Types, and Constraints",
+  "content": "### Day 47: SQL: CREATE TABLE, Data Types, and Constraints\n\n**CREATE TABLE** defines the structure of your data.\n\n**Common Data Types:**\n- INTEGER, REAL/FLOAT, TEXT/VARCHAR\n- DATE, TIMESTAMP, BOOLEAN\n\n**Constraints:** PRIMARY KEY, NOT NULL, UNIQUE, DEFAULT, FOREIGN KEY",
+  "codeExample": "# Day 47: SQL: CREATE TABLE, Data Types, and Constraints\n# SQL: CREATE TABLE\nsql = \"\"\"\n-- Users table\nCREATE TABLE users (\n    id SERIAL PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    email VARCHAR(255) UNIQUE NOT NULL,\n    age INTEGER CHECK (age >= 0),\n    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP\n);\n\n-- Orders table with foreign key\nCREATE TABLE orders (\n    id SERIAL PRIMARY KEY,\n    user_id INTEGER REFERENCES users(id),\n    amount DECIMAL(10,2) NOT NULL,\n    status VARCHAR(20) DEFAULT 'pending',\n    order_date DATE NOT NULL\n);\n\"\"\"\nprint(sql)",
+  "practiceQuestions": [
+    "What is a PRIMARY KEY?",
+    "Difference between VARCHAR and TEXT?",
+    "What is a FOREIGN KEY?",
+    "What constraints can you add to columns?"
+  ],
+  "keywords": [
+    "CREATE TABLE",
+    "Common Data Types",
+    "Constraints"
+  ],
+  "keyTakeaways": [
+    "INTEGER, REAL/FLOAT, TEXT/VARCHAR",
+    "DATE, TIMESTAMP, BOOLEAN"
+  ]
+}

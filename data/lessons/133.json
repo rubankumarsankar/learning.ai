@@ -1,0 +1,23 @@
+{
+  "id": 133,
+  "title": "DL: Forward Propagation Step-by-Step",
+  "content": "### Day 133: DL: Forward Propagation Step-by-Step\n\n**Forward Propagation:** Data flows through network layer by layer.\n1. Input → multiply by weights, add bias\n2. Apply activation function\n3. Output becomes input to next layer\n4. Final layer produces prediction",
+  "codeExample": "# Day 133: DL: Forward Propagation Step-by-Step\nimport numpy as np\n\ndef sigmoid(z): return 1 / (1 + np.exp(-z))\n\n# 2-layer neural network\nnp.random.seed(42)\nW1 = np.random.randn(3, 4) * 0.5  # 3 inputs → 4 hidden\nb1 = np.zeros(4)\nW2 = np.random.randn(4, 1) * 0.5  # 4 hidden → 1 output\nb2 = np.zeros(1)\n\n# Forward pass\nX = np.array([0.5, 0.3, 0.8])  # input\nz1 = X @ W1 + b1\na1 = sigmoid(z1)         # hidden layer output\nz2 = a1 @ W2 + b2\na2 = sigmoid(z2)         # final output\n\nprint(f\"Input: {X}\")\nprint(f\"Hidden: {a1.round(3)}\")\nprint(f\"Output: {a2[0]:.4f}\")",
+  "practiceQuestions": [
+    "What is forward propagation?",
+    "What happens at each layer?",
+    "What does the output represent?",
+    "Why use multiple layers?"
+  ],
+  "keywords": [
+    "Forward Propagation",
+    "Forward",
+    "Propagation",
+    "StepbyStep"
+  ],
+  "keyTakeaways": [
+    "Forward Propagation: Data flows through network layer by layer.",
+    "Input → multiply by weights, add bias\n2.",
+    "Apply activation function\n3."
+  ]
+}

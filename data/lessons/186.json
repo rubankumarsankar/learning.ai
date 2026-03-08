@@ -1,0 +1,23 @@
+{
+  "id": 186,
+  "title": "Testing: Unit Tests with Pytest — Writing Your First Tests",
+  "content": "### Day 186: Testing: Unit Tests with Pytest — Writing Your First Tests\n\n**Pytest:** Python's best testing framework.\n- Test files: `test_*.py`\n- Test functions: `def test_*()`\n- Assert: `assert result == expected`\n- Run: `pytest -v`",
+  "codeExample": "# Day 186: Testing: Unit Tests with Pytest — Writing Your First Tests\n# test_model.py — Unit Tests with Pytest\nimport pytest\n\n# Code to test\ndef predict(features):\n    if not features: raise ValueError(\"Empty features\")\n    return 1 if sum(features) > 0 else 0\n\ndef preprocess(text):\n    return text.lower().strip()\n\n# Tests\ndef test_predict_positive():\n    assert predict([1.0, 2.0, 3.0]) == 1\n\ndef test_predict_negative():\n    assert predict([-1.0, -2.0, -3.0]) == 0\n\ndef test_predict_empty_raises():\n    with pytest.raises(ValueError):\n        predict([])\n\ndef test_preprocess():\n    assert preprocess(\"  HELLO  \") == \"hello\"\n    assert preprocess(\"Test\") == \"test\"\n\n# Run: pytest test_model.py -v\nprint(\"Run: pytest test_model.py -v\")\n\n# Run tests inline\nfor test_fn in [test_predict_positive, test_predict_negative, test_preprocess]:\n    try:\n        test_fn()\n        print(f\"  ✅ {test_fn.__name__}\")\n    except AssertionError:\n        print(f\"  ❌ {test_fn.__name__}\")",
+  "practiceQuestions": [
+    "How to write pytest tests?",
+    "What is assert?",
+    "How to test for exceptions?",
+    "Why write tests?"
+  ],
+  "keywords": [
+    "Pytest",
+    "Testing",
+    "Unit",
+    "Tests"
+  ],
+  "keyTakeaways": [
+    "Test files: `test_*.py`",
+    "Test functions: `def test_*()`",
+    "Assert: `assert result == expected`"
+  ]
+}

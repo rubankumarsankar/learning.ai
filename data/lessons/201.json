@@ -1,0 +1,22 @@
+{
+  "id": 201,
+  "title": "CI/CD: Building a Test + Lint + Deploy Pipeline",
+  "content": "### Day 201: CI/CD: Building a Test + Lint + Deploy Pipeline\n\nDeployment gets models from notebooks into the real world. MLOps makes ML systems reliable and maintainable in production.\n\n**Key Concepts:**\n- **CI/CD:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Building a Test + Lint + Deploy Pipeline:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 201: CI/CD: Building a Test + Lint + Deploy Pipeline\n# Phase: Deployment & MLOps\n\nprint(\"Day 201: CI/CD: Building a Test + Lint + Deploy Pipeline\")\nprint(\"Phase: Deployment & MLOps\")\n\n# Key concepts to practice:\n# 1. CI/CD\\n# 2. Building a Test + Lint + Deploy Pipeline\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain CI/CD in your own words with a real-world example.",
+    "How would you use CI/CD in a product company project?",
+    "Write working code that demonstrates Building a Test + Lint + Deploy Pipeline.",
+    "What interview questions could be asked about CI/CD?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "CI/CD",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "CI/CD: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Building a Test + Lint + Deploy Pipeline: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

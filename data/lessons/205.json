@@ -1,0 +1,23 @@
+{
+  "id": 205,
+  "title": "DVC: Data Version Control — Track Large Datasets",
+  "content": "### Day 205: DVC: Data Version Control — Track Large Datasets\n\nDeployment gets models from notebooks into the real world. MLOps makes ML systems reliable and maintainable in production.\n\n**Key Concepts:**\n- **DVC:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Data Version Control:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Track Large Datasets:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 205: DVC: Data Version Control — Track Large Datasets\n# Phase: Deployment & MLOps\n\nprint(\"Day 205: DVC: Data Version Control — Track Large Datasets\")\nprint(\"Phase: Deployment & MLOps\")\n\n# Key concepts to practice:\n# 1. DVC\\n# 2. Data Version Control\\n# 3. Track Large Datasets\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain DVC in your own words with a real-world example.",
+    "How would you use DVC in a product company project?",
+    "Write working code that demonstrates Data Version Control — Track Large Datasets.",
+    "What interview questions could be asked about DVC?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "DVC",
+    "Data Version Control",
+    "Track Large Datasets"
+  ],
+  "keyTakeaways": [
+    "DVC: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Data Version Control: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Track Large Datasets: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

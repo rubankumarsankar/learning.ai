@@ -1,0 +1,23 @@
+{
+  "id": 200,
+  "title": "CI/CD: GitHub Actions — Auto-Deploy on Push",
+  "content": "### Day 200: CI/CD: GitHub Actions — Auto-Deploy on Push\n\n**GitHub Actions:** CI/CD directly in your repo.\n- Triggered on push/PR\n- Runs tests, linting, deploys automatically\n- Free for public repos",
+  "codeExample": "# Day 200: CI/CD: GitHub Actions — Auto-Deploy on Push\n# .github/workflows/deploy.yml\nworkflow = \"\"\"\nname: Test and Deploy\non:\n  push:\n    branches: [main]\n\njobs:\n  test:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - uses: actions/setup-python@v4\n        with:\n          python-version: '3.10'\n      - run: pip install -r requirements.txt\n      - run: pytest tests/ -v\n\n  deploy:\n    needs: test\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v4\n      - run: echo \"Deploying to production...\"\n\"\"\"\nprint(workflow)",
+  "practiceQuestions": [
+    "What is CI/CD?",
+    "What triggers GitHub Actions?",
+    "How to run tests automatically?",
+    "What is a workflow?"
+  ],
+  "keywords": [
+    "GitHub Actions",
+    "CICD",
+    "GitHub",
+    "Actions"
+  ],
+  "keyTakeaways": [
+    "Triggered on push/PR",
+    "Runs tests, linting, deploys automatically",
+    "Free for public repos"
+  ]
+}

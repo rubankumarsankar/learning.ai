@@ -1,0 +1,21 @@
+{
+  "id": 93,
+  "title": "ML: Encoding Categorical Variables — Label vs OneHot",
+  "content": "### Day 93: ML: Encoding Categorical Variables — Label vs OneHot\n\n**Categorical Encoding:** ML models need numbers.\n\n- **Label Encoding:** Category → number (red=0, blue=1). Use for ordinal data.\n- **One-Hot Encoding:** Creates binary columns. Use for nominal data.\n\n⚠️ Don't use LabelEncoder for nominal data — model assumes order!",
+  "codeExample": "# Day 93: ML: Encoding Categorical Variables — Label vs OneHot\nfrom sklearn.preprocessing import LabelEncoder, OneHotEncoder\nimport numpy as np\n\n# Label Encoding (ordinal)\nle = LabelEncoder()\nsizes = ['S', 'M', 'L', 'XL', 'M', 'S']\nencoded = le.fit_transform(sizes)\nprint(f\"Labels: {list(zip(sizes, encoded))}\")\n\n# One-Hot Encoding (nominal)\ncolors = np.array(['red', 'blue', 'green', 'red']).reshape(-1, 1)\nohe = OneHotEncoder(sparse_output=False)\nresult = ohe.fit_transform(colors)\nprint(f\"\\nOne-Hot:\\n{result}\")\nprint(f\"Categories: {ohe.categories_[0]}\")",
+  "practiceQuestions": [
+    "When to use Label vs One-Hot encoding?",
+    "Why is One-Hot better for nominal data?",
+    "What is the dummy variable trap?",
+    "How to handle high-cardinality categories?"
+  ],
+  "keywords": [
+    "Categorical Encoding",
+    "Label Encoding",
+    "One-Hot Encoding"
+  ],
+  "keyTakeaways": [
+    "Label Encoding: Category → number (red=0, blue=1). Use for ordinal data.",
+    "One-Hot Encoding: Creates binary columns. Use for nominal data."
+  ]
+}

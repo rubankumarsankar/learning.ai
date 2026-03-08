@@ -1,0 +1,22 @@
+{
+  "id": 105,
+  "title": "Evaluation: Precision, Recall, and the F1-Score",
+  "content": "### Day 105: Evaluation: Precision, Recall, and the F1-Score\n\n**Precision:** Of all predicted positive, how many are actually positive?\n**Recall:** Of all actual positives, how many did we catch?\n**F1-Score:** Harmonic mean of precision and recall\n\n- **Spam filter:** Precision matters (don't block real email)\n- **Cancer detection:** Recall matters (don't miss cancer)",
+  "codeExample": "# Day 105: Evaluation: Precision, Recall, and the F1-Score\nfrom sklearn.metrics import precision_score, recall_score, f1_score, classification_report\n\ny_true = [1,1,1,1,1,0,0,0,0,0]\ny_pred = [1,1,1,0,0,0,0,0,1,0]\n\nprint(f\"Precision: {precision_score(y_true, y_pred):.2%}\")\nprint(f\"Recall: {recall_score(y_true, y_pred):.2%}\")\nprint(f\"F1-Score: {f1_score(y_true, y_pred):.2%}\")\nprint(f\"\\n{classification_report(y_true, y_pred, target_names=['Negative','Positive'])}\")",
+  "practiceQuestions": [
+    "Precision vs Recall: which matters more for fraud detection?",
+    "What is the F1-score?",
+    "When is accuracy misleading?",
+    "High precision, low recall — what does this mean?"
+  ],
+  "keywords": [
+    "Precision",
+    "Recall",
+    "F1-Score",
+    "Spam filter"
+  ],
+  "keyTakeaways": [
+    "Spam filter: Precision matters (don't block real email)",
+    "Cancer detection: Recall matters (don't miss cancer)"
+  ]
+}

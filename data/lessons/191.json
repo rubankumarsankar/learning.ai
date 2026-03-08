@@ -1,0 +1,22 @@
+{
+  "id": 191,
+  "title": "Engineering Mini-Project: Full API + Docker + Tests Pipeline",
+  "content": "### Day 191: Engineering Mini-Project: Full API + Docker + Tests Pipeline\n\nAPIs are how ML models reach users. No company deploys Jupyter notebooks. FastAPI is the modern Python framework for ML APIs.\n\n**Key Concepts:**\n- **Engineering Mini-Project:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Full API + Docker + Tests Pipeline:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 191: Engineering Mini-Project: Full API + Docker + Tests Pipeline\n\"\"\"\nBackend Engineering: Full API + Docker + Tests Pipeline\n\nKey concepts:\n1. Engineering Mini-Project\\n2. Full API + Docker + Tests Pipeline\n\"\"\"\n\nprint(\"Day 191: Engineering Mini-Project: Full API + Docker + Tests Pipeline\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Full API + Docker + Tests Pipeline\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain Engineering Mini-Project in your own words with a real-world example.",
+    "How would you use Engineering Mini-Project in a product company project?",
+    "Write working code that demonstrates Full API + Docker + Tests Pipeline.",
+    "What interview questions could be asked about Engineering Mini-Project?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Engineering Mini-Project",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Engineering Mini-Project: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Full API + Docker + Tests Pipeline: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

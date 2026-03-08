@@ -1,0 +1,22 @@
+{
+  "id": 67,
+  "title": "Pandas: Handling Duplicates and Data Type Conversion",
+  "content": "### Day 67: Pandas: Handling Duplicates and Data Type Conversion\n\nPandas is the workhorse of data manipulation. Never loop over rows — use vectorized operations.\n\n**Key Concepts:**\n- **Pandas:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Handling Duplicates and Data Type Conversion:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 67: Pandas: Handling Duplicates and Data Type Conversion\n# Phase: Data Handling & SQL\n\nprint(\"Day 67: Pandas: Handling Duplicates and Data Type Conversion\")\nprint(\"Phase: Data Handling & SQL\")\n\n# Key concepts to practice:\n# 1. Pandas\\n# 2. Handling Duplicates and Data Type Conversion\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain Pandas in your own words with a real-world example.",
+    "How would you use Pandas in a product company project?",
+    "Write working code that demonstrates Handling Duplicates and Data Type Conversion.",
+    "What interview questions could be asked about Pandas?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Pandas",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Pandas: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Handling Duplicates and Data Type Conversion: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

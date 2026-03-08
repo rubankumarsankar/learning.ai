@@ -1,0 +1,22 @@
+{
+  "id": 27,
+  "title": "Generators: Yielding Data for Memory Efficiency",
+  "content": "### Day 27: Generators: Yielding Data for Memory Efficiency\n\n**Generators** produce values lazily using `yield`. They don't store all values in memory.\n\n**Why:** Process large datasets without loading everything into RAM.\n\n**Generator Expression:** `(x**2 for x in range(1000000))` — zero memory overhead.",
+  "codeExample": "# Day 27: Generators: Yielding Data for Memory Efficiency\n# Generators\n\n# Generator function\ndef countdown(n):\n    while n > 0:\n        yield n\n        n -= 1\n\nfor num in countdown(5):\n    print(num, end=\" \")\nprint()\n\n# Fibonacci generator\ndef fibonacci(limit):\n    a, b = 0, 1\n    while a < limit:\n        yield a\n        a, b = b, a + b\n\nfibs = list(fibonacci(100))\nprint(f\"Fibonacci: {fibs}\")\n\n# Generator expression (memory efficient)\nsum_squares = sum(x**2 for x in range(1000000))\nprint(f\"Sum of squares: {sum_squares}\")\n\n# Reading large file line by line\ndef read_large_file(path):\n    with open(path, 'r') as f:\n        for line in f:\n            yield line.strip()",
+  "practiceQuestions": [
+    "What is a generator?",
+    "Difference between yield and return?",
+    "Why are generators memory efficient?",
+    "Write a generator for even numbers."
+  ],
+  "keywords": [
+    "Generators",
+    "Why",
+    "Generator Expression"
+  ],
+  "keyTakeaways": [
+    "Generators produce values lazily using `yield`.",
+    "They don't store all values in memory.",
+    "Why: Process large datasets without loading everything into RAM."
+  ]
+}

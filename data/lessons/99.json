@@ -1,0 +1,23 @@
+{
+  "id": 99,
+  "title": "Classification: Logistic Regression — Theory and Code",
+  "content": "### Day 99: Classification: Logistic Regression — Theory and Code\n\n**Logistic Regression:** Classification using sigmoid function.\n- Output: probability between 0 and 1\n- Decision boundary at 0.5 (tunable)\n- Despite the name, it's for CLASSIFICATION not regression",
+  "codeExample": "# Day 99: Classification: Logistic Regression — Theory and Code\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import accuracy_score, classification_report\nimport numpy as np\n\nnp.random.seed(42)\nX = np.random.randn(200, 2)\ny = (X[:, 0] + X[:, 1] > 0).astype(int)\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\nmodel = LogisticRegression().fit(X_train, y_train)\ny_pred = model.predict(X_test)\n\nprint(f\"Accuracy: {accuracy_score(y_test, y_pred):.2%}\")\nprint(f\"\\n{classification_report(y_test, y_pred)}\")\n\n# Probability output\nprobs = model.predict_proba(X_test[:3])\nfor i, (prob, pred) in enumerate(zip(probs, y_pred[:3])):\n    print(f\"Sample {i}: P(0)={prob[0]:.2f}, P(1)={prob[1]:.2f} → class {pred}\")",
+  "practiceQuestions": [
+    "How does logistic regression work?",
+    "What is the sigmoid function?",
+    "How to interpret probabilities?",
+    "Logistic regression vs linear regression?"
+  ],
+  "keywords": [
+    "Logistic Regression",
+    "Classification",
+    "Logistic",
+    "Regression"
+  ],
+  "keyTakeaways": [
+    "Output: probability between 0 and 1",
+    "Decision boundary at 0.5 (tunable)",
+    "Despite the name, it's for CLASSIFICATION not regression"
+  ]
+}

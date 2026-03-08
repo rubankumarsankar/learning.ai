@@ -1,0 +1,23 @@
+{
+  "id": 234,
+  "title": "Portfolio: GitHub Profile Cleanup and Project Pinning",
+  "content": "### Day 234: Portfolio: GitHub Profile Cleanup and Project Pinning\n\n**GitHub Profile Polish:**\n1. Professional profile picture and bio\n2. Pin your 3 best projects\n3. Each repo: clear README, clean code, requirements.txt\n4. Contribution graph should show activity",
+  "codeExample": "# Day 234: Portfolio: GitHub Profile Cleanup and Project Pinning\n# GitHub Profile Checklist\nchecklist = [\n    \"✅ Professional profile photo\",\n    \"✅ Bio: 'ML Engineer | Python | scikit-learn | FastAPI'\",\n    \"✅ Pin 3 best projects\",\n    \"✅ Each project README has: description, setup, results, screenshots\",\n    \"✅ Clean commit history with meaningful messages\",\n    \"✅ requirements.txt in every project\",\n    \"✅ .gitignore (no data files, no __pycache__)\",\n    \"✅ Consistent coding style (PEP 8)\",\n]\n\nprint(\"GitHub Portfolio Checklist:\")\nfor item in checklist:\n    print(f\"  {item}\")",
+  "practiceQuestions": [
+    "What do hiring managers look at on GitHub?",
+    "What makes a good project README?",
+    "How many projects to pin?",
+    "How to write commit messages?"
+  ],
+  "keywords": [
+    "GitHub Profile Polish",
+    "Portfolio",
+    "GitHub",
+    "Profile"
+  ],
+  "keyTakeaways": [
+    "Professional profile picture and bio\n2.",
+    "Pin your 3 best projects\n3.",
+    "Each repo: clear README, clean code, requirements.txt\n4."
+  ]
+}

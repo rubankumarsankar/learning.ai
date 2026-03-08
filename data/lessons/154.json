@@ -1,0 +1,23 @@
+{
+  "id": 154,
+  "title": "NLP: Sentiment Analysis Project — Product Reviews",
+  "content": "### Day 154: NLP: Sentiment Analysis Project — Product Reviews\n\n**Sentiment Analysis:** Classify text as positive/negative/neutral.\n- Use TF-IDF + Logistic Regression for strong baseline\n- Or use pretrained models (HuggingFace)\n- Applications: product reviews, social media monitoring, customer feedback",
+  "codeExample": "# Day 154: NLP: Sentiment Analysis Project — Product Reviews\nfrom sklearn.feature_extraction.text import TfidfVectorizer\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import accuracy_score, classification_report\n\n# Sample reviews\nreviews = [\"great product love it\", \"terrible quality waste\", \"amazing value recommend\",\n           \"awful broke immediately\", \"excellent best purchase\", \"horrible never buy again\",\n           \"good quality fast shipping\", \"bad experience poor service\",\n           \"wonderful product happy\", \"disappointing not worth\"]\nlabels = [1, 0, 1, 0, 1, 0, 1, 0, 1, 0]  # 1=positive, 0=negative\n\ntfidf = TfidfVectorizer()\nX = tfidf.fit_transform(reviews)\n\nmodel = LogisticRegression().fit(X, labels)\n\n# Test new reviews\ntest = [\"great quality amazing\", \"terrible bad awful\"]\ntest_X = tfidf.transform(test)\npreds = model.predict(test_X)\nfor review, pred in zip(test, preds):\n    print(f\"  '{review}' → {'Positive ✅' if pred == 1 else 'Negative ❌'}\")",
+  "practiceQuestions": [
+    "How does sentiment analysis work?",
+    "TF-IDF + LogReg vs deep learning for NLP?",
+    "What is the baseline approach?",
+    "How to handle sarcasm?"
+  ],
+  "keywords": [
+    "Sentiment Analysis",
+    "Sentiment",
+    "Analysis",
+    "Project"
+  ],
+  "keyTakeaways": [
+    "Use TF-IDF + Logistic Regression for strong baseline",
+    "Or use pretrained models (HuggingFace)",
+    "Applications: product reviews, social media monitoring, customer feedback"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "title": "SQL Database Interview Prep",
+  "url": "https://www.postgresql.org/docs/",
+  "content": "### Crack the Interview: SQL & Database Design\n\nSQL interviews test your ability to think in sets, rather than imperative loops. Interviewers want to see how you handle joins, aggregations, and performance bottlenecks on massive tables.\n\n**Theory: Joins and Indexing**\n- **Core Concept:** Understand the exact difference between `INNER JOIN`, `LEFT JOIN`, and `FULL OUTER JOIN`. \n- **Application:** You must know how to use `GROUP BY` alongside `HAVING` (filtering after aggregation) rather than `WHERE` (filtering before aggregation).\n- **Interview Trick:** If asked how to optimize a slow query, the first answer should always be checking the **Execution Plan** (`EXPLAIN ANALYZE`) and ensuring appropriate **Indexes** exist on the joined or filtered columns.",
+  "codeExample": "-- 💡 Crack the Interview: Top N per Group\n-- Question: Find the highest paid employee in EACH department.\n\nWITH RankedEmployees AS (\n  SELECT \n    department_id,\n    employee_name,\n    salary,\n    -- ROW_NUMBER() or RANK() over a partition is a classic interview pattern\n    DENSE_RANK() OVER(PARTITION BY department_id ORDER BY salary DESC) as rank\n  FROM employees\n)\nSELECT department_id, employee_name, salary \nFROM RankedEmployees\nWHERE rank = 1;",
+  "practiceQuestions": [
+    "What is the difference between WHERE and HAVING?",
+    "Explain what an Index is under the hood (B-Tree vs Hash).",
+    "How do you resolve a N+1 query problem?",
+    "Write a query to find all duplicate records in a table."
+  ],
+  "keywords": [
+    "Indexing",
+    "Execution Plans",
+    "Joins",
+    "Aggregation"
+  ],
+  "keyTakeaways": [
+    "HAVING filters after aggregation; WHERE filters before.",
+    "Always check the EXPLAIN ANALYZE execution plan before adding indexes.",
+    "Window functions like ROW_NUMBER() are standard solutions for 'Top N' interview questions."
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "id": 185,
+  "title": "Docker Project: Containerize Your FastAPI ML App",
+  "content": "### Day 185: Docker Project: Containerize Your FastAPI ML App\n\nAPIs are how ML models reach users. No company deploys Jupyter notebooks. FastAPI is the modern Python framework for ML APIs.\n\n**Key Concepts:**\n- **Docker Project:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Containerize Your FastAPI ML App:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 185: Docker Project: Containerize Your FastAPI ML App\n\"\"\"\nBackend Engineering: Containerize Your FastAPI ML App\n\nKey concepts:\n1. Docker Project\\n2. Containerize Your FastAPI ML App\n\"\"\"\n\nprint(\"Day 185: Docker Project: Containerize Your FastAPI ML App\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Containerize Your FastAPI ML App\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain Docker Project in your own words with a real-world example.",
+    "How would you use Docker Project in a product company project?",
+    "Write working code that demonstrates Containerize Your FastAPI ML App.",
+    "What interview questions could be asked about Docker Project?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Docker Project",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Docker Project: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Containerize Your FastAPI ML App: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": 239,
+  "title": "Interview Prep: Project Walkthrough and HR Questions",
+  "content": "### Day 239: Interview Prep: Project Walkthrough and HR Questions\n\n**Project Walkthrough Framework (STAR):**\n- **Situation:** What was the problem?\n- **Task:** What was your role?\n- **Action:** What did you build?\n- **Result:** What was the impact?\n\n**HR Questions:** Tell me about yourself, biggest challenge, why this company, team conflict",
+  "codeExample": "# Day 239: Interview Prep: Project Walkthrough and HR Questions\n# Project Walkthrough Template\nwalkthrough = {\n    \"situation\": \"Company losing 27% customers annually, costing $2M/year\",\n    \"task\": \"Build predictive system to identify at-risk customers\",\n    \"action\": [\n        \"Cleaned 50K-row dataset with Pandas\",\n        \"Engineered 15 features from raw data\",\n        \"Trained 5 models, selected XGBoost (F1=0.83, AUC=0.91)\",\n        \"Built FastAPI endpoint, Dockerized, deployed to AWS\"\n    ],\n    \"result\": \"Reduced churn by 15% in first quarter, saving ~$300K\"\n}\n\nprint(\"Project Walkthrough (STAR):\")\nfor key, val in walkthrough.items():\n    print(f\"\\n{key.upper()}:\")\n    if isinstance(val, list):\n        for item in val:\n            print(f\"  • {item}\")\n    else:\n        print(f\"  {val}\")",
+  "practiceQuestions": [
+    "Walk me through your best project.",
+    "Biggest technical challenge?",
+    "Why should we hire you?",
+    "Where do you see yourself in 3 years?"
+  ],
+  "keywords": [
+    "Situation",
+    "Task",
+    "Action",
+    "Result"
+  ],
+  "keyTakeaways": [
+    "Situation: What was the problem?",
+    "Task: What was your role?",
+    "Action: What did you build?"
+  ]
+}

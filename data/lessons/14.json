@@ -1,0 +1,23 @@
+{
+  "id": 14,
+  "title": "Arguments: *args, **kwargs, and Default Parameters",
+  "content": "### Day 14: Arguments — *args, **kwargs, and Default Parameters\n\n**Default params:** `def greet(name, msg=\"Hi\")` — msg is optional\n\n***args** — tuple of variable positional args: `def sum(*args)`\n\n****kwargs** — dict of variable keyword args: `def info(**kwargs)`\n\n**Order:** positional → default → *args → **kwargs",
+  "codeExample": "# Day 14: *args, **kwargs\n\n# Default parameter\ndef power(base, exp=2):\n    return base ** exp\nprint(f\"3² = {power(3)}, 2³ = {power(2,3)}\")\n\n# *args — any number of values\ndef average(*args):\n    return sum(args) / len(args) if args else 0\nprint(f\"Avg(10,20,30) = {average(10,20,30)}\")\n\n# **kwargs — any keyword arguments\ndef profile(**kwargs):\n    for k, v in kwargs.items():\n        print(f\"  {k}: {v}\")\nprofile(name=\"Ruban\", role=\"ML Engineer\", city=\"Chennai\")\n\n# Combined\ndef log_event(event, *tags, level=\"INFO\", **meta):\n    print(f\"\\n[{level}] {event}\")\n    if tags: print(f\"  Tags: {', '.join(tags)}\")\n    for k, v in meta.items():\n        print(f\"  {k}: {v}\")\n\nlog_event(\"Training\", \"ml\", \"prod\", level=\"WARN\", model=\"XGBoost\")",
+  "practiceQuestions": [
+    "Difference between *args and **kwargs?",
+    "Parameter order: positional, default, *args, **kwargs?",
+    "Write func that returns sum and count of args.",
+    "When are default parameters useful?"
+  ],
+  "keywords": [
+    "kwargs",
+    "kwargs)`",
+    "Arguments",
+    "args"
+  ],
+  "keyTakeaways": [
+    "Review the provided code sandbox to understand execution flow.",
+    "Attempt all practice questions without looking at the answers.",
+    "Reference the Crack the Interview library for deeper technical syntax."
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "id": 65,
+  "title": "Pandas: Adding, Renaming, and Dropping Columns",
+  "content": "### Day 65: Pandas: Adding, Renaming, and Dropping Columns\n\nPandas is the workhorse of data manipulation. Never loop over rows — use vectorized operations.\n\n**Key Concepts:**\n- **Pandas:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Adding:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Renaming:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and Dropping Columns:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 65: Pandas: Adding, Renaming, and Dropping Columns\n# Phase: Data Handling & SQL\n\nprint(\"Day 65: Pandas: Adding, Renaming, and Dropping Columns\")\nprint(\"Phase: Data Handling & SQL\")\n\n# Key concepts to practice:\n# 1. Pandas\\n# 2. Adding\\n# 3. Renaming\\n# 4. and Dropping Columns\n\n# Follow the tutorial above for implementation guidance",
+  "practiceQuestions": [
+    "Explain Pandas in your own words with a real-world example.",
+    "How would you use Pandas in a product company project?",
+    "Write working code that demonstrates Adding, Renaming, and Dropping Columns.",
+    "What interview questions could be asked about Pandas?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Pandas",
+    "Adding",
+    "Renaming"
+  ],
+  "keyTakeaways": [
+    "Pandas: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Adding: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Renaming: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

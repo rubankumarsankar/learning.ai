@@ -1,0 +1,22 @@
+{
+  "id": 138,
+  "title": "Keras: Sequential vs Functional API",
+  "content": "### Day 138: Keras: Sequential vs Functional API\n\nModern deep learning frameworks provide high-level APIs for building, training, and deploying neural networks.\n\n**Key Concepts:**\n- **Keras:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Sequential vs Functional API:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 138: Keras: Sequential vs Functional API\nimport numpy as np\n\n# Today's topic: Sequential vs Functional API\nprint(\"Day 138: Keras: Sequential vs Functional API\")\nprint(\"Phase: Deep Learning & Applied AI\")\n\n# Deep Learning concepts to implement:\n# Keras\\n# Sequential vs Functional API\n\n# Example: Setting up the foundation\ndef demonstrate_concept():\n    \"\"\"Demonstrate Sequential vs Functional API\"\"\"\n    print(\"Implementing: Keras: Sequential vs Functional API\")\n    # Add your implementation here\n    \ndemonstrate_concept()",
+  "practiceQuestions": [
+    "Explain Keras in your own words with a real-world example.",
+    "How would you use Keras in a product company project?",
+    "Write working code that demonstrates Sequential vs Functional API.",
+    "What interview questions could be asked about Keras?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Keras",
+    "Today's Focus"
+  ],
+  "keyTakeaways": [
+    "Keras: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Sequential vs Functional API: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Study each concept with hands-on practice"
+  ]
+}

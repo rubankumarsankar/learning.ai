@@ -1,0 +1,22 @@
+{
+  "id": 40,
+  "title": "Coding Foundations Capstone: Build a CLI Task Manager",
+  "content": "### Day 40: Coding Foundations Capstone: Build a CLI Task Manager\n\n**Capstone Project: CLI Task Manager**\n\nCombine everything learned: functions, file I/O, JSON, error handling, clean code.\n\n**Features:** Add task, list tasks, mark complete, delete task, save to JSON.",
+  "codeExample": "# Day 40: Coding Foundations Capstone: Build a CLI Task Manager\n# CLI Task Manager\nimport json, os\n\nTASKS_FILE = \"tasks.json\"\n\ndef load_tasks():\n    if os.path.exists(TASKS_FILE):\n        with open(TASKS_FILE, 'r') as f:\n            return json.load(f)\n    return []\n\ndef save_tasks(tasks):\n    with open(TASKS_FILE, 'w') as f:\n        json.dump(tasks, f, indent=2)\n\ndef add_task(title):\n    tasks = load_tasks()\n    tasks.append({\"title\": title, \"done\": False})\n    save_tasks(tasks)\n    print(f\"✅ Added: {title}\")\n\ndef list_tasks():\n    tasks = load_tasks()\n    if not tasks:\n        print(\"No tasks yet!\")\n        return\n    for i, t in enumerate(tasks, 1):\n        status = \"✅\" if t[\"done\"] else \"⬜\"\n        print(f\"  {i}. {status} {t['title']}\")\n\ndef complete_task(index):\n    tasks = load_tasks()\n    if 0 < index <= len(tasks):\n        tasks[index-1][\"done\"] = True\n        save_tasks(tasks)\n        print(f\"✅ Completed: {tasks[index-1]['title']}\")\n\nadd_task(\"Learn Python basics\")\nadd_task(\"Build ML pipeline\")\nadd_task(\"Write API tests\")\ncomplete_task(1)\nlist_tasks()",
+  "practiceQuestions": [
+    "How to structure a CLI project?",
+    "Why use JSON for storage?",
+    "How to handle file not found?",
+    "What features would you add next?"
+  ],
+  "keywords": [
+    "Features",
+    "Coding",
+    "Foundations",
+    "Capstone"
+  ],
+  "keyTakeaways": [
+    "Capstone Project: CLI Task Manager\n\nCombine everything learned: functions, file I/O, JSON, error handling, clean code.",
+    "Features: Add task, list tasks, mark complete, delete task, save to JSON."
+  ]
+}

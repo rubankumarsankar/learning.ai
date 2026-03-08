@@ -1,0 +1,23 @@
+{
+  "id": 189,
+  "title": "Git Advanced: Branching, Merging, and Resolving Conflicts",
+  "content": "### Day 189: Git Advanced: Branching, Merging, and Resolving Conflicts\n\nGit branching, code reviews, and CI/CD are daily workflows at every product company.\n\n**Key Concepts:**\n- **Git Advanced:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Branching:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **Merging:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n- **and Resolving Conflicts:** Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.\n\n**Today's Focus:**\n- Study each concept with hands-on practice\n- Write working code examples\n- Connect to real-world applications\n- Think about how this would be tested in an interview",
+  "codeExample": "# Day 189: Git Advanced: Branching, Merging, and Resolving Conflicts\n\"\"\"\nBackend Engineering: Branching, Merging, and Resolving Conflicts\n\nKey concepts:\n1. Git Advanced\\n2. Branching\\n3. Merging\\n4. and Resolving Conflicts\n\"\"\"\n\nprint(\"Day 189: Git Advanced: Branching, Merging, and Resolving Conflicts\")\nprint(\"Phase: Backend & AI Engineering\")\n\n# Implementation for: Branching, Merging, and Resolving Conflicts\n# Follow the tutorial above for step-by-step guidance",
+  "practiceQuestions": [
+    "Explain Git Advanced in your own words with a real-world example.",
+    "How would you use Git Advanced in a product company project?",
+    "Write working code that demonstrates Branching, Merging, and Resolving Conflicts.",
+    "What interview questions could be asked about Git Advanced?"
+  ],
+  "keywords": [
+    "Key Concepts",
+    "Git Advanced",
+    "Branching",
+    "Merging"
+  ],
+  "keyTakeaways": [
+    "Git Advanced: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Branching: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it.",
+    "Merging: Study this concept deeply — learn the syntax, see real-world examples, and practice writing code for it."
+  ]
+}

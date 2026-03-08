@@ -1,0 +1,22 @@
+{
+  "id": 28,
+  "title": "DSA: Stacks and Queues with Python Lists and Deque",
+  "content": "### Day 28: DSA: Stacks and Queues with Python Lists and Deque\n\n**Stack** = LIFO (Last In, First Out). Use Python list: append() and pop().\n\n**Queue** = FIFO (First In, First Out). Use collections.deque for O(1) operations.\n\n**Uses:** Stack → undo, parentheses matching. Queue → BFS, task scheduling.",
+  "codeExample": "# Day 28: DSA: Stacks and Queues with Python Lists and Deque\n# Stacks and Queues\nfrom collections import deque\n\n# Stack (LIFO)\nstack = []\nstack.append(\"Page 1\")\nstack.append(\"Page 2\")\nstack.append(\"Page 3\")\nprint(f\"Stack: {stack}\")\nprint(f\"Pop: {stack.pop()}\")  # Page 3\n\n# Balanced parentheses (classic interview)\ndef is_balanced(s):\n    stack = []\n    pairs = {')': '(', ']': '[', '}': '{'}\n    for c in s:\n        if c in '([{':\n            stack.append(c)\n        elif c in pairs:\n            if not stack or stack[-1] != pairs[c]:\n                return False\n            stack.pop()\n    return len(stack) == 0\n\nprint(f\"'()[]{{}}' balanced: {is_balanced('()[]{}')}\")\nprint(f\"'([)]' balanced: {is_balanced('([)]')}\")\n\n# Queue (FIFO)\nqueue = deque()\nqueue.append(\"Task 1\")\nqueue.append(\"Task 2\")\nqueue.append(\"Task 3\")\nprint(f\"\\nQueue: {list(queue)}\")\nprint(f\"Dequeue: {queue.popleft()}\")  # Task 1",
+  "practiceQuestions": [
+    "What is LIFO vs FIFO?",
+    "Implement balanced parentheses checker.",
+    "When to use stack vs queue?",
+    "Why use deque instead of list for queue?"
+  ],
+  "keywords": [
+    "Stack",
+    "Queue",
+    "Uses"
+  ],
+  "keyTakeaways": [
+    "Stack = LIFO (Last In, First Out).",
+    "Use Python list: append() and pop().",
+    "Queue = FIFO (First In, First Out)."
+  ]
+}
