@@ -1,330 +1,124 @@
-import { createEntry, toggleStatus, resetTracker, setStartDate } from '@/lib/actions';
-import { promises as fs } from 'fs';
-import path from 'path';
 import Link from 'next/link';
+import { auth } from '@/lib/auth';
 
-const PHASE_CONFIG = [
-  { name: "Coding Foundations", start: 1, end: 40, emoji: "🐍", gradient: "from-blue-600 to-cyan-500", border: "border-blue-500/30", bg: "bg-blue-500/5" },
-  { name: "Data Handling & SQL", start: 41, end: 80, emoji: "🗃️", gradient: "from-emerald-600 to-teal-500", border: "border-emerald-500/30", bg: "bg-emerald-500/5" },
-  { name: "Machine Learning Core", start: 81, end: 130, emoji: "🤖", gradient: "from-purple-600 to-pink-500", border: "border-purple-500/30", bg: "bg-purple-500/5" },
-  { name: "Deep Learning & AI", start: 131, end: 165, emoji: "🧠", gradient: "from-orange-500 to-amber-500", border: "border-orange-500/30", bg: "bg-orange-500/5" },
-  { name: "Backend & AI Eng", start: 166, end: 195, emoji: "⚙️", gradient: "from-red-600 to-rose-500", border: "border-red-500/30", bg: "bg-red-500/5" },
-  { name: "Deployment & MLOps", start: 196, end: 215, emoji: "🚀", gradient: "from-indigo-600 to-violet-500", border: "border-indigo-500/30", bg: "bg-indigo-500/5" },
-  { name: "Portfolio Projects", start: 216, end: 235, emoji: "📁", gradient: "from-yellow-500 to-orange-500", border: "border-yellow-500/30", bg: "bg-yellow-500/5" },
-  { name: "Interview & Launch", start: 236, end: 240, emoji: "🎯", gradient: "from-green-500 to-emerald-500", border: "border-green-500/30", bg: "bg-green-500/5" },
-];
-
-function getPhaseForDay(dayId) {
-  return PHASE_CONFIG.find(p => dayId >= p.start && dayId <= p.end) || PHASE_CONFIG[0];
-}
-
-export default async function Home() {
-  // On Vercel: read from /tmp (writable) > fallback to bundled (read-only)
-  const bundledPath = path.join(process.cwd(), 'data/db.json');
-  const writablePath = '/tmp/db.json';
-  let masteryList = [];
-  try {
-    if (process.env.VERCEL) {
-      try {
-        const file = await fs.readFile(writablePath, 'utf8');
-        masteryList = JSON.parse(file || '[]');
-      } catch {
-        // /tmp not populated yet, read from bundled
-        const file = await fs.readFile(bundledPath, 'utf8');
-        masteryList = JSON.parse(file || '[]');
-      }
-    } else {
-      const file = await fs.readFile(bundledPath, 'utf8');
-      masteryList = JSON.parse(file || '[]');
-    }
-  } catch (e) {
-    if (e.code !== 'ENOENT') throw e;
-  }
-
-  const totalTasks = masteryList.length;
-  const completed = masteryList.filter(item => item.status === "✅ Done").length;
-  const inProgress = masteryList.filter(item => item.status === "🚀 In Progress").length;
-  const review = masteryList.filter(item => item.status === "🚩 Review Needed").length;
-  const todo = masteryList.filter(item => item.status === "⬜ To-Do").length;
-  const progressPercent = totalTasks > 0 ? Math.round((completed / totalTasks) * 100) : 0;
-
-  // Check if start date has already been set
-  const hasStartDate = masteryList.length > 0 && !!masteryList[0].date;
-
-  // Group items by phase
-  const phaseGroups = PHASE_CONFIG.map(phase => {
-    const items = masteryList.filter(item => {
-      const id = item.lessonId || item.id;
-      return id >= phase.start && id <= phase.end;
-    });
-    const done = items.filter(i => i.status === "✅ Done").length;
-    return { ...phase, items, done, total: items.length };
-  });
-
-  // Current streak calculation
-  let streak = 0;
-  const sortedDone = masteryList
-    .filter(i => i.status === "✅ Done")
-    .sort((a, b) => (b.lessonId || b.id) - (a.lessonId || a.id));
-  if (sortedDone.length > 0) {
-    const maxId = sortedDone[0].lessonId || sortedDone[0].id;
-    for (let i = maxId; i >= 1; i--) {
-      const item = masteryList.find(m => (m.lessonId || m.id) === i);
-      if (item && item.status === "✅ Done") streak++;
-      else break;
-    }
-  }
-
-  const daysLeft = totalTasks - completed;
-  const estimatedWeeks = Math.ceil(daysLeft / 7);
+export default async function HubPage() {
+  const session = await auth();
 
   return (
     <div className="min-h-screen bg-[#0a0a0f] text-white font-sans overflow-x-hidden">
-      {/* Decorative background gradient */}
+      {/* Background */}
       <div className="fixed inset-0 pointer-events-none overflow-hidden">
         <div className="absolute -top-40 -right-40 w-96 h-96 bg-blue-600/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-1/3 -left-40 w-80 h-80 bg-purple-600/8 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-emerald-600/6 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 -left-40 w-80 h-80 bg-emerald-600/8 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/4 w-72 h-72 bg-purple-600/6 rounded-full blur-3xl"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-4 md:px-8 py-6 md:py-10">
-        {/* ─── HEADER ─── */}
-        <header className="mb-8 md:mb-12">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 mb-6">
-            <div>
-              <div className="flex items-center gap-3 mb-1">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-base sm:text-lg font-bold shadow-lg shadow-blue-500/20">
-                  L
-                </div>
-                <h1 className="text-xl sm:text-2xl md:text-3xl font-bold">
-                  <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                    LEARNING
-                  </span>
-                  <span className="text-gray-500 font-normal ml-1.5 sm:ml-2 text-sm sm:text-lg">& TRACKING</span>
-                </h1>
+      <div className="relative z-10 max-w-5xl mx-auto px-4 py-16 md:py-24">
+        {/* Header */}
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center gap-3 mb-6">
+            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 via-purple-500 to-emerald-500 flex items-center justify-center text-xl font-bold shadow-lg shadow-purple-500/20">
+              ET
+            </div>
+            <h1 className="text-3xl md:text-4xl font-bold">
+              <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-emerald-400 bg-clip-text text-transparent">
+                Envy Tag
+              </span>
+              <span className="text-gray-500 font-normal ml-2 text-lg md:text-xl">Tracker</span>
+            </h1>
+          </div>
+          <p className="text-gray-400 text-lg max-w-2xl mx-auto">
+            Your personal command center for mastering skills and managing money.
+            Choose your track below.
+          </p>
+
+          {/* Auth buttons */}
+          <div className="flex items-center justify-center gap-3 mt-6">
+            {session ? (
+              <div className="flex items-center gap-3">
+                <span className="text-sm text-gray-500">
+                  Welcome, <span className="text-emerald-400 font-medium">{session.user.name}</span>
+                </span>
+                <form action={async () => { 'use server'; const { logoutAction } = await import('@/lib/auth-actions'); await logoutAction(); }}>
+                  <button className="text-xs text-gray-500 hover:text-red-400 border border-gray-800 hover:border-red-500/30 px-3 py-1.5 rounded-lg transition-all">
+                    Logout
+                  </button>
+                </form>
               </div>
-              <p className="text-gray-500 text-xs sm:text-sm ml-12 sm:ml-[52px]">
-                {new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' })}
+            ) : (
+              <div className="flex gap-3">
+                <Link href="/login" className="text-sm text-emerald-400 hover:text-emerald-300 border border-emerald-500/30 px-4 py-2 rounded-xl hover:bg-emerald-500/10 transition-all font-medium">
+                  Sign In
+                </Link>
+                <Link href="/signup" className="text-sm text-white bg-gradient-to-r from-emerald-600 to-teal-600 px-4 py-2 rounded-xl hover:from-emerald-500 hover:to-teal-500 transition-all font-medium shadow-lg shadow-emerald-500/20">
+                  Sign Up
+                </Link>
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* Track Cards */}
+        <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+          {/* Learning Track - only for srirubankumar@gmail.com */}
+          {session?.user?.email === 'srirubankumar@gmail.com' && (
+            <Link href="/learn" className="group">
+              <div className="bg-gray-900/50 border border-gray-800/50 rounded-2xl p-8 backdrop-blur-sm hover:border-blue-500/40 transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/5 h-full">
+                <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-2xl mb-5 shadow-lg shadow-blue-500/20 group-hover:scale-110 transition-transform">
+                  🧠
+                </div>
+                <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
+                  Learning Track
+                </h2>
+                <p className="text-gray-400 mb-6 leading-relaxed">
+                  Track your 240-day AI/ML journey. Master data science, machine learning,
+                  deep learning, and software engineering with daily progress tracking.
+                </p>
+                <div className="flex flex-wrap gap-2">
+                  {['Python', 'SQL', 'ML', 'Deep Learning', 'MLOps'].map((tag) => (
+                    <span key={tag} className="text-xs px-2.5 py-1 rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/20">
+                      {tag}
+                    </span>
+                  ))}
+                </div>
+                <div className="mt-6 flex items-center text-blue-400 text-sm font-medium group-hover:gap-3 gap-2 transition-all">
+                  Open Dashboard <span className="text-lg">→</span>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* Money Track */}
+          <Link href="/money/dashboard" className="group">
+            <div className="bg-gray-900/50 border border-gray-800/50 rounded-2xl p-8 backdrop-blur-sm hover:border-emerald-500/40 transition-all duration-300 hover:shadow-xl hover:shadow-emerald-500/5 h-full">
+              <div className="w-14 h-14 rounded-2xl bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center text-2xl mb-5 shadow-lg shadow-emerald-500/20 group-hover:scale-110 transition-transform">
+                💰
+              </div>
+              <h2 className="text-2xl font-bold text-white mb-3 group-hover:text-emerald-400 transition-colors">
+                Money Track
+              </h2>
+              <p className="text-gray-400 mb-6 leading-relaxed">
+                Your smart personal finance operating system. Manage accounts, track expenses,
+                monitor credit cards, EMIs, investments, and optimize your cash flow.
               </p>
-            </div>
-
-            <div className="flex flex-wrap gap-2 ml-12 sm:ml-0">
-              <Link href="/ask" className="flex items-center gap-1.5 bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl font-semibold hover:bg-emerald-500/20 transition-all text-xs sm:text-sm">
-                <span>🧠</span> Ask AI
-              </Link>
-              <Link href="/resources" className="flex items-center gap-1.5 bg-blue-500/10 border border-blue-500/30 text-blue-400 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl font-semibold hover:bg-blue-500/20 transition-all text-xs sm:text-sm">
-                <span>📚</span> Resources
-              </Link>
-              {!hasStartDate && (
-                <form action={setStartDate}>
-                  <button className="flex items-center gap-1.5 bg-purple-500/10 border border-purple-500/30 text-purple-400 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl font-semibold hover:bg-purple-500/20 transition-all text-xs sm:text-sm">
-                    <span>📅</span> Start Plan
-                  </button>
-                </form>
-              )}
-              {!hasStartDate && (
-                <form action={resetTracker}>
-                  <button className="flex items-center gap-1.5 bg-red-500/10 border border-red-500/30 text-red-400 px-3 py-2 sm:px-4 sm:py-2.5 rounded-xl font-semibold hover:bg-red-500/20 transition-all text-xs sm:text-sm">
-                    <span>🔄</span> Reset
-                  </button>
-                </form>
-              )}
-            </div>
-          </div>
-        </header>
-
-        {/* ─── HERO STATS ─── */}
-        {totalTasks > 0 && (
-          <section className="mb-8 md:mb-12">
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-2 sm:gap-3 md:gap-4">
-              {/* Big Progress Card */}
-              <div className="col-span-2 sm:col-span-1 lg:row-span-2 bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-500/20 rounded-2xl p-4 sm:p-5 md:p-6 flex flex-col items-center justify-center backdrop-blur-sm">
-                <div className="relative w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 mb-2 sm:mb-3">
-                  <svg className="w-full h-full transform -rotate-90" viewBox="0 0 120 120">
-                    <circle cx="60" cy="60" r="50" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="10" />
-                    <circle cx="60" cy="60" r="50" fill="none" stroke="url(#progressGrad)" strokeWidth="10"
-                      strokeDasharray={`${progressPercent * 3.14} ${314 - progressPercent * 3.14}`}
-                      strokeLinecap="round" className="transition-all duration-1000" />
-                    <defs>
-                      <linearGradient id="progressGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                        <stop offset="0%" stopColor="#3b82f6" />
-                        <stop offset="100%" stopColor="#a855f7" />
-                      </linearGradient>
-                    </defs>
-                  </svg>
-                  <div className="absolute inset-0 flex flex-col items-center justify-center">
-                    <span className="text-2xl sm:text-3xl md:text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">{progressPercent}%</span>
-                    <span className="text-[9px] sm:text-[10px] text-gray-500 uppercase tracking-wider">Complete</span>
-                  </div>
-                </div>
-                <p className="text-gray-400 text-xs text-center">{completed} of {totalTasks} days</p>
+              <div className="flex flex-wrap gap-2">
+                {['Accounts', 'Budget', 'Cards', 'EMI', 'Investments'].map((tag) => (
+                  <span key={tag} className="text-xs px-2.5 py-1 rounded-lg bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
+                    {tag}
+                  </span>
+                ))}
               </div>
-
-              {/* Stat Cards */}
-              <div className="bg-gray-900/50 border border-gray-800/50 rounded-2xl p-3 sm:p-4 md:p-5 backdrop-blur-sm hover:border-green-500/30 transition-colors group">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 rounded-lg bg-green-500/10 flex items-center justify-center text-green-400 text-sm">✅</div>
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Done</span>
-                </div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-bold text-green-400">{completed}</p>
-              </div>
-
-              <div className="bg-gray-900/50 border border-gray-800/50 rounded-2xl p-3 sm:p-4 md:p-5 backdrop-blur-sm hover:border-yellow-500/30 transition-colors group">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 rounded-lg bg-yellow-500/10 flex items-center justify-center text-yellow-400 text-sm">🚀</div>
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Active</span>
-                </div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-bold text-yellow-400">{inProgress}</p>
-              </div>
-
-              <div className="bg-gray-900/50 border border-gray-800/50 rounded-2xl p-3 sm:p-4 md:p-5 backdrop-blur-sm hover:border-red-500/30 transition-colors group">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 rounded-lg bg-red-500/10 flex items-center justify-center text-red-400 text-sm">🚩</div>
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Review</span>
-                </div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-bold text-red-400">{review}</p>
-              </div>
-
-              <div className="bg-gray-900/50 border border-gray-800/50 rounded-2xl p-3 sm:p-4 md:p-5 backdrop-blur-sm hover:border-gray-500/30 transition-colors group">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 rounded-lg bg-gray-500/10 flex items-center justify-center text-gray-400 text-sm">⏳</div>
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Remaining</span>
-                </div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-bold text-gray-400">{todo}</p>
-              </div>
-
-              {/* Streak */}
-              <div className="bg-gray-900/50 border border-gray-800/50 rounded-2xl p-3 sm:p-4 md:p-5 backdrop-blur-sm hover:border-orange-500/30 transition-colors">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 rounded-lg bg-orange-500/10 flex items-center justify-center text-orange-400 text-sm">🔥</div>
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">Streak</span>
-                </div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-bold text-orange-400">{streak}</p>
-              </div>
-
-              {/* ETA */}
-              <div className="bg-gray-900/50 border border-gray-800/50 rounded-2xl p-3 sm:p-4 md:p-5 backdrop-blur-sm hover:border-cyan-500/30 transition-colors">
-                <div className="flex items-center gap-2 mb-2">
-                  <div className="w-8 h-8 rounded-lg bg-cyan-500/10 flex items-center justify-center text-cyan-400 text-sm">📊</div>
-                  <span className="text-xs text-gray-500 uppercase tracking-wider">ETA</span>
-                </div>
-                <p className="text-xl sm:text-2xl md:text-3xl font-bold text-cyan-400">{estimatedWeeks}<span className="text-sm font-normal text-gray-500 ml-1">wk</span></p>
+              <div className="mt-6 flex items-center text-emerald-400 text-sm font-medium group-hover:gap-3 gap-2 transition-all">
+                Open Dashboard <span className="text-lg">→</span>
               </div>
             </div>
-          </section>
-        )}
+          </Link>
+        </div>
 
-        {/* ─── ADD TASK ─── */}
-        <form action={createEntry} className="mb-8 md:mb-12">
-          <div className="flex flex-col md:flex-row gap-3 bg-gray-900/30 border border-gray-800/50 rounded-2xl p-3 backdrop-blur-sm">
-            <input
-              name="topic"
-              placeholder="✏️  What are we mastering today?"
-              className="bg-gray-800/50 border border-gray-700/50 p-3 sm:p-3.5 md:p-4 rounded-xl flex-1 focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500/50 outline-none placeholder-gray-600 text-gray-200 transition-all text-sm sm:text-base"
-              required
-            />
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 px-8 py-3.5 md:py-4 rounded-xl font-bold hover:from-blue-500 hover:to-purple-500 transition-all shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 text-sm uppercase tracking-wider">
-              Log Task
-            </button>
-          </div>
-        </form>
-
-        {/* ─── PHASE ROADMAP ─── */}
-        <section className="mb-10">
-          <h2 className="text-xl font-bold text-gray-300 mb-6 flex items-center gap-2">
-            <span className="bg-gradient-to-r from-blue-500 to-purple-500 bg-clip-text text-transparent">ROADMAP</span>
-            <span className="text-gray-600">/ 8 Phases</span>
-          </h2>
-
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-3 mb-8 sm:mb-10">
-            {phaseGroups.map((phase, idx) => {
-              const pct = phase.total > 0 ? Math.round((phase.done / phase.total) * 100) : 0;
-              return (
-                <a key={idx} href={`#phase-${idx}`} className={`${phase.bg} border ${phase.border} rounded-2xl p-3 sm:p-4 hover:scale-[1.02] transition-all cursor-pointer group overflow-hidden`}>
-                  <div className="flex items-center gap-1.5 sm:gap-2 mb-2 sm:mb-3">
-                    <span className="text-base sm:text-xl shrink-0">{phase.emoji}</span>
-                    <span className="text-[10px] sm:text-xs font-semibold text-gray-400 uppercase tracking-wider leading-tight">{phase.name}</span>
-                  </div>
-                  <div className="flex items-end justify-between">
-                    <div>
-                      <p className="text-xl font-bold text-white">{pct}%</p>
-                      <p className="text-[10px] text-gray-500">{phase.done}/{phase.total} days</p>
-                    </div>
-                    <div className="w-12 h-12">
-                      <svg viewBox="0 0 40 40" className="w-full h-full transform -rotate-90">
-                        <circle cx="20" cy="20" r="15" fill="none" stroke="rgba(255,255,255,0.05)" strokeWidth="4" />
-                        <circle cx="20" cy="20" r="15" fill="none" stroke="currentColor"
-                          className={`text-${phase.gradient.split('-')[1]}-500 transition-all`}
-                          strokeWidth="4" strokeDasharray={`${pct * 0.94} ${94 - pct * 0.94}`}
-                          strokeLinecap="round" />
-                      </svg>
-                    </div>
-                  </div>
-                </a>
-              );
-            })}
-          </div>
-
-          {/* ─── TASK LIST BY PHASE ─── */}
-          {phaseGroups.map((phase, phaseIdx) => (
-            <div key={phaseIdx} id={`phase-${phaseIdx}`} className="mb-8">
-              <div className="flex items-center gap-2 sm:gap-3 mb-3 sm:mb-4 sticky top-0 bg-[#0a0a0f]/90 backdrop-blur-md py-2.5 sm:py-3 z-20 border-b border-gray-800/30">
-                <span className="text-base sm:text-xl shrink-0">{phase.emoji}</span>
-                <h3 className={`text-sm sm:text-lg font-bold bg-gradient-to-r ${phase.gradient} bg-clip-text text-transparent truncate`}>
-                  {phase.name}
-                </h3>
-                <span className="text-[10px] sm:text-xs text-gray-600 ml-auto shrink-0 hidden sm:inline">Days {phase.start}–{phase.end}</span>
-                <span className="text-[10px] sm:text-xs font-semibold px-1.5 sm:px-2 py-0.5 rounded-full bg-gray-800 text-gray-400 shrink-0">{phase.done}/{phase.total}</span>
-              </div>
-
-              <div className="grid gap-2">
-                {phase.items.map((item) => {
-                  const dayId = item.lessonId || item.id;
-                  const statusStyles = {
-                    "⬜ To-Do": "border-gray-800/50 hover:border-gray-600/50",
-                    "🚀 In Progress": "border-yellow-500/20 bg-yellow-500/5 hover:border-yellow-500/40",
-                    "🚩 Review Needed": "border-red-500/20 bg-red-500/5 hover:border-red-500/40",
-                    "✅ Done": "border-green-500/20 bg-green-500/5 hover:border-green-500/30",
-                  };
-                  const btnStyles = {
-                    "⬜ To-Do": "bg-gray-800/50 border-gray-700/50 text-gray-400 hover:bg-gray-700/50",
-                    "🚀 In Progress": "bg-yellow-500/10 border-yellow-500/30 text-yellow-400 hover:bg-yellow-500/20",
-                    "🚩 Review Needed": "bg-red-500/10 border-red-500/30 text-red-400 hover:bg-red-500/20",
-                    "✅ Done": "bg-green-500/10 border-green-500/30 text-green-400 hover:bg-green-500/20",
-                  };
-
-                  return (
-                    <div key={item.id} className={`bg-gray-900/30 backdrop-blur-sm rounded-xl border ${statusStyles[item.status] || statusStyles["⬜ To-Do"]} flex items-center gap-2 sm:gap-3 p-2.5 sm:p-3.5 md:p-4 transition-all group overflow-hidden`}>
-                      <span className={`text-[10px] sm:text-xs font-mono px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-lg bg-gray-800/80 text-gray-500 shrink-0 ${item.status === "✅ Done" ? "text-green-500" : ""}`}>
-                        {String(dayId).padStart(3, '0')}
-                      </span>
-                      <div className="min-w-0 flex-1">
-                        <Link href={`/day/${dayId}`} className="hover:text-blue-300 transition-colors block">
-                          <p className={`text-sm sm:text-base font-medium truncate ${item.status === "✅ Done" ? 'text-gray-500 line-through' : 'text-gray-200'}`}>
-                            {item.topic}
-                          </p>
-                        </Link>
-                        {item.date && (
-                          <p className="text-[9px] sm:text-[10px] text-gray-600 mt-0.5">{item.date}</p>
-                        )}
-                      </div>
-                      <form action={toggleStatus.bind(null, item.id)} className="shrink-0">
-                        <button className={`px-2 sm:px-3 py-1 sm:py-1.5 rounded-lg border text-[10px] sm:text-xs font-semibold transition-all whitespace-nowrap ${btnStyles[item.status] || btnStyles["⬜ To-Do"]}`}>
-                          {item.status}
-                        </button>
-                      </form>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          ))}
-        </section>
-
-        {/* ─── FOOTER ─── */}
-        <footer className="text-center py-8 border-t border-gray-800/30">
-          <p className="text-gray-600 text-sm">
-            Built with 🔥 for the 240-Day AI/ML Journey
+        {/* Footer */}
+        <footer className="text-center pt-16">
+          <p className="text-gray-700 text-sm">
+            Built with 🔥 · Learning + Earning
           </p>
         </footer>
       </div>

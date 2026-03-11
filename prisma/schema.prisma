@@ -1,0 +1,357 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// ─── Users ───
+model User {
+  id           Int      @id @default(autoincrement())
+  name         String
+  email        String   @unique
+  password     String
+  currency     String   @default("INR")
+  timezone     String   @default("Asia/Kolkata")
+  salaryDay    Int      @default(1)
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  accounts         Account[]
+  categories       Category[]
+  transactions     Transaction[]
+  recurringRules   RecurringRule[]
+  creditCards      CreditCard[]
+  loans            Loan[]
+  groups           Group[]
+  borrowLendEntries BorrowLendEntry[]
+  investments      Investment[]
+  reminders        Reminder[]
+  learningTasks    LearningTask[]
+
+  @@map("users")
+}
+
+// ─── Bank Accounts ───
+model Account {
+  id             Int      @id @default(autoincrement())
+  userId         Int
+  name           String
+  type           String   @default("savings") // salary, savings, expense, cash, wallet
+  bankName       String?
+  openingBalance Float    @default(0)
+  currentBalance Float    @default(0)
+  minimumBuffer  Float    @default(0)
+  isActive       Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  transactions  Transaction[]
+  recurringRules RecurringRule[]
+  loans         Loan[]
+  investments   Investment[]
+  creditCards   CreditCard[]
+
+  @@map("accounts")
+}
+
+// ─── Categories ───
+model Category {
+  id       Int     @id @default(autoincrement())
+  userId   Int
+  name     String
+  type     String  // income, expense, transfer, savings
+  icon     String?
+  color    String?
+  parentId Int?
+
+  user         User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  parent       Category?     @relation("CategoryParent", fields: [parentId], references: [id])
+  children     Category[]    @relation("CategoryParent")
+  transactions Transaction[]
+  recurringRules RecurringRule[]
+  cardTransactions CardTransaction[]
+
+  @@map("categories")
+}
+
+// ─── Transactions ───
+model Transaction {
+  id                Int      @id @default(autoincrement())
+  userId            Int
+  accountId         Int
+  type              String   // income, expense, transfer, investment, debt_payment, card_payment
+  categoryId        Int?
+  amount            Float
+  description       String?
+  transactionDate   DateTime @default(now())
+  status            String   @default("completed") // planned, completed, skipped
+  recurringRuleId   Int?
+  relatedEntityType String?
+  relatedEntityId   String?
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  account       Account        @relation(fields: [accountId], references: [id], onDelete: Cascade)
+  category      Category?      @relation(fields: [categoryId], references: [id])
+  recurringRule RecurringRule?  @relation(fields: [recurringRuleId], references: [id])
+
+  @@map("transactions")
+}
+
+// ─── Recurring Rules ───
+model RecurringRule {
+  id              Int       @id @default(autoincrement())
+  userId          Int
+  title           String
+  amount          Float
+  frequency       String    @default("monthly") // daily, weekly, monthly, yearly
+  dueDay          Int?
+  startDate       DateTime
+  endDate         DateTime?
+  sourceAccountId Int
+  categoryId      Int?
+  autoPay         Boolean   @default(false)
+  isEssential     Boolean   @default(true)
+  priority        Int       @default(5)
+  isActive        Boolean   @default(true)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  user          User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sourceAccount Account       @relation(fields: [sourceAccountId], references: [id])
+  category      Category?     @relation(fields: [categoryId], references: [id])
+  transactions  Transaction[]
+  investments   Investment[]
+
+  @@map("recurring_rules")
+}
+
+// ─── Credit Cards ───
+model CreditCard {
+  id                    Int     @id @default(autoincrement())
+  userId                Int
+  name                  String
+  issuer                String?
+  creditLimit           Float
+  billingDay            Int
+  dueDay                Int
+  linkedPaymentAccountId Int?
+  annualFee             Float   @default(0)
+  isActive              Boolean @default(true)
+  createdAt             DateTime @default(now())
+  updatedAt             DateTime @updatedAt
+
+  user               User              @relation(fields: [userId], references: [id], onDelete: Cascade)
+  linkedPaymentAccount Account?        @relation(fields: [linkedPaymentAccountId], references: [id])
+  cardTransactions   CardTransaction[]
+  cardEmis           CardEmi[]
+
+  @@map("credit_cards")
+}
+
+// ─── Card Transactions ───
+model CardTransaction {
+  id              Int      @id @default(autoincrement())
+  cardId          Int
+  amount          Float
+  categoryId      Int?
+  merchant        String?
+  transactionDate DateTime @default(now())
+  statementMonth  String?
+  status          String   @default("pending") // pending, posted, paid
+  isEmi           Boolean  @default(false)
+  createdAt       DateTime @default(now())
+
+  card     CreditCard @relation(fields: [cardId], references: [id], onDelete: Cascade)
+  category Category?  @relation(fields: [categoryId], references: [id])
+
+  @@map("card_transactions")
+}
+
+// ─── Card EMIs ───
+model CardEmi {
+  id                 Int      @id @default(autoincrement())
+  cardId             Int
+  title              String
+  principal          Float
+  rate               Float    @default(0)
+  months             Int
+  emiAmount          Float
+  startMonth         String
+  remainingPrincipal Float
+  monthsLeft         Int
+  processingFee      Float    @default(0)
+  status             String   @default("active") // active, closed, preclosed
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  card CreditCard @relation(fields: [cardId], references: [id], onDelete: Cascade)
+
+  @@map("card_emis")
+}
+
+// ─── Loans ───
+model Loan {
+  id                Int      @id @default(autoincrement())
+  userId            Int
+  lenderName        String
+  type              String   // personal, education, vehicle, gold, bnpl, hand
+  principal         Float
+  rate              Float
+  emiAmount         Float
+  startDate         DateTime
+  endDate           DateTime?
+  remainingPrincipal Float
+  foreclosureCharge Float    @default(0)
+  dueDay            Int?
+  linkedAccountId   Int?
+  status            String   @default("active") // active, closed, defaulted
+  createdAt         DateTime @default(now())
+  updatedAt         DateTime @updatedAt
+
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  linkedAccount Account? @relation(fields: [linkedAccountId], references: [id])
+
+  @@map("loans")
+}
+
+// ─── Groups ───
+model Group {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  name      String
+  createdAt DateTime @default(now())
+
+  user     User          @relation(fields: [userId], references: [id], onDelete: Cascade)
+  members  GroupMember[]
+  expenses GroupExpense[]
+
+  @@map("groups")
+}
+
+// ─── Group Members ───
+model GroupMember {
+  id      Int     @id @default(autoincrement())
+  groupId Int
+  name    String
+  email   String?
+  phone   String?
+
+  group    Group              @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  paidExpenses GroupExpense[]
+  shares   GroupExpenseShare[]
+
+  @@map("group_members")
+}
+
+// ─── Group Expenses ───
+model GroupExpense {
+  id              Int      @id @default(autoincrement())
+  groupId         Int
+  paidByMemberId  Int
+  title           String
+  totalAmount     Float
+  expenseDate     DateTime @default(now())
+  splitType       String   @default("equal") // equal, custom, percentage
+
+  group         Group              @relation(fields: [groupId], references: [id], onDelete: Cascade)
+  paidByMember  GroupMember         @relation(fields: [paidByMemberId], references: [id])
+  shares        GroupExpenseShare[]
+
+  @@map("group_expenses")
+}
+
+// ─── Group Expense Shares ───
+model GroupExpenseShare {
+  id              Int    @id @default(autoincrement())
+  groupExpenseId  Int
+  memberId        Int
+  shareAmount     Float
+  settledAmount   Float  @default(0)
+
+  groupExpense GroupExpense @relation(fields: [groupExpenseId], references: [id], onDelete: Cascade)
+  member       GroupMember  @relation(fields: [memberId], references: [id])
+
+  @@map("group_expense_shares")
+}
+
+// ─── Borrow/Lend Entries ───
+model BorrowLendEntry {
+  id                Int       @id @default(autoincrement())
+  userId            Int
+  personName        String
+  direction         String    // lent, borrowed
+  principalAmount   Float
+  outstandingAmount Float
+  dueDate           DateTime?
+  note              String?
+  status            String    @default("active") // active, overdue, partial, settled
+  createdAt         DateTime  @default(now())
+  updatedAt         DateTime  @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("borrow_lend_entries")
+}
+
+// ─── Investments ───
+model Investment {
+  id              Int       @id @default(autoincrement())
+  userId          Int
+  type            String    // sip, fd, rd, mf, stock, ppf, crypto
+  name            String
+  provider        String?
+  amount          Float
+  startDate       DateTime
+  maturityDate    DateTime?
+  expectedReturn  Float?
+  linkedAccountId Int?
+  recurringRuleId Int?
+  status          String    @default("active") // active, matured, withdrawn
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+
+  user          User           @relation(fields: [userId], references: [id], onDelete: Cascade)
+  linkedAccount Account?       @relation(fields: [linkedAccountId], references: [id])
+  recurringRule RecurringRule?  @relation(fields: [recurringRuleId], references: [id])
+
+  @@map("investments")
+}
+
+// ─── Reminders ───
+model Reminder {
+  id         Int      @id @default(autoincrement())
+  userId     Int
+  entityType String
+  entityId   String
+  remindAt   DateTime
+  channel    String   @default("app") // app, email
+  status     String   @default("pending") // pending, sent, dismissed
+  createdAt  DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("reminders")
+}
+
+// ─── Learning Tasks ───
+model LearningTask {
+  id        Int      @id @default(autoincrement())
+  userId    Int
+  lessonId  Int
+  phase     String?
+  topic     String
+  status    String   @default("⬜ To-Do")
+  date      String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("learning_tasks")
+}

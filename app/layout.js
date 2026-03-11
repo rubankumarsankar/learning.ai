@@ -12,9 +12,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Learning & Tracking | Mastery Dashboard",
-  description: "Advanced daily mastery tracker for data science, software engineering, and AI logic progression. Track your 240-day intensive learning journey.",
-  keywords: ["Data Science", "Machine Learning", "Software Engineering", "AI", "Learning Tracker", "Python", "SQL"]
+  title: "Envy Tag Tracker | Learning & Finance",
+  description: "Your personal command center for mastering skills and managing money. Track learning progress and finances in one place.",
+  keywords: ["Learning Tracker", "Finance", "Money Management", "Budget", "AI", "Data Science"]
 };
 
 export default function RootLayout({ children }) {
